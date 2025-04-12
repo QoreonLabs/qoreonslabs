@@ -1,0 +1,2105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>QOREON LABS LTD - AI-Driven Software & App Development</title>
+  <!-- Google Fonts for a modern look -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <!-- Font Awesome for icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <!-- AOS Animation Library -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
+  <style>
+    /* Global Styles and Variables */
+    :root {
+      --primary-color: #2575fc;
+      --primary-light: rgba(37, 117, 252, 0.1);
+      --primary-dark: #1a5cca;
+      --secondary-color: #6a11cb;
+      --secondary-light: rgba(106, 17, 203, 0.1);
+      --secondary-dark: #5410a3;
+      --accent-color: #00d9ff;
+      --dark-color: #151c2b;
+      --darker-color: #0c111e;
+      --text-color: #333;
+      --text-light: #6e7a8a;
+      --light-color: #f8f9fa;
+      --white: #ffffff;
+      --gray-100: #f8f9fa;
+      --gray-200: #e9ecef;
+      --gray-300: #dee2e6;
+      --gray-400: #ced4da;
+      --gray-500: #adb5bd;
+      --gray-600: #6c757d;
+      --gray-700: #495057;
+      --gray-800: #343a40;
+      --gray-900: #212529;
+      --shadow-sm: 0 2px 5px rgba(0, 0, 0, 0.05);
+      --shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+      --shadow-lg: 0 10px 25px rgba(0, 0, 0, 0.12);
+      --shadow-xl: 0 15px 35px rgba(0, 0, 0, 0.15);
+      --transition-fast: 0.2s;
+      --transition: 0.3s;
+      --transition-slow: 0.5s;
+      --z-tooltip: 10;
+      --z-fixed: 100;
+      --z-modal: 1000;
+      --border-radius-sm: 4px;
+      --border-radius: 8px;
+      --border-radius-lg: 12px;
+      --border-radius-xl: 20px;
+      --border-radius-full: 9999px;
+    }
+    
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    
+    html {
+      scroll-behavior: smooth;
+      scroll-padding-top: 80px;
+    }
+    
+    body {
+      font-family: 'Poppins', sans-serif;
+      line-height: 1.6;
+      color: var(--text-color);
+      overflow-x: hidden;
+      background-color: var(--light-color);
+      position: relative;
+    }
+    
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+    
+    ul {
+      list-style: none;
+    }
+    
+    img {
+      max-width: 100%;
+      height: auto;
+    }
+    
+    /* Utility Classes */
+    .container {
+      width: 100%;
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 1.5rem;
+      position: relative;
+      z-index: 1;
+    }
+    
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 0.75rem 1.8rem;
+      font-size: 1rem;
+      font-weight: 500;
+      border-radius: var(--border-radius-full);
+      transition: all var(--transition) ease;
+      cursor: pointer;
+      position: relative;
+      overflow: hidden;
+      z-index: 1;
+      border: none;
+    }
+    
+    .btn-primary {
+      background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+      color: var(--white);
+      box-shadow: 0 4px 15px rgba(37, 117, 252, 0.3);
+    }
+    
+    .btn-outline {
+      background: transparent;
+      color: var(--primary-color);
+      border: 2px solid var(--primary-color);
+    }
+    
+    .btn-light {
+      background: var(--white);
+      color: var(--primary-color);
+      box-shadow: var(--shadow);
+    }
+    
+    .btn i {
+      margin-left: 0.5rem;
+      transition: transform var(--transition) ease;
+    }
+    
+    .btn:hover {
+      transform: translateY(-3px);
+      box-shadow: var(--shadow-lg);
+    }
+    
+    .btn:hover i {
+      transform: translateX(3px);
+    }
+    
+    .btn-primary::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: -100%;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+      transition: left 0.7s ease;
+    }
+    
+    .btn-primary:hover::before {
+      left: 100%;
+    }
+    
+    .section {
+      padding: 6rem 0;
+      position: relative;
+    }
+    
+    .section-header {
+      margin-bottom: 4rem;
+      text-align: center;
+      position: relative;
+    }
+    
+    .section-header .subtitle {
+      color: var(--primary-color);
+      font-weight: 500;
+      margin-bottom: 1rem;
+      display: block;
+    }
+    
+    .section-header h2 {
+      font-size: 2.5rem;
+      margin-bottom: 1.5rem;
+      position: relative;
+      display: inline-block;
+    }
+    
+    .section-header h2::after {
+      content: '';
+      position: absolute;
+      bottom: -10px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 70px;
+      height: 4px;
+      background: linear-gradient(90deg, var(--secondary-color), var(--primary-color));
+      border-radius: 4px;
+    }
+    
+    .section-header p {
+      max-width: 700px;
+      margin: 0 auto;
+      color: var(--text-light);
+      font-size: 1.1rem;
+    }
+    
+    .text-gradient {
+  color: white;
+  text-shadow: 0 0 8px rgba(180, 130, 230, 0.6), 0 0 16px rgba(180, 130, 230, 0.4);
+  font-weight: 700;
+  letter-spacing: 0.5px;
+}
+    
+    .card {
+      background: var(--white);
+      border-radius: var(--border-radius);
+      box-shadow: var(--shadow);
+      overflow: hidden;
+      transition: all var(--transition) ease;
+    }
+    
+    .card:hover {
+      transform: translateY(-10px);
+      box-shadow: var(--shadow-lg);
+    }
+    
+    .bg-primary {
+      background: var(--primary-color);
+      color: var(--white);
+    }
+    
+    .bg-secondary {
+      background: var(--secondary-color);
+      color: var(--white);
+    }
+    
+    .bg-dark {
+      background: var(--dark-color);
+      color: var(--white);
+    }
+    
+    .bg-light {
+      background: var(--light-color);
+      color: var(--text-color);
+    }
+    
+    .text-center {
+      text-align: center;
+    }
+    
+    .mb-1 {
+      margin-bottom: 0.5rem;
+    }
+    
+    .mb-2 {
+      margin-bottom: 1rem;
+    }
+    
+    .mb-3 {
+      margin-bottom: 1.5rem;
+    }
+    
+    .mb-4 {
+      margin-bottom: 2rem;
+    }
+    
+    .mb-5 {
+      margin-bottom: 3rem;
+    }
+    
+    .mt-1 {
+      margin-top: 0.5rem;
+    }
+    
+    .mt-2 {
+      margin-top: 1rem;
+    }
+    
+    .mt-3 {
+      margin-top: 1.5rem;
+    }
+    
+    .mt-4 {
+      margin-top: 2rem;
+    }
+    
+    .mt-5 {
+      margin-top: 3rem;
+    }
+    
+    /* Animated Background */
+    .animated-background {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+      z-index: 0;
+    }
+    
+    .bg-gradient {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(-45deg,
+                                 rgba(106, 17, 203, 0.05),
+                                 rgba(37, 117, 252, 0.05),
+                                 rgba(0, 217, 255, 0.05),
+                                 rgba(245, 247, 250, 0.05));
+      background-size: 400% 400%;
+      animation: gradientBG 15s ease infinite;
+      z-index: -2;
+    }
+    
+    @keyframes gradientBG {
+      0% {
+        background-position: 0% 50%;
+      }
+      50% {
+        background-position: 100% 50%;
+      }
+      100% {
+        background-position: 0% 50%;
+      }
+    }
+    
+    .bg-grid {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-image:
+        linear-gradient(var(--gray-200) 1px, transparent 1px),
+        linear-gradient(90deg, var(--gray-200) 1px, transparent 1px);
+      background-size: 30px 30px;
+      opacity: 0.3;
+      z-index: -1;
+    }
+    
+    .particles-container {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+      z-index: -1;
+    }
+    
+    .particle {
+      position: absolute;
+      display: block;
+      pointer-events: none;
+      opacity: 0.5;
+      animation: float 15s infinite ease-in-out;
+    }
+    
+    @keyframes float {
+      0%, 100% {
+        transform: translateY(0) rotate(0deg);
+      }
+      50% {
+        transform: translateY(-20px) rotate(180deg);
+      }
+    }
+    
+    /* Wave Dividers */
+    .wave-divider {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      overflow: hidden;
+      line-height: 0;
+      transform: rotate(180deg);
+    }
+    
+    .wave-divider svg {
+      position: relative;
+      display: block;
+      width: calc(100% + 1.3px);
+      height: 70px;
+    }
+    
+    .wave-divider.wave-top {
+      top: 0;
+      transform: rotate(0);
+    }
+    
+    /* Header Styles - Updated to match image 1 */
+    header {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      z-index: var(--z-fixed);
+      transition: all var(--transition) ease;
+      padding: 1rem 0;
+      background: linear-gradient(90deg, var(--secondary-color), var(--primary-color));
+    }
+    
+    .header-container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    
+    .logo {
+      font-size: 1.8rem;
+      font-weight: 700;
+      color: var(--white);
+      position: relative;
+      display: flex;
+      align-items: center;
+    }
+    
+    .logo::before {
+      content: '';
+      position: absolute;
+      width: 10px;
+      height: 10px;
+      background: var(--white);
+      border-radius: 50%;
+      left: -18px;
+      box-shadow: 0 0 15px rgba(255, 255, 255, 0.8);
+    }
+    
+    .nav-menu {
+      display: flex;
+      align-items: center;
+    }
+    
+    .nav-list {
+      display: flex;
+      gap: 2.5rem;
+      margin-right: 2rem;
+    }
+    
+    .nav-link {
+      font-weight: 500;
+      color: var(--white);
+      transition: all var(--transition) ease;
+      position: relative;
+      padding: 0.5rem 0;
+      font-size: 1.05rem;
+      opacity: 0.85;
+    }
+    
+    .nav-link::after {
+      content: '';
+      position: absolute;
+      width: 0;
+      height: 3px;
+      bottom: -3px;
+      left: 0;
+      background-color: var(--white);
+      transition: width var(--transition) ease;
+      border-radius: var(--border-radius-full);
+    }
+    
+    .nav-link:hover {
+      opacity: 1;
+    }
+    
+    .nav-link:hover::after,
+    .nav-link.active::after {
+      width: 100%;
+    }
+    
+    .nav-link.active {
+      opacity: 1;
+    }
+    
+    .header-btn {
+      background: rgba(255, 255, 255, 0.15);
+      color: var(--white);
+      border: 1px solid rgba(255, 255, 255, 0.3);
+      padding: 0.6rem 1.5rem;
+      border-radius: var(--border-radius-full);
+      font-weight: 500;
+      transition: all var(--transition) ease;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+    
+    .header-btn:hover {
+      background: var(--white);
+      color: var(--primary-color);
+      transform: translateY(-3px);
+    }
+    
+    .nav-toggle {
+      display: none;
+      font-size: 1.5rem;
+      cursor: pointer;
+      color: var(--white);
+      transition: all var(--transition) ease;
+    }
+    
+    /* Hero Section - Updated with bubble and network animations */
+    .hero {
+      min-height: 100vh;
+      padding: 0;
+      display: flex;
+      align-items: center;
+      position: relative;
+      overflow: hidden;
+      background: linear-gradient(135deg, var(--secondary-color) 0%, var(--primary-color) 100%);
+      color: var(--white);
+    }
+    
+    .hero-container {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 3rem;
+      align-items: center;
+      padding: 8rem 0 6rem;
+    }
+    
+    .hero-content {
+      z-index: 1;
+    }
+    
+    .hero h1 {
+      font-size: 4rem;
+      line-height: 1.1;
+      margin-bottom: 1.5rem;
+    }
+    
+    .hero p {
+      font-size: 1.2rem;
+      margin-bottom: 2rem;
+      color: rgba(255, 255, 255, 0.9);
+      max-width: 500px;
+    }
+    
+    .hero-btns {
+      display: flex;
+      gap: 1rem;
+      flex-wrap: wrap;
+    }
+    
+    .hero-image {
+      position: relative;
+      z-index: 1;
+    }
+    
+    .hero-image img {
+      max-width: 100%;
+      border-radius: var(--border-radius-lg);
+      box-shadow: var(--shadow-xl);
+      border: 3px solid rgba(255, 255, 255, 0.1);
+    }
+    
+    .hero-overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23ffffff' fill-opacity='0.05' fill-rule='evenodd'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/svg%3E");
+      opacity: 0.3;
+    }
+    
+    /* Bubble Animation */
+    .bubble-container {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+      z-index: 0;
+    }
+    
+    .bubble {
+      position: absolute;
+      border-radius: 50%;
+      background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.05));
+      box-shadow: 0 0 10px rgba(255, 255, 255, 0.05);
+      backdrop-filter: blur(1px);
+      -webkit-backdrop-filter: blur(1px);
+      border: 1px solid rgba(255, 255, 255, 0.05);
+      animation: float linear infinite;
+      bottom: -100px;
+    }
+    
+    @keyframes float {
+      0% {
+        transform: translateY(0) rotate(0deg) scale(1);
+        opacity: 0;
+      }
+      10% {
+        opacity: 0.2;
+      }
+      90% {
+        opacity: 0.1;
+      }
+      100% {
+        transform: translateY(-110vh) rotate(360deg) scale(1.4);
+        opacity: 0;
+      }
+    }
+    
+    /* Network Animation */
+    .network-animation {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+      z-index: 0;
+    }
+    
+    .node {
+      position: absolute;
+      background: rgba(255, 255, 255, 0.2);
+      border-radius: 50%;
+      transform: translate(-50%, -50%);
+    }
+    
+    .connection {
+      position: absolute;
+      height: 1px;
+      background: linear-gradient(90deg, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0));
+      transform-origin: left center;
+      z-index: -1;
+    }
+    
+    .floating-shapes {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      z-index: 0;
+      overflow: hidden;
+    }
+    
+    .shape {
+      position: absolute;
+      background: rgba(255, 255, 255, 0.05);
+      border-radius: 50%;
+    }
+    
+    .shape1 {
+      width: 300px;
+      height: 300px;
+      top: -150px;
+      right: -150px;
+    }
+    
+    .shape2 {
+      width: 200px;
+      height: 200px;
+      bottom: -100px;
+      left: -100px;
+    }
+    
+    .shape3 {
+      width: 150px;
+      height: 150px;
+      bottom: 50%;
+      right: 10%;
+    }
+    
+    .shape4 {
+      width: 80px;
+      height: 80px;
+      top: 30%;
+      left: 20%;
+    }
+    
+    /* Features Section */
+    .features {
+      background-color: var(--white);
+      position: relative;
+    }
+    
+    .features-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+      gap: 2rem;
+    }
+    
+    .feature-card {
+      padding: 2rem;
+      text-align: center;
+      border-radius: var(--border-radius);
+      background: var(--white);
+      box-shadow: var(--shadow);
+      transition: all var(--transition) ease;
+      position: relative;
+      z-index: 1;
+      overflow: hidden;
+    }
+    
+    .feature-card::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 5px;
+      background: linear-gradient(90deg, var(--secondary-color), var(--primary-color));
+      transition: all var(--transition) ease;
+    }
+    
+    .feature-card:hover {
+      transform: translateY(-10px);
+      box-shadow: var(--shadow-lg);
+    }
+    
+    .feature-icon {
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      background: var(--primary-light);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto 1.5rem;
+      transition: all var(--transition) ease;
+    }
+    
+    .feature-icon i {
+      font-size: 2rem;
+      color: var(--primary-color);
+      transition: all var(--transition) ease;
+    }
+    
+    .feature-card:hover .feature-icon {
+      background: linear-gradient(135deg, var(--secondary-color), var(--primary-color));
+    }
+    
+    .feature-card:hover .feature-icon i {
+      color: var(--white);
+    }
+    
+    .feature-title {
+      font-size: 1.2rem;
+      margin-bottom: 1rem;
+      transition: all var(--transition) ease;
+    }
+    
+    .feature-card:hover .feature-title {
+      color: var(--primary-color);
+    }
+    
+    .feature-text {
+      color: var(--text-light);
+    }
+    
+    /* Services Section */
+    .services {
+      background-color: var(--light-color);
+      position: relative;
+    }
+    
+    .services-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+      gap: 2.5rem;
+    }
+    
+    .service-card {
+      background: var(--white);
+      border-radius: var(--border-radius);
+      overflow: hidden;
+      box-shadow: var(--shadow);
+      transition: all var(--transition) ease;
+      position: relative;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+    }
+    
+    .service-card:hover {
+      transform: translateY(-10px);
+      box-shadow: var(--shadow-lg);
+    }
+    
+    .service-icon {
+      width: 100%;
+      height: 200px;
+      position: relative;
+      overflow: hidden;
+    }
+    
+    .service-icon img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: all var(--transition) ease;
+    }
+    
+    .service-card:hover .service-icon img {
+      transform: scale(1.1);
+    }
+    
+    .service-content {
+      padding: 2rem;
+      flex-grow: 1;
+      display: flex;
+      flex-direction: column;
+    }
+    
+    .service-title {
+      font-size: 1.4rem;
+      margin-bottom: 1rem;
+      color: var(--dark-color);
+    }
+    
+    .service-text {
+      color: var(--text-light);
+      margin-bottom: 1.5rem;
+    }
+    
+    .service-content .btn {
+      margin-top: auto;
+      align-self: flex-start;
+    }
+    
+    /* CTA Section */
+    .cta {
+      background: linear-gradient(135deg, var(--secondary-color), var(--primary-color));
+      color: var(--white);
+      text-align: center;
+      padding: 5rem 0;
+      position: relative;
+      overflow: hidden;
+    }
+    
+    .cta-pattern {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23ffffff' fill-opacity='0.05' fill-rule='evenodd'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/svg%3E");
+    }
+    
+    .cta h2 {
+      font-size: 2.5rem;
+      margin-bottom: 1.5rem;
+    }
+    
+    .cta p {
+      font-size: 1.2rem;
+      margin-bottom: 2rem;
+      max-width: 700px;
+      margin-left: auto;
+      margin-right: auto;
+      opacity: 0.9;
+    }
+    
+    .cta .btn-light {
+      padding: 1rem 2.5rem;
+      font-size: 1.1rem;
+    }
+    
+    /* Contact Section */
+    .contact {
+      background-color: var(--white);
+      position: relative;
+    }
+    
+    .contact-container {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 3rem;
+    }
+    
+    .contact-info {
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+    }
+    
+    .contact-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 1.5rem;
+    }
+    
+    .contact-icon {
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      background: var(--primary-light);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--primary-color);
+      font-size: 1.2rem;
+      flex-shrink: 0;
+    }
+    
+    .contact-text h3 {
+      font-size: 1.2rem;
+      margin-bottom: 0.5rem;
+    }
+    
+    .contact-text p {
+      color: var(--text-light);
+    }
+    
+    .contact-form {
+      background: var(--white);
+      padding: 2.5rem;
+      border-radius: var(--border-radius);
+      box-shadow: var(--shadow);
+    }
+    
+    .form-group {
+      margin-bottom: 1.5rem;
+    }
+    
+    .form-label {
+      display: block;
+      margin-bottom: 0.5rem;
+      font-weight: 500;
+    }
+    
+    .form-control {
+      width: 100%;
+      padding: 0.8rem 1rem;
+      font-size: 1rem;
+      border: 1px solid var(--gray-300);
+      border-radius: var(--border-radius);
+      transition: all var(--transition) ease;
+    }
+    
+    .form-control:focus {
+      outline: none;
+      border-color: var(--primary-color);
+      box-shadow: 0 0 0 3px var(--primary-light);
+    }
+    
+    .form-row {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1.5rem;
+    }
+    
+    /* Updated Footer Styles - Added bubble animations and removed divider */
+    footer {
+      background: linear-gradient(180deg, var(--dark-color) 0%, var(--darker-color) 100%);
+      color: var(--gray-300);
+      position: relative;
+      overflow: hidden;
+    }
+    
+    /* Bubble Animation for Footer */
+    .bubble {
+      position: absolute;
+      border-radius: 50%;
+      background: rgba(255, 255, 255, 0.05);
+      animation: bubbleFloat linear infinite;
+      bottom: -50px;
+    }
+    
+    @keyframes bubbleFloat {
+      0% {
+        transform: translateY(0) scale(1);
+        opacity: 0;
+      }
+      50% {
+        opacity: 0.1;
+      }
+      100% {
+        transform: translateY(-1000px) scale(1.8);
+        opacity: 0;
+      }
+    }
+    
+    /* Decorative elements */
+    .footer-decoration {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      pointer-events: none;
+    }
+    
+    .footer-blob {
+      position: absolute;
+      background: linear-gradient(135deg, var(--secondary-color), var(--primary-color));
+      opacity: 0.05;
+      border-radius: 50%;
+    }
+    
+    .blob-1 {
+      width: 400px;
+      height: 400px;
+      top: -200px;
+      right: -200px;
+      filter: blur(50px);
+    }
+    
+    .blob-2 {
+      width: 300px;
+      height: 300px;
+      bottom: -150px;
+      left: -150px;
+      filter: blur(40px);
+    }
+    
+    /* Main Footer Content */
+    .footer-content {
+      position: relative;
+      padding: 5rem 0 3rem;
+      z-index: 1;
+    }
+    
+    .footer-main {
+      display: grid;
+      grid-template-columns: 2fr 1fr 1fr 1fr;
+      gap: 3rem;
+      margin-bottom: 3rem;
+    }
+    
+    /* Logo and About Section */
+    .footer-brand {
+      margin-bottom: 1.5rem;
+    }
+    
+    .footer-logo {
+      font-size: 1.8rem;
+      font-weight: 700;
+      color: var(--white);
+      margin-bottom: 1rem;
+      display: inline-block;
+      position: relative;
+    }
+    
+    .footer-logo::after {
+      content: '';
+      position: absolute;
+      width: 30px;
+      height: 3px;
+      background: linear-gradient(90deg, var(--secondary-color), var(--primary-color));
+      bottom: -8px;
+      left: 0;
+      border-radius: var(--border-radius-full);
+    }
+    
+    .footer-about p {
+      color: var(--gray-400);
+      margin-bottom: 1.5rem;
+    }
+    
+    /* Social Media Links */
+    .footer-social {
+      display: flex;
+      gap: 1rem;
+      margin-bottom: 1.5rem;
+    }
+    
+    .social-link {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 36px;
+      height: 36px;
+      background: rgba(255, 255, 255, 0.05);
+      border-radius: var(--border-radius-full);
+      color: var(--white);
+      transition: all var(--transition) ease;
+    }
+    
+    .social-link:hover {
+      background: linear-gradient(135deg, var(--secondary-color), var(--primary-color));
+      transform: translateY(-3px);
+    }
+    
+    /* Footer Links */
+    .footer-block h3 {
+      color: var(--white);
+      font-size: 1.2rem;
+      margin-bottom: 1.5rem;
+      position: relative;
+      display: inline-block;
+    }
+    
+    .footer-block h3::after {
+      content: '';
+      position: absolute;
+      width: 30px;
+      height: 3px;
+      background: linear-gradient(90deg, var(--secondary-color), var(--primary-color));
+      bottom: -8px;
+      left: 0;
+      border-radius: var(--border-radius-full);
+    }
+    
+    .footer-links {
+      display: flex;
+      flex-direction: column;
+      gap: 0.8rem;
+    }
+    
+    .footer-link {
+      color: var(--gray-400);
+      transition: all var(--transition) ease;
+      position: relative;
+      padding-left: 15px;
+    }
+    
+    .footer-link::before {
+      content: '';
+      position: absolute;
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      background-color: var(--gray-600);
+      left: 0;
+      top: 50%;
+      transform: translateY(-50%);
+      transition: all var(--transition) ease;
+    }
+    
+    .footer-link:hover {
+      color: var(--white);
+      transform: translateX(5px);
+    }
+    
+    .footer-link:hover::before {
+      background: linear-gradient(135deg, var(--secondary-color), var(--primary-color));
+    }
+    
+    /* Contact Information */
+    .footer-contact-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 1rem;
+      margin-bottom: 1.2rem;
+      color: var(--gray-400);
+    }
+    
+    .footer-contact-item i {
+      color: var(--primary-color);
+      font-size: 1.1rem;
+      margin-top: 0.2rem;
+    }
+    
+    /* Newsletter Subscription */
+    .footer-newsletter {
+      margin-top: 1.5rem;
+    }
+    
+    .newsletter-form {
+      position: relative;
+      margin-top: 1rem;
+    }
+    
+    .newsletter-input {
+      width: 100%;
+      padding: 0.8rem 1rem;
+      padding-right: 3.5rem;
+      background: rgba(255, 255, 255, 0.05);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      border-radius: var(--border-radius-full);
+      color: var(--white);
+      font-size: 0.9rem;
+      transition: all var(--transition) ease;
+    }
+    
+    .newsletter-input:focus {
+      outline: none;
+      border-color: rgba(255, 255, 255, 0.3);
+      background: rgba(255, 255, 255, 0.08);
+    }
+    
+    .newsletter-input::placeholder {
+      color: var(--gray-500);
+    }
+    
+    .newsletter-btn {
+      position: absolute;
+      top: 50%;
+      right: 0.5rem;
+      transform: translateY(-50%);
+      background: linear-gradient(135deg, var(--secondary-color), var(--primary-color));
+      border: none;
+      width: 36px;
+      height: 36px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--white);
+      cursor: pointer;
+      transition: all var(--transition) ease;
+    }
+    
+    .newsletter-btn:hover {
+      transform: translateY(-50%) scale(1.05);
+      box-shadow: 0 0 15px rgba(37, 117, 252, 0.4);
+    }
+    
+    /* Copyright Section */
+    .footer-divider {
+      height: 1px;
+      background: linear-gradient(to right, transparent, rgba(255, 255, 255, 0.1), transparent);
+      margin-bottom: 1.5rem;
+    }
+    
+    .footer-bottom {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding-bottom: 1.5rem;
+      color: var(--gray-500);
+      font-size: 0.9rem;
+    }
+    
+    .footer-copyright a {
+      color: var(--primary-color);
+      transition: color var(--transition) ease;
+    }
+    
+    .footer-copyright a:hover {
+      color: var(--white);
+    }
+    
+    .footer-links-inline {
+      display: flex;
+      gap: 1.5rem;
+    }
+    
+    .footer-links-inline a {
+      color: var(--gray-500);
+      transition: color var(--transition) ease;
+    }
+    
+    .footer-links-inline a:hover {
+      color: var(--white);
+    }
+    
+    /* Responsive Styles */
+    @media (max-width: 1200px) {
+      .hero h1 {
+        font-size: 3rem;
+      }
+      
+      .footer-main {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+    
+    @media (max-width: 992px) {
+      html {
+        font-size: 14px;
+      }
+      
+      .hero-container {
+        grid-template-columns: 1fr;
+        text-align: center;
+      }
+      
+      .hero p {
+        margin-left: auto;
+        margin-right: auto;
+      }
+      
+      .hero-btns {
+        justify-content: center;
+      }
+      
+      .hero-image {
+        order: -1;
+        margin-bottom: 2rem;
+      }
+      
+      .contact-container {
+        grid-template-columns: 1fr;
+      }
+    }
+    
+    @media (max-width: 768px) {
+      .section {
+        padding: 4rem 0;
+      }
+      
+      .features-grid,
+      .services-container {
+        grid-template-columns: 1fr;
+      }
+      
+      .footer-main {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+      }
+      
+      .footer-block {
+        margin-bottom: 1rem;
+      }
+      
+      .footer-bottom {
+        flex-direction: column;
+        gap: 1rem;
+        text-align: center;
+      }
+      
+      .footer-links-inline {
+        justify-content: center;
+      }
+      
+      .nav-menu {
+        position: fixed;
+        top: 0;
+        right: -100%;
+        width: 80%;
+        height: 100vh;
+        background: linear-gradient(135deg, var(--secondary-color), var(--primary-color));
+        padding: 6rem 2rem 2rem;
+        transition: all var(--transition) ease;
+        z-index: var(--z-fixed);
+        box-shadow: var(--shadow-lg);
+        display: block;
+      }
+      
+      .nav-menu.show {
+        right: 0;
+      }
+      
+      .nav-list {
+        flex-direction: column;
+        margin-right: 0;
+      }
+      
+      .nav-close {
+        position: absolute;
+        top: 1.5rem;
+        right: 1.5rem;
+        font-size: 1.5rem;
+        cursor: pointer;
+        color: var(--white);
+      }
+      
+      .nav-toggle {
+        display: block;
+      }
+      
+      .form-row {
+        grid-template-columns: 1fr;
+      }
+    }
+    
+    @media (max-width: 576px) {
+      html {
+        font-size: 12px;
+      }
+      
+      .btn {
+        padding: 0.7rem 1.5rem;
+      }
+      
+      .section-header h2 {
+        font-size: 2rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Animated Background -->
+  <div class="animated-background">
+    <div class="bg-gradient"></div>
+    <div class="bg-grid"></div>
+    <div class="particles-container" id="particles-container"></div>
+  </div>
+
+  <!-- Header -->
+  <header id="header">
+    <div class="container">
+      <div class="header-container">
+        <a href="#" class="logo">QOREON LABS</a>
+        
+        <div class="nav-toggle" id="nav-toggle">
+          <i class="fas fa-bars"></i>
+        </div>
+        
+        <nav class="nav-menu" id="nav-menu">
+          <div class="nav-close" id="nav-close">
+            <i class="fas fa-times"></i>
+          </div>
+          
+          <ul class="nav-list">
+            <li><a href="#home" class="nav-link active">Home</a></li>
+            <li><a href="#about" class="nav-link">About</a></li>
+            <li><a href="#services" class="nav-link">Services</a></li>
+            <li><a href="#contact" class="nav-link">Contact</a></li>
+          </ul>
+          
+          <a href="#contact" class="header-btn">
+            <i class="fas fa-headset"></i>
+            Get In Touch
+          </a>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero" id="home">
+    <!-- New animations added here -->
+    <div class="bubble-container" id="bubble-container"></div>
+    <div class="network-animation" id="network-animation"></div>
+    
+    <div class="floating-shapes">
+      <div class="shape shape1"></div>
+      <div class="shape shape2"></div>
+      <div class="shape shape3"></div>
+      <div class="shape shape4"></div>
+    </div>
+    
+    <div class="hero-overlay"></div>
+    
+    <div class="container">
+      <div class="hero-container">
+        <div class="hero-content" data-aos="fade-right" data-aos-delay="200">
+          <h1>Powering Digital<br>Transformation<br>with<br><span class="text-gradient">AI-Driven<br>Innovation</span></h1>
+          <p>We deliver intelligent, future-ready solutions with cutting-edge technology to revolutionize your business in the digital landscape.</p>
+          <div class="hero-btns">
+            <a href="#services" class="btn btn-primary">Our Services <i class="fas fa-arrow-right"></i></a>
+            <a href="#contact" class="btn btn-light">Get in Touch</a>
+          </div>
+        </div>
+        
+        <div class="hero-image" data-aos="fade-left" data-aos-delay="400">
+          <img src="https://res.cloudinary.com/dfzsolglz/image/upload/v1744477640/3d-illustration-blue-purple-futuristic-sci-fi-techno-lights-cool-background_ueaecd.jpg" alt="QOREON LABS Digital Transformation" />
+        </div>
+      </div>
+    </div>
+    
+    <div class="wave-divider">
+      <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+        <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="shape-fill" fill="#ffffff"></path>
+      </svg>
+    </div>
+  </section>
+
+  <!-- Features Section -->
+  <section class="section features" id="about">
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <span class="subtitle">Our Value Proposition</span>
+        <h2>Why Choose QOREON LABS</h2>
+        <p>We combine cutting-edge AI, machine learning, and agile methodologies to create platforms that are secure, scalable, and adaptable to your business needs.</p>
+      </div>
+      
+      <div class="features-grid">
+        <div class="feature-card" data-aos="fade-up" data-aos-delay="100">
+          <div class="feature-icon">
+            <i class="fas fa-brain"></i>
+          </div>
+          <h3 class="feature-title">AI-Powered Solutions</h3>
+          <p class="feature-text">Leverage the power of artificial intelligence to gain valuable insights and automate complex processes.</p>
+        </div>
+        
+        <div class="feature-card" data-aos="fade-up" data-aos-delay="200">
+          <div class="feature-icon">
+            <i class="fas fa-shield-alt"></i>
+          </div>
+          <h3 class="feature-title">Robust Security</h3>
+          <p class="feature-text">Enterprise-grade security at every layer, ensuring your data and applications are protected 24/7.</p>
+        </div>
+        
+        <div class="feature-card" data-aos="fade-up" data-aos-delay="300">
+          <div class="feature-icon">
+            <i class="fas fa-tachometer-alt"></i>
+          </div>
+          <h3 class="feature-title">Scalable Architecture</h3>
+          <p class="feature-text">Build solutions that grow with your business, from startup to enterprise without missing a beat.</p>
+        </div>
+        
+        <div class="feature-card" data-aos="fade-up" data-aos-delay="400">
+          <div class="feature-icon">
+            <i class="fas fa-code"></i>
+          </div>
+          <h3 class="feature-title">Clean Code</h3>
+          <p class="feature-text">Maintainable and efficient code that meets the highest industry standards for long-term stability.</p>
+        </div>
+        
+        <div class="feature-card" data-aos="fade-up" data-aos-delay="500">
+          <div class="feature-icon">
+            <i class="fas fa-users"></i>
+          </div>
+          <h3 class="feature-title">Expert Team</h3>
+          <p class="feature-text">Seasoned professionals with deep expertise across multiple technologies and industries.</p>
+        </div>
+        
+        <div class="feature-card" data-aos="fade-up" data-aos-delay="600">
+          <div class="feature-icon">
+            <i class="fas fa-rocket"></i>
+          </div>
+          <h3 class="feature-title">Rapid Deployment</h3>
+          <p class="feature-text">Accelerate your time-to-market with our efficient development and deployment processes.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services Section -->
+  <section class="section services" id="services">
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <span class="subtitle">What We Offer</span>
+        <h2>Our Services</h2>
+        <p>We provide end-to-end solutions to help businesses leverage technology for growth and innovation.</p>
+      </div>
+      
+      <div class="services-container">
+        <div class="service-card" data-aos="fade-up" data-aos-delay="100">
+          <div class="service-icon">
+            <img src="https://res.cloudinary.com/dfzsolglz/image/upload/v1744477907/image_femtga.png" alt="AI & Machine Learning Solutions" />
+          </div>
+          <div class="service-content">
+            <h3 class="service-title">AI & Machine Learning</h3>
+            <p class="service-text">Custom artificial intelligence and machine learning solutions to automate processes, predict trends, and gain actionable insights from your data.</p>
+            <a href="#" class="btn btn-outline">Learn More</a>
+          </div>
+        </div>
+        
+        <div class="service-card" data-aos="fade-up" data-aos-delay="200">
+          <div class="service-icon">
+            <img src="https://res.cloudinary.com/dfzsolglz/image/upload/v1744477899/web_app_kclxed.png" alt="Web Application Development" />
+          </div>
+          <div class="service-content">
+            <h3 class="service-title">Web Application Development</h3>
+            <p class="service-text">Responsive, scalable, and secure web applications built with modern frameworks and best practices for optimal performance.</p>
+            <a href="#" class="btn btn-outline">Learn More</a>
+          </div>
+        </div>
+        
+        <div class="service-card" data-aos="fade-up" data-aos-delay="300">
+          <div class="service-icon">
+            <img src="https://res.cloudinary.com/dfzsolglz/image/upload/v1744478036/Mobile-app-development-company-1_tbx9qx.webp" alt="Mobile App Development" />
+          </div>
+          <div class="service-content">
+            <h3 class="service-title">Mobile App Development</h3>
+            <p class="service-text">Native and cross-platform mobile applications with intuitive interfaces and seamless functionality for iOS and Android.</p>
+            <a href="#" class="btn btn-outline">Learn More</a>
+          </div>
+        </div>
+        
+        <div class="service-card" data-aos="fade-up" data-aos-delay="400">
+          <div class="service-icon">
+            <img src="https://res.cloudinary.com/dfzsolglz/image/upload/v1744478392/original-045689ec2ea6c33fc92e91f39042e00a_qafgc4.webp" alt="Data Analytics & Visualization" />
+          </div>
+          <div class="service-content">
+            <h3 class="service-title">Data Analytics & Visualization</h3>
+            <p class="service-text">Transform complex data into clear, actionable insights with advanced analytics and intuitive visualization dashboards.</p>
+            <a href="#" class="btn btn-outline">Learn More</a>
+          </div>
+        </div>
+        
+        <div class="service-card" data-aos="fade-up" data-aos-delay="500">
+          <div class="service-icon">
+            <img src="https://res.cloudinary.com/dfzsolglz/image/upload/v1744478560/saas-concept-collage_k9yqzv.jpg" alt="Cloud Solutions" />
+          </div>
+          <div class="service-content">
+            <h3 class="service-title">Cloud Solutions</h3>
+            <p class="service-text">Scalable, secure, and cost-effective cloud infrastructure design, migration, and management across major platforms.</p>
+            <a href="#" class="btn btn-outline">Learn More</a>
+          </div>
+        </div>
+        
+        <div class="service-card" data-aos="fade-up" data-aos-delay="600">
+          <div class="service-icon">
+            <img src="https://res.cloudinary.com/dfzsolglz/image/upload/v1744478569/L3-Digital-transformation-of-tax-administration-V2-shutterstock_2070595583_u5jtuj.jpg" alt="Digital Transformation Consulting" />
+          </div>
+          <div class="service-content">
+            <h3 class="service-title">Digital Transformation</h3>
+            <p class="service-text">Strategic consulting to help your organization leverage technology for competitive advantage and operational excellence.</p>
+            <a href="#" class="btn btn-outline">Learn More</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="section cta">
+    <div class="cta-pattern"></div>
+    <div class="container">
+      <div data-aos="fade-up">
+        <h2>Ready to Transform Your Business?</h2>
+        <p>Let's discuss how our AI-driven solutions can help you achieve your business goals and stay ahead of the competition.</p>
+        <a href="#contact" class="btn btn-light">Schedule a Consultation</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="section contact" id="contact">
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <span class="subtitle">Get In Touch</span>
+        <h2>Contact Us</h2>
+        <p>Have a project in mind or want to learn more about our services? Reach out to us today.</p>
+      </div>
+      
+      <div class="contact-container">
+        <div class="contact-info" data-aos="fade-up" data-aos-delay="100">
+          <div class="contact-item">
+            <div class="contact-icon">
+              <i class="fas fa-map-marker-alt"></i>
+            </div>
+            <div class="contact-text">
+              <h3>Our Location</h3>
+              <p>71-75 Shelton Street, Covent Garden, London, WC2H 9JQ</p>
+            </div>
+          </div>
+          
+          <div class="contact-item">
+            <div class="contact-icon">
+              <i class="fas fa-envelope"></i>
+            </div>
+            <div class="contact-text">
+              <h3>Email Us</h3>
+              <p>support@qoreonslabs.com</p>
+              <p>info@qoreonslabs.com</p>
+            </div>
+          </div>
+          
+          <div class="contact-item">
+            <div class="contact-icon">
+              <i class="fas fa-phone-alt"></i>
+            </div>
+            <div class="contact-text">
+              <h3>Call Us</h3>
+              <p>+601161322729</p>
+            </div>
+          </div>
+          
+          <div class="contact-item">
+            <div class="contact-icon">
+              <i class="fas fa-clock"></i>
+            </div>
+            <div class="contact-text">
+              <h3>Working Hours</h3>
+              <p>Monday - Friday: 9:00 AM - 6:00 PM</p>
+              <p>Saturday - Sunday: Closed</p>
+            </div>
+          </div>
+        </div>
+        
+        <div class="contact-form" data-aos="fade-up" data-aos-delay="200">
+          <form id="contactForm" action="https://formspree.io/f/xwplybvz" method="POST">
+            <div class="form-row">
+              <div class="form-group">
+                <label class="form-label" for="name">Name</label>
+                <input type="text" id="name" name="name" class="form-control" placeholder="Your name" required>
+              </div>
+              
+              <div class="form-group">
+                <label class="form-label" for="email">Email</label>
+                <input type="email" id="email" name="_replyto" class="form-control" placeholder="Your email" required>
+              </div>
+            </div>
+            
+            <div class="form-group">
+              <label class="form-label" for="subject">Subject</label>
+              <input type="text" id="subject" name="subject" class="form-control" placeholder="Subject" required>
+            </div>
+            
+            <div class="form-group">
+              <label class="form-label" for="message">Message</label>
+              <textarea id="message" name="message" rows="5" class="form-control" placeholder="Your message" required></textarea>
+            </div>
+            
+            <button type="submit" class="btn btn-primary">Send Message <i class="fas fa-paper-plane"></i></button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Updated Footer with Bubbles -->
+  <footer>
+    <!-- Bubbles Animation -->
+    <div id="footer-bubbles"></div>
+    
+    <!-- Decorative Elements -->
+    <div class="footer-decoration">
+      <div class="footer-blob blob-1"></div>
+      <div class="footer-blob blob-2"></div>
+    </div>
+    
+    <!-- Footer Content -->
+    <div class="footer-content">
+      <div class="container">
+        <!-- Main Footer Area -->
+        <div class="footer-main">
+          <!-- About Section -->
+          <div class="footer-block footer-about">
+            <div class="footer-brand">
+              <a href="#" class="footer-logo">QOREON LABS</a>
+              <p>Pioneering software and app development company dedicated to bringing intelligent, future-ready solutions to the digital landscape.</p>
+            </div>
+            
+            <!-- Social Media Links -->
+            <div class="footer-social">
+              <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+              <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+              <a href="#" class="social-link"><i class="fab fa-linkedin-in"></i></a>
+              <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+              <a href="#" class="social-link"><i class="fab fa-github"></i></a>
+            </div>
+            
+            <!-- Newsletter Subscription -->
+            <div class="footer-newsletter">
+              <h3>Subscribe to Our Newsletter</h3>
+              <p>Stay updated with our latest news and insights.</p>
+              <form class="newsletter-form">
+                <input type="email" class="newsletter-input" placeholder="Your email address">
+                <button type="submit" class="newsletter-btn">
+                  <i class="fas fa-paper-plane"></i>
+                </button>
+              </form>
+            </div>
+          </div>
+          
+          <!-- Quick Links -->
+          <div class="footer-block">
+            <h3>Quick Links</h3>
+            <div class="footer-links">
+              <a href="#home" class="footer-link">Home</a>
+              <a href="#about" class="footer-link">About Us</a>
+              <a href="#services" class="footer-link">Services</a>
+              <a href="#contact" class="footer-link">Contact</a>
+            </div>
+          </div>
+          
+          <!-- Services Links -->
+          <div class="footer-block">
+            <h3>Our Services</h3>
+            <div class="footer-links">
+              <a href="#" class="footer-link">AI & Machine Learning</a>
+              <a href="#" class="footer-link">Web Development</a>
+              <a href="#" class="footer-link">Mobile Apps</a>
+              <a href="#" class="footer-link">Data Analytics</a>
+              <a href="#" class="footer-link">Cloud Solutions</a>
+              <a href="#" class="footer-link">Digital Transformation</a>
+            </div>
+          </div>
+          
+          <!-- Contact Information -->
+          <div class="footer-block">
+            <h3>Contact Info</h3>
+            <div class="footer-contact">
+              <div class="footer-contact-item">
+                <i class="fas fa-map-marker-alt"></i>
+                <span>71-75 Shelton Street, Covent Garden, London, WC2H 9JQ</span>
+              </div>
+              <div class="footer-contact-item">
+                <i class="fas fa-envelope"></i>
+                <span>support@qoreonslabs.com</span>
+              </div>
+              <div class="footer-contact-item">
+                <i class="fas fa-phone-alt"></i>
+                <span>+601161322729</span>
+              </div>
+              <div class="footer-contact-item">
+                <i class="fas fa-clock"></i>
+                <span>Monday - Friday: 9:00 AM - 6:00 PM</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Divider Line -->
+        <div class="footer-divider"></div>
+        
+        <!-- Copyright Section -->
+        <div class="footer-bottom">
+          <div class="footer-copyright">
+            &copy; <span id="year">2025</span> <a href="#">QOREON LABS LTD</a>. All Rights Reserved.
+          </div>
+          
+          <div class="footer-links-inline">
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms of Service</a>
+            <a href="#">Cookie Policy</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- AOS Animation -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+  
+  <script>
+    // Set the current year dynamically in the footer
+    document.getElementById('year').textContent = new Date().getFullYear();
+    
+    // Initialize AOS Animation Library
+    document.addEventListener('DOMContentLoaded', function() {
+      AOS.init({
+        duration: 800,
+        easing: 'ease-in-out',
+        once: true,
+        mirror: false
+      });
+      
+      // Create particles for the background
+      createParticles();
+      
+      // Create bubbles for footer
+      createBubbles();
+      
+      // Create network and bubble animations for hero section
+      createHeroBubbles();
+      createNetworkAnimation();
+      
+      // Navigation functionality
+      initNavigation();
+    });
+    
+    // Create particles for the background
+    function createParticles() {
+      const container = document.getElementById('particles-container');
+      const particleCount = 20;
+      
+      if (!container) return;
+      
+      for (let i = 0; i < particleCount; i++) {
+        const particle = document.createElement('div');
+        particle.classList.add('particle');
+        
+        // Random size between 30px and 100px
+        const size = Math.random() * 70 + 30;
+        particle.style.width = `${size}px`;
+        particle.style.height = `${size}px`;
+        
+        // Random position
+        particle.style.left = `${Math.random() * 100}vw`;
+        particle.style.top = `${Math.random() * 100}vh`;
+        
+        // Random opacity
+        particle.style.opacity = Math.random() * 0.3 + 0.1;
+        
+        // Random animation delay
+        particle.style.animationDelay = `${Math.random() * 15}s`;
+        
+        // Random animation duration
+        particle.style.animationDuration = `${Math.random() * 15 + 10}s`;
+        
+        container.appendChild(particle);
+      }
+    }
+    
+    // Create floating bubbles for hero section
+    function createHeroBubbles() {
+      const container = document.getElementById('bubble-container');
+      const bubbleCount = 20;
+      
+      if (!container) return;
+      
+      for (let i = 0; i < bubbleCount; i++) {
+        const bubble = document.createElement('div');
+        bubble.classList.add('bubble');
+        
+        // Random size between 20px and 80px
+        const size = Math.random() * 60 + 20;
+        bubble.style.width = `${size}px`;
+        bubble.style.height = `${size}px`;
+        
+        // Random horizontal position
+        bubble.style.left = `${Math.random() * 100}%`;
+        
+        // Random animation duration between 15s and 30s
+        const duration = Math.random() * 15 + 15;
+        bubble.style.animationDuration = `${duration}s`;
+        
+        // Random animation delay
+        bubble.style.animationDelay = `${Math.random() * 5}s`;
+        
+        container.appendChild(bubble);
+      }
+    }
+    
+    // Create network connection animation for hero section
+    function createNetworkAnimation() {
+      const container = document.getElementById('network-animation');
+      const nodeCount = 15;
+      const nodes = [];
+      
+      if (!container) return;
+      
+      // Create nodes
+      for (let i = 0; i < nodeCount; i++) {
+        const node = document.createElement('div');
+        node.classList.add('node');
+        
+        // Random size between 3px and 6px
+        const size = Math.random() * 3 + 3;
+        node.style.width = `${size}px`;
+        node.style.height = `${size}px`;
+        
+        // Random position
+        const x = Math.random() * 100;
+        const y = Math.random() * 100;
+        node.style.left = `${x}%`;
+        node.style.top = `${y}%`;
+        
+        // Save node position for connections
+        nodes.push({ element: node, x, y });
+        
+        // Add to container
+        container.appendChild(node);
+        
+        // Animate node position
+        animateNode(node);
+      }
+      
+      // Create connections between nodes
+      createConnections(container, nodes);
+    }
+    
+    function animateNode(node) {
+      const speed = Math.random() * 10 + 20; // Random speed between 20-30 seconds
+      
+      function moveNode() {
+        // Get current position
+        const currentLeft = parseFloat(node.style.left);
+        const currentTop = parseFloat(node.style.top);
+        
+        // Calculate new position (small movement)
+        const newLeft = Math.max(0, Math.min(100, currentLeft + (Math.random() * 10 - 5)));
+        const newTop = Math.max(0, Math.min(100, currentTop + (Math.random() * 10 - 5)));
+        
+        // Animate to new position
+        node.style.transition = `left ${speed}s ease, top ${speed}s ease`;
+        node.style.left = `${newLeft}%`;
+        node.style.top = `${newTop}%`;
+        
+        // Schedule next movement
+        setTimeout(moveNode, speed * 1000);
+      }
+      
+      // Start animation
+      moveNode();
+    }
+    
+    function createConnections(container, nodes) {
+      // Create connections between nearby nodes
+      for (let i = 0; i < nodes.length; i++) {
+        for (let j = i + 1; j < nodes.length; j++) {
+          const distance = Math.sqrt(
+            Math.pow(nodes[i].x - nodes[j].x, 2) +
+            Math.pow(nodes[i].y - nodes[j].y, 2)
+          );
+          
+          // Only connect if within range (30% of screen)
+          if (distance < 30) {
+            const connection = document.createElement('div');
+            connection.classList.add('connection');
+            
+            // Calculate position and rotation
+            updateConnection(connection, nodes[i], nodes[j]);
+            
+            // Add to container
+            container.appendChild(connection);
+            
+            // Update connection position when nodes move
+            setInterval(() => {
+              updateConnection(connection, nodes[i], nodes[j]);
+            }, 100);
+          }
+        }
+      }
+    }
+    
+    function updateConnection(connection, nodeA, nodeB) {
+      // Get current node positions (they may have moved)
+      const rect = document.getElementById('network-animation').getBoundingClientRect();
+      const xA = nodeA.element.getBoundingClientRect().left + nodeA.element.offsetWidth/2 - rect.left;
+      const yA = nodeA.element.getBoundingClientRect().top + nodeA.element.offsetHeight/2 - rect.top;
+      const xB = nodeB.element.getBoundingClientRect().left + nodeB.element.offsetWidth/2 - rect.left;
+      const yB = nodeB.element.getBoundingClientRect().top + nodeB.element.offsetHeight/2 - rect.top;
+      
+      // Calculate distance and angle
+      const distance = Math.sqrt(Math.pow(xB - xA, 2) + Math.pow(yB - yA, 2));
+      const angle = Math.atan2(yB - yA, xB - xA) * 180 / Math.PI;
+      
+      // Position the connection
+      connection.style.width = `${distance}px`;
+      connection.style.left = `${xA}px`;
+      connection.style.top = `${yA}px`;
+      connection.style.transform = `rotate(${angle}deg)`;
+    }
+    
+    // Create bubble animation for footer
+    function createBubbles() {
+      const container = document.getElementById('footer-bubbles');
+      const bubbleCount = 30;
+      
+      if (!container) return;
+      
+      for (let i = 0; i < bubbleCount; i++) {
+        const bubble = document.createElement('div');
+        bubble.classList.add('bubble');
+        
+        // Random size between 5px and 30px
+        const size = Math.random() * 25 + 5;
+        bubble.style.width = `${size}px`;
+        bubble.style.height = `${size}px`;
+        
+        // Random horizontal position
+        bubble.style.left = `${Math.random() * 100}%`;
+        
+        // Random animation duration between 8s and 20s
+        const duration = Math.random() * 12 + 8;
+        bubble.style.animationDuration = `${duration}s`;
+        
+        // Random animation delay
+        bubble.style.animationDelay = `${Math.random() * 5}s`;
+        
+        // Random opacity
+        bubble.style.opacity = (Math.random() * 0.15).toFixed(2);
+        
+        container.appendChild(bubble);
+      }
+    }
+    
+    // Initialize navigation functionality
+    function initNavigation() {
+      const header = document.getElementById('header');
+      const navToggle = document.getElementById('nav-toggle');
+      const navClose = document.getElementById('nav-close');
+      const navMenu = document.getElementById('nav-menu');
+      const navLinks = document.querySelectorAll('.nav-link');
+      
+      if (!navToggle || !navMenu || !navLinks.length) return;
+      
+      // Active link based on scroll position
+      window.addEventListener('scroll', () => {
+        const sections = document.querySelectorAll('section[id]');
+        
+        sections.forEach(section => {
+          const sectionTop = section.offsetTop - 100;
+          const sectionHeight = section.offsetHeight;
+          const sectionId = section.getAttribute('id');
+          
+          if (window.scrollY >= sectionTop && window.scrollY < sectionTop + sectionHeight) {
+            document.querySelector(`.nav-link[href="#${sectionId}"]`)?.classList.add('active');
+          } else {
+            document.querySelector(`.nav-link[href="#${sectionId}"]`)?.classList.remove('active');
+          }
+        });
+      });
+      
+      // Toggle menu
+      if (navToggle) {
+        navToggle.addEventListener('click', () => {
+          navMenu.classList.add('show');
+        });
+      }
+      
+      if (navClose) {
+        navClose.addEventListener('click', () => {
+          navMenu.classList.remove('show');
+        });
+      }
+      
+      // Close menu when clicking nav links
+      navLinks.forEach(link => {
+        link.addEventListener('click', () => {
+          navMenu.classList.remove('show');
+        });
+      });
+      
+      // Smooth scrolling for all links
+      document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function(e) {
+          e.preventDefault();
+          
+          const targetId = this.getAttribute('href');
+          if (targetId === '#') return;
+          
+          const targetElement = document.querySelector(targetId);
+          
+          if (targetElement) {
+            window.scrollTo({
+              top: targetElement.offsetTop - 80,
+              behavior: 'smooth'
+            });
+          }
+        });
+      });
+    }
+  </script>
+</body>
+</html>
