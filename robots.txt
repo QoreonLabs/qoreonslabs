@@ -1,0 +1,11 @@
+User-agent: *
+Allow: /
+
+# Allow all bots to access all content
+Disallow:
+
+# Reference to sitemap
+Sitemap: https://qoreonlabs.com/sitemap.xml
+
+# Crawl-delay recommendation for bots
+Crawl-delay: 10
