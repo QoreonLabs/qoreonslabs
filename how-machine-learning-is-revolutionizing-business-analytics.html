@@ -1,0 +1,1629 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>How Machine Learning is Revolutionizing Business Analytics - QOREON LABS Blog</title>
+  <!-- Google Fonts for a modern look -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <!-- Font Awesome for icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <!-- AOS Animation Library -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
+  <style>
+    /* Global Styles and Variables */
+    :root {
+      --primary-color: #2575fc;
+      --primary-light: rgba(37, 117, 252, 0.1);
+      --primary-dark: #1a5cca;
+      --secondary-color: #6a11cb;
+      --secondary-light: rgba(106, 17, 203, 0.1);
+      --secondary-dark: #5410a3;
+      --accent-color: #00d9ff;
+      --dark-color: #151c2b;
+      --darker-color: #0c111e;
+      --text-color: #333;
+      --text-light: #6e7a8a;
+      --light-color: #f8f9fa;
+      --white: #ffffff;
+      --gray-100: #f8f9fa;
+      --gray-200: #e9ecef;
+      --gray-300: #dee2e6;
+      --gray-400: #ced4da;
+      --gray-500: #adb5bd;
+      --gray-600: #6c757d;
+      --gray-700: #495057;
+      --gray-800: #343a40;
+      --gray-900: #212529;
+      --shadow-sm: 0 2px 5px rgba(0, 0, 0, 0.05);
+      --shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+      --shadow-lg: 0 10px 25px rgba(0, 0, 0, 0.12);
+      --shadow-xl: 0 15px 35px rgba(0, 0, 0, 0.15);
+      --transition-fast: 0.2s;
+      --transition: 0.3s;
+      --transition-slow: 0.5s;
+      --z-tooltip: 10;
+      --z-fixed: 100;
+      --z-modal: 1000;
+      --border-radius-sm: 4px;
+      --border-radius: 8px;
+      --border-radius-lg: 12px;
+      --border-radius-xl: 20px;
+      --border-radius-full: 9999px;
+    }
+    
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    
+    html {
+      scroll-behavior: smooth;
+      scroll-padding-top: 80px;
+    }
+    
+    body {
+      font-family: 'Poppins', sans-serif;
+      line-height: 1.6;
+      color: var(--text-color);
+      overflow-x: hidden;
+      background-color: var(--light-color);
+      position: relative;
+    }
+    
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+    
+    ul {
+      list-style: none;
+    }
+    
+    img {
+      max-width: 100%;
+      height: auto;
+    }
+    
+    /* Utility Classes */
+    .container {
+      width: 100%;
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 1.5rem;
+      position: relative;
+      z-index: 1;
+    }
+    
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 0.75rem 1.8rem;
+      font-size: 1rem;
+      font-weight: 500;
+      border-radius: var(--border-radius-full);
+      transition: all var(--transition) ease;
+      cursor: pointer;
+      position: relative;
+      overflow: hidden;
+      z-index: 1;
+      border: none;
+    }
+    
+    .btn-primary {
+      background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+      color: var(--white);
+      box-shadow: 0 4px 15px rgba(37, 117, 252, 0.3);
+    }
+    
+    .btn-outline {
+      background: transparent;
+      color: var(--primary-color);
+      border: 2px solid var(--primary-color);
+    }
+    
+    .btn-light {
+      background: var(--white);
+      color: var(--primary-color);
+      box-shadow: var(--shadow);
+    }
+    
+    .btn i {
+      margin-left: 0.5rem;
+      transition: transform var(--transition) ease;
+    }
+    
+    .btn:hover {
+      transform: translateY(-3px);
+      box-shadow: var(--shadow-lg);
+    }
+    
+    .btn:hover i {
+      transform: translateX(3px);
+    }
+    
+    .btn-primary::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: -100%;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+      transition: left 0.7s ease;
+    }
+    
+    .btn-primary:hover::before {
+      left: 100%;
+    }
+    
+    .section {
+      padding: 6rem 0;
+      position: relative;
+    }
+    
+    .section-header {
+      margin-bottom: 4rem;
+      text-align: center;
+      position: relative;
+    }
+    
+    .section-header .subtitle {
+      color: var(--primary-color);
+      font-weight: 500;
+      margin-bottom: 1rem;
+      display: block;
+    }
+    
+    .section-header h2 {
+      font-size: 2.5rem;
+      margin-bottom: 1.5rem;
+      position: relative;
+      display: inline-block;
+    }
+    
+    .section-header h2::after {
+      content: '';
+      position: absolute;
+      bottom: -10px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 70px;
+      height: 4px;
+      background: linear-gradient(90deg, var(--secondary-color), var(--primary-color));
+      border-radius: 4px;
+    }
+    
+    .section-header p {
+      max-width: 700px;
+      margin: 0 auto;
+      color: var(--text-light);
+      font-size: 1.1rem;
+    }
+    
+    .text-gradient {
+      color: white;
+      text-shadow: 0 0 8px rgba(180, 130, 230, 0.6), 0 0 16px rgba(180, 130, 230, 0.4);
+      font-weight: 700;
+      letter-spacing: 0.5px;
+    }
+    
+    .card {
+      background: var(--white);
+      border-radius: var(--border-radius);
+      box-shadow: var(--shadow);
+      overflow: hidden;
+      transition: all var(--transition) ease;
+    }
+    
+    .card:hover {
+      transform: translateY(-10px);
+      box-shadow: var(--shadow-lg);
+    }
+    
+    .bg-primary {
+      background: var(--primary-color);
+      color: var(--white);
+    }
+    
+    .bg-secondary {
+      background: var(--secondary-color);
+      color: var(--white);
+    }
+    
+    .bg-dark {
+      background: var(--dark-color);
+      color: var(--white);
+    }
+    
+    .bg-light {
+      background: var(--light-color);
+      color: var(--text-color);
+    }
+    
+    .text-center {
+      text-align: center;
+    }
+    
+    .mb-1 {
+      margin-bottom: 0.5rem;
+    }
+    
+    .mb-2 {
+      margin-bottom: 1rem;
+    }
+    
+    .mb-3 {
+      margin-bottom: 1.5rem;
+    }
+    
+    .mb-4 {
+      margin-bottom: 2rem;
+    }
+    
+    .mb-5 {
+      margin-bottom: 3rem;
+    }
+    
+    .mt-1 {
+      margin-top: 0.5rem;
+    }
+    
+    .mt-2 {
+      margin-top: 1rem;
+    }
+    
+    .mt-3 {
+      margin-top: 1.5rem;
+    }
+    
+    .mt-4 {
+      margin-top: 2rem;
+    }
+    
+    .mt-5 {
+      margin-top: 3rem;
+    }
+    
+    /* Animated Background */
+    .animated-background {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+      z-index: 0;
+    }
+    
+    .bg-gradient {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(-45deg,
+                                 rgba(106, 17, 203, 0.05),
+                                 rgba(37, 117, 252, 0.05),
+                                 rgba(0, 217, 255, 0.05),
+                                 rgba(245, 247, 250, 0.05));
+      background-size: 400% 400%;
+      animation: gradientBG 15s ease infinite;
+      z-index: -2;
+    }
+    
+    @keyframes gradientBG {
+      0% {
+        background-position: 0% 50%;
+      }
+      50% {
+        background-position: 100% 50%;
+      }
+      100% {
+        background-position: 0% 50%;
+      }
+    }
+    
+    .bg-grid {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-image:
+        linear-gradient(var(--gray-200) 1px, transparent 1px),
+        linear-gradient(90deg, var(--gray-200) 1px, transparent 1px);
+      background-size: 30px 30px;
+      opacity: 0.3;
+      z-index: -1;
+    }
+    
+    .particles-container {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+      z-index: -1;
+    }
+    
+    .particle {
+      position: absolute;
+      display: block;
+      pointer-events: none;
+      opacity: 0.5;
+      animation: float 15s infinite ease-in-out;
+    }
+    
+    @keyframes float {
+      0%, 100% {
+        transform: translateY(0) rotate(0deg);
+      }
+      50% {
+        transform: translateY(-20px) rotate(180deg);
+      }
+    }
+    
+    /* Header Styles */
+    header {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      z-index: var(--z-fixed);
+      transition: all var(--transition) ease;
+      padding: 1rem 0;
+      background: linear-gradient(90deg, var(--secondary-color), var(--primary-color));
+    }
+    
+    .header-container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    
+    .logo {
+      font-size: 1.8rem;
+      font-weight: 700;
+      color: var(--white);
+      position: relative;
+      display: flex;
+      align-items: center;
+    }
+    
+    .logo::before {
+      content: '';
+      position: absolute;
+      width: 10px;
+      height: 10px;
+      background: var(--white);
+      border-radius: 50%;
+      left: -18px;
+      box-shadow: 0 0 15px rgba(255, 255, 255, 0.8);
+    }
+    
+    .nav-menu {
+      display: flex;
+      align-items: center;
+    }
+    
+    .nav-list {
+      display: flex;
+      gap: 2.5rem;
+      margin-right: 2rem;
+    }
+    
+    .nav-link {
+      font-weight: 500;
+      color: var(--white);
+      transition: all var(--transition) ease;
+      position: relative;
+      padding: 0.5rem 0;
+      font-size: 1.05rem;
+      opacity: 0.85;
+    }
+    
+    .nav-link::after {
+      content: '';
+      position: absolute;
+      width: 0;
+      height: 3px;
+      bottom: -3px;
+      left: 0;
+      background-color: var(--white);
+      transition: width var(--transition) ease;
+      border-radius: var(--border-radius-full);
+    }
+    
+    .nav-link:hover {
+      opacity: 1;
+    }
+    
+    .nav-link:hover::after,
+    .nav-link.active::after {
+      width: 100%;
+    }
+    
+    .nav-link.active {
+      opacity: 1;
+    }
+    
+    .header-btn {
+      background: rgba(255, 255, 255, 0.15);
+      color: var(--white);
+      border: 1px solid rgba(255, 255, 255, 0.3);
+      padding: 0.6rem 1.5rem;
+      border-radius: var(--border-radius-full);
+      font-weight: 500;
+      transition: all var(--transition) ease;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+    
+    .header-btn:hover {
+      background: var(--white);
+      color: var(--primary-color);
+      transform: translateY(-3px);
+    }
+    
+    .nav-toggle {
+      display: none;
+      font-size: 1.5rem;
+      cursor: pointer;
+      color: var(--white);
+      transition: all var(--transition) ease;
+    }
+
+    /* Hero Section - Blog */
+    .hero-blog {
+      padding: 12rem 0 6rem;
+      background: linear-gradient(135deg, var(--secondary-color) 0%, var(--primary-color) 100%);
+      color: var(--white);
+      position: relative;
+      overflow: hidden;
+    }
+    
+    .hero-blog-overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23ffffff' fill-opacity='0.05' fill-rule='evenodd'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/svg%3E");
+      opacity: 0.3;
+    }
+    
+    .hero-blog-content {
+      max-width: 800px;
+      margin: 0 auto;
+      text-align: center;
+      position: relative;
+      z-index: 1;
+    }
+    
+    .hero-blog-content h1 {
+      font-size: 3.5rem;
+      line-height: 1.2;
+      margin-bottom: 1.5rem;
+    }
+    
+    .hero-blog-content p {
+      font-size: 1.2rem;
+      opacity: 0.9;
+      max-width: 600px;
+      margin: 0 auto 2rem;
+    }
+
+    /* Blog Post Specific Styles */
+    .blog-post-content {
+      background: var(--white);
+      padding: 3rem;
+      border-radius: var(--border-radius-lg);
+      box-shadow: var(--shadow);
+      margin-bottom: 2rem;
+      max-width: 900px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    
+    .blog-post-header {
+      margin-bottom: 2rem;
+    }
+    
+    .blog-post-category {
+      display: inline-block;
+      padding: 0.3rem 1rem;
+      background: linear-gradient(135deg, var(--secondary-color), var(--primary-color));
+      color: var(--white);
+      border-radius: var(--border-radius-full);
+      font-size: 0.8rem;
+      font-weight: 500;
+      margin-bottom: 1rem;
+    }
+    
+    .blog-post-title {
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+      color: var(--dark-color);
+      line-height: 1.2;
+    }
+    
+    .blog-post-meta {
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 1.5rem;
+      margin-bottom: 1.5rem;
+      color: var(--text-light);
+      font-size: 0.9rem;
+    }
+    
+    .blog-post-meta span {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+    
+    .blog-post-image {
+      width: 100%;
+      height: auto;
+      border-radius: var(--border-radius);
+      margin-bottom: 2rem;
+      box-shadow: var(--shadow);
+    }
+    
+    .blog-post-body {
+      font-size: 1.1rem;
+      line-height: 1.8;
+      color: var(--text-color);
+    }
+    
+    .blog-post-body p {
+      margin-bottom: 1.5rem;
+    }
+    
+    .blog-post-body h2 {
+      font-size: 1.8rem;
+      margin: 2.5rem 0 1rem;
+      color: var(--dark-color);
+      position: relative;
+      padding-bottom: 0.5rem;
+    }
+    
+    .blog-post-body h2::after {
+      content: '';
+      position: absolute;
+      width: 50px;
+      height: 3px;
+      background: linear-gradient(90deg, var(--secondary-color), var(--primary-color));
+      bottom: 0;
+      left: 0;
+      border-radius: var(--border-radius-full);
+    }
+    
+    .blog-post-body h3 {
+      font-size: 1.5rem;
+      margin: 2rem 0 1rem;
+      color: var(--dark-color);
+    }
+    
+    .blog-post-body ul {
+      margin-bottom: 1.5rem;
+      padding-left: 1.5rem;
+    }
+    
+    .blog-post-body li {
+      margin-bottom: 0.8rem;
+      position: relative;
+      padding-left: 1.5rem;
+    }
+    
+    .blog-post-body li::before {
+      content: '';
+      position: absolute;
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: linear-gradient(135deg, var(--secondary-color), var(--primary-color));
+      left: 0;
+      top: 0.7rem;
+    }
+    
+    .blog-post-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.8rem;
+      margin-top: 2.5rem;
+      padding-top: 2rem;
+      border-top: 1px solid var(--gray-200);
+    }
+    
+    .blog-post-tag {
+      padding: 0.4rem 1.2rem;
+      background: var(--gray-100);
+      border-radius: var(--border-radius-full);
+      font-size: 0.85rem;
+      transition: all var(--transition) ease;
+      color: var(--text-color);
+      box-shadow: var(--shadow-sm);
+    }
+    
+    .blog-post-tag:hover {
+      background: linear-gradient(135deg, var(--secondary-color), var(--primary-color));
+      color: var(--white);
+      transform: translateY(-3px);
+      box-shadow: var(--shadow);
+    }
+
+    /* Newsletter Section */
+    .newsletter-box {
+      background: linear-gradient(135deg, var(--secondary-color) 0%, var(--primary-color) 100%);
+      border-radius: var(--border-radius-lg);
+      padding: 2.5rem;
+      color: var(--white);
+      position: relative;
+      overflow: hidden;
+      margin-bottom: 2rem;
+      box-shadow: var(--shadow-lg);
+    }
+    
+    .newsletter-pattern {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23ffffff' fill-opacity='0.05' fill-rule='evenodd'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/svg%3E");
+      opacity: 0.1;
+    }
+    
+    .newsletter-title {
+      font-size: 1.5rem;
+      margin-bottom: 1rem;
+      position: relative;
+    }
+    
+    .newsletter-description {
+      margin-bottom: 1.5rem;
+      opacity: 0.9;
+      position: relative;
+    }
+    
+    .newsletter-form {
+      display: flex;
+      position: relative;
+    }
+    
+    .newsletter-input {
+      flex: 1;
+      padding: 0.8rem 1.2rem;
+      border: none;
+      border-radius: var(--border-radius-full);
+      font-family: 'Poppins', sans-serif;
+      font-size: 1rem;
+    }
+    
+    .newsletter-input:focus {
+      outline: none;
+    }
+    
+    .newsletter-btn {
+      position: absolute;
+      right: 5px;
+      top: 5px;
+      bottom: 5px;
+      border: none;
+      background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+      color: var(--white);
+      padding: 0 1.2rem;
+      border-radius: var(--border-radius-full);
+      font-weight: 500;
+      cursor: pointer;
+      transition: all var(--transition) ease;
+    }
+    
+    .newsletter-btn:hover {
+      opacity: 0.9;
+      transform: translateX(3px);
+    }
+
+    /* CTA Section */
+    .cta {
+      background: linear-gradient(135deg, var(--secondary-color), var(--primary-color));
+      color: var(--white);
+      text-align: center;
+      padding: 5rem 0;
+      position: relative;
+      overflow: hidden;
+    }
+    
+    .cta-pattern {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23ffffff' fill-opacity='0.05' fill-rule='evenodd'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/svg%3E");
+    }
+    
+    .cta h2 {
+      font-size: 2.5rem;
+      margin-bottom: 1.5rem;
+    }
+    
+    .cta p {
+      font-size: 1.2rem;
+      margin-bottom: 2rem;
+      max-width: 700px;
+      margin-left: auto;
+      margin-right: auto;
+      opacity: 0.9;
+    }
+    
+    .cta .btn-light {
+      padding: 1rem 2.5rem;
+      font-size: 1.1rem;
+    }
+
+    /* Footer */
+    footer {
+      background: linear-gradient(180deg, var(--dark-color) 0%, var(--darker-color) 100%);
+      color: var(--gray-300);
+      position: relative;
+      overflow: hidden;
+    }
+    
+    /* Bubble Animation for Footer */
+    .bubble {
+      position: absolute;
+      border-radius: 50%;
+      background: rgba(255, 255, 255, 0.05);
+      animation: bubbleFloat linear infinite;
+      bottom: -50px;
+    }
+    
+    @keyframes bubbleFloat {
+      0% {
+        transform: translateY(0) scale(1);
+        opacity: 0;
+      }
+      50% {
+        opacity: 0.1;
+      }
+      100% {
+        transform: translateY(-1000px) scale(1.8);
+        opacity: 0;
+      }
+    }
+    
+    /* Decorative elements */
+    .footer-decoration {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      pointer-events: none;
+    }
+    
+    .footer-blob {
+      position: absolute;
+      background: linear-gradient(135deg, var(--secondary-color), var(--primary-color));
+      opacity: 0.05;
+      border-radius: 50%;
+    }
+    
+    .blob-1 {
+      width: 400px;
+      height: 400px;
+      top: -200px;
+      right: -200px;
+      filter: blur(50px);
+    }
+    
+    .blob-2 {
+      width: 300px;
+      height: 300px;
+      bottom: -150px;
+      left: -150px;
+      filter: blur(40px);
+    }
+    
+    /* Main Footer Content */
+    .footer-content {
+      position: relative;
+      padding: 5rem 0 3rem;
+      z-index: 1;
+    }
+    
+    .footer-main {
+      display: grid;
+      grid-template-columns: 2fr 1fr 1fr 1fr;
+      gap: 3rem;
+      margin-bottom: 3rem;
+    }
+    
+    /* Logo and About Section */
+    .footer-brand {
+      margin-bottom: 1.5rem;
+    }
+    
+    .footer-logo {
+      font-size: 1.8rem;
+      font-weight: 700;
+      color: var(--white);
+      margin-bottom: 1rem;
+      display: inline-block;
+      position: relative;
+    }
+    
+    .footer-logo::after {
+      content: '';
+      position: absolute;
+      width: 30px;
+      height: 3px;
+      background: linear-gradient(90deg, var(--secondary-color), var(--primary-color));
+      bottom: -8px;
+      left: 0;
+      border-radius: var(--border-radius-full);
+    }
+    
+    .footer-about p {
+      color: var(--gray-400);
+      margin-bottom: 1.5rem;
+    }
+    
+    /* Social Media Links */
+    .footer-social {
+      display: flex;
+      gap: 1rem;
+      margin-bottom: 1.5rem;
+    }
+    
+    .social-link {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 36px;
+      height: 36px;
+      background: rgba(255, 255, 255, 0.05);
+      border-radius: var(--border-radius-full);
+      color: var(--white);
+      transition: all var(--transition) ease;
+    }
+    
+    .social-link:hover {
+      background: linear-gradient(135deg, var(--secondary-color), var(--primary-color));
+      transform: translateY(-3px);
+    }
+    
+    /* Footer Links */
+    .footer-block h3 {
+      color: var(--white);
+      font-size: 1.2rem;
+      margin-bottom: 1.5rem;
+      position: relative;
+      display: inline-block;
+    }
+    
+    .footer-block h3::after {
+      content: '';
+      position: absolute;
+      width: 30px;
+      height: 3px;
+      background: linear-gradient(90deg, var(--secondary-color), var(--primary-color));
+      bottom: -8px;
+      left: 0;
+      border-radius: var(--border-radius-full);
+    }
+    
+    .footer-links {
+      display: flex;
+      flex-direction: column;
+      gap: 0.8rem;
+    }
+    
+    .footer-link {
+      color: var(--gray-400);
+      transition: all var(--transition) ease;
+      position: relative;
+      padding-left: 15px;
+    }
+    
+    .footer-link::before {
+      content: '';
+      position: absolute;
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      background-color: var(--gray-600);
+      left: 0;
+      top: 50%;
+      transform: translateY(-50%);
+      transition: all var(--transition) ease;
+    }
+    
+    .footer-link:hover {
+      color: var(--white);
+      transform: translateX(5px);
+    }
+    
+    .footer-link:hover::before {
+      background: linear-gradient(135deg, var(--secondary-color), var(--primary-color));
+    }
+    
+    /* Contact Information */
+    .footer-contact-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 1rem;
+      margin-bottom: 1.2rem;
+      color: var(--gray-400);
+    }
+    
+    .footer-contact-item i {
+      color: var(--primary-color);
+      font-size: 1.1rem;
+      margin-top: 0.2rem;
+    }
+    
+    /* Newsletter Subscription */
+    .footer-newsletter {
+      margin-top: 1.5rem;
+    }
+    
+    .newsletter-form {
+      position: relative;
+      margin-top: 1rem;
+    }
+    
+    .newsletter-input {
+      width: 100%;
+      padding: 0.8rem 1rem;
+      padding-right: 3.5rem;
+      background: rgba(255, 255, 255, 0.05);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      border-radius: var(--border-radius-full);
+      color: var(--white);
+      font-size: 0.9rem;
+      transition: all var(--transition) ease;
+    }
+    
+    .newsletter-input:focus {
+      outline: none;
+      border-color: rgba(255, 255, 255, 0.3);
+      background: rgba(255, 255, 255, 0.08);
+    }
+    
+    .newsletter-input::placeholder {
+      color: var(--gray-500);
+    }
+    
+    .newsletter-btn {
+      position: absolute;
+      top: 50%;
+      right: 0.5rem;
+      transform: translateY(-50%);
+      background: linear-gradient(135deg, var(--secondary-color), var(--primary-color));
+      border: none;
+      width: 36px;
+      height: 36px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--white);
+      cursor: pointer;
+      transition: all var(--transition) ease;
+    }
+    
+    .newsletter-btn:hover {
+      transform: translateY(-50%) scale(1.05);
+      box-shadow: 0 0 15px rgba(37, 117, 252, 0.4);
+    }
+    
+    /* Copyright Section */
+    .footer-divider {
+      height: 1px;
+      background: linear-gradient(to right, transparent, rgba(255, 255, 255, 0.1), transparent);
+      margin-bottom: 1.5rem;
+    }
+    
+    .footer-bottom {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding-bottom: 1.5rem;
+      color: var(--gray-500);
+      font-size: 0.9rem;
+    }
+    
+    .footer-copyright a {
+      color: var(--primary-color);
+      transition: color var(--transition) ease;
+    }
+    
+    .footer-copyright a:hover {
+      color: var(--white);
+    }
+    
+    .footer-links-inline {
+      display: flex;
+      gap: 1.5rem;
+    }
+    
+    .footer-links-inline a {
+      color: var(--gray-500);
+      transition: color var(--transition) ease;
+    }
+    
+    .footer-links-inline a:hover {
+      color: var(--white);
+    }
+    
+    /* Responsive Styles */
+    @media (max-width: 1200px) {
+      .footer-main {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+    
+    @media (max-width: 992px) {
+      html {
+        font-size: 14px;
+      }
+      
+      .hero-blog-content h1 {
+        font-size: 2.8rem;
+      }
+      
+      .blog-post-title {
+        font-size: 2rem;
+      }
+      
+      .blog-post-content {
+        padding: 2rem;
+      }
+    }
+    
+    @media (max-width: 768px) {
+      .section {
+        padding: 4rem 0;
+      }
+      
+      .blog-post-meta {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.5rem;
+      }
+      
+      .footer-main {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+      }
+      
+      .footer-block {
+        margin-bottom: 1rem;
+      }
+      
+      .footer-bottom {
+        flex-direction: column;
+        gap: 1rem;
+        text-align: center;
+      }
+      
+      .footer-links-inline {
+        justify-content: center;
+      }
+      
+      .nav-menu {
+        position: fixed;
+        top: 0;
+        right: -100%;
+        width: 80%;
+        height: 100vh;
+        background: linear-gradient(135deg, var(--secondary-color), var(--primary-color));
+        padding: 6rem 2rem 2rem;
+        transition: all var(--transition) ease;
+        z-index: var(--z-fixed);
+        box-shadow: var(--shadow-lg);
+        display: block;
+      }
+      
+      .nav-menu.show {
+        right: 0;
+      }
+      
+      .nav-list {
+        flex-direction: column;
+        margin-right: 0;
+      }
+      
+      .nav-close {
+        position: absolute;
+        top: 1.5rem;
+        right: 1.5rem;
+        font-size: 1.5rem;
+        cursor: pointer;
+        color: var(--white);
+      }
+      
+      .nav-toggle {
+        display: block;
+      }
+    }
+    
+    @media (max-width: 576px) {
+      html {
+        font-size: 12px;
+      }
+      
+      .hero-blog {
+        padding: 10rem 0 4rem;
+      }
+      
+      .hero-blog-content h1 {
+        font-size: 2.2rem;
+      }
+      
+      .blog-post-content {
+        padding: 1.5rem;
+      }
+      
+      .blog-post-title {
+        font-size: 1.5rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Animated Background -->
+  <div class="animated-background">
+    <div class="bg-gradient"></div>
+    <div class="bg-grid"></div>
+    <div class="particles-container" id="particles-container"></div>
+  </div>
+
+  <!-- Header -->
+  <header id="header">
+    <div class="container">
+      <div class="header-container">
+        <a href="index.html" class="logo">QOREON LABS</a>
+        
+        <div class="nav-toggle" id="nav-toggle">
+          <i class="fas fa-bars"></i>
+        </div>
+        
+        <nav class="nav-menu" id="nav-menu">
+          <div class="nav-close" id="nav-close">
+            <i class="fas fa-times"></i>
+          </div>
+          
+          <ul class="nav-list">
+            <li><a href="index.html" class="nav-link">Home</a></li>
+            <li><a href="index.html#about" class="nav-link">About</a></li>
+            <li><a href="services.html" class="nav-link">Services</a></li>
+            <li><a href="blog.html" class="nav-link active">Blog</a></li>
+            <li><a href="index.html#contact" class="nav-link">Contact</a></li>
+          </ul>
+          
+          <a href="quote-form.html" class="header-btn">
+            <i class="fas fa-headset"></i>
+            Get In Touch
+          </a>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <!-- Blog Post Hero Section -->
+  <section class="hero-blog" id="blog-hero">
+    <div class="hero-blog-overlay"></div>
+    <div class="container">
+      <div class="hero-blog-content" data-aos="fade-up">
+        <h1>QOREON LABS <span class="text-gradient">Blog</span></h1>
+        <p>Insights, trends, and expertise on AI, software development, and digital transformation</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Blog Post Content -->
+  <section class="section" id="blog-post">
+    <div class="container">
+      <div class="blog-post-content" data-aos="fade-up">
+        <div class="blog-post-header">
+          <span class="blog-post-category">Data Analytics</span>
+          <h1 class="blog-post-title">How Machine Learning is Revolutionizing Business Analytics</h1>
+          <div class="blog-post-meta">
+            <span><i class="far fa-calendar"></i> April 14, 2025</span>
+            <span><i class="far fa-user"></i> QOREON LABS Team</span>
+            <span><i class="far fa-comment"></i> 0 Comments</span>
+          </div>
+        </div>
+        
+        <img src="https://res.cloudinary.com/dfzsolglz/image/upload/v1744571993/what-is-machine-learning-and-machine-learning-techniques-67bc2a273a4f0-e1740981449660_ybdvcc.webp" alt="Machine Learning and Machine Learning Techniques" class="blog-post-image">
+        
+        <div class="blog-post-body">
+          <p>
+            The business landscape is undergoing a profound transformation, driven by the integration of machine learning technologies into analytics processes. Organizations today are awash in data, but extracting meaningful insights that drive strategic decision-making has traditionally been complex and time-consuming. Machine learning is changing this paradigm, enabling businesses to uncover deeper insights, automate analytical processes, and predict future trends with unprecedented accuracy.
+          </p>
+          
+          <h2>The Evolution of Business Analytics</h2>
+          <p>
+            Traditional business analytics relied heavily on historical data and backward-looking reporting. Analysts would identify patterns and trends manually, a process that was both labor-intensive and susceptible to human error. As businesses began collecting more data, these traditional methods became increasingly inadequate for delivering timely, actionable insights.
+          </p>
+          
+          <p>
+            With the advent of machine learning, analytics has evolved from descriptive (what happened) and diagnostic (why it happened) to predictive (what will happen) and prescriptive (how we can make it happen). This evolution represents a fundamental shift in how organizations leverage data to drive business decisions.
+          </p>
+          
+          <h3>Key Machine Learning Applications in Business Analytics</h3>
+          <p>
+            Machine learning has found numerous applications across the analytics spectrum, revolutionizing how businesses approach data-driven decision making:
+          </p>
+          <ul>
+            <li><strong>Predictive Analytics:</strong> ML algorithms can forecast future trends, customer behaviors, and market conditions based on historical data patterns, enabling proactive rather than reactive business strategies.</li>
+            <li><strong>Anomaly Detection:</strong> Advanced algorithms can identify unusual patterns that may indicate fraud, security breaches, or operational inefficiencies that might otherwise go unnoticed.</li>
+            <li><strong>Customer Segmentation:</strong> ML can discover nuanced customer segments by analyzing complex behavioral patterns, allowing for highly targeted marketing and personalization strategies.</li>
+            <li><strong>Sentiment Analysis:</strong> Natural Language Processing (NLP) algorithms can analyze customer feedback across various channels to gauge sentiment and identify emerging issues or opportunities.</li>
+            <li><strong>Demand Forecasting:</strong> ML models can predict future demand with greater accuracy by incorporating multiple variables like seasonality, economic indicators, and even weather patterns.</li>
+            <li><strong>Process Optimization:</strong> Reinforcement learning techniques help identify optimal operational processes, reducing costs and improving efficiency.</li>
+          </ul>
+          
+          <h2>Transformative Benefits for Businesses</h2>
+          <p>
+            The integration of machine learning into business analytics offers several compelling advantages that are transforming how organizations operate and compete:
+          </p>
+          
+          <h3>Enhanced Decision-Making</h3>
+          <p>
+            Perhaps the most significant impact of ML in business analytics is the improvement in decision-making quality. By processing vast amounts of data and identifying complex patterns, machine learning provides decision-makers with insights that would be impossible to discern through traditional analysis. These insights reduce uncertainty and allow for more confident decision-making.
+          </p>
+          
+          <h3>Increased Operational Efficiency</h3>
+          <p>
+            ML automates many time-consuming analytical tasks, freeing up human analysts to focus on higher-value activities. This automation not only reduces costs but also increases the speed at which insights are generated and implemented, creating a more agile and responsive organization.
+          </p>
+          
+          <h3>Personalized Customer Experiences</h3>
+          <p>
+            By analyzing customer data at a granular level, ML enables businesses to create highly personalized experiences. From product recommendations to customized marketing messages, this personalization increases customer satisfaction, loyalty, and ultimately, revenue.
+          </p>
+          
+          <h3>Proactive Problem Solving</h3>
+          <p>
+            Traditional analytics identifies problems after they occur. ML-powered predictive analytics enables businesses to anticipate issues before they arise, allowing for preemptive action. This shift from reactive to proactive problem-solving can prevent revenue loss and maintain operational continuity.
+          </p>
+          
+          <h2>Implementation Challenges and Best Practices</h2>
+          <p>
+            Despite its transformative potential, implementing machine learning in business analytics comes with several challenges:
+          </p>
+          <ul>
+            <li><strong>Data Quality and Preparation:</strong> ML models are only as good as the data they're trained on. Ensuring clean, comprehensive data is essential for accurate insights.</li>
+            <li><strong>Skill Gaps:</strong> Organizations often lack the specialized talent needed to develop and maintain sophisticated ML models.</li>
+            <li><strong>Interpretability:</strong> Complex ML models can function as "black boxes," making it difficult to explain how they reach specific conclusions.</li>
+            <li><strong>Integration with Existing Systems:</strong> Incorporating ML into established business processes and legacy systems presents technical challenges.</li>
+          </ul>
+          
+          <p>
+            To overcome these challenges and maximize the value of ML in business analytics, organizations should consider these best practices:
+          </p>
+          <ul>
+            <li>Start with clearly defined business problems rather than implementing ML for its own sake.</li>
+            <li>Invest in data infrastructure to ensure high-quality, accessible data.</li>
+            <li>Develop a data-driven culture that embraces analytical insights at all organizational levels.</li>
+            <li>Consider explainable AI approaches when transparency in decision-making is critical.</li>
+            <li>Build cross-functional teams that combine domain expertise with technical ML knowledge.</li>
+          </ul>
+          
+          <h2>The Future of ML in Business Analytics</h2>
+          <p>
+            The integration of machine learning and business analytics is still in its early stages, with exciting developments on the horizon:
+          </p>
+          <ul>
+            <li><strong>Automated ML (AutoML):</strong> Tools that automate the end-to-end process of applying machine learning will democratize access to sophisticated analytics.</li>
+            <li><strong>Deep Learning Applications:</strong> More powerful neural network architectures will unlock insights from unstructured data like images, video, and natural language.</li>
+            <li><strong>Real-time Analytics:</strong> Edge computing and 5G will enable instantaneous analysis and decision-making based on streaming data.</li>
+            <li><strong>Augmented Analytics:</strong> ML will increasingly work alongside human analysts, automating routine tasks while enhancing human expertise for complex problems.</li>
+          </ul>
+          
+          <p>
+            As these technologies mature, the line between human and machine analytics will blur, creating a new paradigm of augmented intelligence that combines the creativity and contextual understanding of humans with the pattern recognition and processing power of machines.
+          </p>
+          
+          <h2>Conclusion</h2>
+          <p>
+            Machine learning is not just enhancing business analytics—it's fundamentally transforming how organizations extract value from data. By enabling more accurate predictions, deeper insights, and automated decision-making, ML is helping businesses operate more efficiently, serve customers more effectively, and gain sustainable competitive advantages.
+          </p>
+          
+          <p>
+            Organizations that embrace this revolution, investing in the necessary infrastructure, talent, and cultural changes, will be well-positioned to thrive in an increasingly data-driven business landscape. Those that lag behind risk being outmaneuvered by more agile, data-savvy competitors who are leveraging ML to make better decisions faster.
+          </p>
+          
+          <p>
+            The future of business analytics is not just about having data—it's about having the intelligence to transform that data into actionable insights. Machine learning is the key that unlocks this intelligence, making it an essential capability for forward-thinking organizations.
+          </p>
+        </div>
+        
+        <div class="blog-post-tags">
+          <a href="#" class="blog-post-tag">Machine Learning</a>
+          <a href="#" class="blog-post-tag">Business Analytics</a>
+          <a href="#" class="blog-post-tag">Data Science</a>
+          <a href="#" class="blog-post-tag">AI</a>
+          <a href="#" class="blog-post-tag">Predictive Analytics</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Newsletter Section -->
+  <section class="section bg-light" id="newsletter">
+    <div class="container">
+      <div class="newsletter-box" data-aos="fade-up">
+        <div class="newsletter-pattern"></div>
+        <h3 class="newsletter-title">Subscribe to Our Blog Updates</h3>
+        <p class="newsletter-description">Stay informed with our latest articles, insights, and industry expertise delivered directly to your inbox.</p>
+        <form class="newsletter-form">
+          <input type="email" class="newsletter-input" placeholder="Enter your email address">
+          <button type="submit" class="newsletter-btn">Subscribe</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="section cta">
+    <div class="cta-pattern"></div>
+    <div class="container">
+      <div data-aos="fade-up">
+        <h2>Ready to Transform Your Business with Data?</h2>
+        <p>Let's discuss how our machine learning and analytics solutions can help you unlock actionable insights and gain a competitive edge.</p>
+        <a href="quote-form.html" class="btn btn-light">Schedule a Consultation <i class="fas fa-arrow-right"></i></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <!-- Bubbles Animation -->
+    <div id="footer-bubbles"></div>
+    
+    <!-- Decorative Elements -->
+    <div class="footer-decoration">
+      <div class="footer-blob blob-1"></div>
+      <div class="footer-blob blob-2"></div>
+    </div>
+    
+    <!-- Footer Content -->
+    <div class="footer-content">
+      <div class="container">
+        <!-- Main Footer Area -->
+        <div class="footer-main">
+          <!-- About Section -->
+          <div class="footer-block footer-about">
+            <div class="footer-brand">
+              <a href="#" class="footer-logo">QOREON LABS</a>
+              <p>Pioneering software and app development company dedicated to bringing intelligent, future-ready solutions to the digital landscape.</p>
+            </div>
+            
+            <!-- Social Media Links -->
+            <div class="footer-social">
+              <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+              <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+              <a href="#" class="social-link"><i class="fab fa-linkedin-in"></i></a>
+              <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+              <a href="#" class="social-link"><i class="fab fa-github"></i></a>
+            </div>
+            
+            <!-- Newsletter Subscription -->
+            <div class="footer-newsletter">
+              <h3>Subscribe to Our Newsletter</h3>
+              <p>Stay updated with our latest news and insights.</p>
+              <form class="newsletter-form">
+                <input type="email" class="newsletter-input" placeholder="Your email address">
+                <button type="submit" class="newsletter-btn">
+                  <i class="fas fa-paper-plane"></i>
+                </button>
+              </form>
+            </div>
+          </div>
+          
+          <!-- Quick Links -->
+          <div class="footer-block">
+            <h3>Quick Links</h3>
+            <div class="footer-links">
+              <a href="index.html" class="footer-link">Home</a>
+              <a href="index.html#about" class="footer-link">About Us</a>
+              <a href="services.html" class="footer-link">Services</a>
+              <a href="blog.html" class="footer-link">Blog</a>
+              <a href="index.html#contact" class="footer-link">Contact</a>
+            </div>
+          </div>
+          
+          <!-- Services Links -->
+          <div class="footer-block">
+            <h3>Our Services</h3>
+            <div class="footer-links">
+              <a href="services.html#ios-development" class="footer-link">iOS/macOS Development</a>
+              <a href="#" class="footer-link">AI & Machine Learning</a>
+              <a href="#" class="footer-link">Web Development</a>
+              <a href="#" class="footer-link">Mobile Apps</a>
+              <a href="#" class="footer-link">Data Analytics</a>
+              <a href="#" class="footer-link">Cloud Solutions</a>
+            </div>
+          </div>
+          
+          <!-- Contact Information -->
+          <div class="footer-block">
+            <h3>Contact Info</h3>
+            <div class="footer-contact">
+              <div class="footer-contact-item">
+                <i class="fas fa-map-marker-alt"></i>
+                <span>71-75 Shelton Street, Covent Garden, London, WC2H 9JQ</span>
+              </div>
+              <div class="footer-contact-item">
+                <i class="fas fa-envelope"></i>
+                <span>support@qoreonslabs.com</span>
+              </div>
+              <div class="footer-contact-item">
+                <i class="fas fa-phone-alt"></i>
+                <span>+601161322729</span>
+              </div>
+              <div class="footer-contact-item">
+                <i class="fas fa-clock"></i>
+                <span>Monday - Friday: 9:00 AM - 6:00 PM</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Divider Line -->
+        <div class="footer-divider"></div>
+        
+        <!-- Copyright Section -->
+        <div class="footer-bottom">
+          <div class="footer-copyright">
+            &copy; <span id="year">2025</span> <a href="#">QOREON LABS LTD</a>. All Rights Reserved.
+          </div>
+          
+          <div class="footer-links-inline">
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms of Service</a>
+            <a href="#">Cookie Policy</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- AOS Animation -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+  
+  <script>
+    // Set the current year dynamically in the footer
+    document.getElementById('year').textContent = new Date().getFullYear();
+    
+    // Initialize AOS Animation Library
+    document.addEventListener('DOMContentLoaded', function() {
+      AOS.init({
+        duration: 800,
+        easing: 'ease-in-out',
+        once: true,
+        mirror: false
+      });
+      
+      // Create particles for the background
+      createParticles();
+      
+      // Create bubbles for footer
+      createBubbles();
+      
+      // Navigation functionality
+      initNavigation();
+    });
+    
+    // Create particles for the background
+    function createParticles() {
+      const container = document.getElementById('particles-container');
+      const particleCount = 20;
+      
+      if (!container) return;
+      
+      for (let i = 0; i < particleCount; i++) {
+        const particle = document.createElement('div');
+        particle.classList.add('particle');
+        
+        // Random size between 30px and 100px
+        const size = Math.random() * 70 + 30;
+        particle.style.width = `${size}px`;
+        particle.style.height = `${size}px`;
+        
+        // Random position
+        particle.style.left = `${Math.random() * 100}vw`;
+        particle.style.top = `${Math.random() * 100}vh`;
+        
+        // Random opacity
+        particle.style.opacity = Math.random() * 0.3 + 0.1;
+        
+        // Random animation delay
+        particle.style.animationDelay = `${Math.random() * 15}s`;
+        
+        // Random animation duration
+        particle.style.animationDuration = `${Math.random() * 15 + 10}s`;
+        
+        container.appendChild(particle);
+      }
+    }
+    
+    // Create bubble animation for footer
+    function createBubbles() {
+      const container = document.getElementById('footer-bubbles');
+      const bubbleCount = 30;
+      
+      if (!container) return;
+      
+      for (let i = 0; i < bubbleCount; i++) {
+        const bubble = document.createElement('div');
+        bubble.classList.add('bubble');
+        
+        // Random size between 5px and 30px
+        const size = Math.random() * 25 + 5;
+        bubble.style.width = `${size}px`;
+        bubble.style.height = `${size}px`;
+        
+        // Random horizontal position
+        bubble.style.left = `${Math.random() * 100}%`;
+        
+        // Random animation duration between 8s and 20s
+        const duration = Math.random() * 12 + 8;
+        bubble.style.animationDuration = `${duration}s`;
+        
+        // Random animation delay
+        bubble.style.animationDelay = `${Math.random() * 5}s`;
+        
+        // Random opacity
+        bubble.style.opacity = (Math.random() * 0.15).toFixed(2);
+        
+        container.appendChild(bubble);
+      }
+    }
+    
+    // Initialize navigation functionality
+    function initNavigation() {
+      const header = document.getElementById('header');
+      const navToggle = document.getElementById('nav-toggle');
+      const navClose = document.getElementById('nav-close');
+      const navMenu = document.getElementById('nav-menu');
+      const navLinks = document.querySelectorAll('.nav-link');
+      
+      if (!navToggle || !navMenu || !navLinks.length) return;
+      
+      // Toggle menu
+      if (navToggle) {
+        navToggle.addEventListener('click', () => {
+          navMenu.classList.add('show');
+        });
+      }
+      
+      if (navClose) {
+        navClose.addEventListener('click', () => {
+          navMenu.classList.remove('show');
+        });
+      }
+      
+      // Close menu when clicking nav links
+      navLinks.forEach(link => {
+        link.addEventListener('click', () => {
+          navMenu.classList.remove('show');
+        });
+      });
+    }
+  </script>
+</body>
+</html>
