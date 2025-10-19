@@ -1,88 +1,457 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>MedReminder Privacy Policy - Qoreon Labs</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MedReminder Privacy Policy - Qoreon Labs</title>
     <style>
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-            line-height: 1.6;
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 20px;
-            color: #333;
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
         }
-        h1 { color: #007AFF; }
-        h2 { color: #555; margin-top: 30px; }
-        .last-updated { color: #666; font-style: italic; }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            line-height: 1.8;
+            color: #1a1a1a;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 40px 20px;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background: rgba(255, 255, 255, 0.98);
+            backdrop-filter: blur(10px);
+            border-radius: 24px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+            overflow: hidden;
+        }
+
+        .header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            padding: 60px 40px;
+            text-align: center;
+            color: white;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .header::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: radial-gradient(circle, rgba(255,255,255,0.1) 0%, transparent 70%);
+            animation: pulse 15s ease-in-out infinite;
+        }
+
+        @keyframes pulse {
+            0%, 100% { transform: translate(0, 0) scale(1); }
+            50% { transform: translate(10%, 10%) scale(1.1); }
+        }
+
+        .header-content {
+            position: relative;
+            z-index: 1;
+        }
+
+        .logo {
+            width: 80px;
+            height: 80px;
+            background: rgba(255, 255, 255, 0.2);
+            backdrop-filter: blur(10px);
+            border-radius: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 20px;
+            font-size: 40px;
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            font-size: 42px;
+            font-weight: 700;
+            margin-bottom: 10px;
+            letter-spacing: -0.5px;
+        }
+
+        .tagline {
+            font-size: 18px;
+            opacity: 0.95;
+            font-weight: 400;
+        }
+
+        .last-updated {
+            display: inline-block;
+            background: rgba(255, 255, 255, 0.2);
+            backdrop-filter: blur(10px);
+            padding: 8px 20px;
+            border-radius: 20px;
+            font-size: 14px;
+            margin-top: 20px;
+            font-weight: 500;
+        }
+
+        .content {
+            padding: 60px 40px;
+        }
+
+        .highlight-box {
+            background: linear-gradient(135deg, rgba(102, 126, 234, 0.1) 0%, rgba(118, 75, 162, 0.1) 100%);
+            border-left: 4px solid #667eea;
+            padding: 24px;
+            border-radius: 12px;
+            margin: 30px 0;
+        }
+
+        .highlight-box p {
+            font-size: 18px;
+            color: #667eea;
+            font-weight: 600;
+            margin: 0;
+        }
+
+        h2 {
+            font-size: 28px;
+            font-weight: 700;
+            color: #667eea;
+            margin: 50px 0 20px 0;
+            padding-bottom: 12px;
+            border-bottom: 3px solid #f0f0f0;
+            position: relative;
+        }
+
+        h2::after {
+            content: '';
+            position: absolute;
+            bottom: -3px;
+            left: 0;
+            width: 60px;
+            height: 3px;
+            background: linear-gradient(90deg, #667eea, #764ba2);
+            border-radius: 2px;
+        }
+
+        p {
+            font-size: 16px;
+            color: #444;
+            margin-bottom: 16px;
+        }
+
+        strong {
+            color: #667eea;
+            font-weight: 700;
+        }
+
+        ul {
+            list-style: none;
+            margin: 20px 0;
+        }
+
+        ul li {
+            padding: 12px 0;
+            padding-left: 32px;
+            position: relative;
+            font-size: 16px;
+            color: #444;
+        }
+
+        ul li::before {
+            content: '✓';
+            position: absolute;
+            left: 0;
+            color: #667eea;
+            font-weight: bold;
+            font-size: 18px;
+        }
+
+        .contact-section {
+            background: linear-gradient(135deg, rgba(102, 126, 234, 0.05) 0%, rgba(118, 75, 162, 0.05) 100%);
+            padding: 40px;
+            border-radius: 16px;
+            margin: 50px 0;
+            text-align: center;
+        }
+
+        .contact-section h2 {
+            border: none;
+            margin: 0 0 20px 0;
+            padding: 0;
+        }
+
+        .contact-section h2::after {
+            display: none;
+        }
+
+        .contact-links {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+            margin-top: 24px;
+        }
+
+        .contact-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            padding: 14px 28px;
+            background: white;
+            color: #667eea;
+            text-decoration: none;
+            border-radius: 12px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 12px rgba(102, 126, 234, 0.15);
+        }
+
+        .contact-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(102, 126, 234, 0.25);
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+        }
+
+        .footer {
+            background: #f8f9fa;
+            padding: 40px;
+            text-align: center;
+            color: #666;
+            font-size: 14px;
+            border-top: 1px solid #e0e0e0;
+        }
+
+        .footer-logo {
+            font-size: 20px;
+            font-weight: 700;
+            color: #667eea;
+            margin-bottom: 12px;
+        }
+
+        .footer p {
+            margin: 8px 0;
+            color: #999;
+            font-size: 14px;
+        }
+
+        .badge {
+            display: inline-block;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 6px 16px;
+            border-radius: 20px;
+            font-size: 13px;
+            font-weight: 600;
+            margin: 0 4px;
+            box-shadow: 0 2px 8px rgba(102, 126, 234, 0.3);
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            body {
+                padding: 20px 10px;
+            }
+
+            .header {
+                padding: 40px 20px;
+            }
+
+            h1 {
+                font-size: 32px;
+            }
+
+            .content {
+                padding: 40px 24px;
+            }
+
+            h2 {
+                font-size: 24px;
+            }
+
+            .contact-links {
+                flex-direction: column;
+            }
+
+            .contact-btn {
+                width: 100%;
+                justify-content: center;
+            }
+        }
+
+        /* Smooth scroll */
+        html {
+            scroll-behavior: smooth;
+        }
+
+        /* Selection color */
+        ::selection {
+            background: #667eea;
+            color: white;
+        }
     </style>
 </head>
 <body>
-    <h1>MedReminder Privacy Policy</h1>
-    <p class="last-updated">Last Updated: January 2025</p>
+    <div class="container">
+        <!-- Header -->
+        <div class="header">
+            <div class="header-content">
+                <div class="logo">💊</div>
+                <h1>Privacy Policy</h1>
+                <p class="tagline">MedReminder by Qoreon Labs</p>
+                <span class="last-updated">Last Updated: January 2025</span>
+            </div>
+        </div>
 
-    <h2>Our Commitment</h2>
-    <p>MedReminder is built by Qoreon Labs with privacy as our core principle. We believe your health data is yours alone.</p>
+        <!-- Content -->
+        <div class="content">
+            <!-- Commitment -->
+            <section>
+                <h2>Our Commitment</h2>
+                <div class="highlight-box">
+                    <p>Your health data belongs to you, and you alone. Period.</p>
+                </div>
+                <p>MedReminder is built by Qoreon Labs with privacy as our core principle. We believe your personal health information should never leave your device, never be analyzed by algorithms, and never be sold to third parties.</p>
+            </section>
 
-    <h2>Data Collection</h2>
-    <p><strong>We collect ZERO data.</strong></p>
-    <ul>
-        <li>No personal information</li>
-        <li>No health data</li>
-        <li>No usage analytics</li>
-        <li>No tracking</li>
-        <li>No accounts required</li>
-    </ul>
+            <!-- Data Collection -->
+            <section>
+                <h2>Data Collection</h2>
+                <p><strong>We collect ZERO data.</strong> Here's what that means:</p>
+                <ul>
+                    <li>No personal information (name, email, phone number)</li>
+                    <li>No health data or medication details</li>
+                    <li>No usage analytics or behavioral tracking</li>
+                    <li>No tracking cookies or identifiers</li>
+                    <li>No account creation or login required</li>
+                    <li>No advertising IDs or third-party SDKs</li>
+                </ul>
+                <p>If we don't collect it, we can't lose it, sell it, or misuse it. It's that simple.</p>
+            </section>
 
-    <h2>Data Storage</h2>
-    <p>All your medication information is stored locally on your device using iOS secure storage. Your data:</p>
-    <ul>
-        <li>Never leaves your device</li>
-        <li>Is not backed up to our servers</li>
-        <li>Is not shared with third parties</li>
-        <li>Is deleted when you uninstall the app</li>
-    </ul>
+            <!-- Data Storage -->
+            <section>
+                <h2>Data Storage</h2>
+                <p>All your medication information is stored locally on your device using iOS secure storage (UserDefaults). Your data:</p>
+                <ul>
+                    <li>Never leaves your device</li>
+                    <li>Is not transmitted to any server</li>
+                    <li>Is not backed up to our servers (we don't have any!)</li>
+                    <li>Is not shared with third parties</li>
+                    <li>Is automatically deleted when you uninstall the app</li>
+                    <li>Is protected by iOS security measures</li>
+                </ul>
+                <p>Think of MedReminder as a completely offline tool that happens to send you notifications.</p>
+            </section>
 
-    <h2>Notifications</h2>
-    <p>MedReminder uses iOS local notifications to remind you about medications. These notifications:</p>
-    <ul>
-        <li>Are processed entirely on your device</li>
-        <li>Do not send data to external servers</li>
-        <li>Require your permission to display</li>
-    </ul>
+            <!-- Notifications -->
+            <section>
+                <h2>Notifications</h2>
+                <p>MedReminder uses iOS local notifications to remind you about medications. These notifications:</p>
+                <ul>
+                    <li>Are scheduled and processed entirely on your device</li>
+                    <li>Do not send any data to external servers</li>
+                    <li>Require your explicit permission to display</li>
+                    <li>Can be managed through iOS Settings at any time</li>
+                </ul>
+                <p>Local notifications are handled by iOS, not by any remote service. We never know when or if a notification was displayed.</p>
+            </section>
 
-    <h2>Third-Party Services</h2>
-    <p>MedReminder does not integrate with any third-party analytics, advertising, or tracking services.</p>
+            <!-- Third-Party Services -->
+            <section>
+                <h2>Third-Party Services</h2>
+                <p>MedReminder does not integrate with:</p>
+                <ul>
+                    <li>Analytics services (Google Analytics, Mixpanel, etc.)</li>
+                    <li>Advertising networks (AdMob, Facebook Ads, etc.)</li>
+                    <li>Crash reporting tools (Firebase, Sentry, etc.)</li>
+                    <li>Social media platforms</li>
+                    <li>Cloud storage providers</li>
+                </ul>
+                <p>The only third party involved is Apple, through the App Store distribution and iOS operating system.</p>
+            </section>
 
-    <h2>iCloud Sync (Optional)</h2>
-    <p>If you enable iCloud backup on your device, iOS may back up MedReminder data to your personal iCloud account. This is:</p>
-    <ul>
-        <li>Controlled by iOS, not MedReminder</li>
-        <li>Encrypted by Apple</li>
-        <li>Accessible only to you</li>
-        <li>Can be disabled in iOS Settings</li>
-    </ul>
+            <!-- iCloud -->
+            <section>
+                <h2>iCloud Sync (Optional)</h2>
+                <p>If you have enabled iCloud backup on your device, iOS may automatically back up MedReminder data to your personal iCloud account. This is:</p>
+                <ul>
+                    <li>Controlled by iOS system settings, not by MedReminder</li>
+                    <li>Encrypted end-to-end by Apple</li>
+                    <li>Accessible only to you through your Apple ID</li>
+                    <li>Can be disabled in iOS Settings → [Your Name] → iCloud → Manage Storage</li>
+                </ul>
+                <p>We have no access to your iCloud data. This is entirely between you and Apple.</p>
+            </section>
 
-    <h2>Children's Privacy</h2>
-    <p>MedReminder does not knowingly collect data from anyone, including children under 13.</p>
+            <!-- Children's Privacy -->
+            <section>
+                <h2>Children's Privacy</h2>
+                <p>MedReminder can be used by children to track their medications with parental supervision. However:</p>
+                <ul>
+                    <li>We do not knowingly collect data from children or anyone else</li>
+                    <li>No age verification is required or performed</li>
+                    <li>All data stays on the device, regardless of user age</li>
+                    <li>Parents have full control over the app through device access</li>
+                </ul>
+            </section>
 
-    <h2>GDPR Compliance</h2>
-    <p>As we collect no personal data, GDPR data protection regulations are inherently satisfied. You have complete control over your data as it never leaves your device.</p>
+            <!-- GDPR -->
+            <section>
+                <h2>GDPR Compliance</h2>
+                <p>MedReminder is <span class="badge">GDPR Compliant</span> by design.</p>
+                <p>Under the EU General Data Protection Regulation (GDPR), you have rights regarding your personal data. Since we collect no personal data:</p>
+                <ul>
+                    <li>Right to Access: No data to access</li>
+                    <li>Right to Rectification: No data to correct</li>
+                    <li>Right to Erasure: Simply delete the app</li>
+                    <li>Right to Data Portability: Export manually or delete app</li>
+                    <li>Right to Object: Nothing to object to</li>
+                </ul>
+                <p>You have complete control over your data because it never leaves your device.</p>
+            </section>
 
-    <h2>Changes to This Policy</h2>
-    <p>If we update this privacy policy, we will notify users through the app and update the "Last Updated" date.</p>
+            <!-- Changes -->
+            <section>
+                <h2>Changes to This Policy</h2>
+                <p>If we ever update this privacy policy, we will:</p>
+                <ul>
+                    <li>Update the "Last Updated" date at the top</li>
+                    <li>Notify users through an in-app message</li>
+                    <li>Publish the updated policy on this page</li>
+                    <li>Never make changes that compromise your privacy</li>
+                </ul>
+                <p>Our commitment to zero data collection will not change.</p>
+            </section>
 
-    <h2>Contact Us</h2>
-    <p>Questions about privacy?</p>
-    <p>Email: <a href="mailto:privacy@qoreonslabs.com">privacy@qoreonslabs.com</a></p>
-    <p>Website: <a href="https://qoreonslabs.com">qoreonslabs.com</a></p>
+            <!-- Contact -->
+            <div class="contact-section">
+                <h2>Questions About Privacy?</h2>
+                <p>We're here to help. Reach out to us anytime:</p>
+                <div class="contact-links">
+                    <a href="mailto:support@qoreonlabs.com" class="contact-btn">
+                        <span>📧</span>
+                        <span>support@qoreonlabs.com</span>
+                    </a>
+                    <a href="https://qoreonslabs.com" class="contact-btn">
+                        <span>🌐</span>
+                        <span>qoreonslabs.com</span>
+                    </a>
+                </div>
+            </div>
+        </div>
 
-    <hr style="margin: 40px 0;">
-    
-    <p style="text-align: center; color: #999; font-size: 14px;">
-        © 2025 Qoreon Labs Ltd. All rights reserved.<br>
-        Privacy-first software for everyone.
-    </p>
+        <!-- Footer -->
+        <div class="footer">
+            <div class="footer-logo">Qoreon Labs</div>
+            <p>Privacy-first software for everyone.</p>
+            <p>© 2025 Qoreon Labs Ltd. All rights reserved.</p>
+        </div>
+    </div>
 </body>
 </html>
