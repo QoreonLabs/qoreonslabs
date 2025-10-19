@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>MedReminder Privacy Policy - Qoreon Labs</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            line-height: 1.6;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+        }
+        h1 { color: #007AFF; }
+        h2 { color: #555; margin-top: 30px; }
+        .last-updated { color: #666; font-style: italic; }
+    </style>
+</head>
+<body>
+    <h1>MedReminder Privacy Policy</h1>
+    <p class="last-updated">Last Updated: January 2025</p>
+
+    <h2>Our Commitment</h2>
+    <p>MedReminder is built by Qoreon Labs with privacy as our core principle. We believe your health data is yours alone.</p>
+
+    <h2>Data Collection</h2>
+    <p><strong>We collect ZERO data.</strong></p>
+    <ul>
+        <li>No personal information</li>
+        <li>No health data</li>
+        <li>No usage analytics</li>
+        <li>No tracking</li>
+        <li>No accounts required</li>
+    </ul>
+
+    <h2>Data Storage</h2>
+    <p>All your medication information is stored locally on your device using iOS secure storage. Your data:</p>
+    <ul>
+        <li>Never leaves your device</li>
+        <li>Is not backed up to our servers</li>
+        <li>Is not shared with third parties</li>
+        <li>Is deleted when you uninstall the app</li>
+    </ul>
+
+    <h2>Notifications</h2>
+    <p>MedReminder uses iOS local notifications to remind you about medications. These notifications:</p>
+    <ul>
+        <li>Are processed entirely on your device</li>
+        <li>Do not send data to external servers</li>
+        <li>Require your permission to display</li>
+    </ul>
+
+    <h2>Third-Party Services</h2>
+    <p>MedReminder does not integrate with any third-party analytics, advertising, or tracking services.</p>
+
+    <h2>iCloud Sync (Optional)</h2>
+    <p>If you enable iCloud backup on your device, iOS may back up MedReminder data to your personal iCloud account. This is:</p>
+    <ul>
+        <li>Controlled by iOS, not MedReminder</li>
+        <li>Encrypted by Apple</li>
+        <li>Accessible only to you</li>
+        <li>Can be disabled in iOS Settings</li>
+    </ul>
+
+    <h2>Children's Privacy</h2>
+    <p>MedReminder does not knowingly collect data from anyone, including children under 13.</p>
+
+    <h2>GDPR Compliance</h2>
+    <p>As we collect no personal data, GDPR data protection regulations are inherently satisfied. You have complete control over your data as it never leaves your device.</p>
+
+    <h2>Changes to This Policy</h2>
+    <p>If we update this privacy policy, we will notify users through the app and update the "Last Updated" date.</p>
+
+    <h2>Contact Us</h2>
+    <p>Questions about privacy?</p>
+    <p>Email: <a href="mailto:privacy@qoreonslabs.com">privacy@qoreonslabs.com</a></p>
+    <p>Website: <a href="https://qoreonslabs.com">qoreonslabs.com</a></p>
+
+    <hr style="margin: 40px 0;">
+    
+    <p style="text-align: center; color: #999; font-size: 14px;">
+        © 2025 Qoreon Labs Ltd. All rights reserved.<br>
+        Privacy-first software for everyone.
+    </p>
+</body>
+</html>
+```
+
+---
+
+### **Step 2: Update App Store Connect**
+
+When submitting to App Store:
+
+1. **App Privacy section:**
+   - Select "No, we do not collect data from this app"
+   - Answer all privacy questions as "No"
+
+2. **Privacy Policy URL:**
+```
+   https://qoreonslabs.com/medreminder/privacy
+```
+
+3. **Support URL:**
+```
+   https://qoreonslabs.com/medreminder/support
