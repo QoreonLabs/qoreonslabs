@@ -1,39 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<!-- Google tag (gtag.js) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-KPXN9398W1"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'G-KPXN9398W1');
-  </script>
-  <meta name="description" content="Explore Qoreon Labs services across AI software development, secure web development, app development, cloud systems, and digital transformation for enterprise and defence clients.">
-
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>AI, Web & App Development Services | Qoreon Labs</title>
+  <meta name="description" content="Explore Qoreon Labs services across AI software development, secure web development, app development, cloud systems, and digital transformation for enterprise and defence clients." />
   <meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1" />
   <link rel="canonical" href="https://qoreonlabs.com/services" />
+
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://qoreonlabs.com/services" />
   <meta property="og:title" content="AI, Web & App Development Services | Qoreon Labs" />
-  <meta property="og:description" content="Qoreon Labs delivers AI software development, secure web platforms, cross-platform apps, cloud engineering, and digital transformation services." />
+  <meta property="og:description" content="Qoreon Labs delivers custom software systems, secure web platforms, cross-platform apps, cloud engineering, and digital transformation services." />
   <meta property="og:image" content="https://res.cloudinary.com/dfzsolglz/image/upload/v1744477640/3d-illustration-blue-purple-futuristic-sci-fi-techno-lights-cool-background_ueaecd.jpg" />
   <meta property="og:site_name" content="Qoreon Labs" />
   <meta property="og:locale" content="en_GB" />
+
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="AI, Web & App Development Services | Qoreon Labs" />
-  <meta name="twitter:description" content="Explore AI software, secure web, mobile app, cloud, and transformation services built by Qoreon Labs for enterprise and defence clients." />
+  <meta name="twitter:description" content="Explore AI software, secure web, mobile app, cloud, and transformation services built by Qoreon Labs." />
   <meta name="twitter:image" content="https://res.cloudinary.com/dfzsolglz/image/upload/v1744477640/3d-illustration-blue-purple-futuristic-sci-fi-techno-lights-cool-background_ueaecd.jpg" />
+
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": "CollectionPage",
     "name": "Qoreon Labs Services",
     "url": "https://qoreonlabs.com/services",
-    "description": "Service overview page for Qoreon Labs covering AI software development, secure web platforms, app development, cloud systems, and digital transformation.",
+    "description": "Service overview page for Qoreon Labs covering software development, secure web platforms, mobile apps, cloud systems, and digital transformation.",
     "mainEntity": {
       "@type": "ItemList",
       "itemListElement": [
@@ -54,1339 +48,255 @@
     ]
   }
   </script>
-  <!-- Google Fonts for a modern look -->
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
-  <!-- Font Awesome for icons -->
+
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
-  <!-- AOS Animation Library -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
+  <link rel="stylesheet" href="revamp.css" />
   <style>
-    /* Global Styles and Variables */
-    :root {
-      --primary-color: #2575fc;
-      --primary-light: rgba(37, 117, 252, 0.1);
-      --primary-dark: #1a5cca;
-      --secondary-color: #6a11cb;
-      --secondary-light: rgba(106, 17, 203, 0.1);
-      --secondary-dark: #5410a3;
-      --accent-color: #00d9ff;
-      --dark-color: #151c2b;
-      --darker-color: #0c111e;
-      --text-color: #333;
-      --text-light: #6e7a8a;
-      --light-color: #f8f9fa;
-      --white: #ffffff;
-      --gray-100: #f8f9fa;
-      --gray-200: #e9ecef;
-      --gray-300: #dee2e6;
-      --gray-400: #ced4da;
-      --gray-500: #adb5bd;
-      --gray-600: #6c757d;
-      --gray-700: #495057;
-      --gray-800: #343a40;
-      --gray-900: #212529;
-      --shadow-sm: 0 2px 5px rgba(0, 0, 0, 0.05);
-      --shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
-      --shadow-lg: 0 10px 25px rgba(0, 0, 0, 0.12);
-      --shadow-xl: 0 15px 35px rgba(0, 0, 0, 0.15);
-      --transition-fast: 0.2s;
-      --transition: 0.3s;
-      --transition-slow: 0.5s;
-      --z-tooltip: 10;
-      --z-fixed: 100;
-      --z-modal: 1000;
-      --border-radius-sm: 4px;
-      --border-radius: 8px;
-      --border-radius-lg: 12px;
-      --border-radius-xl: 20px;
-      --border-radius-full: 9999px;
+    .services-page .hero-content {
+      max-width: 1040px !important;
     }
-    
-    * {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
+
+    .services-page .hero h1 {
+      max-width: 12ch !important;
     }
-    
-    html {
-      scroll-behavior: smooth;
-      scroll-padding-top: 80px;
+
+    .services-page .hero p {
+      max-width: 760px !important;
     }
-    
-    body {
-      font-family: 'Poppins', sans-serif;
-      line-height: 1.6;
-      color: var(--text-color);
-      overflow-x: hidden;
-      background-color: var(--light-color);
-      position: relative;
+
+    .services-page a.hero-capability {
+      color: inherit;
+      text-decoration: none;
     }
-    
-    a {
+
+    .services-page .hero-capability:hover {
+      transform: translateY(-4px);
+    }
+
+    .services-page .services-summary .service-card,
+    .services-page .service-lane .product-media,
+    .services-page .service-lane .product-content {
+      height: 100%;
+    }
+
+    .service-lane {
+      scroll-margin-top: 130px;
+    }
+
+    .service-lane .section-header {
+      margin-bottom: 1.8rem !important;
+    }
+
+    .service-lane .product-highlight {
+      align-items: stretch !important;
+    }
+
+    .service-lane .product-media {
+      display: flex;
+      align-items: stretch;
+    }
+
+    .service-lane .service-visual {
+      width: 100%;
+      min-height: 100%;
+      aspect-ratio: 4 / 3;
+      object-fit: cover;
+      display: block;
+      border-radius: 22px;
+    }
+
+    .service-lane--reverse .product-media {
+      order: 2;
+    }
+
+    .service-lane--reverse .product-content {
+      order: 1;
+    }
+
+    .service-meta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.65rem;
+      margin-top: 1.15rem;
+    }
+
+    .service-meta span {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+      min-height: 40px;
+      padding: 0.65rem 0.9rem;
+      border-radius: 999px;
+      border: 1px solid rgba(255, 255, 255, 0.09);
+      background: rgba(255, 255, 255, 0.03);
+      color: rgba(232, 232, 236, 0.72);
+      font-size: 0.85rem;
+      font-weight: 600;
+    }
+
+    .service-route-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 1.35rem;
+    }
+
+    .service-route-card {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      padding: 1.7rem;
+      border-radius: 28px;
       text-decoration: none;
       color: inherit;
+      background: linear-gradient(180deg, rgba(17, 17, 20, 0.96), rgba(10, 10, 12, 0.94));
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      box-shadow: var(--shadow);
+      transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
     }
-    
-    ul {
-      list-style: none;
+
+    .service-route-card:hover {
+      transform: translateY(-6px);
+      border-color: rgba(255, 255, 255, 0.15);
+      box-shadow: var(--shadow-lg);
     }
-    
-    img {
-      max-width: 100%;
-      height: auto;
-    }
-    
-    /* Utility Classes */
-    .container {
-      width: 100%;
-      max-width: 1200px;
-      margin: 0 auto;
-      padding: 0 1.5rem;
-      position: relative;
-      z-index: 1;
-    }
-    
-    .btn {
+
+    .service-route-icon {
+      width: 56px;
+      height: 56px;
       display: inline-flex;
       align-items: center;
       justify-content: center;
-      padding: 0.75rem 1.8rem;
-      font-size: 1rem;
-      font-weight: 500;
-      border-radius: var(--border-radius-full);
-      transition: all var(--transition) ease;
-      cursor: pointer;
-      position: relative;
-      overflow: hidden;
-      z-index: 1;
-      border: none;
-    }
-    
-    .btn-primary {
-      background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
-      color: var(--white);
-      box-shadow: 0 4px 15px rgba(37, 117, 252, 0.3);
-    }
-    
-    .btn-outline {
-      background: transparent;
-      color: var(--primary-color);
-      border: 2px solid var(--primary-color);
-    }
-    
-    .btn-light {
-      background: var(--white);
-      color: var(--primary-color);
-      box-shadow: var(--shadow);
-    }
-    
-    .btn i {
-      margin-left: 0.5rem;
-      transition: transform var(--transition) ease;
-    }
-    
-    .btn:hover {
-      transform: translateY(-3px);
-      box-shadow: var(--shadow-lg);
-    }
-    
-    .btn:hover i {
-      transform: translateX(3px);
-    }
-    
-    .btn-primary::before {
-      content: '';
-      position: absolute;
-      top: 0;
-      left: -100%;
-      width: 100%;
-      height: 100%;
-      background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
-      transition: left 0.7s ease;
-    }
-    
-    .btn-primary:hover::before {
-      left: 100%;
-    }
-    
-    .section {
-      padding: 6rem 0;
-      position: relative;
-    }
-    
-    .section-header {
-      margin-bottom: 4rem;
-      text-align: center;
-      position: relative;
-    }
-    
-    .section-header .subtitle {
-      color: var(--primary-color);
-      font-weight: 500;
-      margin-bottom: 1rem;
-      display: block;
-    }
-    
-    .section-header h2 {
-      font-size: 2.5rem;
-      margin-bottom: 1.5rem;
-      position: relative;
-      display: inline-block;
-    }
-    
-    .section-header h2::after {
-      content: '';
-      position: absolute;
-      bottom: -10px;
-      left: 50%;
-      transform: translateX(-50%);
-      width: 70px;
-      height: 4px;
-      background: linear-gradient(90deg, var(--secondary-color), var(--primary-color));
-      border-radius: 4px;
-    }
-    
-    .section-header p {
-      max-width: 700px;
-      margin: 0 auto;
-      color: var(--text-light);
-      font-size: 1.1rem;
-    }
-    
-    .text-gradient {
-      color: white;
-      text-shadow: 0 0 8px rgba(180, 130, 230, 0.6), 0 0 16px rgba(180, 130, 230, 0.4);
-      font-weight: 700;
-      letter-spacing: 0.5px;
-    }
-    
-    .card {
-      background: var(--white);
-      border-radius: var(--border-radius);
-      box-shadow: var(--shadow);
-      overflow: hidden;
-      transition: all var(--transition) ease;
-    }
-    
-    .card:hover {
-      transform: translateY(-10px);
-      box-shadow: var(--shadow-lg);
-    }
-    
-    .bg-primary {
-      background: var(--primary-color);
-      color: var(--white);
-    }
-    
-    .bg-secondary {
-      background: var(--secondary-color);
-      color: var(--white);
-    }
-    
-    .bg-dark {
-      background: var(--dark-color);
-      color: var(--white);
-    }
-    
-    .bg-light {
-      background: var(--light-color);
-      color: var(--text-color);
-    }
-    
-    .text-center {
-      text-align: center;
-    }
-    
-    .mb-1 {
-      margin-bottom: 0.5rem;
-    }
-    
-    .mb-2 {
-      margin-bottom: 1rem;
-    }
-    
-    .mb-3 {
-      margin-bottom: 1.5rem;
-    }
-    
-    .mb-4 {
-      margin-bottom: 2rem;
-    }
-    
-    .mb-5 {
-      margin-bottom: 3rem;
-    }
-    
-    .mt-1 {
-      margin-top: 0.5rem;
-    }
-    
-    .mt-2 {
-      margin-top: 1rem;
-    }
-    
-    .mt-3 {
-      margin-top: 1.5rem;
-    }
-    
-    .mt-4 {
-      margin-top: 2rem;
-    }
-    
-    .mt-5 {
-      margin-top: 3rem;
-    }
-    
-    /* Animated Background */
-    .animated-background {
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      overflow: hidden;
-      z-index: 0;
-    }
-    
-    .bg-gradient {
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      background: linear-gradient(-45deg,
-                                 rgba(106, 17, 203, 0.05),
-                                 rgba(37, 117, 252, 0.05),
-                                 rgba(0, 217, 255, 0.05),
-                                 rgba(245, 247, 250, 0.05));
-      background-size: 400% 400%;
-      animation: gradientBG 15s ease infinite;
-      z-index: -2;
-    }
-    
-    @keyframes gradientBG {
-      0% {
-        background-position: 0% 50%;
-      }
-      50% {
-        background-position: 100% 50%;
-      }
-      100% {
-        background-position: 0% 50%;
-      }
-    }
-    
-    .bg-grid {
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      background-image:
-        linear-gradient(var(--gray-200) 1px, transparent 1px),
-        linear-gradient(90deg, var(--gray-200) 1px, transparent 1px);
-      background-size: 30px 30px;
-      opacity: 0.3;
-      z-index: -1;
-    }
-    
-    .particles-container {
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      overflow: hidden;
-      z-index: -1;
-    }
-    
-    .particle {
-      position: absolute;
-      display: block;
-      pointer-events: none;
-      opacity: 0.5;
-      animation: float 15s infinite ease-in-out;
-    }
-    
-    @keyframes float {
-      0%, 100% {
-        transform: translateY(0) rotate(0deg);
-      }
-      50% {
-        transform: translateY(-20px) rotate(180deg);
-      }
-    }
-    
-    /* Header Styles */
-    header {
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 100%;
-      z-index: var(--z-fixed);
-      transition: all var(--transition) ease;
-      padding: 1rem 0;
-      background: linear-gradient(90deg, var(--secondary-color), var(--primary-color));
-    }
-    
-    .header-container {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-    }
-    
-    .logo {
-      font-size: 1.8rem;
-      font-weight: 700;
-      color: var(--white);
-      position: relative;
-      display: flex;
-      align-items: center;
-    }
-    
-    .logo::before {
-      content: '';
-      position: absolute;
-      width: 10px;
-      height: 10px;
-      background: var(--white);
-      border-radius: 50%;
-      left: -18px;
-      box-shadow: 0 0 15px rgba(255, 255, 255, 0.8);
-    }
-    
-    .nav-menu {
-      display: flex;
-      align-items: center;
-    }
-    
-    .nav-list {
-      display: flex;
-      gap: 2.5rem;
-      margin-right: 2rem;
-    }
-    
-    .nav-link {
-      font-weight: 500;
-      color: var(--white);
-      transition: all var(--transition) ease;
-      position: relative;
-      padding: 0.5rem 0;
-      font-size: 1.05rem;
-      opacity: 0.85;
-    }
-    
-    .nav-link::after {
-      content: '';
-      position: absolute;
-      width: 0;
-      height: 3px;
-      bottom: -3px;
-      left: 0;
-      background-color: var(--white);
-      transition: width var(--transition) ease;
-      border-radius: var(--border-radius-full);
-    }
-    
-    .nav-link:hover {
-      opacity: 1;
-    }
-    
-    .nav-link:hover::after,
-    .nav-link.active::after {
-      width: 100%;
-    }
-    
-    .nav-link.active {
-      opacity: 1;
-    }
-    
-    .header-btn {
-      background: rgba(255, 255, 255, 0.15);
-      color: var(--white);
-      border: 1px solid rgba(255, 255, 255, 0.3);
-      padding: 0.6rem 1.5rem;
-      border-radius: var(--border-radius-full);
-      font-weight: 500;
-      transition: all var(--transition) ease;
-      display: flex;
-      align-items: center;
-      gap: 0.5rem;
-    }
-    
-    .header-btn:hover {
-      background: var(--white);
-      color: var(--primary-color);
-      transform: translateY(-3px);
-    }
-    
-    .nav-toggle {
-      display: none;
-      font-size: 1.5rem;
-      cursor: pointer;
-      color: var(--white);
-      transition: all var(--transition) ease;
-    }
-
-    /* Hero Section - iOS/macOS Development */
-    .hero-ios {
-      padding: 12rem 0 6rem;
-      background: linear-gradient(135deg, var(--secondary-color) 0%, var(--primary-color) 100%);
-      color: var(--white);
-      position: relative;
-      overflow: hidden;
-    }
-    
-    .hero-ios-overlay {
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23ffffff' fill-opacity='0.05' fill-rule='evenodd'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/svg%3E");
-      opacity: 0.3;
-    }
-    
-    .hero-ios-container {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 4rem;
-      align-items: center;
-    }
-    
-    .hero-ios-content h1 {
-      font-size: 3.5rem;
-      line-height: 1.1;
-      margin-bottom: 1.5rem;
-    }
-    
-    .hero-ios-content h1 span {
-      color: var(--accent-color);
-      display: block;
-    }
-    
-    .hero-ios-content p {
-      font-size: 1.2rem;
-      margin-bottom: 2rem;
-      opacity: 0.9;
-      max-width: 600px;
-    }
-    
-    .hero-ios-image {
-      position: relative;
-      z-index: 1;
-    }
-    
-    .hero-ios-image img {
-      border-radius: var(--border-radius-lg);
-      box-shadow: var(--shadow-xl);
-      border: 3px solid rgba(255, 255, 255, 0.1);
-    }
-
-    .hero-btns {
-      display: flex;
-      gap: 1rem;
-      flex-wrap: wrap;
-    }
-    
-    /* Floating tech icons for iOS section */
-    .floating-techs {
-      position: absolute;
-      width: 100%;
-      height: 100%;
-      top: 0;
-      left: 0;
-      z-index: 0;
-      overflow: hidden;
-    }
-    
-    .tech-icon {
-      position: absolute;
-      background: rgba(255, 255, 255, 0.1);
-      backdrop-filter: blur(5px);
-      border-radius: var(--border-radius);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      box-shadow: var(--shadow);
-      animation: techFloat 8s infinite ease-in-out;
-    }
-    
-    .tech-icon img {
-      width: 70%;
-      height: 70%;
-      object-fit: contain;
-    }
-    
-    @keyframes techFloat {
-      0%, 100% {
-        transform: translateY(0) rotate(0deg);
-      }
-      50% {
-        transform: translateY(-20px) rotate(5deg);
-      }
-    }
-    
-    .swift-icon {
-      width: 80px;
-      height: 80px;
-      top: 20%;
-      left: 10%;
-      animation-delay: 0s;
-    }
-    
-    .xcode-icon {
-      width: 70px;
-      height: 70px;
-      top: 60%;
-      left: 5%;
-      animation-delay: 1s;
-    }
-    
-    .apple-icon {
-      width: 60px;
-      height: 60px;
-      top: 25%;
-      right: 15%;
-      animation-delay: 2s;
-    }
-    
-    .swiftui-icon {
-      width: 75px;
-      height: 75px;
-      top: 70%;
-      right: 10%;
-      animation-delay: 3s;
-    }
-    
-    /* Features List Styles */
-    .features-list {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      gap: 1.5rem;
-      margin-top: 2rem;
-    }
-    
-    .feature-item {
-      display: flex;
-      align-items: flex-start;
-      gap: 1rem;
-    }
-    
-    .feature-item i {
-      color: var(--accent-color);
-      font-size: 1.2rem;
-      margin-top: 0.2rem;
-    }
-
-    /* Pricing Table Styles */
-    .pricing-section {
-      background-color: var(--white);
-      position: relative;
-    }
-    
-    .pricing-container {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 2rem;
-      margin-top: 2rem;
-    }
-    
-    .pricing-card {
-      background: var(--white);
-      border-radius: var(--border-radius-lg);
-      overflow: hidden;
-      box-shadow: var(--shadow);
-      transition: all var(--transition) ease;
-      width: 100%;
-      max-width: 350px;
-      display: flex;
-      flex-direction: column;
-      position: relative;
-    }
-    
-    .pricing-card:hover {
-      transform: translateY(-10px);
-      box-shadow: var(--shadow-xl);
-    }
-    
-    .pricing-header {
-      padding: 2rem;
-      background: linear-gradient(135deg, var(--secondary-color) 0%, var(--primary-color) 100%);
-      color: var(--white);
-      text-align: center;
-    }
-    
-    .pricing-title {
-      font-size: 1.6rem;
-      margin-bottom: 0.5rem;
-    }
-    
-    .pricing-subtitle {
-      font-size: 0.9rem;
-      opacity: 0.8;
-    }
-    
-    .pricing-price {
-      font-size: 3rem;
-      font-weight: 700;
-      margin: 1.5rem 0;
-    }
-    
-    .pricing-price .currency {
-      font-size: 1.5rem;
-      vertical-align: super;
-      font-weight: 500;
-      margin-right: 0.3rem;
-    }
-    
-    .pricing-price .period {
-      font-size: 0.9rem;
-      opacity: 0.8;
-      font-weight: 400;
-    }
-    
-    .pricing-body {
-      padding: 2rem;
-      flex-grow: 1;
-    }
-    
-    .pricing-features {
-      margin-bottom: 2rem;
-    }
-    
-    .pricing-feature {
-      display: flex;
-      align-items: flex-start;
-      margin-bottom: 1rem;
-    }
-    
-    .pricing-feature i {
-      color: var(--primary-color);
-      margin-right: 0.75rem;
-      font-size: 1.1rem;
-      margin-top: 0.2rem;
-    }
-    
-    .pricing-feature.disabled {
-      opacity: 0.5;
-    }
-    
-    .pricing-feature.disabled i {
-      color: var(--gray-400);
-    }
-    
-    .pricing-card.highlighted {
-      transform: scale(1.05);
-      z-index: 2;
-    }
-    
-    .pricing-card.highlighted .pricing-header {
-      position: relative;
-      overflow: hidden;
-    }
-    
-    .pricing-card.highlighted .pricing-header::before {
-      content: 'Most Popular';
-      position: absolute;
-      top: 15px;
-      right: -30px;
-      background: var(--white);
-      color: var(--primary-color);
-      padding: 0.3rem 2rem;
-      font-size: 0.8rem;
-      font-weight: 600;
-      transform: rotate(45deg);
-      box-shadow: var(--shadow);
-    }
-    
-    .pricing-footer {
-      padding: 0 2rem 2rem;
-      text-align: center;
-    }
-
-    /* Services Section */
-    .services {
-      background-color: var(--light-color);
-      position: relative;
-    }
-    
-    .services-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-      gap: 2.5rem;
-    }
-    
-    .service-card {
-      background: var(--white);
-      border-radius: var(--border-radius);
-      overflow: hidden;
-      box-shadow: var(--shadow);
-      transition: all var(--transition) ease;
-      position: relative;
-      height: 100%;
-      display: flex;
-      flex-direction: column;
-    }
-    
-    .service-card:hover {
-      transform: translateY(-10px);
-      box-shadow: var(--shadow-lg);
-    }
-    
-    .service-icon {
-      width: 100%;
-      height: 200px;
-      position: relative;
-      overflow: hidden;
-    }
-    
-    .service-icon img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      transition: all var(--transition) ease;
-    }
-    
-    .service-card:hover .service-icon img {
-      transform: scale(1.1);
-    }
-    
-    .service-content {
-      padding: 2rem;
-      flex-grow: 1;
-      display: flex;
-      flex-direction: column;
-    }
-    
-    .service-title {
-      font-size: 1.4rem;
-      margin-bottom: 1rem;
-      color: var(--dark-color);
-    }
-    
-    .service-text {
-      color: var(--text-light);
-      margin-bottom: 1.5rem;
-      flex-grow: 1;
-    }
-    
-    /* CTA Section */
-    .cta {
-      background: linear-gradient(135deg, var(--secondary-color), var(--primary-color));
-      color: var(--white);
-      text-align: center;
-      padding: 5rem 0;
-      position: relative;
-      overflow: hidden;
-    }
-    
-    .cta-pattern {
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23ffffff' fill-opacity='0.05' fill-rule='evenodd'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/svg%3E");
-    }
-    
-    .cta h2 {
-      font-size: 2.5rem;
-      margin-bottom: 1.5rem;
-    }
-    
-    .cta p {
-      font-size: 1.2rem;
-      margin-bottom: 2rem;
-      max-width: 700px;
-      margin-left: auto;
-      margin-right: auto;
-      opacity: 0.9;
-    }
-    
-    .cta .btn-light {
-      padding: 1rem 2.5rem;
-      font-size: 1.1rem;
-    }
-
-    /* Updated Footer - Same as home page */
-    footer {
-      background: linear-gradient(180deg, var(--dark-color) 0%, var(--darker-color) 100%);
-      color: var(--gray-300);
-      position: relative;
-      overflow: hidden;
-    }
-    
-    /* Bubble Animation for Footer */
-    .bubble {
-      position: absolute;
-      border-radius: 50%;
+      border-radius: 18px;
       background: rgba(255, 255, 255, 0.05);
-      animation: bubbleFloat linear infinite;
-      bottom: -50px;
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      color: #ffffff;
+      font-size: 1.15rem;
     }
-    
-    @keyframes bubbleFloat {
-      0% {
-        transform: translateY(0) scale(1);
-        opacity: 0;
-      }
-      50% {
-        opacity: 0.1;
-      }
-      100% {
-        transform: translateY(-1000px) scale(1.8);
-        opacity: 0;
-      }
-    }
-    
-    /* Decorative elements */
-    .footer-decoration {
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      pointer-events: none;
-    }
-    
-    .footer-blob {
-      position: absolute;
-      background: linear-gradient(135deg, var(--secondary-color), var(--primary-color));
-      opacity: 0.05;
-      border-radius: 50%;
-    }
-    
-    .blob-1 {
-      width: 400px;
-      height: 400px;
-      top: -200px;
-      right: -200px;
-      filter: blur(50px);
-    }
-    
-    .blob-2 {
-      width: 300px;
-      height: 300px;
-      bottom: -150px;
-      left: -150px;
-      filter: blur(40px);
-    }
-    
-    /* Main Footer Content */
-    .footer-content {
-      position: relative;
-      padding: 5rem 0 3rem;
-      z-index: 1;
-    }
-    
-    .footer-main {
-      display: grid;
-      grid-template-columns: 2fr 1fr 1fr 1fr;
-      gap: 3rem;
-      margin-bottom: 3rem;
-    }
-    
-    /* Logo and About Section */
-    .footer-brand {
-      margin-bottom: 1.5rem;
-    }
-    
-    .footer-logo {
-      font-size: 1.8rem;
-      font-weight: 700;
-      color: var(--white);
-      margin-bottom: 1rem;
-      display: inline-block;
-      position: relative;
-    }
-    
-    .footer-logo::after {
-      content: '';
-      position: absolute;
-      width: 30px;
-      height: 3px;
-      background: linear-gradient(90deg, var(--secondary-color), var(--primary-color));
-      bottom: -8px;
-      left: 0;
-      border-radius: var(--border-radius-full);
-    }
-    
-    .footer-about p {
-      color: var(--gray-400);
-      margin-bottom: 1.5rem;
-    }
-    
-    /* Social Media Links */
-    .footer-social {
-      display: flex;
-      gap: 1rem;
-      margin-bottom: 1.5rem;
-    }
-    
-    .social-link {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      width: 36px;
-      height: 36px;
-      background: rgba(255, 255, 255, 0.05);
-      border-radius: var(--border-radius-full);
-      color: var(--white);
-      transition: all var(--transition) ease;
-    }
-    
-    .social-link:hover {
-      background: linear-gradient(135deg, var(--secondary-color), var(--primary-color));
-      transform: translateY(-3px);
-    }
-    
-    /* Footer Links */
-    .footer-block h3 {
-      color: var(--white);
+
+    .service-route-card h3 {
+      margin: 0;
+      color: #ffffff;
       font-size: 1.2rem;
-      margin-bottom: 1.5rem;
-      position: relative;
-      display: inline-block;
+      letter-spacing: -0.03em;
     }
-    
-    .footer-block h3::after {
-      content: '';
-      position: absolute;
-      width: 30px;
-      height: 3px;
-      background: linear-gradient(90deg, var(--secondary-color), var(--primary-color));
-      bottom: -8px;
-      left: 0;
-      border-radius: var(--border-radius-full);
+
+    .service-route-card p {
+      margin: 0;
+      color: rgba(220, 220, 228, 0.7);
+      line-height: 1.78;
     }
-    
-    .footer-links {
-      display: flex;
-      flex-direction: column;
-      gap: 0.8rem;
+
+    .service-route-card strong {
+      color: rgba(255, 255, 255, 0.88);
+      font-size: 0.92rem;
+      letter-spacing: -0.01em;
     }
-    
-    .footer-link {
-      color: var(--gray-400);
-      transition: all var(--transition) ease;
-      position: relative;
-      padding-left: 15px;
+
+    .service-page footer .btn {
+      width: auto;
     }
-    
-    .footer-link::before {
-      content: '';
-      position: absolute;
-      width: 6px;
-      height: 6px;
-      border-radius: 50%;
-      background-color: var(--gray-600);
-      left: 0;
-      top: 50%;
-      transform: translateY(-50%);
-      transition: all var(--transition) ease;
+
+    .service-page .footer-main {
+      grid-template-columns: minmax(0, 1.2fr) repeat(2, minmax(0, 0.8fr)) minmax(0, 1fr);
     }
-    
-    .footer-link:hover {
-      color: var(--white);
-      transform: translateX(5px);
+
+    .service-page .footer-links {
+      display: grid;
+      gap: 0.75rem;
     }
-    
-    .footer-link:hover::before {
-      background: linear-gradient(135deg, var(--secondary-color), var(--primary-color));
+
+    .service-page .footer-contact {
+      display: grid;
+      gap: 0.9rem;
     }
-    
-    /* Contact Information */
-    .footer-contact-item {
-      display: flex;
-      align-items: flex-start;
-      gap: 1rem;
-      margin-bottom: 1.2rem;
-      color: var(--gray-400);
+
+    .service-page .footer-contact-item a {
+      color: inherit;
+      text-decoration: none;
     }
-    
-    .footer-contact-item i {
-      color: var(--primary-color);
-      font-size: 1.1rem;
-      margin-top: 0.2rem;
-    }
-    
-    /* Newsletter Subscription */
-    .footer-newsletter {
-      margin-top: 1.5rem;
-    }
-    
-    .newsletter-form {
-      position: relative;
-      margin-top: 1rem;
-    }
-    
-    .newsletter-input {
-      width: 100%;
-      padding: 0.8rem 1rem;
-      padding-right: 3.5rem;
-      background: rgba(255, 255, 255, 0.05);
-      border: 1px solid rgba(255, 255, 255, 0.1);
-      border-radius: var(--border-radius-full);
-      color: var(--white);
-      font-size: 0.9rem;
-      transition: all var(--transition) ease;
-    }
-    
-    .newsletter-input:focus {
-      outline: none;
-      border-color: rgba(255, 255, 255, 0.3);
-      background: rgba(255, 255, 255, 0.08);
-    }
-    
-    .newsletter-input::placeholder {
-      color: var(--gray-500);
-    }
-    
-    .newsletter-btn {
-      position: absolute;
-      top: 50%;
-      right: 0.5rem;
-      transform: translateY(-50%);
-      background: linear-gradient(135deg, var(--secondary-color), var(--primary-color));
-      border: none;
-      width: 36px;
-      height: 36px;
-      border-radius: 50%;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      color: var(--white);
-      cursor: pointer;
-      transition: all var(--transition) ease;
-    }
-    
-    .newsletter-btn:hover {
-      transform: translateY(-50%) scale(1.05);
-      box-shadow: 0 0 15px rgba(37, 117, 252, 0.4);
-    }
-    
-    /* Copyright Section */
-    .footer-divider {
-      height: 1px;
-      background: linear-gradient(to right, transparent, rgba(255, 255, 255, 0.1), transparent);
-      margin-bottom: 1.5rem;
-    }
-    
-    .footer-bottom {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding-bottom: 1.5rem;
-      color: var(--gray-500);
-      font-size: 0.9rem;
-    }
-    
-    .footer-copyright a {
-      color: var(--primary-color);
-      transition: color var(--transition) ease;
-    }
-    
-    .footer-copyright a:hover {
-      color: var(--white);
-    }
-    
-    .footer-links-inline {
-      display: flex;
-      gap: 1.5rem;
-    }
-    
-    .footer-links-inline a {
-      color: var(--gray-500);
-      transition: color var(--transition) ease;
-    }
-    
-    .footer-links-inline a:hover {
-      color: var(--white);
-    }
-    
-    /* Responsive Styles */
-    @media (max-width: 1200px) {
-      .hero-ios-container {
-        gap: 2rem;
+
+    @media (max-width: 980px) {
+      .service-lane--reverse .product-media,
+      .service-lane--reverse .product-content {
+        order: initial;
       }
-      
-      .footer-main {
-        grid-template-columns: 1fr 1fr;
-      }
-    }
-    
-    @media (max-width: 992px) {
-      html {
-        font-size: 14px;
-      }
-      
-      .hero-ios-container {
+
+      .service-route-grid {
         grid-template-columns: 1fr;
       }
-      
-      .hero-ios-image {
-        order: -1;
-        text-align: center;
-        margin-bottom: 2rem;
-      }
-      
-      .hero-ios-content {
-        text-align: center;
-      }
-      
-      .hero-ios-content p {
-        margin-left: auto;
-        margin-right: auto;
-      }
-      
-      .hero-btns {
-        justify-content: center;
-      }
-      
-      .features-list {
+
+      .services-page .footer-main {
         grid-template-columns: 1fr;
       }
-      
-      .pricing-container {
-        flex-direction: column;
-        align-items: center;
-      }
-      
-      .pricing-card {
-        max-width: 450px;
-      }
-      
-      .pricing-card.highlighted {
-        transform: scale(1);
-        order: -1;
-        margin-bottom: 1rem;
-      }
-    }
-    
-    @media (max-width: 768px) {
-      .section {
-        padding: 4rem 0;
-      }
-      
-      .hero-ios {
-        padding: 8rem 0 4rem;
-      }
-      
-      .hero-ios-content h1 {
-        font-size: 2.5rem;
-      }
-      
-      .services-grid {
-        grid-template-columns: 1fr;
-      }
-      
-      .footer-main {
-        grid-template-columns: 1fr;
-        gap: 2rem;
-      }
-      
-      .footer-block {
-        margin-bottom: 1rem;
-      }
-      
-      .footer-bottom {
-        flex-direction: column;
-        gap: 1rem;
-        text-align: center;
-      }
-      
-      .footer-links-inline {
-        justify-content: center;
-      }
-      
+
       .nav-menu {
         position: fixed;
         top: 0;
         right: -100%;
-        width: 80%;
+        width: min(82vw, 360px);
         height: 100vh;
-        background: linear-gradient(135deg, var(--secondary-color), var(--primary-color));
-        padding: 6rem 2rem 2rem;
-        transition: all var(--transition) ease;
-        z-index: var(--z-fixed);
-        box-shadow: var(--shadow-lg);
-        display: block;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1.5rem;
+        padding: 6rem 1.4rem 2rem;
+        transition: right 0.35s ease;
+        z-index: 200;
       }
-      
+
       .nav-menu.show {
         right: 0;
       }
-      
+
       .nav-list {
+        width: 100%;
         flex-direction: column;
-        margin-right: 0;
+        align-items: flex-start !important;
+        gap: 1.2rem !important;
       }
-      
-      .nav-close {
-        position: absolute;
-        top: 1.5rem;
-        right: 1.5rem;
-        font-size: 1.5rem;
-        cursor: pointer;
-        color: var(--white);
-      }
-      
+
       .nav-toggle {
-        display: block;
+        display: inline-flex !important;
+        align-items: center;
+        justify-content: center;
       }
-    }
-    
-    @media (max-width: 576px) {
-      html {
-        font-size: 12px;
-      }
-      
-      .btn {
-        padding: 0.7rem 1.5rem;
-      }
-      
-      .section-header h2 {
-        font-size: 2rem;
+
+      .nav-close {
+        display: inline-flex !important;
+        position: absolute;
+        top: 1.4rem;
+        right: 1.4rem;
+        align-items: center;
+        justify-content: center;
+        font-size: 1.35rem;
+        cursor: pointer;
       }
     }
   </style>
-  <link rel="stylesheet" href="revamp.css" />
 </head>
-<body>
-
-  <!-- Animated Background -->
-  <div class="animated-background">
-    <div class="bg-gradient"></div>
-    <div class="bg-grid"></div>
-    <div class="particles-container" id="particles-container"></div>
-  </div>
-
-  <!-- Header -->
+<body class="services-page">
   <header id="header">
     <div class="container">
       <div class="header-container">
         <a href="index.html" class="logo">QOREON LABS</a>
-        
-        <div class="nav-toggle" id="nav-toggle">
+
+        <div class="nav-toggle" id="nav-toggle" aria-label="Open navigation" role="button" tabindex="0">
           <i class="fas fa-bars"></i>
         </div>
-        
+
         <nav class="nav-menu" id="nav-menu">
-          <div class="nav-close" id="nav-close">
+          <div class="nav-close" id="nav-close" aria-label="Close navigation" role="button" tabindex="0">
             <i class="fas fa-times"></i>
           </div>
-          
+
           <ul class="nav-list">
             <li><a href="index.html" class="nav-link">Home</a></li>
-            <li><a href="about-us.html" class="nav-link">About</a></li>
-            <li><a href="services.html" class="nav-link active">Services</a></li>
-            <li><a href="polymonit-wallet-tracker.html" class="nav-link">Product</a></li>
+            <li><a href="about-us" class="nav-link">About</a></li>
+            <li><a href="services" class="nav-link active">Services</a></li>
             <li><a href="index.html#contact" class="nav-link">Contact</a></li>
           </ul>
-          
-          <a href="quoteform.html" class="header-btn">
+
+          <a href="quoteform" class="header-btn">
             <i class="fas fa-headset"></i>
             Get A Quote
           </a>
@@ -1395,484 +305,354 @@
     </div>
   </header>
 
-  <!-- iOS/macOS Hero Section -->
-  <section class="hero-ios" id="app-development">
-    <div class="hero-ios-overlay"></div>
-    
-    <!-- Floating tech icons -->
-    <div class="floating-techs">
-      <div class="tech-icon swift-icon">
-        <i class="fab fa-swift" style="color: #F05138; font-size: 2.5rem;"></i>
+  <main>
+    <section class="hero">
+      <div class="hero-video-wrap" aria-hidden="true">
+        <video
+          class="hero-video"
+          autoplay
+          muted
+          loop
+          playsinline
+          preload="metadata"
+          poster="https://res.cloudinary.com/dfzsolglz/image/upload/v1744477640/3d-illustration-blue-purple-futuristic-sci-fi-techno-lights-cool-background_ueaecd.jpg"
+        >
+          <source src="https://res.cloudinary.com/dfzsolglz/video/upload/v1765797719/Video_2_vs7mjk.mp4" type="video/mp4" />
+        </video>
       </div>
-      <div class="tech-icon xcode-icon">
-        <i class="fas fa-code" style="color: #147EFB; font-size: 2rem;"></i>
-      </div>
-      <div class="tech-icon apple-icon">
-        <i class="fab fa-apple" style="color: #ffffff; font-size: 2.2rem;"></i>
-      </div>
-      <div class="tech-icon swiftui-icon">
-        <i class="fas fa-mobile-alt" style="color: #30D158; font-size: 2rem;"></i>
-      </div>
-    </div>
-    
-    <div class="container">
-      <div class="hero-ios-container">
-        <div class="hero-ios-content" data-aos="fade-right">
-          <span class="subtitle">Our Specialty</span>
-          <h1>iOS & macOS <span>App Development</span></h1>
-          <p>Building powerful, elegant, and native applications for Apple's ecosystem that leverage the full potential of their platforms.</p>
-          
-          <div class="features-list">
-            <div class="feature-item">
-              <i class="fas fa-check-circle"></i>
-              <span>Native iOS development with Swift</span>
-            </div>
-            <div class="feature-item">
-              <i class="fas fa-check-circle"></i>
-              <span>SwiftUI modern interfaces</span>
-            </div>
-            <div class="feature-item">
-              <i class="fas fa-check-circle"></i>
-              <span>macOS desktop applications</span>
-            </div>
-            <div class="feature-item">
-              <i class="fas fa-check-circle"></i>
-              <span>Cross-device experiences</span>
-            </div>
-          </div>
-          
-          <div class="hero-btns mt-4">
-            <a href="quoteform.html" class="btn btn-light">Get A Quote <i class="fas fa-arrow-right"></i></a>
-            <a href="#pricing" class="btn btn-primary">View Pricing</a>
-          </div>
-        </div>
-        
-        <div class="hero-ios-image" data-aos="fade-left">
-          <img src="https://res.cloudinary.com/dfzsolglz/image/upload/v1744478036/Mobile-app-development-company-1_tbx9qx.webp" alt="iOS and macOS Development" />
-        </div>
-      </div>
-    </div>
-  </section>
+      <div class="hero-noise" aria-hidden="true"></div>
+      <div class="hero-overlay"></div>
 
-  <!-- Pricing Table Section -->
-  <section id="pricing" class="section pricing-section">
-    <div class="container">
-      <div class="section-header" data-aos="fade-up">
-        <span class="subtitle">Transparent Pricing</span>
-        <h2>iOS App Development Packages</h2>
-        <p>Choose the perfect package for your business needs, with transparent pricing and no hidden fees</p>
-      </div>
-      
-      <div class="pricing-container">
-        <!-- Basic Package -->
-        <div class="pricing-card" data-aos="fade-up" data-aos-delay="100">
-          <div class="pricing-header">
-            <h3 class="pricing-title">Basic</h3>
-            <span class="pricing-subtitle">For startups and simple apps</span>
-            <div class="pricing-price">
-              <span class="currency">$</span>3,999
-              <span class="period">starting price</span>
+      <div class="container">
+        <div class="hero-container">
+          <div class="hero-content">
+            <span class="hero-eyebrow">Services Overview</span>
+            <h1>Software, Web &amp; App Development Built to Ship.</h1>
+            <p>Qoreon Labs designs, builds, and deploys custom digital products for enterprise and defence-focused teams. From secure backend systems to resilient web platforms and cross-platform apps, the emphasis is on usable software, clean delivery, and strong technical foundations.</p>
+            <div class="hero-btns">
+              <a href="#service-overview" class="btn btn-primary">Explore Services <i class="fas fa-arrow-right"></i></a>
+              <a href="quoteform" class="btn btn-light">Get A Quote</a>
             </div>
           </div>
-          
-          <div class="pricing-body">
-            <div class="pricing-features">
-              <div class="pricing-feature">
-                <i class="fas fa-check-circle"></i>
-                <span>Up to 5 screens</span>
-              </div>
-              <div class="pricing-feature">
-                <i class="fas fa-check-circle"></i>
-                <span>Basic UI components</span>
-              </div>
-              <div class="pricing-feature">
-                <i class="fas fa-check-circle"></i>
-                <span>User authentication</span>
-              </div>
-              <div class="pricing-feature">
-                <i class="fas fa-check-circle"></i>
-                <span>Local data storage</span>
-              </div>
-              <div class="pricing-feature">
-                <i class="fas fa-check-circle"></i>
-                <span>Push notifications</span>
-              </div>
-              <div class="pricing-feature disabled">
-                <i class="fas fa-times-circle"></i>
-                <span>Backend integration</span>
-              </div>
-              <div class="pricing-feature disabled">
-                <i class="fas fa-times-circle"></i>
-                <span>Analytics integration</span>
-              </div>
-              <div class="pricing-feature disabled">
-                <i class="fas fa-times-circle"></i>
-                <span>Advanced features</span>
-              </div>
-            </div>
-          </div>
-          
-          <div class="pricing-footer">
-            <a href="quoteform.html" class="btn btn-outline">Request Quote</a>
-          </div>
-        </div>
-        
-        <!-- Standard Package -->
-        <div class="pricing-card highlighted" data-aos="fade-up" data-aos-delay="200">
-          <div class="pricing-header">
-            <h3 class="pricing-title">Standard</h3>
-            <span class="pricing-subtitle">For growing businesses</span>
-            <div class="pricing-price">
-              <span class="currency">$</span>7,999
-              <span class="period">starting price</span>
-            </div>
-          </div>
-          
-          <div class="pricing-body">
-            <div class="pricing-features">
-              <div class="pricing-feature">
-                <i class="fas fa-check-circle"></i>
-                <span>Up to 12 screens</span>
-              </div>
-              <div class="pricing-feature">
-                <i class="fas fa-check-circle"></i>
-                <span>Custom UI components</span>
-              </div>
-              <div class="pricing-feature">
-                <i class="fas fa-check-circle"></i>
-                <span>User authentication</span>
-              </div>
-              <div class="pricing-feature">
-                <i class="fas fa-check-circle"></i>
-                <span>Cloud data storage</span>
-              </div>
-              <div class="pricing-feature">
-                <i class="fas fa-check-circle"></i>
-                <span>Push notifications</span>
-              </div>
-              <div class="pricing-feature">
-                <i class="fas fa-check-circle"></i>
-                <span>Backend integration</span>
-              </div>
-              <div class="pricing-feature">
-                <i class="fas fa-check-circle"></i>
-                <span>Analytics integration</span>
-              </div>
-              <div class="pricing-feature disabled">
-                <i class="fas fa-times-circle"></i>
-                <span>Advanced features</span>
-              </div>
-            </div>
-          </div>
-          
-          <div class="pricing-footer">
-            <a href="quoteform.html" class="btn btn-primary">Request Quote</a>
-          </div>
-        </div>
-        
-        <!-- Custom Full Stack Package -->
-        <div class="pricing-card" data-aos="fade-up" data-aos-delay="300">
-          <div class="pricing-header">
-            <h3 class="pricing-title">Custom Full Stack</h3>
-            <span class="pricing-subtitle">For enterprise solutions</span>
-            <div class="pricing-price">
-              <span class="currency">$</span>12,999+
-              <span class="period">starting price</span>
-            </div>
-          </div>
-          
-          <div class="pricing-body">
-            <div class="pricing-features">
-              <div class="pricing-feature">
-                <i class="fas fa-check-circle"></i>
-                <span>Unlimited screens</span>
-              </div>
-              <div class="pricing-feature">
-                <i class="fas fa-check-circle"></i>
-                <span>Premium UI/UX design</span>
-              </div>
-              <div class="pricing-feature">
-                <i class="fas fa-check-circle"></i>
-                <span>Advanced authentication</span>
-              </div>
-              <div class="pricing-feature">
-                <i class="fas fa-check-circle"></i>
-                <span>Full cloud infrastructure</span>
-              </div>
-              <div class="pricing-feature">
-                <i class="fas fa-check-circle"></i>
-                <span>Interactive notifications</span>
-              </div>
-              <div class="pricing-feature">
-                <i class="fas fa-check-circle"></i>
-                <span>Custom backend development</span>
-              </div>
-              <div class="pricing-feature">
-                <i class="fas fa-check-circle"></i>
-                <span>Advanced analytics & reporting</span>
-              </div>
-              <div class="pricing-feature">
-                <i class="fas fa-check-circle"></i>
-                <span>Apple ecosystem integration</span>
-              </div>
-            </div>
-          </div>
-          
-          <div class="pricing-footer">
-            <a href="quoteform.html" class="btn btn-outline">Request Quote</a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
 
-<!-- macOS Custom Software Development Section -->
-<section class="section bg-light" id="software-development">
-  <div class="container">
-    <div class="section-header" data-aos="fade-up">
-      <span class="subtitle">Custom Solutions</span>
-      <h2>macOS Custom Software & Tools</h2>
-      <p>We create bespoke macOS applications and utilities that streamline workflows, enhance productivity, and solve complex business challenges</p>
-    </div>
-    
-    <div class="hero-ios-container">
-      <div class="hero-ios-content" data-aos="fade-right">
-        <h3 class="service-title mb-3">Professional macOS Development</h3>
-        <p class="mb-4">Our expert developers create native macOS applications that provide seamless integration with Apple's ecosystem while delivering powerful functionality tailored to your specific needs.</p>
-        
-        <div class="features-list">
-          <div class="feature-item">
-            <i class="fas fa-check-circle"></i>
-            <span>Custom business tools & utilities</span>
+          <div class="hero-capability-bar">
+            <a href="#software-development" class="hero-capability">
+              <div class="hero-capability-icon"><i class="fas fa-brain"></i></div>
+              <span>Software Development</span>
+              <p>AI-enabled systems, backend platforms, data pipelines, internal tools, and cloud-ready product architecture.</p>
+            </a>
+
+            <a href="#web-development" class="hero-capability">
+              <div class="hero-capability-icon"><i class="fas fa-globe"></i></div>
+              <span>Web Development</span>
+              <p>Modern web applications, secure dashboards, customer platforms, and frontend systems built for performance.</p>
+            </a>
+
+            <a href="#app-development" class="hero-capability">
+              <div class="hero-capability-icon"><i class="fas fa-mobile-screen-button"></i></div>
+              <span>App Development</span>
+              <p>Cross-platform and mobile-first experiences with production-ready deployment and operational reliability.</p>
+            </a>
           </div>
-          <div class="feature-item">
-            <i class="fas fa-check-circle"></i>
-            <span>AppKit & SwiftUI interfaces</span>
-          </div>
-          <div class="feature-item">
-            <i class="fas fa-check-circle"></i>
-            <span>Cross-platform compatibility</span>
-          </div>
-          <div class="feature-item">
-            <i class="fas fa-check-circle"></i>
-            <span>Enterprise automation solutions</span>
-          </div>
-        </div>
-        
-        <div class="mt-4">
-          <a href="quoteform.html" class="btn btn-primary">Get a Quote <i class="fas fa-arrow-right"></i></a>
         </div>
       </div>
-      
-      <div class="hero-ios-image" data-aos="fade-left">
-        <img src="https://res.cloudinary.com/dfzsolglz/image/upload/v1744566993/screen-macos15-large_2x_hrpez9.png" alt="macOS 15 Interface" class="mb-4" style="border-radius: var(--border-radius-lg); box-shadow: var(--shadow-xl); border: 3px solid rgba(37, 117, 252, 0.1);" />
-        
-        <div class="card service-card">
-          <div class="service-content">
-            <h3 class="service-title">Why Choose Custom macOS Software</h3>
-            <div class="pricing-features">
-              <div class="pricing-feature">
-                <i class="fas fa-star"></i>
-                <span><strong>Tailored Functionality</strong> - Built specifically for your unique business processes</span>
-              </div>
-              <div class="pricing-feature">
-                <i class="fas fa-star"></i>
-                <span><strong>Seamless Integration</strong> - Works with your existing Apple ecosystem</span>
-              </div>
-              <div class="pricing-feature">
-                <i class="fas fa-star"></i>
-                <span><strong>Improved Productivity</strong> - Automate repetitive tasks and streamline workflows</span>
-              </div>
-              <div class="pricing-feature">
-                <i class="fas fa-star"></i>
-                <span><strong>Competitive Advantage</strong> - Proprietary tools built for your specific needs</span>
-              </div>
-              <div class="pricing-feature">
-                <i class="fas fa-star"></i>
-                <span><strong>Enhanced Security</strong> - Custom security measures for your sensitive data</span>
-              </div>
+    </section>
+
+    <section class="stats-section">
+      <div class="container">
+        <div class="stats-grid">
+          <div class="stat-item">
+            <span class="stat-number">3</span>
+            <span class="stat-label">Core Service Tracks</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-number">30+</span>
+            <span class="stat-label">Projects Delivered</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-number">Full</span>
+            <span class="stat-label">Design to Deployment</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-number">UK</span>
+            <span class="stat-label">Based, Global Delivery</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section services-summary" id="service-overview">
+      <div class="container">
+        <div class="section-header">
+          <span class="subtitle">Core Services</span>
+          <h2>Three Clear Delivery Lanes</h2>
+          <p>The old fragmented service templates are gone here. This page is now a direct, modern overview of the three main ways Qoreon Labs delivers value.</p>
+        </div>
+
+        <div class="service-route-grid">
+          <a href="#software-development" class="service-route-card">
+            <div class="service-route-icon"><i class="fas fa-microchip"></i></div>
+            <h3>Software Development</h3>
+            <p>Custom backend systems, AI-enabled workflows, internal tools, cloud services, and data-heavy platforms engineered for long-term maintainability.</p>
+            <strong>Go to software development</strong>
+          </a>
+
+          <a href="#web-development" class="service-route-card">
+            <div class="service-route-icon"><i class="fas fa-window-maximize"></i></div>
+            <h3>Web Development</h3>
+            <p>Responsive websites, secure portals, admin dashboards, SaaS interfaces, and web platforms with cleaner UX and stronger frontend execution.</p>
+            <strong>Go to web development</strong>
+          </a>
+
+          <a href="#app-development" class="service-route-card">
+            <div class="service-route-icon"><i class="fas fa-mobile-alt"></i></div>
+            <h3>App Development</h3>
+            <p>Mobile and cross-platform apps designed for product launch, field usage, customer engagement, and enterprise workflows that need to work reliably.</p>
+            <strong>Go to app development</strong>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section service-lane" id="software-development">
+      <div class="container">
+        <div class="section-header">
+          <span class="subtitle">Software Development</span>
+          <h2>Custom Systems, AI Workflows, and Product Infrastructure</h2>
+          <p>For teams that need more than a brochure site, this is the lane for core product logic, backend services, internal dashboards, data systems, and AI-enabled software that supports real operations.</p>
+        </div>
+
+        <div class="product-highlight">
+          <div class="product-content">
+            <span class="product-badge"><i class="fas fa-server"></i> Software Development</span>
+            <h3>What this track usually includes</h3>
+            <p>We scope and build the underlying system, not just the interface. That means architecture, APIs, automation flows, dashboards, analytics layers, and cloud deployment patterns that can scale with the product.</p>
+            <ul class="product-points">
+              <li><i class="fas fa-check"></i> Custom backend architecture and API development</li>
+              <li><i class="fas fa-check"></i> AI feature integrations, workflow automation, and data processing</li>
+              <li><i class="fas fa-check"></i> Secure admin panels, internal tooling, and reporting systems</li>
+              <li><i class="fas fa-check"></i> Cloud deployment, monitoring, and performance hardening</li>
+            </ul>
+            <div class="service-meta">
+              <span><i class="fas fa-layer-group"></i> Backend platforms</span>
+              <span><i class="fas fa-shield-alt"></i> Secure architecture</span>
+              <span><i class="fas fa-chart-line"></i> Data workflows</span>
             </div>
-            <div class="text-center mt-4">
-              <a href="quoteform.html" class="btn btn-outline">Request a Quote</a>
+            <div class="product-actions">
+              <a href="quoteform" class="btn btn-primary">Start a Software Project</a>
+              <a href="services/software-development" class="btn btn-outline">Open Service Route</a>
+            </div>
+          </div>
+
+          <div class="product-media">
+            <img src="https://res.cloudinary.com/dfzsolglz/image/upload/v1744477907/image_femtga.png" alt="Software development and AI systems by Qoreon Labs" class="service-visual" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section service-lane service-lane--reverse" id="web-development">
+      <div class="container">
+        <div class="section-header">
+          <span class="subtitle">Web Development</span>
+          <h2>Secure Web Platforms That Feel Modern and Work Hard</h2>
+          <p>This covers the frontend and platform layer: customer-facing experiences, SaaS interfaces, dashboards, portals, and web systems that need strong usability without sacrificing performance or resilience.</p>
+        </div>
+
+        <div class="product-highlight">
+          <div class="product-content">
+            <span class="product-badge"><i class="fas fa-globe"></i> Web Development</span>
+            <h3>Built for launch quality, not placeholder quality</h3>
+            <p>We focus on modern layout systems, stronger visual hierarchy, responsive behavior, and clean component structure. The goal is a site or platform that looks credible and feels intentional across desktop and mobile.</p>
+            <ul class="product-points">
+              <li><i class="fas fa-check"></i> Marketing sites, portals, dashboards, and full web apps</li>
+              <li><i class="fas fa-check"></i> Responsive frontend systems with polished spacing and interaction</li>
+              <li><i class="fas fa-check"></i> Secure auth flows, form handling, and operational interfaces</li>
+              <li><i class="fas fa-check"></i> Performance tuning, deployment, and maintainable handoff</li>
+            </ul>
+            <div class="service-meta">
+              <span><i class="fas fa-display"></i> Responsive UI</span>
+              <span><i class="fas fa-bolt"></i> Fast delivery</span>
+              <span><i class="fas fa-lock"></i> Secure implementation</span>
+            </div>
+            <div class="product-actions">
+              <a href="quoteform" class="btn btn-primary">Start a Web Project</a>
+              <a href="services/web-development" class="btn btn-outline">Open Service Route</a>
+            </div>
+          </div>
+
+          <div class="product-media">
+            <img src="https://res.cloudinary.com/dfzsolglz/image/upload/v1744477899/web_app_kclxed.png" alt="Secure web platform development by Qoreon Labs" class="service-visual" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section service-lane" id="app-development">
+      <div class="container">
+        <div class="section-header">
+          <span class="subtitle">App Development</span>
+          <h2>Mobile and Cross-Platform Apps Designed for Real Use</h2>
+          <p>App work here is not the old iOS-only pitch. This track covers launch-ready mobile products, cross-platform builds, field applications, and operational apps where reliability matters as much as visuals.</p>
+        </div>
+
+        <div class="product-highlight">
+          <div class="product-content">
+            <span class="product-badge"><i class="fas fa-mobile-screen"></i> App Development</span>
+            <h3>From product concept to shipped app</h3>
+            <p>We build app experiences with clear user flows, stable backend connections, and deployment readiness in mind. That includes prototyping, system design, frontend buildout, and release preparation.</p>
+            <ul class="product-points">
+              <li><i class="fas fa-check"></i> Cross-platform app development for faster launch cycles</li>
+              <li><i class="fas fa-check"></i> Product UX, system design, and API-connected mobile flows</li>
+              <li><i class="fas fa-check"></i> Field-ready and enterprise-ready operational app logic</li>
+              <li><i class="fas fa-check"></i> Release support, iteration planning, and scaling roadmap</li>
+            </ul>
+            <div class="service-meta">
+              <span><i class="fas fa-mobile-alt"></i> Cross-platform delivery</span>
+              <span><i class="fas fa-cloud"></i> API connected</span>
+              <span><i class="fas fa-rocket"></i> Launch ready</span>
+            </div>
+            <div class="product-actions">
+              <a href="quoteform" class="btn btn-primary">Start an App Project</a>
+              <a href="services/app-development" class="btn btn-outline">Open Service Route</a>
+            </div>
+          </div>
+
+          <div class="product-media">
+            <img src="https://res.cloudinary.com/dfzsolglz/image/upload/v1744478036/Mobile-app-development-company-1_tbx9qx.webp" alt="App development and mobile systems by Qoreon Labs" class="service-visual" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section process-section">
+      <div class="container">
+        <div class="section-header">
+          <span class="subtitle">Delivery Process</span>
+          <h2>How Service Engagements Actually Run</h2>
+          <p>Whether the brief is software, web, or app development, the delivery model stays direct: define clearly, build properly, ship without the usual agency drift.</p>
+        </div>
+
+        <div class="process-grid">
+          <div class="process-step">
+            <div class="process-step-num">01</div>
+            <h3>Scope the product</h3>
+            <p>We clarify the actual deliverable, identify what matters in the first release, and remove scope noise before development starts.</p>
+          </div>
+          <div class="process-step">
+            <div class="process-step-num">02</div>
+            <h3>Build in production logic</h3>
+            <p>Design, frontend, backend, and deployment decisions are made with the live product in mind, not just the mockup or proposal deck.</p>
+          </div>
+          <div class="process-step">
+            <div class="process-step-num">03</div>
+            <h3>Launch and iterate</h3>
+            <p>Once the first working version ships, we tighten the system, improve the UX, and support the next phase of growth with less friction.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section faq-section" aria-label="Frequently asked questions about Qoreon Labs services">
+      <div class="container">
+        <div class="section-header">
+          <span class="subtitle">FAQ</span>
+          <h2>Questions Clients Usually Ask First</h2>
+          <p>Short answers to the questions that normally come up before a project starts.</p>
+        </div>
+
+        <div class="faq-grid">
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false">
+              Do you handle design and development together?
+              <i class="fas fa-chevron-down faq-chevron" aria-hidden="true"></i>
+            </button>
+            <div class="faq-answer" hidden>
+              <p>Yes. Most projects are handled end to end, including structure, visual direction, implementation, and deployment. If design work already exists, we can also build against an existing system.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false">
+              Are these fixed packages or custom scopes?
+              <i class="fas fa-chevron-down faq-chevron" aria-hidden="true"></i>
+            </button>
+            <div class="faq-answer" hidden>
+              <p>Custom scopes. The service lanes exist to make the site easier to understand, but actual project pricing depends on features, delivery pace, integrations, and complexity.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false">
+              Can one project include software, web, and app work together?
+              <i class="fas fa-chevron-down faq-chevron" aria-hidden="true"></i>
+            </button>
+            <div class="faq-answer" hidden>
+              <p>Yes. Many projects span all three. A typical build may include a backend system, a web admin interface, and a customer or field mobile app in the same engagement.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false">
+              What should we send before requesting a quote?
+              <i class="fas fa-chevron-down faq-chevron" aria-hidden="true"></i>
+            </button>
+            <div class="faq-answer" hidden>
+              <p>A rough brief is enough. Send the product goal, target users, must-have features, timeline constraints, and any references. We can help shape the rest from there.</p>
             </div>
           </div>
         </div>
       </div>
-    </div>
-  </div>
-</section>
+    </section>
 
-  <!-- Other Services Section -->
-  <section class="section services" id="services">
-    <div class="container">
-      <div class="section-header" data-aos="fade-up">
-        <span class="subtitle">What We Offer</span>
-        <h2>Our Other Development Services</h2>
-        <p>We provide end-to-end solutions to help businesses leverage technology for growth and innovation.</p>
-      </div>
-      
-      <div class="services-grid">
-        <!-- AI & Machine Learning -->
-        <div class="service-card" data-aos="fade-up" data-aos-delay="100">
-          <div class="service-icon">
-            <img src="https://res.cloudinary.com/dfzsolglz/image/upload/v1744477907/image_femtga.png" alt="AI & Machine Learning Solutions" />
-          </div>
-          <div class="service-content">
-            <h3 class="service-title">AI & Machine Learning</h3>
-            <p class="service-text">Custom artificial intelligence and machine learning solutions to automate processes, predict trends, and gain actionable insights from your data.</p>
-            <a href="services/software-development" class="btn btn-outline">View Service</a>
-          </div>
-        </div>
-        
-        <!-- Web Application Development -->
-        <div class="service-card" id="web-development" data-aos="fade-up" data-aos-delay="200">
-          <div class="service-icon">
-            <img src="https://res.cloudinary.com/dfzsolglz/image/upload/v1744477899/web_app_kclxed.png" alt="Web Application Development" />
-          </div>
-          <div class="service-content">
-            <h3 class="service-title">Web Application Development</h3>
-            <p class="service-text">Responsive, scalable, and secure web applications built with modern frameworks and best practices for optimal performance.</p>
-            <a href="services/web-development" class="btn btn-outline">View Service</a>
-          </div>
-        </div>
-        
-        <!-- Cross-Platform Mobile App Development -->
-        <div class="service-card" data-aos="fade-up" data-aos-delay="300">
-          <div class="service-icon">
-            <img src="https://res.cloudinary.com/dfzsolglz/image/upload/v1744478036/Mobile-app-development-company-1_tbx9qx.webp" alt="Mobile App Development" />
-          </div>
-          <div class="service-content">
-            <h3 class="service-title">Android Development</h3>
-            <p class="service-text">Native and cross-platform mobile applications with intuitive interfaces and seamless functionality for Android devices.</p>
-            <a href="services/app-development" class="btn btn-outline">View Service</a>
-          </div>
-        </div>
-        
-        <!-- Data Analytics & Visualization -->
-        <div class="service-card" data-aos="fade-up" data-aos-delay="400">
-          <div class="service-icon">
-            <img src="https://res.cloudinary.com/dfzsolglz/image/upload/v1744478392/original-045689ec2ea6c33fc92e91f39042e00a_qafgc4.webp" alt="Data Analytics & Visualization" />
-          </div>
-          <div class="service-content">
-            <h3 class="service-title">Data Analytics & Visualization</h3>
-            <p class="service-text">Transform complex data into clear, actionable insights with advanced analytics and intuitive visualization dashboards.</p>
-            <a href="services/software-development" class="btn btn-outline">View Service</a>
-          </div>
-        </div>
-        
-        <!-- Cloud Solutions -->
-        <div class="service-card" data-aos="fade-up" data-aos-delay="500">
-          <div class="service-icon">
-            <img src="https://res.cloudinary.com/dfzsolglz/image/upload/v1744478560/saas-concept-collage_k9yqzv.jpg" alt="Cloud Solutions" />
-          </div>
-          <div class="service-content">
-            <h3 class="service-title">Cloud Solutions</h3>
-            <p class="service-text">Scalable, secure, and cost-effective cloud infrastructure design, migration, and management across major platforms.</p>
-            <a href="services/software-development" class="btn btn-outline">View Service</a>
-          </div>
-        </div>
-        
-        <!-- Digital Transformation -->
-        <div class="service-card" data-aos="fade-up" data-aos-delay="600">
-          <div class="service-icon">
-            <img src="https://res.cloudinary.com/dfzsolglz/image/upload/v1744478569/L3-Digital-transformation-of-tax-administration-V2-shutterstock_2070595583_u5jtuj.jpg" alt="Digital Transformation Consulting" />
-          </div>
-          <div class="service-content">
-            <h3 class="service-title">Digital Transformation</h3>
-            <p class="service-text">Strategic consulting to help your organization leverage technology for competitive advantage and operational excellence.</p>
-            <a href="quoteform.html" class="btn btn-outline">Request a Quote</a>
-          </div>
+    <section class="section cta">
+      <div class="container">
+        <div>
+          <h2>Need a cleaner plan for your next product build?</h2>
+          <p>If the current brief is messy, that is normal. We can help tighten the scope, recommend the right delivery lane, and turn the idea into a buildable product roadmap.</p>
+          <a href="quoteform" class="btn btn-light">Request a Quote <i class="fas fa-arrow-right"></i></a>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
+  </main>
 
-  <!-- CTA Section -->
-  <section class="section cta">
-    <div class="cta-pattern"></div>
-    <div class="container">
-      <div data-aos="fade-up">
-        <h2>Ready to Build Your Next App?</h2>
-        <p>Let's discuss how our development expertise can bring your app idea to life and help you reach your business goals.</p>
-        <a href="quoteform.html" class="btn btn-light">Request a Free Quote <i class="fas fa-arrow-right"></i></a>
-      </div>
-    </div>
-  </section>
-
-  <!-- Footer -->
   <footer>
-    <!-- Bubbles Animation -->
-    <div id="footer-bubbles"></div>
-    
-    <!-- Decorative Elements -->
-    <div class="footer-decoration">
-      <div class="footer-blob blob-1"></div>
-      <div class="footer-blob blob-2"></div>
-    </div>
-    
-    <!-- Footer Content -->
     <div class="footer-content">
       <div class="container">
-        <!-- Main Footer Area -->
         <div class="footer-main">
-          <!-- About Section -->
           <div class="footer-block footer-about">
             <div class="footer-brand">
               <a href="index.html" class="footer-logo">QOREON LABS</a>
-              <p>Pioneering software and app development company dedicated to bringing intelligent, future-ready solutions to the digital landscape.</p>
+              <p>UK-based AI development company building custom software systems, secure web platforms, and production-ready apps for enterprise and defence-focused teams.</p>
             </div>
-            
-            <!-- Social Media Links -->
-            <div class="footer-social">
-              <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
-              <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
-              <a href="#" class="social-link"><i class="fab fa-linkedin-in"></i></a>
-              <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
-              <a href="#" class="social-link"><i class="fab fa-github"></i></a>
-            </div>
-            
-            <!-- Newsletter Subscription -->
-            <div class="footer-newsletter">
-              <h3>Subscribe to Our Newsletter</h3>
-              <p>Stay updated with our latest news and insights.</p>
-              <form class="newsletter-form">
-                <input type="email" class="newsletter-input" placeholder="Your email address">
-                <button type="submit" class="newsletter-btn">
-                  <i class="fas fa-paper-plane"></i>
-                </button>
-              </form>
-            </div>
+            <a href="quoteform" class="btn btn-outline">Discuss a Project</a>
           </div>
-          
-          <!-- Quick Links -->
+
           <div class="footer-block">
             <h3>Quick Links</h3>
             <div class="footer-links">
               <a href="index.html" class="footer-link">Home</a>
-              <a href="about-us.html" class="footer-link">About Us</a>
-              <a href="services.html" class="footer-link">Services</a>
-              <a href="blogs.html" class="footer-link">Blog</a>
-              <a href="polymonit-wallet-tracker.html" class="footer-link">Polymonit</a>
-              <a href="index.html#contact" class="footer-link">Contact</a>
+              <a href="about-us" class="footer-link">About</a>
+              <a href="blogs" class="footer-link">Blog</a>
+              <a href="polymonit-wallet-tracker" class="footer-link">Polymonit</a>
+              <a href="quoteform" class="footer-link">Get A Quote</a>
             </div>
           </div>
-          
-          <!-- Services Links -->
+
           <div class="footer-block">
-            <h3>Our Services</h3>
+            <h3>Service Routes</h3>
             <div class="footer-links">
-              <a href="services/app-development" class="footer-link">App Development</a>
-              <a href="services/software-development" class="footer-link">AI &amp; Software</a>
+              <a href="services/software-development" class="footer-link">Software Development</a>
               <a href="services/web-development" class="footer-link">Web Development</a>
-              <a href="services/app-development" class="footer-link">Mobile Apps</a>
-              <a href="services/software-development" class="footer-link">Data Analytics</a>
-              <a href="services/software-development" class="footer-link">Cloud Solutions</a>
+              <a href="services/app-development" class="footer-link">App Development</a>
+              <a href="#software-development" class="footer-link">Backend &amp; AI Systems</a>
+              <a href="#web-development" class="footer-link">Secure Web Platforms</a>
+              <a href="#app-development" class="footer-link">Mobile &amp; Cross-Platform Apps</a>
             </div>
           </div>
-          
-          <!-- Contact Information -->
+
           <div class="footer-block">
-            <h3>Contact Info</h3>
+            <h3>Contact</h3>
             <div class="footer-contact">
               <div class="footer-contact-item">
                 <i class="fas fa-map-marker-alt"></i>
@@ -1880,11 +660,11 @@
               </div>
               <div class="footer-contact-item">
                 <i class="fas fa-envelope"></i>
-                <span>support@qoreonslabs.com</span>
+                <a href="mailto:support@qoreonlabs.com">support@qoreonlabs.com</a>
               </div>
               <div class="footer-contact-item">
                 <i class="fas fa-phone-alt"></i>
-                <span>+601161322729</span>
+                <a href="tel:+447883302109">+44 7883 302109</a>
               </div>
               <div class="footer-contact-item">
                 <i class="fas fa-clock"></i>
@@ -1893,168 +673,72 @@
             </div>
           </div>
         </div>
-        
-        <!-- Divider Line -->
+
         <div class="footer-divider"></div>
-        
-        <!-- Copyright Section -->
+
         <div class="footer-bottom">
           <div class="footer-copyright">
-            &copy; <span id="year">2025</span> <a href="index.html">QOREON LABS LTD</a>. All Rights Reserved.
-          </div>
-          
-          <div class="footer-links-inline">
-            <a href="#">Privacy Policy</a>
-            <a href="#">Terms of Service</a>
-            <a href="#">Cookie Policy</a>
+            &copy; <span id="year">2026</span> <a href="index.html">QOREON LABS LTD</a>. All Rights Reserved.
           </div>
         </div>
       </div>
     </div>
   </footer>
 
-  <!-- AOS Animation -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
-  
+  <script src="revamp.js" defer></script>
   <script>
-    // Set the current year dynamically in the footer
-    document.getElementById('year').textContent = new Date().getFullYear();
-    
-    // Initialize AOS Animation Library
-    document.addEventListener('DOMContentLoaded', function() {
-      AOS.init({
-        duration: 800,
-        easing: 'ease-in-out',
-        once: true,
-        mirror: false
-      });
-      
-      // Create particles for the background
-      createParticles();
-      
-      // Create bubbles for footer
-      createBubbles();
-      
-      // Navigation functionality
-      initNavigation();
-    });
-    
-    // Create particles for the background
-    function createParticles() {
-      const container = document.getElementById('particles-container');
-      const particleCount = 20;
-      
-      if (!container) return;
-      
-      for (let i = 0; i < particleCount; i++) {
-        const particle = document.createElement('div');
-        particle.classList.add('particle');
-        
-        // Random size between 30px and 100px
-        const size = Math.random() * 70 + 30;
-        particle.style.width = `${size}px`;
-        particle.style.height = `${size}px`;
-        
-        // Random position
-        particle.style.left = `${Math.random() * 100}vw`;
-        particle.style.top = `${Math.random() * 100}vh`;
-        
-        // Random opacity
-        particle.style.opacity = Math.random() * 0.3 + 0.1;
-        
-        // Random animation delay
-        particle.style.animationDelay = `${Math.random() * 15}s`;
-        
-        // Random animation duration
-        particle.style.animationDuration = `${Math.random() * 15 + 10}s`;
-        
-        container.appendChild(particle);
+    document.addEventListener('DOMContentLoaded', function () {
+      var navMenu = document.getElementById('nav-menu');
+      var navToggle = document.getElementById('nav-toggle');
+      var navClose = document.getElementById('nav-close');
+      var navLinks = document.querySelectorAll('.nav-link');
+      var yearNode = document.getElementById('year');
+      var faqQuestions = document.querySelectorAll('.faq-question');
+
+      if (yearNode) {
+        yearNode.textContent = new Date().getFullYear();
       }
-    }
-    
-    // Create bubble animation for footer
-    function createBubbles() {
-      const container = document.getElementById('footer-bubbles');
-      const bubbleCount = 30;
-      
-      if (!container) return;
-      
-      for (let i = 0; i < bubbleCount; i++) {
-        const bubble = document.createElement('div');
-        bubble.classList.add('bubble');
-        
-        // Random size between 5px and 30px
-        const size = Math.random() * 25 + 5;
-        bubble.style.width = `${size}px`;
-        bubble.style.height = `${size}px`;
-        
-        // Random horizontal position
-        bubble.style.left = `${Math.random() * 100}%`;
-        
-        // Random animation duration between 8s and 20s
-        const duration = Math.random() * 12 + 8;
-        bubble.style.animationDuration = `${duration}s`;
-        
-        // Random animation delay
-        bubble.style.animationDelay = `${Math.random() * 5}s`;
-        
-        // Random opacity
-        bubble.style.opacity = (Math.random() * 0.15).toFixed(2);
-        
-        container.appendChild(bubble);
-      }
-    }
-    
-    // Initialize navigation functionality
-    function initNavigation() {
-      const header = document.getElementById('header');
-      const navToggle = document.getElementById('nav-toggle');
-      const navClose = document.getElementById('nav-close');
-      const navMenu = document.getElementById('nav-menu');
-      const navLinks = document.querySelectorAll('.nav-link');
-      
-      if (!navToggle || !navMenu || !navLinks.length) return;
-      
-      // Toggle menu
-      if (navToggle) {
-        navToggle.addEventListener('click', () => {
+
+      if (navToggle && navMenu) {
+        navToggle.addEventListener('click', function () {
           navMenu.classList.add('show');
         });
       }
-      
-      if (navClose) {
-        navClose.addEventListener('click', () => {
+
+      if (navClose && navMenu) {
+        navClose.addEventListener('click', function () {
           navMenu.classList.remove('show');
         });
       }
-      
-      // Close menu when clicking nav links
-      navLinks.forEach(link => {
-        link.addEventListener('click', () => {
-          navMenu.classList.remove('show');
-        });
-      });
-      
-      // Smooth scrolling for all links
-      document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-        anchor.addEventListener('click', function(e) {
-          e.preventDefault();
-          
-          const targetId = this.getAttribute('href');
-          if (targetId === '#') return;
-          
-          const targetElement = document.querySelector(targetId);
-          
-          if (targetElement) {
-            window.scrollTo({
-              top: targetElement.offsetTop - 80,
-              behavior: 'smooth'
-            });
+
+      navLinks.forEach(function (link) {
+        link.addEventListener('click', function () {
+          if (navMenu) {
+            navMenu.classList.remove('show');
           }
         });
       });
-    }
+
+      faqQuestions.forEach(function (button) {
+        button.addEventListener('click', function () {
+          var isOpen = button.getAttribute('aria-expanded') === 'true';
+          faqQuestions.forEach(function (otherButton) {
+            otherButton.setAttribute('aria-expanded', 'false');
+            var otherAnswer = otherButton.nextElementSibling;
+            if (otherAnswer) {
+              otherAnswer.hidden = true;
+            }
+          });
+
+          if (!isOpen) {
+            button.setAttribute('aria-expanded', 'true');
+            if (button.nextElementSibling) {
+              button.nextElementSibling.hidden = false;
+            }
+          }
+        });
+      });
+    });
   </script>
-  <script src="revamp.js" defer></script>
 </body>
 </html>
