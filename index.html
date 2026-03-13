@@ -1529,32 +1529,79 @@
 
   <!-- Hero Section -->
   <section class="hero" id="home">
-    <!-- New animations added here -->
-    <div class="bubble-container" id="bubble-container"></div>
-    <div class="network-animation" id="network-animation"></div>
-    
-    <div class="floating-shapes">
-      <div class="shape shape1"></div>
-      <div class="shape shape2"></div>
-      <div class="shape shape3"></div>
-      <div class="shape shape4"></div>
+    <div class="hero-video-wrap" aria-hidden="true">
+      <video
+        class="hero-video"
+        autoplay
+        muted
+        loop
+        playsinline
+        preload="metadata"
+        poster="https://res.cloudinary.com/dfzsolglz/image/upload/v1744477640/3d-illustration-blue-purple-futuristic-sci-fi-techno-lights-cool-background_ueaecd.jpg"
+      >
+        <source src="https://res.cloudinary.com/dfzsolglz/video/upload/v1765797719/Video_2_vs7mjk.mp4" type="video/mp4" />
+      </video>
     </div>
-    
+    <div class="hero-noise" aria-hidden="true"></div>
+    <div class="hero-grid-lines" aria-hidden="true"></div>
     <div class="hero-overlay"></div>
     
     <div class="container">
       <div class="hero-container">
         <div class="hero-content" data-aos="fade-right" data-aos-delay="200">
-          <h1>Powering the <br>Future with <br> <span class="text-gradient">Dual-Use AI<br>for Defense and Enterprise</span></h1>
-          <p>From AI-powered platforms to red-teaming and system security, Qoreon Labs delivers intelligent, future-ready solutions designed to strengthen both commercial innovation and defense resilience</p>
+          <span class="hero-eyebrow"><i class="fas fa-circle"></i> Dual-use AI systems for enterprise and defense</span>
+          <h1>Powering the Future with <span class="text-gradient">Dual-Use AI for Defense and Enterprise</span></h1>
+          <p>From AI-powered platforms to red-teaming and system security, Qoreon Labs delivers intelligent, future-ready solutions designed to strengthen both commercial innovation and defense resilience.</p>
           <div class="hero-btns">
             <a href="services.html" class="btn btn-primary">Our Services <i class="fas fa-arrow-right"></i></a>
             <a href="quoteform.html" class="btn btn-light">Get A Quote</a>
           </div>
+          <div class="hero-proof-list">
+            <span>AI &amp; LLM Security</span>
+            <span>Secure Web Platforms</span>
+            <span>Resilient Cloud Solutions</span>
+          </div>
         </div>
         
-        <div class="hero-image" data-aos="fade-left" data-aos-delay="400">
-          <img src="https://res.cloudinary.com/dfzsolglz/image/upload/v1744477640/3d-illustration-blue-purple-futuristic-sci-fi-techno-lights-cool-background_ueaecd.jpg" alt="QOREON LABS Digital Transformation" />
+        <div class="hero-stage" data-aos="fade-left" data-aos-delay="400">
+          <div class="hero-panel hero-panel-top">
+            <span class="hero-panel-label">Delivery</span>
+            <p>From red-teaming to intelligent platforms built for enterprise and defense resilience.</p>
+          </div>
+
+          <div class="hero-panel hero-panel-main">
+            <div class="hero-panel-header">
+              <span class="hero-panel-label">Operational Stack</span>
+              <span class="hero-panel-status">Mission-ready</span>
+            </div>
+
+            <div class="hero-visual-shell">
+              <img src="https://res.cloudinary.com/dfzsolglz/image/upload/v1744477640/3d-illustration-blue-purple-futuristic-sci-fi-techno-lights-cool-background_ueaecd.jpg" alt="QOREON LABS Digital Transformation" />
+            </div>
+
+            <div class="hero-signal-row">
+              <div class="hero-signal-item">
+                <span>Focus</span>
+                <strong>AI &amp; LLM Security</strong>
+              </div>
+              <div class="hero-signal-item">
+                <span>Platform</span>
+                <strong>Secure Web Systems</strong>
+              </div>
+              <div class="hero-signal-item">
+                <span>Scale</span>
+                <strong>Cloud Resilience</strong>
+              </div>
+            </div>
+          </div>
+
+          <div class="hero-panel hero-panel-bottom">
+            <span class="hero-panel-label">Capabilities</span>
+            <ul class="hero-mini-list">
+              <li><i class="fas fa-shield-alt"></i> Security by design</li>
+              <li><i class="fas fa-brain"></i> Future-ready AI systems</li>
+            </ul>
+          </div>
         </div>
       </div>
     </div>
