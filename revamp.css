@@ -2793,7 +2793,7 @@ header .logo,
   height: 100%;
   object-fit: cover;
   transform: scale(1.08);
-  filter: grayscale(1) saturate(0) blur(14px) contrast(1.04) brightness(0.2);
+  filter: grayscale(1) saturate(0) blur(10px) contrast(1.06) brightness(0.34);
 }
 
 .section-video-overlay {
@@ -2801,31 +2801,29 @@ header .logo,
 }
 
 .section-video-wrap--pain {
-  opacity: 0.24;
+  opacity: 0.42;
 }
 
 .section-video-wrap--pain .section-video {
-  filter: grayscale(1) saturate(0) blur(18px) contrast(1.06) brightness(0.19);
+  filter: grayscale(1) saturate(0) blur(12px) contrast(1.08) brightness(0.36);
 }
 
 .section-video-overlay--pain {
   background:
-    radial-gradient(circle at 50% 25%, rgba(54, 112, 255, 0.09), transparent 55%),
-    linear-gradient(180deg, rgba(5, 5, 6, 0.82) 0%, rgba(5, 5, 6, 0.9) 52%, rgba(5, 5, 6, 0.96) 100%);
+    linear-gradient(180deg, rgba(5, 5, 6, 0.68) 0%, rgba(5, 5, 6, 0.8) 52%, rgba(5, 5, 6, 0.9) 100%);
 }
 
 .section-video-wrap--product {
-  opacity: 0.3;
+  opacity: 0.46;
 }
 
 .section-video-wrap--product .section-video {
-  filter: grayscale(1) saturate(0) blur(16px) contrast(1.08) brightness(0.18);
+  filter: grayscale(1) saturate(0) blur(11px) contrast(1.08) brightness(0.34);
 }
 
 .section-video-overlay--product {
   background:
-    radial-gradient(circle at 68% 28%, rgba(64, 124, 255, 0.1), transparent 58%),
-    linear-gradient(180deg, rgba(5, 5, 6, 0.8) 0%, rgba(5, 5, 6, 0.9) 54%, rgba(5, 5, 6, 0.96) 100%);
+    linear-gradient(180deg, rgba(5, 5, 6, 0.66) 0%, rgba(5, 5, 6, 0.8) 54%, rgba(5, 5, 6, 0.9) 100%);
 }
 
 .section-header {
@@ -2850,42 +2848,35 @@ header .logo,
   inset: 0;
   pointer-events: none;
   z-index: 0;
+  background: none !important;
 }
 
 .features::before {
-  background:
-    radial-gradient(circle at 30% 38%, rgba(44, 118, 255, 0.13), transparent 58%),
-    radial-gradient(circle at 76% 12%, rgba(255, 255, 255, 0.035), transparent 70%);
+  background: none !important;
 }
 
 .services::before {
-  background:
-    radial-gradient(circle at 84% 10%, rgba(44, 118, 255, 0.08), transparent 54%),
-    radial-gradient(circle at 12% 80%, rgba(255, 255, 255, 0.025), transparent 72%);
+  background: none !important;
 }
 
 .partners::before {
-  background:
-    radial-gradient(circle at 18% 20%, rgba(44, 118, 255, 0.07), transparent 55%),
-    radial-gradient(circle at 88% 12%, rgba(255, 255, 255, 0.028), transparent 72%);
+  background: none !important;
 }
 
 .products-showcase::before {
-  background: radial-gradient(circle at 82% 16%, rgba(44, 118, 255, 0.08), transparent 54%);
+  background: none !important;
 }
 
 .pain-points-section::before {
-  background: radial-gradient(circle at 22% 16%, rgba(44, 118, 255, 0.07), transparent 56%);
+  background: none !important;
 }
 
 .process-section::before {
-  background:
-    radial-gradient(circle at 82% 12%, rgba(44, 118, 255, 0.075), transparent 54%),
-    radial-gradient(circle at 10% 78%, rgba(255, 255, 255, 0.022), transparent 74%);
+  background: none !important;
 }
 
 .contact::before {
-  background: radial-gradient(circle at 50% 0%, rgba(255, 255, 255, 0.04), transparent 70%);
+  background: none !important;
 }
 
 .services::after,
@@ -2896,12 +2887,12 @@ header .logo,
   inset: 0;
   pointer-events: none;
   z-index: 1;
-  opacity: 0.05;
+  opacity: 0.075;
   background-image:
-    linear-gradient(rgba(92, 132, 255, 0.06) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(92, 132, 255, 0.05) 1px, transparent 1px),
-    radial-gradient(circle at 1px 1px, rgba(164, 190, 255, 0.12) 1px, transparent 0);
-  background-size: 46px 46px, 46px 46px, 138px 138px;
+    linear-gradient(rgba(255, 255, 255, 0.06) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.05) 1px, transparent 1px),
+    radial-gradient(circle at 1px 1px, rgba(255, 255, 255, 0.12) 1px, transparent 0);
+  background-size: 42px 42px, 42px 42px, 126px 126px;
   background-position: center center;
   mask-image: linear-gradient(180deg, transparent 0%, #000 15%, #000 85%, transparent 100%);
   -webkit-mask-image: linear-gradient(180deg, transparent 0%, #000 15%, #000 85%, transparent 100%);
@@ -2931,7 +2922,7 @@ header .logo,
   border-radius: 24px !important;
   box-shadow:
     0 24px 54px rgba(0, 0, 0, 0.32),
-    0 0 42px rgba(44, 118, 255, 0.07) !important;
+    0 0 0 1px rgba(255, 255, 255, 0.04) !important;
 }
 
 .feature-card:hover,
@@ -2945,7 +2936,7 @@ header .logo,
 .product-content:hover {
   box-shadow:
     0 34px 78px rgba(0, 0, 0, 0.42),
-    0 0 54px rgba(44, 118, 255, 0.1) !important;
+    0 0 0 1px rgba(255, 255, 255, 0.08) !important;
 }
 
 .feature-card,
@@ -2991,7 +2982,7 @@ header .logo,
   border-radius: 30px !important;
   box-shadow:
     0 30px 74px rgba(0, 0, 0, 0.38),
-    0 0 54px rgba(44, 118, 255, 0.08) !important;
+    0 0 0 1px rgba(255, 255, 255, 0.05) !important;
 }
 
 .cta h2 {
