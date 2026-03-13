@@ -36,6 +36,7 @@
     tagRevealTargets();
     initRevealObserver();
     initHeaderState();
+    initNavDropdowns();
     initHeroScene();
     initBackToTop();
     initRippleButtons();
@@ -127,6 +128,83 @@
 
     updateHeader();
     window.addEventListener('scroll', updateHeader, { passive: true });
+  }
+
+  function initNavDropdowns() {
+    var dropdownItems = document.querySelectorAll('.nav-item--has-dropdown');
+
+    if (!dropdownItems.length) {
+      return;
+    }
+
+    var isMobile = function () {
+      return window.matchMedia('(max-width: 980px)').matches;
+    };
+
+    var closeAll = function () {
+      dropdownItems.forEach(function (item) {
+        item.classList.remove('is-open');
+        var link = item.querySelector('.nav-link--dropdown');
+        if (link) {
+          link.setAttribute('aria-expanded', 'false');
+        }
+      });
+    };
+
+    dropdownItems.forEach(function (item) {
+      var link = item.querySelector('.nav-link--dropdown');
+
+      if (!link) {
+        return;
+      }
+
+      link.addEventListener('click', function (event) {
+        if (!isMobile()) {
+          return;
+        }
+
+        if (!item.classList.contains('is-open')) {
+          event.preventDefault();
+          closeAll();
+          item.classList.add('is-open');
+          link.setAttribute('aria-expanded', 'true');
+        }
+      });
+
+      link.addEventListener('keydown', function (event) {
+        if (event.key !== 'Enter' && event.key !== ' ' && event.key !== 'ArrowDown') {
+          return;
+        }
+
+        if (!isMobile()) {
+          return;
+        }
+
+        event.preventDefault();
+        var shouldOpen = !item.classList.contains('is-open');
+        closeAll();
+        if (shouldOpen) {
+          item.classList.add('is-open');
+          link.setAttribute('aria-expanded', 'true');
+        }
+      });
+    });
+
+    document.addEventListener('click', function (event) {
+      var clickedInside = Array.prototype.some.call(dropdownItems, function (item) {
+        return item.contains(event.target);
+      });
+
+      if (!clickedInside) {
+        closeAll();
+      }
+    });
+
+    window.addEventListener('resize', function () {
+      if (!isMobile()) {
+        closeAll();
+      }
+    });
   }
 
   function initBackToTop() {

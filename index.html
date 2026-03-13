@@ -1611,7 +1611,17 @@
           <ul class="nav-list">
             <li><a href="#home" class="nav-link active">Home</a></li>
             <li><a href="about-us" class="nav-link">About</a></li>
-            <li><a href="services" class="nav-link">Services</a></li>
+            <li class="nav-item nav-item--has-dropdown">
+              <a href="services" class="nav-link nav-link--dropdown" aria-haspopup="true" aria-expanded="false">
+                Services
+                <i class="fas fa-chevron-down nav-caret" aria-hidden="true"></i>
+              </a>
+              <div class="nav-dropdown" role="menu" aria-label="Services">
+                <a href="services/software-development" class="nav-dropdown-link" role="menuitem">Software Development</a>
+                <a href="services/web-development" class="nav-dropdown-link" role="menuitem">Web Development</a>
+                <a href="services/app-development" class="nav-dropdown-link" role="menuitem">App Development</a>
+              </div>
+            </li>
             <li><a href="#contact" class="nav-link">Contact</a></li>
           </ul>
           
@@ -1764,6 +1774,12 @@
 
   <!-- Pain Points Section -->
   <section class="section pain-points-section" aria-label="Common challenges businesses face with AI and software development">
+    <div class="section-video-wrap section-video-wrap--pain" aria-hidden="true">
+      <video class="section-video" autoplay muted loop playsinline preload="metadata">
+        <source src="https://res.cloudinary.com/dsqqxueuo/video/upload/v1773414460/3_ycf6ku.mp4" type="video/mp4" />
+      </video>
+    </div>
+    <div class="section-video-overlay section-video-overlay--pain" aria-hidden="true"></div>
     <div class="container">
       <div class="section-header" data-aos="fade-up">
         <span class="subtitle">The Problem</span>
@@ -2008,6 +2024,12 @@
 
   <!-- Product Showcase Section -->
   <section class="section products-showcase" id="products">
+    <div class="section-video-wrap section-video-wrap--product" aria-hidden="true">
+      <video class="section-video" autoplay muted loop playsinline preload="metadata">
+        <source src="https://res.cloudinary.com/dsqqxueuo/video/upload/v1773414452/Understanding_the_Manuals_gzeq7n.mp4" type="video/mp4" />
+      </video>
+    </div>
+    <div class="section-video-overlay section-video-overlay--product" aria-hidden="true"></div>
     <div class="container">
       <div class="section-header" data-aos="fade-up">
         <span class="subtitle">Shipped Product</span>
