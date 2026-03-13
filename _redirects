@@ -1,7 +1,7 @@
-/services /services.html 200
-/services/web-development /services/web-development.html 200
-/services/software-development /services/software-development.html 200
-/services/app-development /services/app-development.html 200
+/services /services/index.html 200
+/services/web-development /services/web-development/index.html 200
+/services/software-development /services/software-development/index.html 200
+/services/app-development /services/app-development/index.html 200
 /about-us /about-us.html 200
 /blogs /blogs.html 200
 /the-future-of-ai-driven-development /the-future-of-ai-driven-development.html 200
