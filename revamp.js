@@ -38,6 +38,7 @@
     initHeaderState();
     initNavDropdowns();
     initHeroScene();
+    initSectionVideos();
     initBackToTop();
     initRippleButtons();
     initCardTilt();
@@ -259,6 +260,98 @@
     if (playback && typeof playback.catch === 'function') {
       playback.catch(markFallback);
     }
+  }
+
+  function initSectionVideos() {
+    var videos = document.querySelectorAll('.section-video');
+
+    if (!videos.length) {
+      return;
+    }
+
+    var primeVideo = function (video) {
+      video.muted = true;
+      video.defaultMuted = true;
+      video.autoplay = true;
+      video.loop = true;
+      video.playsInline = true;
+      video.preload = 'auto';
+      video.setAttribute('muted', '');
+      video.setAttribute('autoplay', '');
+      video.setAttribute('loop', '');
+      video.setAttribute('playsinline', '');
+      video.setAttribute('webkit-playsinline', 'true');
+    };
+
+    var tryPlay = function (video) {
+      primeVideo(video);
+
+      var playback = video.play();
+      if (playback && typeof playback.catch === 'function') {
+        playback.catch(function () {
+          window.setTimeout(function () {
+            primeVideo(video);
+            var retry = video.play();
+            if (retry && typeof retry.catch === 'function') {
+              retry.catch(function () {});
+            }
+          }, 180);
+        });
+      }
+    };
+
+    videos.forEach(function (video) {
+      primeVideo(video);
+
+      if (video.readyState >= 2) {
+        tryPlay(video);
+      } else {
+        video.addEventListener('loadeddata', function () {
+          tryPlay(video);
+        }, { once: true });
+        video.addEventListener('canplay', function () {
+          tryPlay(video);
+        }, { once: true });
+      }
+    });
+
+    if (!('IntersectionObserver' in window)) {
+      videos.forEach(tryPlay);
+      return;
+    }
+
+    var observer = new IntersectionObserver(function (entries) {
+      entries.forEach(function (entry) {
+        var video = entry.target;
+
+        if (entry.isIntersecting) {
+          tryPlay(video);
+          return;
+        }
+
+        if (!reduceMotion) {
+          video.pause();
+        }
+      });
+    }, {
+      threshold: 0.08,
+      rootMargin: '160px 0px'
+    });
+
+    videos.forEach(function (video) {
+      observer.observe(video);
+    });
+
+    document.addEventListener('visibilitychange', function () {
+      if (document.hidden) {
+        videos.forEach(function (video) {
+          video.pause();
+        });
+        return;
+      }
+
+      videos.forEach(tryPlay);
+    });
   }
 
   function initRippleButtons() {
