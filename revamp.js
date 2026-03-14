@@ -302,44 +302,14 @@
 
     videos.forEach(function (video) {
       primeVideo(video);
+      video.load();
+      tryPlay(video);
 
-      if (video.readyState >= 2) {
-        tryPlay(video);
-      } else {
-        video.addEventListener('loadeddata', function () {
+      ['loadedmetadata', 'loadeddata', 'canplay', 'canplaythrough'].forEach(function (eventName) {
+        video.addEventListener(eventName, function () {
           tryPlay(video);
         }, { once: true });
-        video.addEventListener('canplay', function () {
-          tryPlay(video);
-        }, { once: true });
-      }
-    });
-
-    if (!('IntersectionObserver' in window)) {
-      videos.forEach(tryPlay);
-      return;
-    }
-
-    var observer = new IntersectionObserver(function (entries) {
-      entries.forEach(function (entry) {
-        var video = entry.target;
-
-        if (entry.isIntersecting) {
-          tryPlay(video);
-          return;
-        }
-
-        if (!reduceMotion) {
-          video.pause();
-        }
       });
-    }, {
-      threshold: 0.08,
-      rootMargin: '160px 0px'
-    });
-
-    videos.forEach(function (video) {
-      observer.observe(video);
     });
 
     document.addEventListener('visibilitychange', function () {
