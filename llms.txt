@@ -15,30 +15,30 @@ Key facts:
 ## Services
 
 - [Custom AI systems](https://qoreonlabs.com/#custom-ai): AI built into a real product or platform, including conversational and voice AI, integration with your content and users, private or cloud deployment, and testing before launch.
-- [AI development](https://qoreonlabs.com/ai-development.html): AI features in products and websites: search that answers questions, assistants that know your data, and document reading.
-- [AI automation](https://qoreonlabs.com/ai-automation.html): Automations that reply to enquiries in minutes, qualify leads, book appointments and update your CRM, using the tools you already have.
-- [Workflow automation](https://qoreonlabs.com/workflow-automation.html): Connecting forms, spreadsheets, CRM, accounts and chat tools so information moves on its own, with monitoring and alerts.
-- [Custom software development](https://qoreonlabs.com/custom-software-development.html): Workflow systems, operations tools and business rules, connected to the tools a business already uses.
-- [Business dashboards](https://qoreonlabs.com/business-dashboard-development.html): Sales, orders, stock and finance in one live view, with roles, alerts and weekly reports.
-- [Internal tools](https://qoreonlabs.com/internal-tools-development.html): Admin panels, approval workflows, roles and audit logs that replace spreadsheets.
-- [Business web apps](https://qoreonlabs.com/business-web-app-development.html): Web apps for bookings, orders and payments, plus the staff tools behind them.
-- [Customer portals](https://qoreonlabs.com/customer-portal-development.html): Portals where clients track orders, pay invoices, download documents and reorder on their own.
-- [MVP development](https://qoreonlabs.com/mvp-development.html): Focused MVPs for startups: iPhone apps, web apps and the dashboards behind them.
-- [SaaS development](https://qoreonlabs.com/saas-development.html): SaaS products end to end: sign-up, teams, Stripe subscriptions, admin tools and the product itself.
-- [All services](https://qoreonlabs.com/services.html): Websites, dashboards, internal tools, web apps, iPhone apps and AI automation.
+- [AI development](https://qoreonlabs.com/ai-development): AI features in products and websites: search that answers questions, assistants that know your data, and document reading.
+- [AI automation](https://qoreonlabs.com/ai-automation): Automations that reply to enquiries in minutes, qualify leads, book appointments and update your CRM, using the tools you already have.
+- [Workflow automation](https://qoreonlabs.com/workflow-automation): Connecting forms, spreadsheets, CRM, accounts and chat tools so information moves on its own, with monitoring and alerts.
+- [Custom software development](https://qoreonlabs.com/custom-software-development): Workflow systems, operations tools and business rules, connected to the tools a business already uses.
+- [Business dashboards](https://qoreonlabs.com/business-dashboard-development): Sales, orders, stock and finance in one live view, with roles, alerts and weekly reports.
+- [Internal tools](https://qoreonlabs.com/internal-tools-development): Admin panels, approval workflows, roles and audit logs that replace spreadsheets.
+- [Business web apps](https://qoreonlabs.com/business-web-app-development): Web apps for bookings, orders and payments, plus the staff tools behind them.
+- [Customer portals](https://qoreonlabs.com/customer-portal-development): Portals where clients track orders, pay invoices, download documents and reorder on their own.
+- [MVP development](https://qoreonlabs.com/mvp-development): Focused MVPs for startups: iPhone apps, web apps and the dashboards behind them.
+- [SaaS development](https://qoreonlabs.com/saas-development): SaaS products end to end: sign-up, teams, Stripe subscriptions, admin tools and the product itself.
+- [All services](https://qoreonlabs.com/services): Websites, dashboards, internal tools, web apps, iPhone apps and AI automation.
 
 ## Work
 
-- [PolyMonit case study](https://qoreonlabs.com/polymonit-wallet-tracker.html): How we designed, built and launched our own SaaS product, a Polymarket wallet tracker with alerts and paying subscribers in more than 20 countries.
+- [PolyMonit case study](https://qoreonlabs.com/polymonit-wallet-tracker): How we designed, built and launched our own SaaS product, a Polymarket wallet tracker with alerts and paying subscribers in more than 20 countries.
 
 ## Company
 
-- [About Qoreon Labs](https://qoreonlabs.com/about-us.html): Who we are and how the studio works.
-- [Request a quote](https://qoreonlabs.com/quoteform.html): Describe a project and get a fixed quote and plan within 48 hours of a short call.
+- [About Qoreon Labs](https://qoreonlabs.com/about-us): Who we are and how the studio works.
+- [Request a quote](https://qoreonlabs.com/quoteform): Describe a project and get a fixed quote and plan within 48 hours of a short call.
 - [Contact](https://qoreonlabs.com/#contact): Project enquiry form, email and phone.
 
 ## Optional
 
-- [Blog](https://qoreonlabs.com/blogs.html): Articles on AI, software and product development.
-- [The future of AI-driven development](https://qoreonlabs.com/the-future-of-ai-driven-development.html)
-- [Machine learning in business analytics](https://qoreonlabs.com/how-machine-learning-is-revolutionizing-business-analytics.html)
+- [Blog](https://qoreonlabs.com/blogs): Articles on AI, software and product development.
+- [The future of AI-driven development](https://qoreonlabs.com/the-future-of-ai-driven-development)
+- [Machine learning in business analytics](https://qoreonlabs.com/how-machine-learning-is-revolutionizing-business-analytics)
