@@ -3,26 +3,32 @@
   document.getElementById('year').textContent = new Date().getFullYear();
 
   /* fit: scale fixed-size mockups to their container */
-  var fits = document.querySelectorAll('.fit');
-  function sizeFit(el){
-    var cs = getComputedStyle(el), w = parseFloat(cs.getPropertyValue('--w')) || el.clientWidth;
-    var s = el.clientWidth / w, max = parseFloat(el.dataset.maxs);
-    /* data-maxs: stop a mockup growing past this scale; centre it and shrink the box to fit */
-    if (max && s > max){
-      s = max;
-      el.style.height = (parseFloat(cs.getPropertyValue('--h')) * s).toFixed(1) + 'px';
-      el.style.setProperty('--ox', ((el.clientWidth - w * s) / 2).toFixed(1) + 'px');
-    } else if (max){
-      el.style.height = ''; el.style.removeProperty('--ox');
-    }
-    el.style.setProperty('--s', s.toFixed(4));
+  var fits = [].slice.call(document.querySelectorAll('.fit'));
+  /* measure every mockup first, then write, so the page is laid out once rather than once per mockup */
+  function sizeFits(els){
+    els.map(function(el){
+      var cs = getComputedStyle(el), cw = el.clientWidth;
+      return { el: el, cw: cw, w: parseFloat(cs.getPropertyValue('--w')) || cw, h: parseFloat(cs.getPropertyValue('--h')), max: parseFloat(el.dataset.maxs) };
+    }).forEach(function(m){
+      var el = m.el, s = m.cw / m.w;
+      /* data-maxs: stop a mockup growing past this scale; centre it and shrink the box to fit */
+      if (m.max && s > m.max){
+        s = m.max;
+        el.style.height = (m.h * s).toFixed(1) + 'px';
+        el.style.setProperty('--ox', ((m.cw - m.w * s) / 2).toFixed(1) + 'px');
+      } else if (m.max){
+        el.style.height = ''; el.style.removeProperty('--ox');
+      }
+      el.style.setProperty('--s', s.toFixed(4));
+    });
   }
   if ('ResizeObserver' in window){
-    var ro = new ResizeObserver(function(entries){ entries.forEach(function(e){ sizeFit(e.target); }); });
-    fits.forEach(function(el){ sizeFit(el); ro.observe(el); });
+    /* the observer fires once on observe (after layout, before paint), which does the first sizing */
+    var ro = new ResizeObserver(function(entries){ sizeFits(entries.map(function(e){ return e.target; })); });
+    fits.forEach(function(el){ ro.observe(el); });
   } else {
-    fits.forEach(sizeFit);
-    window.addEventListener('resize', function(){ fits.forEach(sizeFit); });
+    sizeFits(fits);
+    window.addEventListener('resize', function(){ sizeFits(fits); });
   }
 
   /* header */
@@ -125,8 +131,10 @@
       };
       var side = function(sel, out){
         var nodes = sys.querySelectorAll(sel + ' .sys-n');
-        [].forEach.call(nodes, function(n, i){
-          var r = n.getBoundingClientRect(), y = r.top + r.height / 2 - box.top;
+        /* read every node box before adding any path, so the loop doesn't force a layout per wire */
+        var rects = [].map.call(nodes, function(n){ return n.getBoundingClientRect(); });
+        rects.forEach(function(r, i){
+          var y = r.top + r.height / 2 - box.top;
           var hy = h.top - box.top + h.height * (.22 + .56 * i / Math.max(1, nodes.length - 1));
           var x1, x2;
           if (out){ x1 = h.right - box.left; x2 = r.left - box.left; add('M' + x1 + ' ' + hy + 'C' + (x1 + x2) / 2 + ' ' + hy + ' ' + (x1 + x2) / 2 + ' ' + y + ' ' + x2 + ' ' + y, i, true); }
@@ -153,8 +161,13 @@
       var r = +rate.value, hrs = tasks.map(function(t){ return +t.value * 52; });
       var total = hrs.reduce(function(a, b){ return a + b; }, 0), top = Math.max.apply(null, hrs), weeks = total / 37.5;
       tasks.concat(rate).forEach(fill);
-      tasks.forEach(function(t){ document.getElementById(t.id + '-o').textContent = t.value + ' h'; });
+      /* aria-valuetext gives screen readers the value with its unit, not a bare number */
+      tasks.forEach(function(t){
+        document.getElementById(t.id + '-o').textContent = t.value + ' h';
+        t.setAttribute('aria-valuetext', t.value + (+t.value === 1 ? ' hour' : ' hours') + ' a week');
+      });
       document.getElementById('c5-o').textContent = gbp(r);
+      rate.setAttribute('aria-valuetext', gbp(r) + ' an hour');
       document.getElementById('co-cost').innerHTML = gbp(total * r) + '<small>a year</small>';
       document.getElementById('co-sub').innerHTML = '<b>' + total.toLocaleString('en-GB') + ' hours</b>, or about ' + Math.round(weeks) + ' working week' + (Math.round(weeks) === 1 ? '' : 's');
       document.getElementById('co-wk-l').textContent = Math.round(weeks) + ' week' + (Math.round(weeks) === 1 ? '' : 's') + ' of busywork';

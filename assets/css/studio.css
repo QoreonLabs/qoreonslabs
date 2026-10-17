@@ -3,6 +3,11 @@
    Paper + ink + lime. Inter / Inter Tight / Lora italic.
    Reuse these tokens and components on every page.
    ========================================================= */
+/* Self-hosted variable fonts (latin subset, from Google Fonts, OFL). Every page preloads
+   them in <head> so they usually land before first paint and nothing reflows on swap. */
+@font-face{font-family:'Inter';font-style:normal;font-weight:400 700;font-display:swap;src:url(../fonts/inter-latin.woff2) format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+@font-face{font-family:'Inter Tight';font-style:normal;font-weight:500 700;font-display:swap;src:url(../fonts/inter-tight-latin.woff2) format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+@font-face{font-family:'Lora';font-style:italic;font-weight:500;font-display:swap;src:url(../fonts/lora-italic-latin.woff2) format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
 /* Metric-matched fallbacks (measured against Arial in Chrome): while the web fonts
    load, text is laid out at Inter / Inter Tight size, so the swap barely moves anything. */
 @font-face{font-family:'Inter Fallback';font-weight:400;src:local('Arial'),local('Arimo');size-adjust:106.48%;ascent-override:90.98%;descent-override:22.65%;line-gap-override:0%}
@@ -40,6 +45,10 @@ button,input,select,textarea{font:inherit;color:inherit}
 ::selection{background:var(--lime);color:var(--ink)}
 :focus-visible{outline:2px solid var(--ink);outline-offset:3px;border-radius:6px}
 .sr-only{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+/* skip link: first focusable element on every page, parked above the viewport until focused */
+.skip{position:fixed;left:16px;top:12px;z-index:1000;padding:12px 18px;border-radius:999px;background:var(--ink);color:#fff;font:600 14px var(--f-sans);transform:translateY(-200%)}
+.skip:focus{transform:none}
+.skip:focus-visible{outline-color:var(--lime)}
 .wrap{width:100%;max-width:calc(var(--wrap) + var(--gutter)*2);margin:0 auto;padding:0 var(--gutter);position:relative}
 
 /* ---------- type ---------- */
@@ -147,6 +156,10 @@ section{position:relative}
 
 /* ---------- fit: fixed-size mockups that scale to their box ---------- */
 .fit{position:relative;width:100%;aspect-ratio:var(--w)/var(--h);overflow:hidden}
+/* mockups are sized by aspect-ratio alone, so the browser can skip laying out and painting
+   the ones offscreen without moving anything; the ones that spill past their box opt out */
+.fit{content-visibility:auto}
+.fit.ov,.shot-fit,.report .fit,.wfc .fit,.itx-mess .fit{content-visibility:visible}
 .fit-in{position:absolute;left:var(--ox,0px);top:0;width:calc(var(--w)*1px);height:calc(var(--h)*1px);transform-origin:0 0;transform:scale(var(--s,1))}
 
 /* ---------- dark stage ---------- */
@@ -362,7 +375,7 @@ section{position:relative}
 .ap-btn.k{background:var(--ink);color:#fff;box-shadow:0 1px 2px rgba(13,13,15,.2)}
 .ap-btn.sm{height:28px;padding:0 10px;font-size:11.5px;border-radius:8px}
 .ap-hi{margin:18px 0 14px}
-.ap-hi h3{font:600 22px var(--f-display);letter-spacing:-.035em}
+.ap-hi .ap-hi-t{font:600 22px var(--f-display);letter-spacing:-.035em;color:inherit;margin-top:0}
 .ap-hi p{font:400 13px var(--f-sans);color:var(--mute);margin-top:2px}
 .ap-kpis{display:grid;grid-template-columns:repeat(4,1fr);gap:10px}
 .ap-kpi{position:relative;padding:12px 13px 0;border-radius:12px;box-shadow:0 0 0 1px #ececE7;overflow:hidden}
@@ -613,6 +626,8 @@ section{position:relative}
 .facts{list-style:none;margin:22px 0 26px;display:grid;gap:0}
 .facts li{display:flex;align-items:baseline;gap:12px;padding:12px 0;border-top:1px solid var(--line-2);font-size:14.5px;color:var(--ink-2)}
 .facts li b{min-width:92px;font:600 15px var(--f-display);letter-spacing:-.02em;color:var(--ink)}
+/* long values (an email address) may break rather than push the page wider on 320px phones */
+.facts li a{min-width:0;overflow-wrap:anywhere}
 .wf-copy .row{display:flex;gap:18px;flex-wrap:wrap;margin-top:auto;align-items:center}
 .wf-vis{position:relative;border-radius:24px;overflow:hidden}
 .fit.ov{overflow:visible}
@@ -874,6 +889,8 @@ a.c-item:hover{background:rgba(255,255,255,.08)}
 .foot-bot nav{display:flex;gap:18px}
 .foot-bot a:hover{color:#fff}
 .foot-word{font:600 clamp(70px,17vw,250px)/.8 var(--f-display);letter-spacing:-.06em;color:#17181a;white-space:nowrap;text-align:center;margin-bottom:-.12em;user-select:none;pointer-events:none}
+/* the watermark is decoration, so its text lives in CSS rather than the document */
+.foot-word::before{content:attr(data-word)}
 
 /* ======================= RESPONSIVE ======================= */
 @media (max-width:1180px){
@@ -2272,11 +2289,11 @@ body:not(.no-js) .pr:not(.in) .pr-fix{opacity:0;transform:translateY(8px)}
 .lm-side{display:flex;flex-direction:column;gap:4px;padding:22px 14px;background:#0d1220;border-right:2px solid #161c2e}
 .lm-logo{display:flex;align-items:center;gap:10px;margin:0 6px 18px;font:700 22px var(--f-display);letter-spacing:-.02em;color:#fff}
 .lm-logo span{display:grid;place-items:center;width:34px;height:34px;border-radius:10px;background:linear-gradient(135deg,#8b5cf6,#22d3ee);color:#fff}
-.lm-side a{display:flex;align-items:center;gap:11px;height:46px;padding:0 12px;border-radius:12px;font:500 18px var(--f-sans);color:#8a93ad}
-.lm-side a svg{color:#5b6480;flex:none}
-.lm-side a.on{background:rgba(139,92,246,.16);color:#fff}
-.lm-side a.on svg{color:#a78bfa}
-.lm-side a em{margin-left:auto;padding:1px 8px;border-radius:999px;background:#8b5cf6;color:#fff;font:600 18px var(--f-sans);font-style:normal}
+.lm-side .lm-it{display:flex;align-items:center;gap:11px;height:46px;padding:0 12px;border-radius:12px;font:500 18px var(--f-sans);color:#8a93ad}
+.lm-side .lm-it svg{color:#5b6480;flex:none}
+.lm-side .lm-it.on{background:rgba(139,92,246,.16);color:#fff}
+.lm-side .lm-it.on svg{color:#a78bfa}
+.lm-side .lm-it em{margin-left:auto;padding:1px 8px;border-radius:999px;background:#8b5cf6;color:#fff;font:600 18px var(--f-sans);font-style:normal}
 .lm-main{padding:24px 26px 0;min-width:0}
 .lm-top{display:flex;align-items:center;gap:12px}
 .lm-top>div{margin-right:auto}
