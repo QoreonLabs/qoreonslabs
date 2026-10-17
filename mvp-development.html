@@ -1,0 +1,735 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-KPXN9398W1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-KPXN9398W1');
+  </script>
+
+  <!-- Primary meta -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MVP Development for Startups | iOS &amp; Web MVPs | Qoreon Labs</title>
+  <meta name="description" content="We turn ideas into focused MVPs: iPhone apps, web apps and the dashboards behind them, with sign-up, payments and analytics. UK studio, fixed quotes." />
+  <meta name="author" content="Qoreon Labs Ltd" />
+  <meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1" />
+  <meta name="theme-color" content="#efefea" />
+  <link rel="canonical" href="https://qoreonlabs.com/mvp-development.html" />
+  <link rel="icon" href="assets/img/favicon.ico" sizes="any" />
+  <link rel="icon" type="image/svg+xml" href="assets/img/favicon.svg" />
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon-32.png" />
+  <link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png" />
+
+  <!-- Open Graph / Social -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://qoreonlabs.com/mvp-development.html" />
+  <meta property="og:title" content="MVP development | Qoreon Labs" />
+  <meta property="og:description" content="From idea to an app in people&#x27;s hands, fast. iOS and web MVPs with sign-up, payments and analytics. Fixed quotes, weekly previews." />
+  <meta property="og:image" content="https://qoreonlabs.com/assets/img/og-qoreon.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:alt" content="Qoreon Labs, a UK AI development company and product studio" />
+  <meta property="og:site_name" content="Qoreon Labs" />
+  <meta property="og:locale" content="en_GB" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:site" content="@QoreonLab" />
+  <meta name="twitter:title" content="MVP development | Qoreon Labs" />
+  <meta name="twitter:description" content="From idea to an app in people&#x27;s hands, fast. iOS and web MVPs with sign-up, payments and analytics. Fixed quotes, weekly previews." />
+  <meta name="twitter:image" content="https://qoreonlabs.com/assets/img/og-qoreon.png" />
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "name": "MVP development",
+    "serviceType": "MVP development",
+    "url": "https://qoreonlabs.com/mvp-development.html",
+    "description": "MVP development for founders and teams: iPhone and web apps with sign-up, payments, analytics, waitlists and App Store launch.",
+    "areaServed": [
+      "GB",
+      "US",
+      "AU"
+    ],
+    "provider": {
+      "@type": "Organization",
+      "name": "Qoreon Labs Ltd",
+      "url": "https://qoreonlabs.com",
+      "logo": "https://qoreonlabs.com/assets/img/apple-touch-icon.png",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "71-75 Shelton Street, Covent Garden",
+        "addressLocality": "London",
+        "postalCode": "WC2H 9JQ",
+        "addressCountry": "GB"
+      }
+    }
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://qoreonlabs.com/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Services",
+        "item": "https://qoreonlabs.com/services.html"
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "name": "MVP development",
+        "item": "https://qoreonlabs.com/mvp-development.html"
+      }
+    ]
+  }
+  </script>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Inter+Tight:wght@500;600;700&family=Lora:ital,wght@1,500&display=swap" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Inter+Tight:wght@500;600;700&family=Lora:ital,wght@1,500&display=swap" media="print" onload="this.media='all'" />
+  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Inter+Tight:wght@500;600;700&family=Lora:ital,wght@1,500&display=swap" /></noscript>
+
+  <link rel="stylesheet" href="assets/css/studio.css" />
+</head>
+<body class="no-js">
+<script>document.body.classList.remove('no-js')</script>
+
+<!-- ================= HEADER ================= -->
+<header class="hdr" id="header">
+  <div class="hdr-in">
+    <a class="logo" href="index.html" aria-label="Qoreon Labs home"><img src="assets/img/qoreon-logo.svg" alt="Qoreon Labs" width="134" height="40" /></a>
+
+    <nav class="nav" id="primary-nav" aria-label="Primary">
+      <a href="index.html">Home</a>
+      <a href="about-us.html">About</a>
+      <div class="dd" id="dd-services">
+        <button class="dd-t on" type="button" aria-expanded="false" aria-controls="mega">Services
+          <svg width="11" height="8" viewBox="0 0 12 8" aria-hidden="true"><path d="m1 1 5 5 5-5" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></svg>
+        </button>
+        <div class="mega" id="mega">
+          <div class="mg">
+            <div class="mg-l">Websites &amp; core</div>
+            <a href="services.html#web-development"><b>Web Development <svg width="10" height="10" viewBox="0 0 10 10"><path d="M2 8 8 2M3.5 2H8v4.5" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></b><span>New sites and redesigns</span></a>
+            <a href="services.html#app-development"><b>App Development <svg width="10" height="10" viewBox="0 0 10 10"><path d="M2 8 8 2M3.5 2H8v4.5" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></b><span>iOS and cross-platform apps</span></a>
+            <a href="services.html#software-development"><b>Software Development <svg width="10" height="10" viewBox="0 0 10 10"><path d="M2 8 8 2M3.5 2H8v4.5" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></b><span>Back ends, APIs, integrations</span></a>
+            <a href="custom-software-development.html"><b>Custom Software <svg width="10" height="10" viewBox="0 0 10 10"><path d="M2 8 8 2M3.5 2H8v4.5" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></b><span>Built around how you work</span></a>
+          </div>
+          <div class="mg">
+            <div class="mg-l">Business systems</div>
+            <a href="business-dashboard-development.html"><b>Business Dashboards <svg width="10" height="10" viewBox="0 0 10 10"><path d="M2 8 8 2M3.5 2H8v4.5" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></b><span>Your numbers on one screen</span></a>
+            <a href="internal-tools-development.html"><b>Internal Tools <svg width="10" height="10" viewBox="0 0 10 10"><path d="M2 8 8 2M3.5 2H8v4.5" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></b><span>Replace the spreadsheets</span></a>
+            <a href="business-web-app-development.html"><b>Business Web Apps <svg width="10" height="10" viewBox="0 0 10 10"><path d="M2 8 8 2M3.5 2H8v4.5" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></b><span>Booking, ordering, ops</span></a>
+            <a href="customer-portal-development.html"><b>Customer Portals <svg width="10" height="10" viewBox="0 0 10 10"><path d="M2 8 8 2M3.5 2H8v4.5" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></b><span>Self-serve for your clients</span></a>
+          </div>
+          <div class="mg">
+            <div class="mg-l">Products &amp; automation</div>
+            <a href="ai-automation.html"><b>AI Automation <svg width="10" height="10" viewBox="0 0 10 10"><path d="M2 8 8 2M3.5 2H8v4.5" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></b><span>Leads, replies, follow-ups</span></a>
+            <a href="workflow-automation.html"><b>Workflow Automation <svg width="10" height="10" viewBox="0 0 10 10"><path d="M2 8 8 2M3.5 2H8v4.5" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></b><span>Connect the tools you use</span></a>
+            <a href="ai-development.html"><b>AI Development <svg width="10" height="10" viewBox="0 0 10 10"><path d="M2 8 8 2M3.5 2H8v4.5" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></b><span>Chat, search, AI features</span></a>
+            <a href="mvp-development.html" aria-current="page"><b>MVP Development <svg width="10" height="10" viewBox="0 0 10 10"><path d="M2 8 8 2M3.5 2H8v4.5" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></b><span>From idea to first users</span></a>
+            <a href="saas-development.html"><b>SaaS Development <svg width="10" height="10" viewBox="0 0 10 10"><path d="M2 8 8 2M3.5 2H8v4.5" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></b><span>Subscriptions, accounts, billing</span></a>
+          </div>
+          <a class="mg-promo" href="index.html#audit">
+            <div class="score">46<small>/100</small></div>
+            <b>Free site audit</b>
+            <p>See what's costing you enquiries, in plain English.</p>
+            <span class="go">Get yours <svg width="12" height="12" viewBox="0 0 12 12"><path d="M2 6h8M6.5 2.5 10 6l-3.5 3.5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+          </a>
+        </div>
+      </div>
+      <a href="index.html#work">Work</a>
+      <a href="index.html#process">Process</a>
+      <a href="#contact">Contact</a>
+      <a class="btn btn-ink btn-sm m-cta" href="index.html#audit" style="display:none">Free site audit <span class="arr"><svg width="11" height="11" viewBox="0 0 12 12"><path d="M2 6h8M6.5 2.5 10 6l-3.5 3.5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></span></a>
+    </nav>
+
+    <div class="hdr-cta">
+      <a class="q" href="quoteform.html">Get a quote</a>
+      <a class="btn btn-ink btn-sm" href="index.html#audit">Free site audit <span class="arr"><svg width="11" height="11" viewBox="0 0 12 12"><path d="M2 6h8M6.5 2.5 10 6l-3.5 3.5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></span></a>
+    </div>
+    <button class="burger" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="primary-nav">
+      <svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 8h16M4 16h16" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+    </button>
+  </div>
+</header>
+
+<main id="top">
+
+<!-- ================= HERO ================= -->
+<section class="hero">
+  <div class="wrap hero-top">
+    <div class="ht-l">
+      <div class="kicker rv"><a class="idx" href="services.html">Services</a>MVP development</div>
+      <h1 class="display rv d1">From idea to an app <span class="soft ser">in</span> people's hands, <span class="hl">fast.</span></h1>
+    </div>
+    <div class="ht-r">
+      <p class="lede rv d2">We help founders and teams turn an idea into a focused first version: <b>an iPhone app, a web app, or both</b>, with sign-up, payments and the analytics you need to learn what works. Small scope, real users, weekly previews.</p>
+      <div class="ctas rv d3">
+        <a class="btn btn-ink" href="#contact">Book a free call <span class="arr"><svg width="12" height="12" viewBox="0 0 12 12"><path d="M2 6h8M6.5 2.5 10 6l-3.5 3.5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></span></a>
+        <a class="btn btn-ghost" href="#work">See examples</a>
+      </div>
+      <div class="trust rv d4">
+        <div class="trust-i"><div>
+          <div class="stars" role="img" aria-label="5 out of 5 stars"><svg width="13" height="13" viewBox="0 0 20 20"><path d="M10 1.5l2.6 5.6 6.1.7-4.5 4.2 1.2 6L10 15l-5.4 3 1.2-6L1.3 7.8l6.1-.7z" fill="currentColor"/></svg><svg width="13" height="13" viewBox="0 0 20 20"><path d="M10 1.5l2.6 5.6 6.1.7-4.5 4.2 1.2 6L10 15l-5.4 3 1.2-6L1.3 7.8l6.1-.7z" fill="currentColor"/></svg><svg width="13" height="13" viewBox="0 0 20 20"><path d="M10 1.5l2.6 5.6 6.1.7-4.5 4.2 1.2 6L10 15l-5.4 3 1.2-6L1.3 7.8l6.1-.7z" fill="currentColor"/></svg><svg width="13" height="13" viewBox="0 0 20 20"><path d="M10 1.5l2.6 5.6 6.1.7-4.5 4.2 1.2 6L10 15l-5.4 3 1.2-6L1.3 7.8l6.1-.7z" fill="currentColor"/></svg><svg width="13" height="13" viewBox="0 0 20 20"><path d="M10 1.5l2.6 5.6 6.1.7-4.5 4.2 1.2 6L10 15l-5.4 3 1.2-6L1.3 7.8l6.1-.7z" fill="currentColor"/></svg></div>
+          <span><b style="display:inline">5.0</b> from 69 reviews</span></div></div>
+        <span class="trust-sep"></span>
+        <div class="trust-i"><div><b>100+</b>orders delivered</div></div>
+        <span class="trust-sep"></span>
+        <div class="trust-i"><div><b>UK Ltd</b>registered in London</div></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Hero visual: from sketch to prototype to the app on TestFlight (Northstar sample build) -->
+  <div class="hv rv d2" aria-hidden="true">
+    <div class="fit hvf mv-fit"><div class="fit-in">
+
+      <div class="mv-tl">
+        <div class="mv-st" style="left:200px"><i></i><span><b>Week 1</b>The sketch</span></div>
+        <div class="mv-st" style="left:657px"><i></i><span><b>Week 3</b>Clickable prototype</span></div>
+        <div class="mv-st on" style="left:1110px"><i></i><span><b>Week 6</b>On TestFlight</span></div>
+      </div>
+
+      <div class="mv-paper"><span class="mv-tape"></span>
+          <svg width="320" height="470" viewBox="0 0 320 470" fill="none" stroke="#1d3a8a" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M92 52c-2 0 50-3 98-1 14 1 17 4 17 16 1 70 2 230-1 300 0 12-4 15-16 15-46 1-82 2-98 0-12-1-15-4-15-15-2-70-2-232 0-300 1-12 4-14 15-15z"/>
+            <path d="M126 64c10 1 24 1 34 0"/>
+            <path d="M104 96c18 0 40-1 52 0" stroke-width="3"/><path d="M104 108c10 0 22 0 30 0" opacity=".6"/>
+            <path d="M152 136c22 1 40 18 40 40s-18 40-41 40-40-18-40-41c0-22 19-39 41-39z"/>
+            <path d="M152 147c16 0 29 13 29 29" stroke-width="5" opacity=".85"/>
+            <path d="M104 236h92c2 0 3 1 3 3v18c0 2-1 3-3 3h-92c-2 0-3-1-3-3v-18c0-2 1-3 3-3z"/>
+            <path d="M104 268h92c2 0 3 1 3 3v18c0 2-1 3-3 3h-92c-2 0-3-1-3-3v-18c0-2 1-3 3-3z"/>
+            <path d="M104 304c30-1 62-1 92 0 3 0 4 2 4 4v26c0 2-2 4-4 4-30 1-62 1-92 0-2 0-4-2-4-4v-26c0-2 2-4 4-4z" stroke-dasharray="1 0"/>
+            <path d="M110 244l4 4 7-8M110 276l4 4 7-8"/>
+            <path d="M212 168c14-6 28-10 44-8" /><path d="M248 154l9 6-8 8"/>
+            <path d="M210 318c18 6 32 8 48 4"/><path d="M250 314l9 8-10 6"/>
+            <path d="M64 110c-10 18-12 40-2 60" /><path d="M56 160l6 12 10-8"/>
+          </svg>
+          <span class="mv-hand" style="left:206px;top:96px;transform:rotate(-4deg)">daily focus<br>ring!</span>
+          <span class="mv-hand" style="left:214px;top:332px;transform:rotate(3deg)">AI tip<br>goes here?</span>
+          <span class="mv-hand" style="left:10px;top:84px;transform:rotate(-8deg)">greeting</span>
+          <span class="mv-hand" style="left:78px;top:404px;transform:rotate(-2deg)">v1: just goals + summary</span>
+      </div>
+
+      <div class="mv-wf">
+        <div class="g" style="width:60%;height:10px"></div><div class="g" style="width:80%;height:18px;margin-top:8px"></div>
+        <div class="ring"></div>
+        <div class="row"></div><div class="row"></div><div class="row"></div>
+        <div class="g" style="height:74px;margin-top:10px;border-radius:14px;background:#d9d9d2"></div>
+        <div class="g" style="position:absolute;left:12px;right:12px;bottom:12px;height:50px;border-radius:18px;background:#d9d9d2"></div>
+      </div>
+      <div class="mv-hot" style="left:538px;top:350px;width:238px;height:48px"></div>
+      <div class="mv-tap" style="left:792px;top:362px">On tap: goal detail <svg width="11" height="11" viewBox="0 0 12 12"><path d="M2 6h8M6.5 2.5 10 6l-3.5 3.5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+      <div class="mv-cm" style="left:430px;top:150px"><span class="ap-av" style="background:linear-gradient(135deg,#ffd9c7,#f5a98a)">LP</span><div><b>Lena P. · tester</b>The morning summary is the reason I'd open it.</div></div>
+
+      <div class="ph">
+        <div class="ph-s">
+          <div class="ph-i"></div>
+          <div class="ph-sb"><span>9:41</span><span>5G</span></div>
+          <div class="ph-h">Tuesday, 30 Sep<b>Good morning, Ana</b></div>
+          <div class="ph-ring"><svg viewBox="0 0 42 42"><circle cx="21" cy="21" r="17" fill="none" stroke="#e6e6e0" stroke-width="5"/><circle cx="21" cy="21" r="17" fill="none" stroke="#0d0d0f" stroke-width="5" stroke-linecap="round" stroke-dasharray="72.6 106.8"/></svg><div><b>68%</b>Daily focus</div></div>
+          <div class="ph-row"><span class="ckb ok"></span>Morning run<span>6:40 am</span></div>
+          <div class="ph-row"><span class="ckb ok"></span>Deep work, 2 hours<span>9:00 am</span></div>
+          <div class="ph-row"><span class="ckb"></span>Read 20 pages<span>Tonight</span></div>
+          <div class="ph-ai"><b>Northstar AI</b>You finish more deep work before 11am. Want to move tomorrow's block earlier?</div>
+          <div class="ph-tab"><i class="on"></i><i></i><i></i><i></i></div>
+        </div>
+      </div>
+      <div class="mv-tf pop p1"><span class="ic"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3 4 7.5v9L12 21l8-4.5v-9z"/><path d="M4 7.5 12 12l8-4.5M12 12v9"/></svg></span><div><b>TestFlight<em>now</em></b>Northstar 1.4 is ready to test.</div></div>
+      <div class="mv-stat pop p2"><b>412 testers</b>46% still active on day 7</div>
+    </div></div>
+    <div class="hv-cap"><span>Sample build · Northstar, from first sketch to TestFlight</span><span>iOS · Web · Analytics</span></div>
+  </div>
+
+  <div class="marq" aria-label="Built with">
+    <div class="marq-in">
+      <div class="marq-l">Built with</div>
+      <div class="marq-v">
+        <div class="marq-t">
+          <span>Swift &amp; SwiftUI</span><span>React Native</span><span>Next.js</span><span>React</span><span>Node.js</span><span>Supabase</span><span>Firebase</span><span>Stripe</span><span>RevenueCat</span><span>TestFlight</span><span>PostHog</span><span>OpenAI</span>
+          <span aria-hidden="true">Swift &amp; SwiftUI</span><span aria-hidden="true">React Native</span><span aria-hidden="true">Next.js</span><span aria-hidden="true">React</span><span aria-hidden="true">Node.js</span><span aria-hidden="true">Supabase</span><span aria-hidden="true">Firebase</span><span aria-hidden="true">Stripe</span><span aria-hidden="true">RevenueCat</span><span aria-hidden="true">TestFlight</span><span aria-hidden="true">PostHog</span><span aria-hidden="true">OpenAI</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= PROBLEMS ================= -->
+<section class="sec" id="problems">
+  <div class="wrap">
+    <div class="sec-head">
+      <div>
+        <div class="kicker rv"><span class="idx">01</span>Sound familiar?</div>
+        <h2 class="display rv d1">Most first versions <span class="hl">never ship.</span></h2>
+      </div>
+      <p class="rv d2">Not because the idea is bad, but because the scope keeps growing, the budget runs out or the build stalls halfway.</p>
+    </div>
+
+    <div class="prob-grid">
+      <article class="prob rv">
+        <div class="fit" style="--w:300;--h:230" aria-hidden="true"><div class="fit-in real">
+          <div class="pad"><div class="note"><span class="ic"><svg class="" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#3d3d42" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 3H6a1 1 0 0 0-1 1v16a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V8z"/><path d="M14 3v5h5M9 13h6M9 17h4"/></svg></span><div><b>MVP_features_v7</b>43 must-have features</div><span class="ct">43</span></div><div class="note"><span class="ic"><svg class="" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#3d3d42" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></span><div><b>Launch date</b>Moved again, now "spring"</div><span class="ago">3rd time</span></div><div class="note"><span class="ic"><svg class="" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#3d3d42" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12a8 8 0 0 1-11.6 7.1L4 20l1-4.6A8 8 0 1 1 21 12z"/></svg></span><div><b>Investor call</b>"Can we see a demo?"</div><span class="ago">Fri</span></div></div>
+        </div></div>
+        <span class="n">Problem 01</span>
+        <h3>The scope keeps growing</h3>
+        <p>Every week adds another must-have, and the launch date drifts further away.</p>
+      </article>
+      <article class="prob rv d1">
+        <div class="fit" style="--w:300;--h:230" aria-hidden="true"><div class="fit-in real">
+          <div class="pad" style="inset:20px 18px"><div class="bub me">How long would it take to build?</div><div class="bub th">About 9 months, all in</div><div class="bub me">We need to test it in 2</div><div class="bub th">That's not really how we work</div></div>
+        </div></div>
+        <span class="n">Problem 02</span>
+        <h3>Quotes that don't fit the stage</h3>
+        <p>Big agencies price an MVP like a finished product, with a timeline that outlasts your runway.</p>
+      </article>
+      <article class="prob rv d2">
+        <div class="fit" style="--w:300;--h:230" aria-hidden="true"><div class="fit-in real">
+          <div class="pad"><div class="note"><span class="ic"><svg class="" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#3d3d42" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 6 6 18M6 6l12 12"/></svg></span><div><b>No-code app hit a limit</b>Logins break past 500 users</div><span class="ct">!</span></div><div class="note"><span class="ic"><svg class="" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#3d3d42" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="8" cy="15" r="4"/><path d="m11 12 9-9M16 7l3 3"/></svg></span><div><b>Payments workaround</b>Manual invoices via email</div><span class="ago">hack</span></div><div class="note"><span class="ic"><svg class="" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#3d3d42" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="6" y="2" width="12" height="20" rx="3"/><path d="M11 18h2"/></svg></span><div><b>Not on the App Store</b>Web wrapper got rejected</div><span class="ago">rejected</span></div></div>
+        </div></div>
+        <span class="n">Problem 03</span>
+        <h3>The prototype hit its limits</h3>
+        <p>No-code tools are great for testing. Then real users arrive and the workarounds start to show.</p>
+      </article>
+      <article class="prob rv d3">
+        <div class="fit" style="--w:300;--h:230" aria-hidden="true"><div class="fit-in real">
+          <div class="mini-win sheet">
+            <div class="sbar"><i></i>Roadmap_FINAL.xlsx<span>No data</span></div>
+            <table><tr><td class="rn">1</td><td><b>Feature</b></td><td><b>Users?</b></td><td><b>Status</b></td></tr><tr><td class="rn">2</td><td>Dark mode</td><td class="yel">maybe</td><td>Building</td></tr><tr><td class="rn">3</td><td>Social feed</td><td class="err">0 asked</td><td>Building</td></tr><tr><td class="rn">4</td><td>Badges</td><td class="dup">?</td><td class="dup">?</td></tr><tr><td class="rn">5</td><td>Sharing</td><td>12 asked</td><td class="err">Not started</td></tr><tr><td class="rn">6</td><td>Launch</td><td class="err">#REF!</td><td></td></tr></table>
+          </div>
+        </div></div>
+        <span class="n">Problem 04</span>
+        <h3>Building what nobody asked for</h3>
+        <p>Without analytics and feedback from real users, the roadmap is a list of guesses.</p>
+      </article>
+    </div>
+
+    <div class="prob-foot rv">
+      <p>A focused MVP, shipped and measured, fixes all four. <span>Usually in 3 to 8 weeks.</span></p>
+      <a class="btn btn-lime btn-sm" href="#build">See what we build <span class="arr"><svg width="11" height="11" viewBox="0 0 12 12"><path d="M2 6h8M6.5 2.5 10 6l-3.5 3.5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></span></a>
+    </div>
+  </div>
+</section>
+
+<!-- ================= WHAT WE BUILD ================= -->
+<section class="sec" id="build" style="padding-top:20px">
+  <div class="wrap">
+    <div class="sec-head">
+      <div>
+        <div class="kicker rv"><span class="idx">02</span>What we build</div>
+        <h2 class="display rv d1">Just enough product <span class="soft ser">to</span> learn <span class="hl">what works.</span></h2>
+      </div>
+      <p class="rv d2">We help you cut the scope to the version people will actually use, then build it properly so it can grow.</p>
+    </div>
+
+    <div class="cards-3">
+      <article class="pstep rv">
+        <div class="fit" style="--w:400;--h:250" aria-hidden="true"><div class="fit-in real">
+          <div class="ph" style="left:60px;top:22px;">
+            <div class="ph-s"><div class="ph-i"></div><div class="ph-sb"><span>9:41</span><span>5G</span></div>
+              <div class="ph-h">Tuesday, 30 Sep<b>Good morning, Ana</b></div>
+              <div class="ph-ring"><svg viewBox="0 0 42 42"><circle cx="21" cy="21" r="17" fill="none" stroke="#e6e6e0" stroke-width="5"/><circle cx="21" cy="21" r="17" fill="none" stroke="#0d0d0f" stroke-width="5" stroke-linecap="round" stroke-dasharray="72.6 106.8"/></svg><div><b>68%</b>Daily focus</div></div>
+              <div class="ph-row"><span class="ckb ok"></span>Morning run<span>6:40 am</span></div>
+            </div>
+          </div>
+          <div class="toast" style="left:214px;top:150px;width:170px"><div class="tx"><b>Build 1.4</b>Ready on TestFlight</div></div>
+        </div></div>
+        <div class="top"><b>iOS APP</b><span>SwiftUI</span></div>
+        <h3>A native iPhone app</h3>
+        <p>Built in Swift and SwiftUI for a fast, polished feel, or React Native when you need iPhone and Android from day one.</p>
+      </article>
+      <article class="pstep rv d1">
+        <div class="fit" style="--w:400;--h:250" aria-hidden="true"><div class="fit-in real">
+          <div class="pad"><div class="ap-kpis c2"><div class="ap-kpi flat"><div class="l">Sign-ups this week</div><div class="v">340</div><div class="d"><span class="ch g">+22%</span></div></div><div class="ap-kpi flat"><div class="l">Active today</div><div class="v">268</div><div class="d">of 412 testers</div></div><div class="ap-kpi flat"><div class="l">Day-7 retention</div><div class="v">46%</div><div class="d"><span class="ch g">+9 pts</span></div></div><div class="ap-kpi flat"><div class="l">Feedback</div><div class="v">86</div><div class="d">12 new today</div></div></div></div>
+        </div></div>
+        <div class="top"><b>WEB DASHBOARD</b><span>Admin</span></div>
+        <h3>A web app and admin</h3>
+        <p>A web version or admin dashboard to manage users, content and data, so you are never editing the database by hand.</p>
+      </article>
+      <article class="pstep rv d2">
+        <div class="fit" style="--w:400;--h:250" aria-hidden="true"><div class="fit-in real">
+          <div class="pad" style="inset:20px 26px"><div style="font:600 20px var(--f-display);letter-spacing:-.03em;margin-bottom:4px">Focus on what matters.</div><div style="font:500 12.5px var(--f-sans);color:var(--mute);margin-bottom:12px">Join 2,860 people on the Northstar waitlist.</div><div class="mf"><label>Email<span class="f">ana@lumen.studio</span></label><span style="justify-content:center;background:var(--ink);color:#fff;box-shadow:none;font-weight:600">Join the waitlist</span></div></div>
+        </div></div>
+        <div class="top"><b>WAITLIST</b><span>Landing page</span></div>
+        <h3>Landing page and waitlist</h3>
+        <p>A simple site that explains the product and collects a waitlist, so you launch to people who already asked for it.</p>
+      </article>
+      <article class="pstep rv">
+        <div class="fit" style="--w:400;--h:250" aria-hidden="true"><div class="fit-in real">
+          <div class="pad"><div class="ap-card ap-orders" style="margin-top:0;background:#fff"><div class="ap-ch"><div><b>Feedback</b><small>From beta testers</small></div></div><table><tr><th>Tester</th><th>Says</th><th>Tag</th></tr><tr><td><b>Lena P.</b></td><td>Love the morning summary</td><td><span class="ap-st g">Love it</span></td></tr><tr><td><b>Omar K.</b></td><td>Want shared goals</td><td><span class="ap-st n">Idea</span></td></tr><tr><td><b>Sara T.</b></td><td>Crashed on sign-in</td><td><span class="ap-st r">Bug</span></td></tr></table></div></div>
+        </div></div>
+        <div class="top"><b>FEEDBACK</b><span>Built in</span></div>
+        <h3>Analytics and feedback</h3>
+        <p>Product analytics and in-app feedback from day one, so the next version is based on what people do, not guesses.</p>
+      </article>
+      <article class="pstep rv d1">
+        <div class="fit" style="--w:400;--h:250" aria-hidden="true"><div class="fit-in real">
+          <div class="pad" style="inset:18px 14px"><div class="plans"><div class="plan"><b>Free</b><div class="pr">£0</div><ul><li>Personal goals</li></ul></div><div class="plan on"><span class="tag">Trial</span><b>Plus</b><div class="pr">£4.99<small> /mo</small></div><ul><li>AI coaching</li></ul></div><div class="plan"><b>Annual</b><div class="pr">£39<small> /yr</small></div><ul><li>Save 35%</li></ul></div></div></div>
+        </div></div>
+        <div class="top"><b>PAYMENTS</b><span>App Store · Stripe</span></div>
+        <h3>Subscriptions and payments</h3>
+        <p>In-app subscriptions through the App Store, or Stripe on the web, with free trials and plans you can change later.</p>
+      </article>
+      <article class="pstep rv d2">
+        <div class="fit" style="--w:400;--h:250" aria-hidden="true"><div class="fit-in real">
+          <div class="launch" style="inset:18px 24px"><div class="ln"><i></i>Build uploaded<span>App Store Connect</span></div><div class="ln"><i></i>TestFlight beta<span>412 testers</span></div><div class="ln"><i></i>Privacy details<span>Submitted</span></div><div class="ln live"><i></i>Live on the App Store<span>Northstar 1.0</span></div></div>
+        </div></div>
+        <div class="top"><b>LAUNCH</b><span>App Store</span></div>
+        <h3>Launch and App Store submission</h3>
+        <p>We handle TestFlight, App Store review and the release itself, and stay on for the fixes that follow every launch.</p>
+      </article>
+    </div>
+
+    <div class="svc-all rv">
+      <span class="lbl">Related services</span>
+      <div class="chips">
+        <a class="chip" href="saas-development.html">SaaS development</a>
+        <a class="chip" href="services.html#app-development">App development</a>
+        <a class="chip" href="ai-development.html">AI development</a>
+        <a class="chip" href="business-web-app-development.html">Business web apps</a>
+        <a class="chip" href="custom-software-development.html">Custom software</a>
+        <a class="chip" href="ai-automation.html">AI automation</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= PROCESS ================= -->
+<section class="sec" id="process" style="padding-top:20px">
+  <div class="wrap">
+    <div class="sec-head">
+      <div>
+        <div class="kicker rv"><span class="idx">03</span>How it works</div>
+        <h2 class="display rv d1">No mystery. <span class="soft ser">Just</span> four clear <span class="hl">steps.</span></h2>
+      </div>
+      <p class="rv d2">You always know what's being built, what it costs and when it ships. That's the whole point.</p>
+    </div>
+    <div class="proc">
+      <article class="pstep rv">
+        <div class="fit" style="--w:300;--h:170" aria-hidden="true"><div class="fit-in">
+          <div class="cal">
+            <span><b>Mon</b><i></i><i style="width:60%"></i></span>
+            <span class="on"><b>Tue</b>10:30 call<i></i></span>
+            <span><b>Wed</b><i style="width:70%"></i></span>
+            <span><b>Thu</b><i></i><i style="width:50%"></i></span>
+            <span><b>Fri</b><i style="width:40%"></i></span>
+          </div>
+        </div></div>
+        <div class="top"><b>STEP 01</b><span>15 min</span></div>
+        <h3>A quick, free call</h3>
+        <p>Tell us what's not working. We ask a few questions and tell you honestly if we're the right fit.</p>
+      </article>
+      <article class="pstep rv d1">
+        <div class="fit" style="--w:300;--h:170" aria-hidden="true"><div class="fit-in">
+          <div class="qdoc">
+            <div class="h">Project plan<span>Fixed price</span></div>
+            <div class="ln">Scope &amp; design<i></i>Week 1</div>
+            <div class="ln">Build &amp; TestFlight<i></i>Weeks 2 to 6</div>
+            <div class="ln">Beta &amp; launch<i></i>Weeks 7 to 8</div>
+            <div class="tot"><span>3 milestones</span><span>Agreed up front</span></div>
+          </div>
+        </div></div>
+        <div class="top"><b>STEP 02</b><span>48 hours</span></div>
+        <h3>A fixed quote and plan</h3>
+        <p>A clear scope, timeline and price, split into milestones. You only pay as each one is delivered.</p>
+      </article>
+      <article class="pstep rv d2">
+        <div class="fit" style="--w:300;--h:170" aria-hidden="true"><div class="fit-in">
+          <div class="prev">
+            <div class="bar"><i></i><i></i><i></i><span class="url">testflight.apple.com/northstar</span></div>
+            <div class="pv"><div><i class="k"></i><i></i><i class="s"></i></div><div class="im" style="background:linear-gradient(160deg,#dfe4ff,#a9b6f5)"></div></div>
+            <div class="cm"><i></i>Preview v3 · 2 comments</div>
+          </div>
+        </div></div>
+        <div class="top"><b>STEP 03</b><span>Weekly</span></div>
+        <h3>Build, with weekly previews</h3>
+        <p>A working link every week so you can click through, comment and steer. No big reveal at the end.</p>
+      </article>
+      <article class="pstep rv d3">
+        <div class="fit" style="--w:300;--h:170" aria-hidden="true"><div class="fit-in">
+          <div class="launch">
+            <div class="ln"><i></i>TestFlight beta<span>Done</span></div>
+            <div class="ln"><i></i>App Store review<span>Done</span></div>
+            <div class="ln live"><i></i>Live<span>Northstar 1.0</span></div>
+          </div>
+        </div></div>
+        <div class="top"><b>STEP 04</b><span>Launch</span></div>
+        <h3>Launch, handover, support</h3>
+        <p>We launch it, show your team how it works and hand over everything. Ongoing support if you want it.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ================= RELATED WORK ================= -->
+<section class="sec" id="work" style="padding-top:20px">
+  <div class="wrap">
+    <div class="sec-head">
+      <div>
+        <div class="kicker rv"><span class="idx">04</span>Related work</div>
+        <h2 class="display rv d1">From first sketch <span class="soft ser">to</span> <span class="hl">first users.</span></h2>
+      </div>
+      <p class="rv d2">A sample build that shows the approach, and a product of our own that went from idea to paying users.</p>
+    </div>
+
+    <div class="work-grid" style="margin-top:0">
+      <article class="wcard rv">
+        <div class="fit" style="--w:456;--h:340" aria-hidden="true"><div class="fit-in real">
+          <div class="pad" style="inset:20px 20px -20px">
+            <div class="win lt" style="position:absolute;left:0;top:0;width:320px;height:320px;background:#fff">
+              <div class="bar"><i></i><i></i><i></i><span class="url">admin.northstar.so</span></div>
+              <div style="padding:14px 14px">
+                <div class="ap-kpis c2"><div class="ap-kpi flat"><div class="l">Waitlist</div><div class="v">2,860</div><div class="d">+340 this week</div></div><div class="ap-kpi flat"><div class="l">Day-7 active</div><div class="v">46%</div><div class="d">since 1.3</div></div></div>
+                <div class="ap-card" style="padding:10px 12px"><b style="font:600 12.5px var(--f-sans)">Daily active testers</b><svg width="100%" height="64" viewBox="0 0 300 64" preserveAspectRatio="none" style="display:block;margin-top:6px"><path d="M0 58 C40 54,60 46,100 42 S170 30,210 22 S270 12,300 8" fill="none" stroke="#0d0d0f" stroke-width="2"/></svg></div>
+              </div>
+            </div>
+          </div>
+          <div class="ph" style="left:286px;top:30px">
+        <div class="ph-s">
+          <div class="ph-i"></div>
+          <div class="ph-sb"><span>9:41</span><span>5G</span></div>
+          <div class="ph-h">Tuesday, 30 Sep<b>Good morning, Ana</b></div>
+          <div class="ph-ring"><svg viewBox="0 0 42 42"><circle cx="21" cy="21" r="17" fill="none" stroke="#e6e6e0" stroke-width="5"/><circle cx="21" cy="21" r="17" fill="none" stroke="#0d0d0f" stroke-width="5" stroke-linecap="round" stroke-dasharray="72.6 106.8"/></svg><div><b>68%</b>Daily focus</div></div>
+          <div class="ph-row"><span class="ckb ok"></span>Morning run<span>6:40 am</span></div>
+          <div class="ph-row"><span class="ckb ok"></span>Deep work, 2 hours<span>9:00 am</span></div>
+          <div class="ph-row"><span class="ckb"></span>Read 20 pages<span>Tonight</span></div>
+          <div class="ph-ai"><b>Northstar AI</b>You finish more deep work before 11am. Want to move tomorrow's block earlier?</div>
+          <div class="ph-tab"><i class="on"></i><i></i><i></i><i></i></div>
+        </div>
+      </div>
+        </div></div>
+        <div class="meta"><span class="label s"><i></i>Sample build</span><span>iOS app + web dashboard</span></div>
+        <h3>Northstar</h3>
+        <p>A sample habit and focus app for iPhone, with an AI suggestion feature, a waitlist and a web dashboard to run the beta.</p>
+      </article>
+      <article class="wcard rv d1">
+        <div class="fit dk" style="--w:520;--h:340" aria-hidden="true"><div class="fit-in real">
+          <!-- TODO: optionally swap this mock for a real PolyMonit screenshot -->
+          <div class="pm" style="padding:0">
+            <div class="pm-app" style="left:22px;right:22px;top:22px;bottom:-40px">
+              <div class="pm-top"><span class="pm-logo"><i></i>PolyMonit</span><span class="pm-tabs"><span class="on">Whales</span><span>Markets</span><span>Alerts</span></span><span class="pm-live"><i></i>Streaming</span></div>
+              <div class="pm-body" style="grid-template-columns:1fr">
+                <div class="pm-card">
+                  <div class="t">Top wallets<span>24h</span></div>
+                  <div class="pm-row h"><span>WALLET</span><span>PNL</span><span>WIN RATE</span><span></span></div>
+                  <div class="pm-row"><b><i style="background:linear-gradient(135deg,#d6ff3d,#6e8f00)"></i>0x8f3…a21c</b><span class="up">+$182k</span><span>68%</span><span class="tg">WHALE</span></div>
+                  <div class="pm-row"><b><i style="background:linear-gradient(135deg,#b9c7ff,#5a6fe0)"></i>0x41d…9e07</b><span class="up">+$96k</span><span>61%</span><span class="tg">WHALE</span></div>
+                  <div class="pm-row"><b><i style="background:linear-gradient(135deg,#ffd5b8,#d4785a)"></i>0xc02…77b4</b><span class="up">+$41k</span><span>57%</span><span></span></div>
+                  <div class="pm-row"><b><i style="background:linear-gradient(135deg,#5a5a60,#2b2b2e)"></i>0x9aa…0f13</b><span style="color:#ff7a7e">-$8k</span><span>44%</span><span></span></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div></div>
+        <div class="meta"><span class="label"><i></i>Live product · Our own SaaS</span><span>Idea to paying users</span></div>
+        <h3>PolyMonit</h3>
+        <p>PolyMonit started as an idea we wanted to test. We built a focused first version, launched it and grew it into a product with paying subscribers in 20+ countries. <a class="tlink" style="margin-top:12px" href="polymonit-wallet-tracker.html">Read the case study <svg width="10" height="10" viewBox="0 0 10 10"><path d="M2 8 8 2M3.5 2H8v4.5" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></a></p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ================= FAQ ================= -->
+<section class="sec" id="faq" style="padding-top:20px">
+  <div class="wrap faq-wrap">
+    <div class="faq-side">
+      <div class="kicker rv"><span class="idx">05</span>Questions</div>
+      <h2 class="display rv d1" style="margin-top:22px">MVP <span class="hl">questions.</span></h2>
+      <p class="lede rv d2">What founders usually ask before we start an MVP.</p>
+      <div class="help rv d3"><span class="mark"><i></i></span><div><b>Still unsure?</b><span>Email <a href="mailto:support@qoreonlabs.com" style="color:var(--ink);font-weight:600">support@qoreonlabs.com</a></span></div></div>
+    </div>
+    <div class="faq-list">
+      <details class="rv" open>
+        <summary>What should be in our MVP?<span class="pm" aria-hidden="true"></span></summary>
+        <div class="ans">Only what's needed to test your biggest assumption with real users. On the first call we help you sort the feature list into now, next and later. Most ideas need far less than people expect to get a meaningful answer.</div>
+      </details>
+      <details class="rv">
+        <summary>iPhone, Android or web?<span class="pm" aria-hidden="true"></span></summary>
+        <div class="ans">It depends where your users are. We often start with iPhone in SwiftUI or a web app, because that is the fastest way to learn. If you need iPhone and Android from day one, we build both at once with React Native.</div>
+      </details>
+      <details class="rv">
+        <summary>How much does an MVP cost?<span class="pm" aria-hidden="true"></span></summary>
+        <div class="ans">Every project gets a fixed quote after a free 15-minute call, so you know the full price before anything starts. Keeping the scope tight is the best way to keep the cost down, and we will help you do that.</div>
+      </details>
+      <details class="rv">
+        <summary>How long does it take?<span class="pm" aria-hidden="true"></span></summary>
+        <div class="ans">Most MVPs take 3 to 8 weeks to a first version real users can try. You get a working build every week, on TestFlight for apps or a preview link for web, so you can show it to people as it grows.</div>
+      </details>
+      <details class="rv">
+        <summary>Can you help with App Store submission?<span class="pm" aria-hidden="true"></span></summary>
+        <div class="ans">Yes. We set up App Store Connect, TestFlight and the store listing, handle the review process and fix anything Apple flags. Your app is published under your own developer account.</div>
+      </details>
+      <details class="rv">
+        <summary>What happens after the MVP?<span class="pm" aria-hidden="true"></span></summary>
+        <div class="ans">You own the code and every account. If it works, we can keep building with you, or hand it over to your own team. Because we build the foundations properly, version two builds on version one instead of starting again.</div>
+      </details>
+    </div>
+  </div>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "What should be in our MVP?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Only what's needed to test your biggest assumption with real users. On the first call we help you sort the feature list into now, next and later. Most ideas need far less than people expect to get a meaningful answer."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "iPhone, Android or web?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "It depends where your users are. We often start with iPhone in SwiftUI or a web app, because that is the fastest way to learn. If you need iPhone and Android from day one, we build both at once with React Native."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How much does an MVP cost?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Every project gets a fixed quote after a free 15-minute call, so you know the full price before anything starts. Keeping the scope tight is the best way to keep the cost down, and we will help you do that."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How long does it take?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Most MVPs take 3 to 8 weeks to a first version real users can try. You get a working build every week, on TestFlight for apps or a preview link for web, so you can show it to people as it grows."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Can you help with App Store submission?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. We set up App Store Connect, TestFlight and the store listing, handle the review process and fix anything Apple flags. Your app is published under your own developer account."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What happens after the MVP?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "You own the code and every account. If it works, we can keep building with you, or hand it over to your own team. Because we build the foundations properly, version two builds on version one instead of starting again."
+        }
+      }
+    ]
+  }
+  </script>
+</section>
+
+<!-- ================= CONTACT ================= -->
+<section class="sec" id="contact" style="padding-top:20px;padding-bottom:0">
+  <div class="wrap contact">
+    <div class="c-left stage rv">
+      <div class="kicker"><span class="idx">06</span>Start a project</div>
+      <h2 class="display">Tell us about <span class="soft">your idea.</span></h2>
+      <p>A few lines is plenty: the problem, who it's for and what you want to learn first. We'll reply within one business day with honest advice and a clear next step.</p>
+      <ol class="next">
+        <li><b>1</b>We reply within one business day</li>
+        <li><b>2</b>A free 15-minute call to scope it</li>
+        <li><b>3</b>A fixed quote and plan within 48 hours</li>
+      </ol>
+      <div class="c-items">
+        <a class="c-item" href="mailto:support@qoreonlabs.com"><span class="ic"><svg width="16" height="16" viewBox="0 0 24 24"><path d="M3 6h18v12H3zM3 7l9 6 9-6" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg></span><div><small>Email</small><b>support@qoreonlabs.com</b></div></a>
+        <a class="c-item" href="tel:+447883302109"><span class="ic"><svg width="16" height="16" viewBox="0 0 24 24"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg></span><div><small>Phone</small><b>+44 7883 302 109</b></div></a>
+        <div class="c-item"><span class="ic"><svg width="16" height="16" viewBox="0 0 24 24"><path d="M12 22s7-6.2 7-12a7 7 0 1 0-14 0c0 5.8 7 12 7 12z" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="12" cy="10" r="2.5" fill="none" stroke="currentColor" stroke-width="2"/></svg></span><div><small>Registered office</small><b>71-75 Shelton Street, London WC2H 9JQ</b></div></div>
+      </div>
+    </div>
+
+    <div class="c-form rv d1">
+      <h3>Project enquiry</h3>
+      <p>Prefer a detailed brief? Use our <a href="quoteform.html" style="color:var(--ink);font-weight:600;border-bottom:1.5px solid var(--lime)">quote form</a>.</p>
+      <form id="contactForm" action="https://formspree.io/f/moverwoe" method="POST">
+        <input type="hidden" name="_subject" value="New project enquiry (MVP page)" />
+        <div class="fgrid">
+          <div class="fld"><label for="c-name">Name</label><input id="c-name" name="name" type="text" placeholder="Your name" autocomplete="name" required></div>
+          <div class="fld"><label for="c-email">Email</label><input id="c-email" name="_replyto" type="email" placeholder="you@company.com" autocomplete="email" required></div>
+          <div class="fld full"><label for="c-site">Company or website <span style="color:var(--mute);font-weight:500">(optional)</span></label><input id="c-site" name="company" type="text" placeholder="yourcompany.com"></div>
+          <div class="fld full"><span class="lbl" id="c-needs">What do you need?</span>
+            <div class="opts" role="group" aria-labelledby="c-needs">
+              <label><input type="checkbox" name="needs[]" value="Website"><span>Website</span></label>
+              <label><input type="checkbox" name="needs[]" value="Dashboard or internal tool"><span>Dashboard / internal tool</span></label>
+              <label><input type="checkbox" name="needs[]" value="Web app or portal"><span>Web app / portal</span></label>
+              <label><input type="checkbox" name="needs[]" value="iOS app or MVP" checked><span>iOS app / MVP</span></label>
+              <label><input type="checkbox" name="needs[]" value="AI automation"><span>AI automation</span></label>
+              <label><input type="checkbox" name="needs[]" value="Not sure yet"><span>Not sure yet</span></label>
+            </div>
+          </div>
+          <div class="fld full"><label for="c-budget">Rough budget <span style="color:var(--mute);font-weight:500">(optional)</span></label>
+            <select id="c-budget" name="budget"><option value="">Choose a range</option><option>Under £1,000</option><option>£1,000 to £3,000</option><option>£3,000 to £8,000</option><option>£8,000+</option><option>Not sure yet</option></select></div>
+          <div class="fld full"><label for="c-msg">Message</label><textarea id="c-msg" name="message" placeholder="What problem does it solve, and who is it for?" required></textarea></div>
+        </div>
+        <div class="f-foot">
+          <small>We reply within one business day. No spam, ever.</small>
+          <button class="btn btn-ink" type="submit">Send message <span class="arr"><svg width="12" height="12" viewBox="0 0 12 12"><path d="M2 6h8M6.5 2.5 10 6l-3.5 3.5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></span></button>
+        </div>
+      </form>
+    </div>
+  </div>
+</section>
+</main>
+
+<!-- ================= FOOTER ================= -->
+<footer class="foot">
+  <div class="wrap">
+    <div class="foot-cta">
+      <h2 class="display">Let's build something <span class="hl">useful.</span></h2>
+      <div class="ctas" style="margin-top:0">
+        <a class="btn btn-lime" href="#contact">Start a project <span class="arr"><svg width="12" height="12" viewBox="0 0 12 12"><path d="M2 6h8M6.5 2.5 10 6l-3.5 3.5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></span></a>
+        <a class="btn" style="background:#17181a;color:#fff;box-shadow:0 0 0 1px #2a2b2e inset" href="index.html#audit">Free site audit</a>
+      </div>
+    </div>
+    <div class="foot-grid">
+      <div>
+        <a class="logo" href="index.html" aria-label="Qoreon Labs home"><img src="assets/img/qoreon-logo-light.svg" alt="Qoreon Labs" width="175" height="52" loading="lazy" /></a>
+        <p class="about">A UK product studio building websites, dashboards, web apps, iOS apps and AI automations for growing businesses.</p>
+        <div class="foot-soc">
+          <a href="https://www.linkedin.com/company/qoreon-labs-ltd/" target="_blank" rel="noopener" aria-label="Qoreon Labs on LinkedIn"><svg width="15" height="15" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9h4v11H4zM6 3.5a2 2 0 1 1 0 4 2 2 0 0 1 0-4zM10 9h3.8v1.6c.6-1 1.9-1.9 3.8-1.9 3.6 0 4.4 2.3 4.4 5.4V20h-4v-5.2c0-1.3 0-2.9-1.8-2.9s-2.1 1.4-2.1 2.8V20H10z" fill="currentColor"/></svg></a>
+          <a href="https://x.com/QoreonLab" target="_blank" rel="noopener" aria-label="Qoreon Labs on X"><svg width="13" height="13" viewBox="0 0 24 24" aria-hidden="true"><path d="M18.24 2.25h3.31l-7.23 8.26 8.5 11.24h-6.65l-5.21-6.82-5.97 6.82H1.68l7.73-8.84L1.25 2.25h6.83l4.71 6.23zm-1.16 17.52h1.83L7.08 4.13H5.12z" fill="currentColor"/></svg></a>
+          <a href="https://www.facebook.com/QOREONLABS" target="_blank" rel="noopener" aria-label="Qoreon Labs on Facebook"><svg width="15" height="15" viewBox="0 0 24 24" aria-hidden="true"><path d="M14 8.5V6.6c0-.8.2-1.3 1.4-1.3H17V2.2c-.3 0-1.3-.2-2.5-.2C12 2 10.5 3.5 10.5 6.2v2.3H8v3.3h2.5V22H14V11.8h2.8l.4-3.3z" fill="currentColor"/></svg></a>
+          <a href="https://www.fiverr.com/talha_19" target="_blank" rel="noopener" aria-label="Qoreon Labs on Fiverr"><svg width="15" height="15" viewBox="0 0 24 24" aria-hidden="true"><path d="M9 19V9.6C9 7.6 10 6.5 12 6.5h1.3M6.5 11.2H12M16 11.2V19" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round"/><circle cx="16" cy="7.4" r="1.6" fill="currentColor"/></svg></a>
+        </div>
+      </div>
+      <div>
+        <h3>Studio</h3>
+        <ul><li><a href="about-us.html">About</a></li><li><a href="index.html#work">Work</a></li><li><a href="polymonit-wallet-tracker.html">PolyMonit</a></li><li><a href="blogs.html">Blog</a></li><li><a href="quoteform.html">Get a quote</a></li><li><a href="#contact">Contact</a></li></ul>
+      </div>
+      <div>
+        <h3>Services</h3>
+        <ul><li><a href="services.html#web-development">Web development</a></li><li><a href="business-dashboard-development.html">Dashboards</a></li><li><a href="internal-tools-development.html">Internal tools</a></li><li><a href="business-web-app-development.html">Business web apps</a></li><li><a href="customer-portal-development.html">Customer portals</a></li><li><a href="custom-software-development.html">Custom software</a></li></ul>
+      </div>
+      <div>
+        <h3>Products &amp; AI</h3>
+        <ul><li><a href="mvp-development.html">MVP development</a></li><li><a href="saas-development.html">SaaS development</a></li><li><a href="ai-development.html">AI development</a></li><li><a href="ai-automation.html">AI automation</a></li><li><a href="workflow-automation.html">Workflow automation</a></li><li><a href="index.html#security">AI security (RedShield)</a></li></ul>
+      </div>
+    </div>
+    <div class="foot-bot">
+      <span>© <span id="year">2026</span> Qoreon Labs Ltd. Registered in England &amp; Wales, company no. 16359714.</span>
+      <nav aria-label="Legal"><a href="privacy.html">Privacy</a><a href="terms.html">Terms</a><a href="cookies.html">Cookies</a></nav>
+    </div>
+  </div>
+  <div class="foot-word" aria-hidden="true">Qoreon Labs</div>
+</footer>
+
+<script src="assets/js/studio.js"></script>
+</body>
+</html>

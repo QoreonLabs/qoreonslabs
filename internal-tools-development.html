@@ -1,0 +1,724 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-KPXN9398W1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-KPXN9398W1');
+  </script>
+
+  <!-- Primary meta -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Internal Tools Development | Admin Panels &amp; Approvals | Qoreon Labs</title>
+  <meta name="description" content="We build internal tools that replace spreadsheets: admin panels, approval workflows, roles and audit logs your team will actually use. UK studio, fixed quotes." />
+  <meta name="author" content="Qoreon Labs Ltd" />
+  <meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1" />
+  <meta name="theme-color" content="#efefea" />
+  <link rel="canonical" href="https://qoreonlabs.com/internal-tools-development.html" />
+  <link rel="icon" href="assets/img/favicon.ico" sizes="any" />
+  <link rel="icon" type="image/svg+xml" href="assets/img/favicon.svg" />
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon-32.png" />
+  <link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png" />
+
+  <!-- Open Graph / Social -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://qoreonlabs.com/internal-tools-development.html" />
+  <meta property="og:title" content="Internal tools development | Qoreon Labs" />
+  <meta property="og:description" content="Admin panels, approval workflows and team tools that replace the spreadsheet chaos. Fixed quotes, weekly previews." />
+  <meta property="og:image" content="https://qoreonlabs.com/assets/img/og-qoreon.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:alt" content="Qoreon Labs, a UK AI development company and product studio" />
+  <meta property="og:site_name" content="Qoreon Labs" />
+  <meta property="og:locale" content="en_GB" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:site" content="@QoreonLab" />
+  <meta name="twitter:title" content="Internal tools development | Qoreon Labs" />
+  <meta name="twitter:description" content="Admin panels, approval workflows and team tools that replace the spreadsheet chaos. Fixed quotes, weekly previews." />
+  <meta name="twitter:image" content="https://qoreonlabs.com/assets/img/og-qoreon.png" />
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "name": "Internal tools development",
+    "serviceType": "Internal tools development",
+    "url": "https://qoreonlabs.com/internal-tools-development.html",
+    "description": "Custom internal tools for growing businesses: admin panels, approval workflows, roles and permissions, audit logs and integrations.",
+    "areaServed": [
+      "GB",
+      "US",
+      "AU"
+    ],
+    "provider": {
+      "@type": "Organization",
+      "name": "Qoreon Labs Ltd",
+      "url": "https://qoreonlabs.com",
+      "logo": "https://qoreonlabs.com/assets/img/apple-touch-icon.png",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "71-75 Shelton Street, Covent Garden",
+        "addressLocality": "London",
+        "postalCode": "WC2H 9JQ",
+        "addressCountry": "GB"
+      }
+    }
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://qoreonlabs.com/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Services",
+        "item": "https://qoreonlabs.com/services.html"
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "name": "Internal tools development",
+        "item": "https://qoreonlabs.com/internal-tools-development.html"
+      }
+    ]
+  }
+  </script>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Inter+Tight:wght@500;600;700&family=Lora:ital,wght@1,500&display=swap" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Inter+Tight:wght@500;600;700&family=Lora:ital,wght@1,500&display=swap" media="print" onload="this.media='all'" />
+  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Inter+Tight:wght@500;600;700&family=Lora:ital,wght@1,500&display=swap" /></noscript>
+
+  <link rel="stylesheet" href="assets/css/studio.css" />
+</head>
+<body class="no-js">
+<script>document.body.classList.remove('no-js')</script>
+
+<!-- ================= HEADER ================= -->
+<header class="hdr" id="header">
+  <div class="hdr-in">
+    <a class="logo" href="index.html" aria-label="Qoreon Labs home"><img src="assets/img/qoreon-logo.svg" alt="Qoreon Labs" width="134" height="40" /></a>
+
+    <nav class="nav" id="primary-nav" aria-label="Primary">
+      <a href="index.html">Home</a>
+      <a href="about-us.html">About</a>
+      <div class="dd" id="dd-services">
+        <button class="dd-t on" type="button" aria-expanded="false" aria-controls="mega">Services
+          <svg width="11" height="8" viewBox="0 0 12 8" aria-hidden="true"><path d="m1 1 5 5 5-5" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></svg>
+        </button>
+        <div class="mega" id="mega">
+          <div class="mg">
+            <div class="mg-l">Websites &amp; core</div>
+            <a href="services.html#web-development"><b>Web Development <svg width="10" height="10" viewBox="0 0 10 10"><path d="M2 8 8 2M3.5 2H8v4.5" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></b><span>New sites and redesigns</span></a>
+            <a href="services.html#app-development"><b>App Development <svg width="10" height="10" viewBox="0 0 10 10"><path d="M2 8 8 2M3.5 2H8v4.5" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></b><span>iOS and cross-platform apps</span></a>
+            <a href="services.html#software-development"><b>Software Development <svg width="10" height="10" viewBox="0 0 10 10"><path d="M2 8 8 2M3.5 2H8v4.5" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></b><span>Back ends, APIs, integrations</span></a>
+            <a href="custom-software-development.html"><b>Custom Software <svg width="10" height="10" viewBox="0 0 10 10"><path d="M2 8 8 2M3.5 2H8v4.5" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></b><span>Built around how you work</span></a>
+          </div>
+          <div class="mg">
+            <div class="mg-l">Business systems</div>
+            <a href="business-dashboard-development.html"><b>Business Dashboards <svg width="10" height="10" viewBox="0 0 10 10"><path d="M2 8 8 2M3.5 2H8v4.5" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></b><span>Your numbers on one screen</span></a>
+            <a href="internal-tools-development.html" aria-current="page"><b>Internal Tools <svg width="10" height="10" viewBox="0 0 10 10"><path d="M2 8 8 2M3.5 2H8v4.5" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></b><span>Replace the spreadsheets</span></a>
+            <a href="business-web-app-development.html"><b>Business Web Apps <svg width="10" height="10" viewBox="0 0 10 10"><path d="M2 8 8 2M3.5 2H8v4.5" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></b><span>Booking, ordering, ops</span></a>
+            <a href="customer-portal-development.html"><b>Customer Portals <svg width="10" height="10" viewBox="0 0 10 10"><path d="M2 8 8 2M3.5 2H8v4.5" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></b><span>Self-serve for your clients</span></a>
+          </div>
+          <div class="mg">
+            <div class="mg-l">Products &amp; automation</div>
+            <a href="ai-automation.html"><b>AI Automation <svg width="10" height="10" viewBox="0 0 10 10"><path d="M2 8 8 2M3.5 2H8v4.5" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></b><span>Leads, replies, follow-ups</span></a>
+            <a href="workflow-automation.html"><b>Workflow Automation <svg width="10" height="10" viewBox="0 0 10 10"><path d="M2 8 8 2M3.5 2H8v4.5" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></b><span>Connect the tools you use</span></a>
+            <a href="ai-development.html"><b>AI Development <svg width="10" height="10" viewBox="0 0 10 10"><path d="M2 8 8 2M3.5 2H8v4.5" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></b><span>Chat, search, AI features</span></a>
+            <a href="mvp-development.html"><b>MVP Development <svg width="10" height="10" viewBox="0 0 10 10"><path d="M2 8 8 2M3.5 2H8v4.5" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></b><span>From idea to first users</span></a>
+            <a href="saas-development.html"><b>SaaS Development <svg width="10" height="10" viewBox="0 0 10 10"><path d="M2 8 8 2M3.5 2H8v4.5" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></b><span>Subscriptions, accounts, billing</span></a>
+          </div>
+          <a class="mg-promo" href="index.html#audit">
+            <div class="score">46<small>/100</small></div>
+            <b>Free site audit</b>
+            <p>See what's costing you enquiries, in plain English.</p>
+            <span class="go">Get yours <svg width="12" height="12" viewBox="0 0 12 12"><path d="M2 6h8M6.5 2.5 10 6l-3.5 3.5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+          </a>
+        </div>
+      </div>
+      <a href="index.html#work">Work</a>
+      <a href="index.html#process">Process</a>
+      <a href="#contact">Contact</a>
+      <a class="btn btn-ink btn-sm m-cta" href="index.html#audit" style="display:none">Free site audit <span class="arr"><svg width="11" height="11" viewBox="0 0 12 12"><path d="M2 6h8M6.5 2.5 10 6l-3.5 3.5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></span></a>
+    </nav>
+
+    <div class="hdr-cta">
+      <a class="q" href="quoteform.html">Get a quote</a>
+      <a class="btn btn-ink btn-sm" href="index.html#audit">Free site audit <span class="arr"><svg width="11" height="11" viewBox="0 0 12 12"><path d="M2 6h8M6.5 2.5 10 6l-3.5 3.5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></span></a>
+    </div>
+    <button class="burger" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="primary-nav">
+      <svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 8h16M4 16h16" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+    </button>
+  </div>
+</header>
+
+<main id="top">
+
+<!-- ================= HERO ================= -->
+<section class="hero">
+  <div class="wrap hero-top">
+    <div class="ht-l">
+      <div class="kicker rv"><a class="idx" href="services.html">Services</a>Internal tools development</div>
+      <h1 class="display rv d1">Internal tools that replace <span class="soft ser">the</span> spreadsheet <span class="hl">chaos.</span></h1>
+    </div>
+    <div class="ht-r">
+      <p class="lede rv d2">We build the admin panels, approval flows and team tools your business runs on. <b>One place for requests, records and sign-offs</b>, with the right access for each person and a full history of who did what.</p>
+      <div class="ctas rv d3">
+        <a class="btn btn-ink" href="#contact">Book a free call <span class="arr"><svg width="12" height="12" viewBox="0 0 12 12"><path d="M2 6h8M6.5 2.5 10 6l-3.5 3.5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></span></a>
+        <a class="btn btn-ghost" href="#work">See examples</a>
+      </div>
+      <div class="trust rv d4">
+        <div class="trust-i"><div>
+          <div class="stars" role="img" aria-label="5 out of 5 stars"><svg width="13" height="13" viewBox="0 0 20 20"><path d="M10 1.5l2.6 5.6 6.1.7-4.5 4.2 1.2 6L10 15l-5.4 3 1.2-6L1.3 7.8l6.1-.7z" fill="currentColor"/></svg><svg width="13" height="13" viewBox="0 0 20 20"><path d="M10 1.5l2.6 5.6 6.1.7-4.5 4.2 1.2 6L10 15l-5.4 3 1.2-6L1.3 7.8l6.1-.7z" fill="currentColor"/></svg><svg width="13" height="13" viewBox="0 0 20 20"><path d="M10 1.5l2.6 5.6 6.1.7-4.5 4.2 1.2 6L10 15l-5.4 3 1.2-6L1.3 7.8l6.1-.7z" fill="currentColor"/></svg><svg width="13" height="13" viewBox="0 0 20 20"><path d="M10 1.5l2.6 5.6 6.1.7-4.5 4.2 1.2 6L10 15l-5.4 3 1.2-6L1.3 7.8l6.1-.7z" fill="currentColor"/></svg><svg width="13" height="13" viewBox="0 0 20 20"><path d="M10 1.5l2.6 5.6 6.1.7-4.5 4.2 1.2 6L10 15l-5.4 3 1.2-6L1.3 7.8l6.1-.7z" fill="currentColor"/></svg></div>
+          <span><b style="display:inline">5.0</b> from 69 reviews</span></div></div>
+        <span class="trust-sep"></span>
+        <div class="trust-i"><div><b>100+</b>orders delivered</div></div>
+        <span class="trust-sep"></span>
+        <div class="trust-i"><div><b>UK Ltd</b>registered in London</div></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Hero visual: the mess on the left, one place on the right (Brightline Ops sample build) -->
+  <div class="hv rv d2" aria-hidden="true">
+    <div class="itx">
+      <div class="itx-mess">
+        <div class="itx-lbl"><i></i>Before: five places to check</div>
+        <div class="fit" style="--w:620;--h:500"><div class="fit-in real">
+          <div class="mx mx-sheet sheet">
+            <div class="sbar"><i></i>Purchase requests FINAL v3 (Mia's copy).xlsx<span>4 editors</span></div>
+            <table>
+              <tr><td class="rn"></td><td class="hd">Request</td><td class="hd">Supplier</td><td class="hd">Amount</td><td class="hd">Approved?</td><td class="hd">Notes</td></tr>
+              <tr><td class="rn">12</td><td>Oat milk x240</td><td>Northfield</td><td>$1,860</td><td class="yel">???</td><td>ask Jon</td></tr>
+              <tr><td class="rn">13</td><td class="dup">Oat milk x240</td><td class="dup">Northfield</td><td class="dup">$1,860</td><td></td><td class="dup">dup??</td></tr>
+              <tr><td class="rn">14</td><td>Espresso service</td><td>BrewTech</td><td>$2,450</td><td>Jon</td><td></td></tr>
+              <tr><td class="rn">15</td><td>Cups 12oz</td><td>Kestrel</td><td>$480</td><td>yes</td><td>paid?</td></tr>
+              <tr><td class="rn">16</td><td>Shop signage</td><td>Printworks</td><td class="err">#REF!</td><td></td><td>Sam?</td></tr>
+              <tr><td class="rn">17</td><td>Fuel cards</td><td>FleetCard</td><td>$600</td><td>Y</td><td></td></tr>
+              <tr><td class="rn">18</td><td>Display fridge</td><td>CoolServe</td><td>$5,900</td><td class="err">NO??</td><td>owner??</td></tr>
+            </table>
+          </div>
+          <div class="mx mx-mail"><span class="n">14 unread</span>
+            <div class="h"><span class="ap-av" style="background:linear-gradient(135deg,#eaffb0,#c3eb4a)">JO</span><div><b>Jon Okafor</b><small>3 days ago</small></div></div>
+            <div class="s">RE: RE: FW: Northfield order</div>
+            Sorry, missed this one. Who's approving it, you or Sam?
+          </div>
+          <div class="mx mx-chat">
+            <div class="h">Managers (Leeds)<small>9:58 pm</small></div>
+            <div class="b"><small>Mia</small>did anyone sign off the oat milk order??</div>
+            <div class="b"><small>Jon</small>I thought Sam did</div>
+            <div class="b me">Not me. Is it in the sheet?</div>
+          </div>
+          <div class="mx mx-paper">PURCHASE REQUEST
+            <p><span>ITEM</span>Oat milk x 240</p>
+            <p><span>COST</span>$1,860 ?</p>
+            <p><span>SIGNED</span>&nbsp;</p>
+            <i class="ring"></i>
+          </div>
+          <div class="sticky"><b>DON'T EDIT ROW 14</b>Ask Sam first. Or Jon?</div>
+          <div class="itx-q">Who approved PO-1042?</div>
+        </div></div>
+      </div>
+
+      <div class="itx-arr">
+        <svg viewBox="0 0 112 40" width="112" height="40"><path d="M6 28C34 4 72 4 100 21" fill="none" stroke="#0d0d0f" stroke-width="2" stroke-dasharray="4 6" stroke-linecap="round"/><path d="M90 13l11 8.5-12.5 4.5" fill="none" stroke="#0d0d0f" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        <span>One place<br>for every request</span>
+      </div>
+
+      <div class="itx-after">
+        <div class="itx-lbl on"><i></i>After: one place, full history</div>
+        <div class="itx-card">
+          <div class="ic-top"><span class="lg-t">B</span><span><b>Brightline</b> / Approvals</span><span class="ap-st y">2 waiting on you</span></div>
+          <div class="ic-h"><div><small>PO-1042</small><h3>Oat milk restock for Leeds</h3></div><div class="amt">$1,860</div></div>
+          <div class="ic-meta"><div><span>Supplier</span><b>Northfield Dairy</b></div><div><span>Items</span><b>240 x 1L</b></div><div><span>Needed by</span><b>Thu 2 Oct</b></div></div>
+          <div class="ic-chain">
+            <div class="ic-step"><i style="background:linear-gradient(135deg,#dfe4ff,#a9b6f5)">MT<em><svg width="9" height="9" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></em></i><b>Mia Tan</b>Requested 9:12</div>
+            <div class="ic-step"><i style="background:linear-gradient(135deg,#eaffb0,#c3eb4a)">JO<em><svg width="9" height="9" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></em></i><b>Jon Okafor</b>Manager 9:40</div>
+            <div class="ic-step now"><i>You</i><b>Finance</b>Waiting on you</div>
+          </div>
+          <div class="ic-acts"><span class="ap-btn k"><svg width="9" height="9" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg> Approve</span><span class="ap-btn">Reject</span><span class="ap-btn">Ask Mia</span></div>
+          <div class="ic-log">
+            <p><em>9:41 am</em><span>Sent to <b>finance</b>, over the $1,500 manager limit</span></p>
+            <p><em>9:40 am</em><span><b>Jon Okafor</b> approved as manager</span></p>
+            <p><em>9:12 am</em><span><b>Mia Tan</b> raised the request</span></p>
+          </div>
+          <div class="itx-chip pop p1"><div><b>3h 20m</b>average sign-off, was 2 days</div></div>
+        </div>
+      </div>
+    </div>
+    <div class="hv-cap"><span>Sample build · Brightline Ops purchase approvals</span><span>Roles · Approvals · Audit log</span></div>
+  </div>
+
+  <div class="marq" aria-label="Replaces">
+    <div class="marq-in">
+      <div class="marq-l">Replaces</div>
+      <div class="marq-v">
+        <div class="marq-t">
+          <span>Shared spreadsheets</span><span>Email approvals</span><span>WhatsApp groups</span><span>Paper forms</span><span>Sticky notes</span><span>Shared inboxes</span><span>Copy and paste</span><span>Monday catch-ups</span>
+          <span aria-hidden="true">Shared spreadsheets</span><span aria-hidden="true">Email approvals</span><span aria-hidden="true">WhatsApp groups</span><span aria-hidden="true">Paper forms</span><span aria-hidden="true">Sticky notes</span><span aria-hidden="true">Shared inboxes</span><span aria-hidden="true">Copy and paste</span><span aria-hidden="true">Monday catch-ups</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= PROBLEMS ================= -->
+<section class="sec" id="problems">
+  <div class="wrap">
+    <div class="sec-head">
+      <div>
+        <div class="kicker rv"><span class="idx">01</span>Sound familiar?</div>
+        <h2 class="display rv d1">Your team works hard. <span class="hl">The tools don't.</span></h2>
+      </div>
+      <p class="rv d2">Most internal processes start in a spreadsheet and a group chat. That works for five people. It falls apart at fifteen.</p>
+    </div>
+
+    <div class="prob-grid">
+      <article class="prob rv">
+        <div class="fit" style="--w:300;--h:230" aria-hidden="true"><div class="fit-in real">
+          <div class="pad" style="inset:20px 18px"><div class="bub me">Can I order more cups?</div><div class="bub th">Did anyone approve the van repair?</div><div class="bub me">Which chat was that in?</div><div class="bub th">Check email, maybe</div></div>
+        </div></div>
+        <span class="n">Problem 01</span>
+        <h3>Requests get lost in chats</h3>
+        <p>Purchase requests, holiday requests and fixes are scattered across email, WhatsApp and memory.</p>
+      </article>
+      <article class="prob rv d1">
+        <div class="fit" style="--w:300;--h:230" aria-hidden="true"><div class="fit-in real">
+          <div class="mini-win sheet">
+            <div class="sbar"><i></i>Staff_rota_FINAL_v3.xlsx<span>6 editors</span></div>
+            <table><tr><td class="rn">1</td><td><b>Name</b></td><td><b>Mon</b></td><td><b>Tue</b></td></tr><tr><td class="rn">2</td><td>Mia</td><td>Leeds</td><td class="yel">Leeds??</td></tr><tr><td class="rn">3</td><td>Jon</td><td class="dup">York</td><td class="dup">York</td></tr><tr><td class="rn">4</td><td>Sam</td><td class="err">#N/A</td><td>Off</td></tr><tr><td class="rn">5</td><td>Priya</td><td>York</td><td class="err">#REF!</td></tr><tr><td class="rn">6</td><td>Total</td><td class="err">#VALUE!</td><td></td></tr></table>
+          </div>
+        </div></div>
+        <span class="n">Problem 02</span>
+        <h3>Spreadsheets nobody trusts</h3>
+        <p>Five people editing one file means broken formulas, double bookings and no idea which version is right.</p>
+      </article>
+      <article class="prob rv d2">
+        <div class="fit" style="--w:300;--h:230" aria-hidden="true"><div class="fit-in real">
+          <div class="pad"><div class="note"><span class="ic"><svg class="" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#3d3d42" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 3H6a1 1 0 0 0-1 1v16a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V8z"/><path d="M14 3v5h5M9 13h6M9 17h4"/></svg></span><div><b>Supplier price changed</b>Edited by someone, Tuesday</div><span class="ago">?</span></div><div class="note"><span class="ic"><svg class="" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#3d3d42" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 6 6 18M6 6l12 12"/></svg></span><div><b>Row 48 deleted</b>Nobody remembers why</div><span class="ago">2 wks</span></div><div class="note"><span class="ic"><svg class="" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#3d3d42" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="8" cy="15" r="4"/><path d="m11 12 9-9M16 7l3 3"/></svg></span><div><b>Shared login used</b>admin@ password, 9 people</div><span class="ct">!</span></div></div>
+        </div></div>
+        <span class="n">Problem 03</span>
+        <h3>No record of who did what</h3>
+        <p>When something goes wrong, there is no history to check. Everyone shares one login and one password.</p>
+      </article>
+      <article class="prob rv d3">
+        <div class="fit" style="--w:300;--h:230" aria-hidden="true"><div class="fit-in real">
+          <div class="pad"><div class="note"><span class="ic"><svg class="" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#3d3d42" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 13h5l2 3h4l2-3h5"/><path d="M5 5h14l2 8v6H3v-6z"/></svg></span><div><b>Waiting on Sam</b>14 requests to approve</div><span class="ct">14</span></div><div class="note"><span class="ic"><svg class="" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#3d3d42" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></span><div><b>Holiday request</b>Asked 9 days ago</div><span class="ago">9 days</span></div><div class="note"><span class="ic"><svg class="" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#3d3d42" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 7h12l1 13a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1L6 7z"/><path d="M9 7a3 3 0 0 1 6 0"/></svg></span><div><b>Stock order</b>Blocked until approved</div><span class="ago">3 days</span></div></div>
+        </div></div>
+        <span class="n">Problem 04</span>
+        <h3>Everything waits on one person</h3>
+        <p>Approvals sit in one inbox, so work stops whenever the owner is busy, away or asleep.</p>
+      </article>
+    </div>
+
+    <div class="prob-foot rv">
+      <p>One tool your team trusts fixes all four. <span>Usually live in 3 to 8 weeks.</span></p>
+      <a class="btn btn-lime btn-sm" href="#build">See what we build <span class="arr"><svg width="11" height="11" viewBox="0 0 12 12"><path d="M2 6h8M6.5 2.5 10 6l-3.5 3.5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></span></a>
+    </div>
+  </div>
+</section>
+
+<!-- ================= WHAT WE BUILD ================= -->
+<section class="sec" id="build" style="padding-top:20px">
+  <div class="wrap">
+    <div class="sec-head">
+      <div>
+        <div class="kicker rv"><span class="idx">02</span>What we build</div>
+        <h2 class="display rv d1">Tools shaped <span class="soft ser">around</span> how your team <span class="hl">really works.</span></h2>
+      </div>
+      <p class="rv d2">We map the process you have today, keep the parts that work and replace the copying, chasing and guessing.</p>
+    </div>
+
+    <div class="cards-3">
+      <article class="pstep rv">
+        <div class="fit" style="--w:400;--h:250" aria-hidden="true"><div class="fit-in real">
+          <div class="pad"><div class="ap-card ap-orders" style="margin-top:0;background:#fff"><div class="ap-ch"><div><b>Approvals</b><small>Waiting on you · 2</small></div><span class="ap-btn k sm" style="margin-left:auto">Approve 2</span></div><table><tr><th>Request</th><th class="r">Amount</th><th>Status</th></tr><tr><td><b>PO-1042</b> Oat milk</td><td class="r"><b>$1,860</b></td><td><span class="ap-st y">Your turn</span></td></tr><tr><td><b>PO-1039</b> Signage</td><td class="r"><b>$3,200</b></td><td><span class="ap-st y">Your turn</span></td></tr><tr><td><b>PO-1040</b> Cups</td><td class="r"><b>$480</b></td><td><span class="ap-st g">Approved</span></td></tr></table></div></div>
+        </div></div>
+        <div class="top"><b>APPROVALS</b><span>Rules you set</span></div>
+        <h3>Approval workflows</h3>
+        <p>Requests go to the right person automatically, with limits by amount, team or location. Approve from your phone in one tap.</p>
+      </article>
+      <article class="pstep rv d1">
+        <div class="fit" style="--w:400;--h:250" aria-hidden="true"><div class="fit-in real">
+          <div class="pad"><div class="ap-card ap-orders" style="margin-top:0;background:#fff"><div class="ap-ch"><div><b>Suppliers</b><small>38 records</small></div><span class="ap-search" style="margin:0 0 0 auto;width:150px;height:30px"><svg class="i" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg><span>Search</span></span></div><table><tr><th>Name</th><th>Contact</th><th>Terms</th></tr><tr><td><b>Northfield Dairy</b></td><td>Ana Ruiz</td><td>30 days</td></tr><tr><td><b>Kestrel Supply</b></td><td>Mia Torres</td><td>14 days</td></tr><tr><td><b>BrewTech Repairs</b></td><td>Dev Shah</td><td>On invoice</td></tr></table></div></div>
+        </div></div>
+        <div class="top"><b>ADMIN PANELS</b><span>Search, filter, edit</span></div>
+        <h3>Admin panels and records</h3>
+        <p>Customers, suppliers, stock and staff in clean tables you can search, filter, bulk edit and export.</p>
+      </article>
+      <article class="pstep rv d2">
+        <div class="fit" style="--w:400;--h:250" aria-hidden="true"><div class="fit-in real">
+          <div class="pad"><div class="ap-card ap-orders" style="margin-top:0;background:#fff"><div class="ap-ch"><div><b>Roles</b><small>Who can do what</small></div></div><table><tr><th>Role</th><th>Approve</th><th>Reports</th></tr><tr><td><b>Staff</b></td><td><span class="ap-st n">Requests only</span></td><td><span class="ap-st n">Hidden</span></td></tr><tr><td><b>Manager</b></td><td><span class="ap-st y">Up to $1,500</span></td><td><span class="ap-st g">Own shop</span></td></tr><tr><td><b>Finance</b></td><td><span class="ap-st g">Any amount</span></td><td><span class="ap-st g">All shops</span></td></tr></table></div></div>
+        </div></div>
+        <div class="top"><b>ROLES</b><span>Per person</span></div>
+        <h3>Roles and permissions</h3>
+        <p>Everyone gets their own login. Staff see what they need, managers see their team and finance sees the money.</p>
+      </article>
+      <article class="pstep rv">
+        <div class="fit" style="--w:400;--h:250" aria-hidden="true"><div class="fit-in real">
+          <div class="pad"><div class="ap-card ap-orders" style="margin-top:0;background:#fff"><div class="ap-ch"><div><b>Audit log</b><small>Every change, kept</small></div></div><table><tr><th>When</th><th>Who</th><th>What</th></tr><tr><td>9:40 am</td><td><span class="ap-av" style="background:linear-gradient(135deg,#eaffb0,#c3eb4a)">JO</span>Jon</td><td>Approved PO-1042</td></tr><tr><td>9:12 am</td><td><span class="ap-av" style="background:linear-gradient(135deg,#dfe4ff,#a9b6f5)">MT</span>Mia</td><td>Raised PO-1042</td></tr><tr><td>Tue</td><td><span class="ap-av" style="background:linear-gradient(135deg,#ffe1cc,#f3b38f)">SR</span>Sam</td><td>Changed limit to $1,500</td></tr></table></div></div>
+        </div></div>
+        <div class="top"><b>HISTORY</b><span>Always on</span></div>
+        <h3>A full audit trail</h3>
+        <p>Every edit, approval and login is recorded, so you can see exactly what changed, when and by whom.</p>
+      </article>
+      <article class="pstep rv d1">
+        <div class="fit" style="--w:400;--h:250" aria-hidden="true"><div class="fit-in real">
+          <div class="pad" style="inset:18px 24px"><div class="mf"><label>What do you need?<span class="f">Oat milk 1L, 240 cartons</span></label><div class="row"><label>Supplier<span>Northfield Dairy</span></label><label>Needed by<span>Thu 2 Oct</span></label></div><label>Notes<span class="ph">Anything the approver should know</span></label></div></div>
+        </div></div>
+        <div class="top"><b>FORMS</b><span>Phone friendly</span></div>
+        <h3>Simple forms for your team</h3>
+        <p>Replace paper forms and long email threads with short forms that work on a phone and land in the right place.</p>
+      </article>
+      <article class="pstep rv d2">
+        <div class="fit" style="--w:400;--h:250" aria-hidden="true"><div class="fit-in real">
+          <div class="toast" style="left:20px;top:22px;width:330px"><span class="ic"><svg class="" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#d6ff3d" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 8a6 6 0 0 1 12 0c0 7 3 9 3 9H3s3-2 3-9"/><path d="M10.3 21a1.9 1.9 0 0 0 3.4 0"/></svg></span><div class="tx"><b>Slack · #purchasing <em>9:41 am</em></b>Jon approved PO-1042 for $1,860. It now needs finance sign-off.</div></div>
+          <div class="toast" style="left:50px;top:128px;width:330px"><span class="ic"><svg class="" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#d6ff3d" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 6h18v12H3zM3 7l9 6 9-6"/></svg></span><div class="tx"><b>Email to Mia Tan <em>10:02 am</em></b>Good news: your request PO-1042 is approved. The order has gone to Northfield Dairy.</div></div>
+        </div></div>
+        <div class="top"><b>NOTIFICATIONS</b><span>Email · Slack</span></div>
+        <h3>Connected to your tools</h3>
+        <p>Updates go to Slack, email or Teams, and approved orders can flow into Xero, QuickBooks or your stock system.</p>
+      </article>
+    </div>
+
+    <div class="svc-all rv">
+      <span class="lbl">Related services</span>
+      <div class="chips">
+        <a class="chip" href="business-dashboard-development.html">Business dashboards</a>
+        <a class="chip" href="custom-software-development.html">Custom software</a>
+        <a class="chip" href="customer-portal-development.html">Customer portals</a>
+        <a class="chip" href="workflow-automation.html">Workflow automation</a>
+        <a class="chip" href="business-web-app-development.html">Business web apps</a>
+        <a class="chip" href="ai-automation.html">AI automation</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= PROCESS ================= -->
+<section class="sec" id="process" style="padding-top:20px">
+  <div class="wrap">
+    <div class="sec-head">
+      <div>
+        <div class="kicker rv"><span class="idx">03</span>How it works</div>
+        <h2 class="display rv d1">No mystery. <span class="soft ser">Just</span> four clear <span class="hl">steps.</span></h2>
+      </div>
+      <p class="rv d2">You always know what's being built, what it costs and when it ships. That's the whole point.</p>
+    </div>
+    <div class="proc">
+      <article class="pstep rv">
+        <div class="fit" style="--w:300;--h:170" aria-hidden="true"><div class="fit-in">
+          <div class="cal">
+            <span><b>Mon</b><i></i><i style="width:60%"></i></span>
+            <span class="on"><b>Tue</b>10:30 call<i></i></span>
+            <span><b>Wed</b><i style="width:70%"></i></span>
+            <span><b>Thu</b><i></i><i style="width:50%"></i></span>
+            <span><b>Fri</b><i style="width:40%"></i></span>
+          </div>
+        </div></div>
+        <div class="top"><b>STEP 01</b><span>15 min</span></div>
+        <h3>A quick, free call</h3>
+        <p>Tell us what's not working. We ask a few questions and tell you honestly if we're the right fit.</p>
+      </article>
+      <article class="pstep rv d1">
+        <div class="fit" style="--w:300;--h:170" aria-hidden="true"><div class="fit-in">
+          <div class="qdoc">
+            <div class="h">Project plan<span>Fixed price</span></div>
+            <div class="ln">Process map &amp; screens<i></i>Week 1</div>
+            <div class="ln">Build &amp; import data<i></i>Weeks 2 to 4</div>
+            <div class="ln">Training &amp; handover<i></i>Week 5</div>
+            <div class="tot"><span>3 milestones</span><span>Agreed up front</span></div>
+          </div>
+        </div></div>
+        <div class="top"><b>STEP 02</b><span>48 hours</span></div>
+        <h3>A fixed quote and plan</h3>
+        <p>A clear scope, timeline and price, split into milestones. You only pay as each one is delivered.</p>
+      </article>
+      <article class="pstep rv d2">
+        <div class="fit" style="--w:300;--h:170" aria-hidden="true"><div class="fit-in">
+          <div class="prev">
+            <div class="bar"><i></i><i></i><i></i><span class="url">preview.qoreonlabs.com/brightline</span></div>
+            <div class="pv"><div><i class="k"></i><i></i><i class="s"></i></div><div class="im" style="background:linear-gradient(160deg,#eaffb0,#c3eb4a)"></div></div>
+            <div class="cm"><i></i>Preview v3 · 2 comments</div>
+          </div>
+        </div></div>
+        <div class="top"><b>STEP 03</b><span>Weekly</span></div>
+        <h3>Build, with weekly previews</h3>
+        <p>A working link every week so you can click through, comment and steer. No big reveal at the end.</p>
+      </article>
+      <article class="pstep rv d3">
+        <div class="fit" style="--w:300;--h:170" aria-hidden="true"><div class="fit-in">
+          <div class="launch">
+            <div class="ln"><i></i>Old spreadsheets imported<span>Done</span></div>
+            <div class="ln"><i></i>Logins &amp; roles<span>Done</span></div>
+            <div class="ln live"><i></i>Live<span>ops.brightline.co</span></div>
+          </div>
+        </div></div>
+        <div class="top"><b>STEP 04</b><span>Launch</span></div>
+        <h3>Launch, handover, support</h3>
+        <p>We launch it, show your team how it works and hand over everything. Ongoing support if you want it.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ================= RELATED WORK ================= -->
+<section class="sec" id="work" style="padding-top:20px">
+  <div class="wrap">
+    <div class="sec-head">
+      <div>
+        <div class="kicker rv"><span class="idx">04</span>Related work</div>
+        <h2 class="display rv d1">Built for teams <span class="soft ser">that</span> run on <span class="hl">process.</span></h2>
+      </div>
+      <p class="rv d2">A sample build that shows the approach, and a product of our own that we run every day.</p>
+    </div>
+
+    <div class="work-grid" style="margin-top:0">
+      <article class="wcard rv">
+        <div class="fit" style="--w:456;--h:340" aria-hidden="true"><div class="fit-in real">
+          <div class="win lt" style="inset:20px 20px -14px;width:auto;height:auto;background:#fff">
+            <div class="bar"><i></i><i></i><i></i><span class="url">ops.brightline.co/approvals</span></div>
+            <div style="padding:14px 16px">
+              <div class="ap-top"><div class="ap-crumb"><span>Brightline</span><i>/</i><b>Approvals</b></div><span class="ap-btn sm k">New request</span></div>
+              <div class="ap-tabs" style="margin-top:10px"><span class="on">Waiting on me<em>2</em></span><span>All open<em>4</em></span></div>
+              <div class="ap-card ap-orders" style="margin-top:0;background:#fff;padding:6px 14px"><table style="margin-top:0"><tr><th>Request</th><th class="r">Amount</th><th>Status</th></tr><tr><td><b>PO-1042</b></td><td class="r"><b>$1,860</b></td><td><span class="ap-st y">Your turn</span></td></tr><tr><td><b>PO-1039</b></td><td class="r"><b>$3,200</b></td><td><span class="ap-st y">Your turn</span></td></tr><tr><td><b>PO-1040</b></td><td class="r"><b>$480</b></td><td><span class="ap-st g">Approved</span></td></tr></table></div>
+            </div>
+          </div>
+        </div></div>
+        <div class="meta"><span class="label s"><i></i>Sample build</span><span>Approvals tool</span></div>
+        <h3>Brightline Ops</h3>
+        <p>A sample internal tool for a growing food and drink supplier: purchase requests, approval limits by role, and a full audit log.</p>
+      </article>
+      <article class="wcard rv d1">
+        <div class="fit dk" style="--w:520;--h:340" aria-hidden="true"><div class="fit-in real">
+          <!-- TODO: optionally swap this mock for a real PolyMonit screenshot -->
+          <div class="pm" style="padding:0">
+            <div class="pm-app" style="left:22px;right:22px;top:22px;bottom:-40px">
+              <div class="pm-top"><span class="pm-logo"><i></i>PolyMonit</span><span class="pm-tabs"><span class="on">Whales</span><span>Markets</span><span>Alerts</span></span><span class="pm-live"><i></i>Streaming</span></div>
+              <div class="pm-body" style="grid-template-columns:1fr">
+                <div class="pm-card">
+                  <div class="t">Top wallets<span>24h</span></div>
+                  <div class="pm-row h"><span>WALLET</span><span>PNL</span><span>WIN RATE</span><span></span></div>
+                  <div class="pm-row"><b><i style="background:linear-gradient(135deg,#d6ff3d,#6e8f00)"></i>0x8f3…a21c</b><span class="up">+$182k</span><span>68%</span><span class="tg">WHALE</span></div>
+                  <div class="pm-row"><b><i style="background:linear-gradient(135deg,#b9c7ff,#5a6fe0)"></i>0x41d…9e07</b><span class="up">+$96k</span><span>61%</span><span class="tg">WHALE</span></div>
+                  <div class="pm-row"><b><i style="background:linear-gradient(135deg,#ffd5b8,#d4785a)"></i>0xc02…77b4</b><span class="up">+$41k</span><span>57%</span><span></span></div>
+                  <div class="pm-row"><b><i style="background:linear-gradient(135deg,#5a5a60,#2b2b2e)"></i>0x9aa…0f13</b><span style="color:#ff7a7e">-$8k</span><span>44%</span><span></span></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div></div>
+        <div class="meta"><span class="label"><i></i>Live product · Our own SaaS</span><span>Admin, accounts, billing</span></div>
+        <h3>PolyMonit</h3>
+        <p>We designed, built and run PolyMonit end to end, including the admin tools, user accounts and billing behind it. It has paying subscribers in 20+ countries. <a class="tlink" style="margin-top:12px" href="polymonit-wallet-tracker.html">Read the case study <svg width="10" height="10" viewBox="0 0 10 10"><path d="M2 8 8 2M3.5 2H8v4.5" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></a></p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ================= FAQ ================= -->
+<section class="sec" id="faq" style="padding-top:20px">
+  <div class="wrap faq-wrap">
+    <div class="faq-side">
+      <div class="kicker rv"><span class="idx">05</span>Questions</div>
+      <h2 class="display rv d1" style="margin-top:22px">Internal tool <span class="hl">questions.</span></h2>
+      <p class="lede rv d2">What people usually ask before we replace a spreadsheet or a manual process.</p>
+      <div class="help rv d3"><span class="mark"><i></i></span><div><b>Still unsure?</b><span>Email <a href="mailto:support@qoreonlabs.com" style="color:var(--ink);font-weight:600">support@qoreonlabs.com</a></span></div></div>
+    </div>
+    <div class="faq-list">
+      <details class="rv" open>
+        <summary>Can you move our existing spreadsheets across?<span class="pm" aria-hidden="true"></span></summary>
+        <div class="ans">Yes. We clean up and import your current data as part of the build, so nobody starts from a blank screen. We check the import with you before launch and keep the old files as a backup.</div>
+      </details>
+      <details class="rv">
+        <summary>Why not use Airtable, Notion or Retool?<span class="pm" aria-hidden="true"></span></summary>
+        <div class="ans">Sometimes those are the right answer, and we'll say so on the first call. A custom tool makes sense when you need proper approval rules, per-person access, an audit trail, or when per-seat pricing gets expensive as your team grows.</div>
+      </details>
+      <details class="rv">
+        <summary>How much does an internal tool cost?<span class="pm" aria-hidden="true"></span></summary>
+        <div class="ans">Every project gets a fixed quote after a free 15-minute call, so you know the full price before anything starts. Cost depends mostly on how many screens, roles and integrations you need.</div>
+      </details>
+      <details class="rv">
+        <summary>How long does it take?<span class="pm" aria-hidden="true"></span></summary>
+        <div class="ans">Most internal tools take 3 to 8 weeks. You get a working preview every week, so your team can try it and give feedback long before launch.</div>
+      </details>
+      <details class="rv">
+        <summary>Will my team actually use it?<span class="pm" aria-hidden="true"></span></summary>
+        <div class="ans">That's the point of building it around how they already work. We keep screens simple, make it work on phones, and run a short training session at launch. Most teams need very little help after that.</div>
+      </details>
+      <details class="rv">
+        <summary>Who owns the tool and the data?<span class="pm" aria-hidden="true"></span></summary>
+        <div class="ans">You do. The code, the database and the hosting accounts are yours. We offer simple monthly support for changes and new features, or we hand it over to your own developer with a walkthrough.</div>
+      </details>
+    </div>
+  </div>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Can you move our existing spreadsheets across?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. We clean up and import your current data as part of the build, so nobody starts from a blank screen. We check the import with you before launch and keep the old files as a backup."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Why not use Airtable, Notion or Retool?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Sometimes those are the right answer, and we'll say so on the first call. A custom tool makes sense when you need proper approval rules, per-person access, an audit trail, or when per-seat pricing gets expensive as your team grows."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How much does an internal tool cost?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Every project gets a fixed quote after a free 15-minute call, so you know the full price before anything starts. Cost depends mostly on how many screens, roles and integrations you need."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How long does it take?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Most internal tools take 3 to 8 weeks. You get a working preview every week, so your team can try it and give feedback long before launch."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Will my team actually use it?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "That's the point of building it around how they already work. We keep screens simple, make it work on phones, and run a short training session at launch. Most teams need very little help after that."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Who owns the tool and the data?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "You do. The code, the database and the hosting accounts are yours. We offer simple monthly support for changes and new features, or we hand it over to your own developer with a walkthrough."
+        }
+      }
+    ]
+  }
+  </script>
+</section>
+
+<!-- ================= CONTACT ================= -->
+<section class="sec" id="contact" style="padding-top:20px;padding-bottom:0">
+  <div class="wrap contact">
+    <div class="c-left stage rv">
+      <div class="kicker"><span class="idx">06</span>Start a project</div>
+      <h2 class="display">Tell us what <span class="soft">slows you down.</span></h2>
+      <p>A few lines is plenty: the process, the people involved and where it breaks. We'll reply within one business day with honest advice and a clear next step.</p>
+      <ol class="next">
+        <li><b>1</b>We reply within one business day</li>
+        <li><b>2</b>A free 15-minute call to scope it</li>
+        <li><b>3</b>A fixed quote and plan within 48 hours</li>
+      </ol>
+      <div class="c-items">
+        <a class="c-item" href="mailto:support@qoreonlabs.com"><span class="ic"><svg width="16" height="16" viewBox="0 0 24 24"><path d="M3 6h18v12H3zM3 7l9 6 9-6" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg></span><div><small>Email</small><b>support@qoreonlabs.com</b></div></a>
+        <a class="c-item" href="tel:+447883302109"><span class="ic"><svg width="16" height="16" viewBox="0 0 24 24"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg></span><div><small>Phone</small><b>+44 7883 302 109</b></div></a>
+        <div class="c-item"><span class="ic"><svg width="16" height="16" viewBox="0 0 24 24"><path d="M12 22s7-6.2 7-12a7 7 0 1 0-14 0c0 5.8 7 12 7 12z" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="12" cy="10" r="2.5" fill="none" stroke="currentColor" stroke-width="2"/></svg></span><div><small>Registered office</small><b>71-75 Shelton Street, London WC2H 9JQ</b></div></div>
+      </div>
+    </div>
+
+    <div class="c-form rv d1">
+      <h3>Project enquiry</h3>
+      <p>Prefer a detailed brief? Use our <a href="quoteform.html" style="color:var(--ink);font-weight:600;border-bottom:1.5px solid var(--lime)">quote form</a>.</p>
+      <form id="contactForm" action="https://formspree.io/f/moverwoe" method="POST">
+        <input type="hidden" name="_subject" value="New project enquiry (internal tools page)" />
+        <div class="fgrid">
+          <div class="fld"><label for="c-name">Name</label><input id="c-name" name="name" type="text" placeholder="Your name" autocomplete="name" required></div>
+          <div class="fld"><label for="c-email">Email</label><input id="c-email" name="_replyto" type="email" placeholder="you@company.com" autocomplete="email" required></div>
+          <div class="fld full"><label for="c-site">Company or website <span style="color:var(--mute);font-weight:500">(optional)</span></label><input id="c-site" name="company" type="text" placeholder="yourcompany.com"></div>
+          <div class="fld full"><span class="lbl" id="c-needs">What do you need?</span>
+            <div class="opts" role="group" aria-labelledby="c-needs">
+              <label><input type="checkbox" name="needs[]" value="Website"><span>Website</span></label>
+              <label><input type="checkbox" name="needs[]" value="Dashboard or internal tool" checked><span>Dashboard / internal tool</span></label>
+              <label><input type="checkbox" name="needs[]" value="Web app or portal"><span>Web app / portal</span></label>
+              <label><input type="checkbox" name="needs[]" value="iOS app or MVP"><span>iOS app / MVP</span></label>
+              <label><input type="checkbox" name="needs[]" value="AI automation"><span>AI automation</span></label>
+              <label><input type="checkbox" name="needs[]" value="Not sure yet"><span>Not sure yet</span></label>
+            </div>
+          </div>
+          <div class="fld full"><label for="c-budget">Rough budget <span style="color:var(--mute);font-weight:500">(optional)</span></label>
+            <select id="c-budget" name="budget"><option value="">Choose a range</option><option>Under £1,000</option><option>£1,000 to £3,000</option><option>£3,000 to £8,000</option><option>£8,000+</option><option>Not sure yet</option></select></div>
+          <div class="fld full"><label for="c-msg">Message</label><textarea id="c-msg" name="message" placeholder="Which process do you want to fix, and who uses it?" required></textarea></div>
+        </div>
+        <div class="f-foot">
+          <small>We reply within one business day. No spam, ever.</small>
+          <button class="btn btn-ink" type="submit">Send message <span class="arr"><svg width="12" height="12" viewBox="0 0 12 12"><path d="M2 6h8M6.5 2.5 10 6l-3.5 3.5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></span></button>
+        </div>
+      </form>
+    </div>
+  </div>
+</section>
+</main>
+
+<!-- ================= FOOTER ================= -->
+<footer class="foot">
+  <div class="wrap">
+    <div class="foot-cta">
+      <h2 class="display">Let's build something <span class="hl">useful.</span></h2>
+      <div class="ctas" style="margin-top:0">
+        <a class="btn btn-lime" href="#contact">Start a project <span class="arr"><svg width="12" height="12" viewBox="0 0 12 12"><path d="M2 6h8M6.5 2.5 10 6l-3.5 3.5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></span></a>
+        <a class="btn" style="background:#17181a;color:#fff;box-shadow:0 0 0 1px #2a2b2e inset" href="index.html#audit">Free site audit</a>
+      </div>
+    </div>
+    <div class="foot-grid">
+      <div>
+        <a class="logo" href="index.html" aria-label="Qoreon Labs home"><img src="assets/img/qoreon-logo-light.svg" alt="Qoreon Labs" width="175" height="52" loading="lazy" /></a>
+        <p class="about">A UK product studio building websites, dashboards, web apps, iOS apps and AI automations for growing businesses.</p>
+        <div class="foot-soc">
+          <a href="https://www.linkedin.com/company/qoreon-labs-ltd/" target="_blank" rel="noopener" aria-label="Qoreon Labs on LinkedIn"><svg width="15" height="15" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9h4v11H4zM6 3.5a2 2 0 1 1 0 4 2 2 0 0 1 0-4zM10 9h3.8v1.6c.6-1 1.9-1.9 3.8-1.9 3.6 0 4.4 2.3 4.4 5.4V20h-4v-5.2c0-1.3 0-2.9-1.8-2.9s-2.1 1.4-2.1 2.8V20H10z" fill="currentColor"/></svg></a>
+          <a href="https://x.com/QoreonLab" target="_blank" rel="noopener" aria-label="Qoreon Labs on X"><svg width="13" height="13" viewBox="0 0 24 24" aria-hidden="true"><path d="M18.24 2.25h3.31l-7.23 8.26 8.5 11.24h-6.65l-5.21-6.82-5.97 6.82H1.68l7.73-8.84L1.25 2.25h6.83l4.71 6.23zm-1.16 17.52h1.83L7.08 4.13H5.12z" fill="currentColor"/></svg></a>
+          <a href="https://www.facebook.com/QOREONLABS" target="_blank" rel="noopener" aria-label="Qoreon Labs on Facebook"><svg width="15" height="15" viewBox="0 0 24 24" aria-hidden="true"><path d="M14 8.5V6.6c0-.8.2-1.3 1.4-1.3H17V2.2c-.3 0-1.3-.2-2.5-.2C12 2 10.5 3.5 10.5 6.2v2.3H8v3.3h2.5V22H14V11.8h2.8l.4-3.3z" fill="currentColor"/></svg></a>
+          <a href="https://www.fiverr.com/talha_19" target="_blank" rel="noopener" aria-label="Qoreon Labs on Fiverr"><svg width="15" height="15" viewBox="0 0 24 24" aria-hidden="true"><path d="M9 19V9.6C9 7.6 10 6.5 12 6.5h1.3M6.5 11.2H12M16 11.2V19" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round"/><circle cx="16" cy="7.4" r="1.6" fill="currentColor"/></svg></a>
+        </div>
+      </div>
+      <div>
+        <h3>Studio</h3>
+        <ul><li><a href="about-us.html">About</a></li><li><a href="index.html#work">Work</a></li><li><a href="polymonit-wallet-tracker.html">PolyMonit</a></li><li><a href="blogs.html">Blog</a></li><li><a href="quoteform.html">Get a quote</a></li><li><a href="#contact">Contact</a></li></ul>
+      </div>
+      <div>
+        <h3>Services</h3>
+        <ul><li><a href="services.html#web-development">Web development</a></li><li><a href="business-dashboard-development.html">Dashboards</a></li><li><a href="internal-tools-development.html">Internal tools</a></li><li><a href="business-web-app-development.html">Business web apps</a></li><li><a href="customer-portal-development.html">Customer portals</a></li><li><a href="custom-software-development.html">Custom software</a></li></ul>
+      </div>
+      <div>
+        <h3>Products &amp; AI</h3>
+        <ul><li><a href="mvp-development.html">MVP development</a></li><li><a href="saas-development.html">SaaS development</a></li><li><a href="ai-development.html">AI development</a></li><li><a href="ai-automation.html">AI automation</a></li><li><a href="workflow-automation.html">Workflow automation</a></li><li><a href="index.html#security">AI security (RedShield)</a></li></ul>
+      </div>
+    </div>
+    <div class="foot-bot">
+      <span>© <span id="year">2026</span> Qoreon Labs Ltd. Registered in England &amp; Wales, company no. 16359714.</span>
+      <nav aria-label="Legal"><a href="privacy.html">Privacy</a><a href="terms.html">Terms</a><a href="cookies.html">Cookies</a></nav>
+    </div>
+  </div>
+  <div class="foot-word" aria-hidden="true">Qoreon Labs</div>
+</footer>
+
+<script src="assets/js/studio.js"></script>
+</body>
+</html>

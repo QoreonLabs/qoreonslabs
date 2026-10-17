@@ -1,0 +1,700 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-KPXN9398W1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-KPXN9398W1');
+  </script>
+
+  <!-- Primary meta -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Customer Portal Development | Client Login Portals | Qoreon Labs</title>
+  <meta name="description" content="We build customer portals where clients track orders, pay invoices, download documents and reorder on their own, connected to your systems. UK studio." />
+  <meta name="author" content="Qoreon Labs Ltd" />
+  <meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1" />
+  <meta name="theme-color" content="#efefea" />
+  <link rel="canonical" href="https://qoreonlabs.com/customer-portal-development.html" />
+  <link rel="icon" href="assets/img/favicon.ico" sizes="any" />
+  <link rel="icon" type="image/svg+xml" href="assets/img/favicon.svg" />
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon-32.png" />
+  <link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png" />
+
+  <!-- Open Graph / Social -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://qoreonlabs.com/customer-portal-development.html" />
+  <meta property="og:title" content="Customer portal development | Qoreon Labs" />
+  <meta property="og:description" content="Client portals for orders, invoices, tracking and documents, connected to the systems you already use. Fixed quotes, weekly previews." />
+  <meta property="og:image" content="https://qoreonlabs.com/assets/img/og-qoreon.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:alt" content="Qoreon Labs, a UK AI development company and product studio" />
+  <meta property="og:site_name" content="Qoreon Labs" />
+  <meta property="og:locale" content="en_GB" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:site" content="@QoreonLab" />
+  <meta name="twitter:title" content="Customer portal development | Qoreon Labs" />
+  <meta name="twitter:description" content="Client portals for orders, invoices, tracking and documents, connected to the systems you already use. Fixed quotes, weekly previews." />
+  <meta name="twitter:image" content="https://qoreonlabs.com/assets/img/og-qoreon.png" />
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "name": "Customer portal development",
+    "serviceType": "Customer portal development",
+    "url": "https://qoreonlabs.com/customer-portal-development.html",
+    "description": "Custom client and customer portals with order tracking, invoices and payments, documents, messaging and team logins.",
+    "areaServed": [
+      "GB",
+      "US",
+      "AU"
+    ],
+    "provider": {
+      "@type": "Organization",
+      "name": "Qoreon Labs Ltd",
+      "url": "https://qoreonlabs.com",
+      "logo": "https://qoreonlabs.com/assets/img/apple-touch-icon.png",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "71-75 Shelton Street, Covent Garden",
+        "addressLocality": "London",
+        "postalCode": "WC2H 9JQ",
+        "addressCountry": "GB"
+      }
+    }
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://qoreonlabs.com/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Services",
+        "item": "https://qoreonlabs.com/services.html"
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "name": "Customer portal development",
+        "item": "https://qoreonlabs.com/customer-portal-development.html"
+      }
+    ]
+  }
+  </script>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Inter+Tight:wght@500;600;700&family=Lora:ital,wght@1,500&display=swap" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Inter+Tight:wght@500;600;700&family=Lora:ital,wght@1,500&display=swap" media="print" onload="this.media='all'" />
+  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Inter+Tight:wght@500;600;700&family=Lora:ital,wght@1,500&display=swap" /></noscript>
+
+  <link rel="stylesheet" href="assets/css/studio.css" />
+</head>
+<body class="no-js">
+<script>document.body.classList.remove('no-js')</script>
+
+<!-- ================= HEADER ================= -->
+<header class="hdr" id="header">
+  <div class="hdr-in">
+    <a class="logo" href="index.html" aria-label="Qoreon Labs home"><img src="assets/img/qoreon-logo.svg" alt="Qoreon Labs" width="134" height="40" /></a>
+
+    <nav class="nav" id="primary-nav" aria-label="Primary">
+      <a href="index.html">Home</a>
+      <a href="about-us.html">About</a>
+      <div class="dd" id="dd-services">
+        <button class="dd-t on" type="button" aria-expanded="false" aria-controls="mega">Services
+          <svg width="11" height="8" viewBox="0 0 12 8" aria-hidden="true"><path d="m1 1 5 5 5-5" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></svg>
+        </button>
+        <div class="mega" id="mega">
+          <div class="mg">
+            <div class="mg-l">Websites &amp; core</div>
+            <a href="services.html#web-development"><b>Web Development <svg width="10" height="10" viewBox="0 0 10 10"><path d="M2 8 8 2M3.5 2H8v4.5" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></b><span>New sites and redesigns</span></a>
+            <a href="services.html#app-development"><b>App Development <svg width="10" height="10" viewBox="0 0 10 10"><path d="M2 8 8 2M3.5 2H8v4.5" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></b><span>iOS and cross-platform apps</span></a>
+            <a href="services.html#software-development"><b>Software Development <svg width="10" height="10" viewBox="0 0 10 10"><path d="M2 8 8 2M3.5 2H8v4.5" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></b><span>Back ends, APIs, integrations</span></a>
+            <a href="custom-software-development.html"><b>Custom Software <svg width="10" height="10" viewBox="0 0 10 10"><path d="M2 8 8 2M3.5 2H8v4.5" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></b><span>Built around how you work</span></a>
+          </div>
+          <div class="mg">
+            <div class="mg-l">Business systems</div>
+            <a href="business-dashboard-development.html"><b>Business Dashboards <svg width="10" height="10" viewBox="0 0 10 10"><path d="M2 8 8 2M3.5 2H8v4.5" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></b><span>Your numbers on one screen</span></a>
+            <a href="internal-tools-development.html"><b>Internal Tools <svg width="10" height="10" viewBox="0 0 10 10"><path d="M2 8 8 2M3.5 2H8v4.5" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></b><span>Replace the spreadsheets</span></a>
+            <a href="business-web-app-development.html"><b>Business Web Apps <svg width="10" height="10" viewBox="0 0 10 10"><path d="M2 8 8 2M3.5 2H8v4.5" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></b><span>Booking, ordering, ops</span></a>
+            <a href="customer-portal-development.html" aria-current="page"><b>Customer Portals <svg width="10" height="10" viewBox="0 0 10 10"><path d="M2 8 8 2M3.5 2H8v4.5" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></b><span>Self-serve for your clients</span></a>
+          </div>
+          <div class="mg">
+            <div class="mg-l">Products &amp; automation</div>
+            <a href="ai-automation.html"><b>AI Automation <svg width="10" height="10" viewBox="0 0 10 10"><path d="M2 8 8 2M3.5 2H8v4.5" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></b><span>Leads, replies, follow-ups</span></a>
+            <a href="workflow-automation.html"><b>Workflow Automation <svg width="10" height="10" viewBox="0 0 10 10"><path d="M2 8 8 2M3.5 2H8v4.5" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></b><span>Connect the tools you use</span></a>
+            <a href="ai-development.html"><b>AI Development <svg width="10" height="10" viewBox="0 0 10 10"><path d="M2 8 8 2M3.5 2H8v4.5" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></b><span>Chat, search, AI features</span></a>
+            <a href="mvp-development.html"><b>MVP Development <svg width="10" height="10" viewBox="0 0 10 10"><path d="M2 8 8 2M3.5 2H8v4.5" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></b><span>From idea to first users</span></a>
+            <a href="saas-development.html"><b>SaaS Development <svg width="10" height="10" viewBox="0 0 10 10"><path d="M2 8 8 2M3.5 2H8v4.5" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></b><span>Subscriptions, accounts, billing</span></a>
+          </div>
+          <a class="mg-promo" href="index.html#audit">
+            <div class="score">46<small>/100</small></div>
+            <b>Free site audit</b>
+            <p>See what's costing you enquiries, in plain English.</p>
+            <span class="go">Get yours <svg width="12" height="12" viewBox="0 0 12 12"><path d="M2 6h8M6.5 2.5 10 6l-3.5 3.5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+          </a>
+        </div>
+      </div>
+      <a href="index.html#work">Work</a>
+      <a href="index.html#process">Process</a>
+      <a href="#contact">Contact</a>
+      <a class="btn btn-ink btn-sm m-cta" href="index.html#audit" style="display:none">Free site audit <span class="arr"><svg width="11" height="11" viewBox="0 0 12 12"><path d="M2 6h8M6.5 2.5 10 6l-3.5 3.5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></span></a>
+    </nav>
+
+    <div class="hdr-cta">
+      <a class="q" href="quoteform.html">Get a quote</a>
+      <a class="btn btn-ink btn-sm" href="index.html#audit">Free site audit <span class="arr"><svg width="11" height="11" viewBox="0 0 12 12"><path d="M2 6h8M6.5 2.5 10 6l-3.5 3.5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></span></a>
+    </div>
+    <button class="burger" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="primary-nav">
+      <svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 8h16M4 16h16" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+    </button>
+  </div>
+</header>
+
+<main id="top">
+
+<!-- ================= HERO ================= -->
+<section class="hero">
+  <div class="wrap hero-top">
+    <div class="ht-l">
+      <div class="kicker rv"><a class="idx" href="services.html">Services</a>Customer portal development</div>
+      <h1 class="display rv d1">A customer portal <span class="soft ser">that</span> answers &ldquo;where&rsquo;s my <span class="hl">order?&rdquo;</span></h1>
+    </div>
+    <div class="ht-r">
+      <p class="lede rv d2">We build secure client portals where your customers can <b>track orders, pay invoices, download documents and reorder</b> on their own, any time. Fewer emails for your team, and a better experience for the people who pay you.</p>
+      <div class="ctas rv d3">
+        <a class="btn btn-ink" href="#contact">Book a free call <span class="arr"><svg width="12" height="12" viewBox="0 0 12 12"><path d="M2 6h8M6.5 2.5 10 6l-3.5 3.5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></span></a>
+        <a class="btn btn-ghost" href="#work">See examples</a>
+      </div>
+      <div class="trust rv d4">
+        <div class="trust-i"><div>
+          <div class="stars" role="img" aria-label="5 out of 5 stars"><svg width="13" height="13" viewBox="0 0 20 20"><path d="M10 1.5l2.6 5.6 6.1.7-4.5 4.2 1.2 6L10 15l-5.4 3 1.2-6L1.3 7.8l6.1-.7z" fill="currentColor"/></svg><svg width="13" height="13" viewBox="0 0 20 20"><path d="M10 1.5l2.6 5.6 6.1.7-4.5 4.2 1.2 6L10 15l-5.4 3 1.2-6L1.3 7.8l6.1-.7z" fill="currentColor"/></svg><svg width="13" height="13" viewBox="0 0 20 20"><path d="M10 1.5l2.6 5.6 6.1.7-4.5 4.2 1.2 6L10 15l-5.4 3 1.2-6L1.3 7.8l6.1-.7z" fill="currentColor"/></svg><svg width="13" height="13" viewBox="0 0 20 20"><path d="M10 1.5l2.6 5.6 6.1.7-4.5 4.2 1.2 6L10 15l-5.4 3 1.2-6L1.3 7.8l6.1-.7z" fill="currentColor"/></svg><svg width="13" height="13" viewBox="0 0 20 20"><path d="M10 1.5l2.6 5.6 6.1.7-4.5 4.2 1.2 6L10 15l-5.4 3 1.2-6L1.3 7.8l6.1-.7z" fill="currentColor"/></svg></div>
+          <span><b style="display:inline">5.0</b> from 69 reviews</span></div></div>
+        <span class="trust-sep"></span>
+        <div class="trust-i"><div><b>100+</b>orders delivered</div></div>
+        <span class="trust-sep"></span>
+        <div class="trust-i"><div><b>UK Ltd</b>registered in London</div></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Hero visual: the customer's delivery, live on a map, with the portal and updates (Kestrel Supply sample build) -->
+  <div class="hv rv d2" aria-hidden="true">
+    <div class="fit hvf cp-fit"><div class="fit-in">
+
+      <div class="cp-map">
+        <svg viewBox="0 0 1336 600" preserveAspectRatio="xMidYMid slice">
+          <rect width="1336" height="600" fill="#e7e8e0"/>
+          <path d="M520 360h150v150H520zM880 40h120v110H880zM300 420h110v120H300z" fill="#d9e5c8"/>
+          <path d="M-20 540C200 500 380 560 600 520S1000 470 1360 540" fill="none" stroke="#cddfe8" stroke-width="40"/>
+          <g fill="none" stroke="#fff" stroke-linecap="round">
+            <path d="M0 130H1336M0 300H1336M0 450H1336M560 0V600M760 0V600M420 0V600M940 0V600M1140 0V600M240 0V600" stroke-width="16"/>
+            <path d="M0 60H1336M0 210H1336M0 380H1336M490 0V600M660 0V600M850 0V600M1040 0V600M330 0V600" stroke-width="7"/>
+            <path d="M420 600L760 130M940 300L1336 20" stroke-width="12"/>
+          </g>
+          <text class="m" x="586" y="452">HYDE PARK</text><text class="m" x="884" y="562">RIVER AIRE</text><text class="m" x="770" y="122">HEADINGLEY</text>
+          <path d="M490 130H560V300H760V430H840" fill="none" stroke="#0d0d0f" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="2 11" opacity=".55"/>
+          <path d="M490 130H560V300H660" fill="none" stroke="#0d0d0f" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+          <path d="M490 130H560V300H660" fill="none" stroke="#d6ff3d" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+          <g transform="translate(490 130)"><rect x="-17" y="-17" width="34" height="34" rx="9" fill="#1f5f4a"/><text x="0" y="5" text-anchor="middle" fill="#fff" style="font:700 13px Inter,sans-serif">K</text><text x="0" y="-26" text-anchor="middle">Kestrel depot</text></g>
+          <g transform="translate(840 430)"><path d="M0 0c-14-16-22-26-22-36a22 22 0 0 1 44 0c0 10-8 20-22 36z" fill="#d6ff3d" stroke="#0d0d0f" stroke-width="2.5"/><circle cx="0" cy="-36" r="7" fill="#0d0d0f"/><text x="0" y="20" text-anchor="middle">Corner Bakery</text></g>
+          <g transform="translate(660 300)"><circle r="30" fill="#d6ff3d" opacity=".35"/><circle r="19" fill="#0d0d0f"/><path d="M-9 -4h11v9h-11zM2 -1h4l3 3v3h-7z" fill="#fff"/><circle cx="-5" cy="6" r="2" fill="#d6ff3d"/><circle cx="5" cy="6" r="2" fill="#d6ff3d"/></g>
+        </svg>
+      </div>
+      <div class="cp-eta">Sam · Van 2<b>20 min away</b>Arriving <em>7 to 9am</em></div>
+
+      <div class="cp-p">
+        <div class="cp-hd"><span class="lg-t">K</span><div><b>Kestrel Supply</b>Customer portal</div><span class="ap-st y">On the way</span></div>
+        <h5>Morning, Hannah</h5><p>Order #4820 · 40 items · £1,120.00</p>
+        <ul class="cp-trk">
+          <li><i><svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></i><div><b>Ordered</b>Oat milk, cups, lids</div><em>Mon 4:12 pm</em></li>
+          <li><i><svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></i><div><b>Packed and loaded</b>Checked against your order</div><em>Tue 6:40 am</em></li>
+          <li class="now"><i></i><div><b>Out for delivery</b>Sam, stop 3 of 9</div><em>7:42 am</em></li>
+          <li class="nx"><i></i><div><b>Delivered</b>Photo and signature</div><em>by 9:00 am</em></li>
+        </ul>
+        <div class="cp-inv"><div><b>INV-2041 · £1,120.00</b>Due 7 Oct</div><span class="ap-btn sm k">Pay</span></div>
+        <div class="cp-acts"><span class="ap-btn">Reorder usual</span><span class="ap-btn">Message Dev</span></div>
+      </div>
+
+      <div class="cp-ns">
+        <div class="cp-n pop p1"><span class="ic" style="background:#34c759"><svg width="17" height="17" viewBox="0 0 24 24" fill="currentColor"><path d="M12 3C6.5 3 2 6.6 2 11c0 2.4 1.3 4.6 3.4 6.1L4.5 21l4.2-2.2c1 .3 2.1.4 3.3.4 5.5 0 10-3.6 10-8.1S17.5 3 12 3z"/></svg></span><div><b>Kestrel Supply<em>7:42 am</em></b>Sam is 20 minutes away with order #4820. Track live: kestrel.co/t/4820</div></div>
+        <div class="cp-n pop p2"><span class="ic" style="background:#1a73e8"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg></span><div><b>Invoice for order #4820<em>Mon</em></b>Pay online in two taps, or by bank transfer.<br><span class="pdf">PDF · INV-2041</span></div></div>
+        <div class="cp-n pop p3"><span class="ic" style="background:linear-gradient(135deg,#cdeedc,#7fcfa5);color:var(--ink);font:700 11px var(--f-sans)">DS</span><div><b>Dev Shah · account manager<em>8:15 am</em></b>The new oat milk is in stock if you want to try a case with Thursday's order.</div></div>
+      </div>
+    </div></div>
+    <div class="hv-cap"><span>Sample build · Kestrel Supply customer portal</span><span>Orders · Invoices · Tracking</span></div>
+  </div>
+
+  <div class="marq" aria-label="Connects to">
+    <div class="marq-in">
+      <div class="marq-l">Connects to</div>
+      <div class="marq-v">
+        <div class="marq-t">
+          <span>Xero</span><span>QuickBooks</span><span>Sage</span><span>Stripe</span><span>GoCardless</span><span>Shopify</span><span>HubSpot</span><span>Salesforce</span><span>Google Drive</span><span>SharePoint</span><span>Slack</span><span>Gmail</span>
+          <span aria-hidden="true">Xero</span><span aria-hidden="true">QuickBooks</span><span aria-hidden="true">Sage</span><span aria-hidden="true">Stripe</span><span aria-hidden="true">GoCardless</span><span aria-hidden="true">Shopify</span><span aria-hidden="true">HubSpot</span><span aria-hidden="true">Salesforce</span><span aria-hidden="true">Google Drive</span><span aria-hidden="true">SharePoint</span><span aria-hidden="true">Slack</span><span aria-hidden="true">Gmail</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= PROBLEMS ================= -->
+<section class="sec" id="problems">
+  <div class="wrap">
+    <div class="sec-head">
+      <div>
+        <div class="kicker rv"><span class="idx">01</span>Sound familiar?</div>
+        <h2 class="display rv d1">Your inbox is <span class="hl">the portal.</span></h2>
+      </div>
+      <p class="rv d2">If customers have to email you to find out anything, your team spends its day answering the same five questions.</p>
+    </div>
+
+    <div class="prob-grid">
+      <article class="prob rv">
+        <div class="fit" style="--w:300;--h:230" aria-hidden="true"><div class="fit-in real">
+          <div class="pad"><div class="note"><span class="ic"><svg class="" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#3d3d42" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 6h18v12H3zM3 7l9 6 9-6"/></svg></span><div><b>Where's my order?</b>Corner Bakery, 3rd today</div><span class="ct">3</span></div><div class="note"><span class="ic"><svg class="" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#3d3d42" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 3H6a1 1 0 0 0-1 1v16a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V8z"/><path d="M14 3v5h5M9 13h6M9 17h4"/></svg></span><div><b>Resend invoice 2033?</b>Third time this month</div><span class="ago">1h</span></div><div class="note"><span class="ic"><svg class="" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#3d3d42" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12a8 8 0 0 1-11.6 7.1L4 20l1-4.6A8 8 0 1 1 21 12z"/></svg></span><div><b>What did we pay for cups?</b>Needs last 3 invoices</div><span class="ago">2h</span></div></div>
+        </div></div>
+        <span class="n">Problem 01</span>
+        <h3>"Where's my order?" all day</h3>
+        <p>Order updates, invoice copies and price questions arrive by email and phone, and someone has to look each one up.</p>
+      </article>
+      <article class="prob rv d1">
+        <div class="fit" style="--w:300;--h:230" aria-hidden="true"><div class="fit-in real">
+          <div class="mini-win sheet">
+            <div class="sbar"><i></i>Aged_debtors_Sept.xlsx<span>Chased by hand</span></div>
+            <table><tr><td class="rn">1</td><td><b>Client</b></td><td><b>Due</b></td><td><b>Chased?</b></td></tr><tr><td class="rn">2</td><td>Corner Bakery</td><td>£1,120</td><td class="yel">emailed?</td></tr><tr><td class="rn">3</td><td>Harbor Deli</td><td>£2,460</td><td class="err">45 days</td></tr><tr><td class="rn">4</td><td>Kite Cafe</td><td class="dup">£380</td><td class="dup">£380</td></tr><tr><td class="rn">5</td><td>Mill Lane</td><td>£910</td><td></td></tr><tr><td class="rn">6</td><td>Total</td><td class="err">#VALUE!</td><td></td></tr></table>
+          </div>
+        </div></div>
+        <span class="n">Problem 02</span>
+        <h3>Invoices get chased by hand</h3>
+        <p>Without a place to see and pay invoices, payment depends on someone remembering to send a reminder.</p>
+      </article>
+      <article class="prob rv d2">
+        <div class="fit" style="--w:300;--h:230" aria-hidden="true"><div class="fit-in real">
+          <div class="pad" style="inset:20px 18px"><div class="bub me">Can you send the spec sheet again?</div><div class="bub th">Which version?</div><div class="bub me">The one from March, I think</div><div class="bub th">I'll dig it out tomorrow</div></div>
+        </div></div>
+        <span class="n">Problem 03</span>
+        <h3>Documents live in old emails</h3>
+        <p>Contracts, spec sheets and certificates get sent once, then lost, then requested again and again.</p>
+      </article>
+      <article class="prob rv d3">
+        <div class="fit" style="--w:300;--h:230" aria-hidden="true"><div class="fit-in real">
+          <div class="pad"><div class="note"><span class="ic"><svg class="" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#3d3d42" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 2l3 3-3 3"/><path d="M4 11V9a4 4 0 0 1 4-4h12M7 22l-3-3 3-3"/><path d="M20 13v2a4 4 0 0 1-4 4H4"/></svg></span><div><b>Same as last week please</b>Phoned in, typed up by Dev</div><span class="ago">12 min</span></div><div class="note"><span class="ic"><svg class="" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#3d3d42" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 6 6 18M6 6l12 12"/></svg></span><div><b>Wrong quantity</b>40 entered instead of 4</div><span class="ct">!</span></div><div class="note"><span class="ic"><svg class="" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#3d3d42" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></span><div><b>Order missed the van</b>Sent after the cut-off</div><span class="ago">+1 day</span></div></div>
+        </div></div>
+        <span class="n">Problem 04</span>
+        <h3>Reorders need a phone call</h3>
+        <p>Your best customers order the same things every week, and still have to call or email to do it.</p>
+      </article>
+    </div>
+
+    <div class="prob-foot rv">
+      <p>A portal your customers can use on their own fixes all four. <span>Usually live in 4 to 8 weeks.</span></p>
+      <a class="btn btn-lime btn-sm" href="#build">See what we build <span class="arr"><svg width="11" height="11" viewBox="0 0 12 12"><path d="M2 6h8M6.5 2.5 10 6l-3.5 3.5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></span></a>
+    </div>
+  </div>
+</section>
+
+<!-- ================= WHAT WE BUILD ================= -->
+<section class="sec" id="build" style="padding-top:20px">
+  <div class="wrap">
+    <div class="sec-head">
+      <div>
+        <div class="kicker rv"><span class="idx">02</span>What we build</div>
+        <h2 class="display rv d1">Everything your customers <span class="soft ser">keep</span> asking <span class="hl">you for.</span></h2>
+      </div>
+      <p class="rv d2">We start with the questions your team answers most often, then give customers a simple place to answer them on their own.</p>
+    </div>
+
+    <div class="cards-3">
+      <article class="pstep rv">
+        <div class="fit" style="--w:400;--h:250" aria-hidden="true"><div class="fit-in real">
+          <div class="pad"><div class="ap-card" style="margin-top:0;background:#fff"><div class="ap-ch"><div><b>Order #4820</b><small>40 items · £1,120.00</small></div><span class="ap-st y">On the way</span></div><div class="trk"><div><b>Ordered</b>Mon</div><div><b>Packed</b>Tue 6:40</div><div class="now"><b>Out</b>20 min</div><div class="todo"><b>Delivered</b>by 9am</div></div></div></div>
+        </div></div>
+        <div class="top"><b>TRACKING</b><span>Live</span></div>
+        <h3>Order and job tracking</h3>
+        <p>Customers see exactly where their order, project or case is, with updates sent automatically at each step.</p>
+      </article>
+      <article class="pstep rv d1">
+        <div class="fit" style="--w:400;--h:250" aria-hidden="true"><div class="fit-in real">
+          <div class="pad"><div class="ap-card ap-orders" style="margin-top:0;background:#fff"><div class="ap-ch"><div><b>Invoices</b><small>Balance due £1,120</small></div></div><table><tr><th>Invoice</th><th>Date</th><th class="r">Amount</th><th></th></tr><tr><td><b>INV-2041</b></td><td>29 Sep</td><td class="r"><b>£1,120</b></td><td><span class="ap-btn k sm">Pay now</span></td></tr><tr><td><b>INV-2033</b></td><td>22 Sep</td><td class="r"><b>£820</b></td><td><span class="ap-st g">Paid</span></td></tr><tr><td><b>INV-2027</b></td><td>15 Sep</td><td class="r"><b>£640</b></td><td><span class="ap-st g">Paid</span></td></tr></table></div></div>
+        </div></div>
+        <div class="top"><b>INVOICES</b><span>Pay online</span></div>
+        <h3>Invoices and payments</h3>
+        <p>Every invoice in one place, synced from Xero or QuickBooks, with card and bank payments that mark themselves as paid.</p>
+      </article>
+      <article class="pstep rv d2">
+        <div class="fit" style="--w:400;--h:250" aria-hidden="true"><div class="fit-in real">
+          <div class="pad"><div class="ap-card ap-orders" style="margin-top:0;background:#fff"><div class="ap-ch"><div><b>Your usual order</b><small>Corner Bakery</small></div><span class="ap-btn k sm" style="margin-left:auto">Add all</span></div><table><tr><th>Item</th><th class="r">Qty</th><th class="r">Price</th></tr><tr><td><b>Oat milk 1L</b></td><td class="r">24</td><td class="r">£186.00</td></tr><tr><td><b>Cups 12oz</b></td><td class="r">1,000</td><td class="r">£205.00</td></tr><tr><td><b>House blend 1kg</b></td><td class="r">6</td><td class="r">£114.00</td></tr></table></div></div>
+        </div></div>
+        <div class="top"><b>REORDERING</b><span>Two taps</span></div>
+        <h3>Self-serve ordering</h3>
+        <p>Customers reorder their usual in two taps, with their own prices, delivery days and cut-off times built in.</p>
+      </article>
+      <article class="pstep rv">
+        <div class="fit" style="--w:400;--h:250" aria-hidden="true"><div class="fit-in real">
+          <div class="pad"><div class="ap-card ap-orders" style="margin-top:0;background:#fff"><div class="ap-ch"><div><b>Documents</b><small>Shared with Corner Bakery</small></div></div><table><tr><th>Name</th><th>Type</th><th>Updated</th></tr><tr><td><b>Supply agreement 2026</b></td><td>PDF</td><td>12 Mar</td></tr><tr><td><b>Oat milk spec sheet</b></td><td>PDF</td><td>3 Mar</td></tr><tr><td><b>Allergen matrix</b></td><td>Sheet</td><td>28 Sep</td></tr></table></div></div>
+        </div></div>
+        <div class="top"><b>DOCUMENTS</b><span>Always current</span></div>
+        <h3>Documents and files</h3>
+        <p>Contracts, certificates, spec sheets and reports, always the latest version, with a record of who downloaded what.</p>
+      </article>
+      <article class="pstep rv d1">
+        <div class="fit" style="--w:400;--h:250" aria-hidden="true"><div class="fit-in real">
+          <div class="pad" style="inset:22px 22px"><div class="bub me">Can we move Thursday to Friday this week?</div><div class="bub th">Done. Friday 7 to 9am, same order.</div><div class="bub me">Perfect, thanks Dev</div><div class="seen"><b>Seen</b> just now</div></div>
+        </div></div>
+        <div class="top"><b>MESSAGES</b><span>In one thread</span></div>
+        <h3>Messages and requests</h3>
+        <p>Questions and change requests live next to the order they relate to, not buried in someone's inbox.</p>
+      </article>
+      <article class="pstep rv d2">
+        <div class="fit" style="--w:400;--h:250" aria-hidden="true"><div class="fit-in real">
+          <div class="pad"><div class="ap-card ap-orders" style="margin-top:0;background:#fff"><div class="ap-ch"><div><b>Team</b><small>Who can log in</small></div></div><table><tr><th>Name</th><th>Role</th><th>Can order</th></tr><tr><td><b>Hannah Price</b></td><td><span class="ap-st g">Owner</span></td><td>Yes</td></tr><tr><td><b>Tom Lee</b></td><td><span class="ap-st y">Buyer</span></td><td>Up to £500</td></tr><tr><td><b>Asha Khan</b></td><td><span class="ap-st n">Viewer</span></td><td>No</td></tr></table></div></div>
+        </div></div>
+        <div class="top"><b>LOGINS</b><span>Per customer</span></div>
+        <h3>Logins for each customer team</h3>
+        <p>Each customer only sees their own data, and can add their own team with the right permissions. No shared passwords.</p>
+      </article>
+    </div>
+
+    <div class="svc-all rv">
+      <span class="lbl">Related services</span>
+      <div class="chips">
+        <a class="chip" href="business-web-app-development.html">Business web apps</a>
+        <a class="chip" href="business-dashboard-development.html">Business dashboards</a>
+        <a class="chip" href="internal-tools-development.html">Internal tools</a>
+        <a class="chip" href="workflow-automation.html">Workflow automation</a>
+        <a class="chip" href="saas-development.html">SaaS development</a>
+        <a class="chip" href="ai-development.html">AI development</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= PROCESS ================= -->
+<section class="sec" id="process" style="padding-top:20px">
+  <div class="wrap">
+    <div class="sec-head">
+      <div>
+        <div class="kicker rv"><span class="idx">03</span>How it works</div>
+        <h2 class="display rv d1">No mystery. <span class="soft ser">Just</span> four clear <span class="hl">steps.</span></h2>
+      </div>
+      <p class="rv d2">You always know what's being built, what it costs and when it ships. That's the whole point.</p>
+    </div>
+    <div class="proc">
+      <article class="pstep rv">
+        <div class="fit" style="--w:300;--h:170" aria-hidden="true"><div class="fit-in">
+          <div class="cal">
+            <span><b>Mon</b><i></i><i style="width:60%"></i></span>
+            <span class="on"><b>Tue</b>10:30 call<i></i></span>
+            <span><b>Wed</b><i style="width:70%"></i></span>
+            <span><b>Thu</b><i></i><i style="width:50%"></i></span>
+            <span><b>Fri</b><i style="width:40%"></i></span>
+          </div>
+        </div></div>
+        <div class="top"><b>STEP 01</b><span>15 min</span></div>
+        <h3>A quick, free call</h3>
+        <p>Tell us what's not working. We ask a few questions and tell you honestly if we're the right fit.</p>
+      </article>
+      <article class="pstep rv d1">
+        <div class="fit" style="--w:300;--h:170" aria-hidden="true"><div class="fit-in">
+          <div class="qdoc">
+            <div class="h">Project plan<span>Fixed price</span></div>
+            <div class="ln">Portal map &amp; screens<i></i>Week 1</div>
+            <div class="ln">Build &amp; connect data<i></i>Weeks 2 to 5</div>
+            <div class="ln">Customer pilot<i></i>Week 6</div>
+            <div class="tot"><span>3 milestones</span><span>Agreed up front</span></div>
+          </div>
+        </div></div>
+        <div class="top"><b>STEP 02</b><span>48 hours</span></div>
+        <h3>A fixed quote and plan</h3>
+        <p>A clear scope, timeline and price, split into milestones. You only pay as each one is delivered.</p>
+      </article>
+      <article class="pstep rv d2">
+        <div class="fit" style="--w:300;--h:170" aria-hidden="true"><div class="fit-in">
+          <div class="prev">
+            <div class="bar"><i></i><i></i><i></i><span class="url">preview.qoreonlabs.com/kestrel</span></div>
+            <div class="pv"><div><i class="k"></i><i></i><i class="s"></i></div><div class="im" style="background:linear-gradient(160deg,#d6f5ef,#8fd9c7)"></div></div>
+            <div class="cm"><i></i>Preview v3 · 2 comments</div>
+          </div>
+        </div></div>
+        <div class="top"><b>STEP 03</b><span>Weekly</span></div>
+        <h3>Build, with weekly previews</h3>
+        <p>A working link every week so you can click through, comment and steer. No big reveal at the end.</p>
+      </article>
+      <article class="pstep rv d3">
+        <div class="fit" style="--w:300;--h:170" aria-hidden="true"><div class="fit-in">
+          <div class="launch">
+            <div class="ln"><i></i>Xero invoices synced<span>Done</span></div>
+            <div class="ln"><i></i>Customer logins sent<span>Done</span></div>
+            <div class="ln live"><i></i>Live<span>portal.kestrelsupply.co</span></div>
+          </div>
+        </div></div>
+        <div class="top"><b>STEP 04</b><span>Launch</span></div>
+        <h3>Launch, handover, support</h3>
+        <p>We launch it, show your team how it works and hand over everything. Ongoing support if you want it.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ================= RELATED WORK ================= -->
+<section class="sec" id="work" style="padding-top:20px">
+  <div class="wrap">
+    <div class="sec-head">
+      <div>
+        <div class="kicker rv"><span class="idx">04</span>Related work</div>
+        <h2 class="display rv d1">Built for <span class="soft ser">the</span> customers <span class="hl">you keep.</span></h2>
+      </div>
+      <p class="rv d2">A sample build that shows the approach, and a product of our own with real customer accounts.</p>
+    </div>
+
+    <div class="work-grid" style="margin-top:0">
+      <article class="wcard rv">
+        <div class="fit" style="--w:456;--h:340" aria-hidden="true"><div class="fit-in real">
+          <div class="win lt" style="inset:20px 20px -14px;width:auto;height:auto;background:#fff">
+            <div class="bar"><i></i><i></i><i></i><span class="url">portal.kestrelsupply.co</span></div>
+            <div style="padding:14px 16px">
+              <div class="ap-top"><div class="ap-crumb"><span>Kestrel Supply</span><i>/</i><b>Overview</b></div><span class="ap-btn sm k">Reorder usual</span></div>
+              <div class="ap-card" style="padding:12px 14px"><div class="ap-ch"><div><b>Order #4820</b><small>40 items · £1,120.00</small></div><span class="ap-st y">On the way</span></div><div class="trk"><div><b>Ordered</b>Mon</div><div><b>Packed</b>Tue</div><div class="now"><b>Out</b>20 min</div><div class="todo"><b>Delivered</b>by 9am</div></div></div>
+              <div class="ap-card ap-orders" style="margin-top:0;background:#fff;margin-top:12px;padding:6px 14px"><table style="margin-top:0"><tr><th>Invoice</th><th class="r">Amount</th><th>Status</th></tr><tr><td><b>INV-2041</b></td><td class="r"><b>£1,120</b></td><td><span class="ap-st y">Due</span></td></tr></table></div>
+            </div>
+          </div>
+        </div></div>
+        <div class="meta"><span class="label s"><i></i>Sample build</span><span>Wholesale portal</span></div>
+        <h3>Kestrel Supply</h3>
+        <p>A sample portal for a wholesale supplier: live order tracking, invoices synced from Xero, one-tap reorders and a message thread with the account manager.</p>
+      </article>
+      <article class="wcard rv d1">
+        <div class="fit dk" style="--w:520;--h:340" aria-hidden="true"><div class="fit-in real">
+          <!-- TODO: optionally swap this mock for a real PolyMonit screenshot -->
+          <div class="pm" style="padding:0">
+            <div class="pm-app" style="left:22px;right:22px;top:22px;bottom:-40px">
+              <div class="pm-top"><span class="pm-logo"><i></i>PolyMonit</span><span class="pm-tabs"><span class="on">Whales</span><span>Markets</span><span>Alerts</span></span><span class="pm-live"><i></i>Streaming</span></div>
+              <div class="pm-body" style="grid-template-columns:1fr">
+                <div class="pm-card">
+                  <div class="t">Top wallets<span>24h</span></div>
+                  <div class="pm-row h"><span>WALLET</span><span>PNL</span><span>WIN RATE</span><span></span></div>
+                  <div class="pm-row"><b><i style="background:linear-gradient(135deg,#d6ff3d,#6e8f00)"></i>0x8f3…a21c</b><span class="up">+$182k</span><span>68%</span><span class="tg">WHALE</span></div>
+                  <div class="pm-row"><b><i style="background:linear-gradient(135deg,#b9c7ff,#5a6fe0)"></i>0x41d…9e07</b><span class="up">+$96k</span><span>61%</span><span class="tg">WHALE</span></div>
+                  <div class="pm-row"><b><i style="background:linear-gradient(135deg,#ffd5b8,#d4785a)"></i>0xc02…77b4</b><span class="up">+$41k</span><span>57%</span><span></span></div>
+                  <div class="pm-row"><b><i style="background:linear-gradient(135deg,#5a5a60,#2b2b2e)"></i>0x9aa…0f13</b><span style="color:#ff7a7e">-$8k</span><span>44%</span><span></span></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div></div>
+        <div class="meta"><span class="label"><i></i>Live product · Our own SaaS</span><span>Accounts, billing</span></div>
+        <h3>PolyMonit</h3>
+        <p>PolyMonit is our own product. Every subscriber has their own login, settings, alerts and billing, the same building blocks a customer portal needs. It has paying subscribers in 20+ countries. <a class="tlink" style="margin-top:12px" href="polymonit-wallet-tracker.html">Read the case study <svg width="10" height="10" viewBox="0 0 10 10"><path d="M2 8 8 2M3.5 2H8v4.5" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></a></p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ================= FAQ ================= -->
+<section class="sec" id="faq" style="padding-top:20px">
+  <div class="wrap faq-wrap">
+    <div class="faq-side">
+      <div class="kicker rv"><span class="idx">05</span>Questions</div>
+      <h2 class="display rv d1" style="margin-top:22px">Portal <span class="hl">questions.</span></h2>
+      <p class="lede rv d2">What people usually ask before we build a portal for their customers.</p>
+      <div class="help rv d3"><span class="mark"><i></i></span><div><b>Still unsure?</b><span>Email <a href="mailto:support@qoreonlabs.com" style="color:var(--ink);font-weight:600">support@qoreonlabs.com</a></span></div></div>
+    </div>
+    <div class="faq-list">
+      <details class="rv" open>
+        <summary>Can it connect to our accounting or order system?<span class="pm" aria-hidden="true"></span></summary>
+        <div class="ans">Usually, yes. We connect to tools like Xero, QuickBooks, Sage, Shopify, HubSpot and most systems with an API, so orders and invoices appear in the portal without anyone retyping them.</div>
+      </details>
+      <details class="rv">
+        <summary>Will our customers actually log in?<span class="pm" aria-hidden="true"></span></summary>
+        <div class="ans">They will if it saves them time. We keep sign-in simple, often with a one-click email link instead of a password, and we make the first screen answer the question they usually email you about.</div>
+      </details>
+      <details class="rv">
+        <summary>Can each customer only see their own data?<span class="pm" aria-hidden="true"></span></summary>
+        <div class="ans">Yes. Every customer account is kept separate, and inside each account you can give people different roles, such as an owner, a buyer with a spending limit or a read-only viewer.</div>
+      </details>
+      <details class="rv">
+        <summary>How much does a customer portal cost?<span class="pm" aria-hidden="true"></span></summary>
+        <div class="ans">Every project gets a fixed quote after a free 15-minute call. Cost depends mostly on how many systems we connect to and how many features customers need on day one.</div>
+      </details>
+      <details class="rv">
+        <summary>How long does it take?<span class="pm" aria-hidden="true"></span></summary>
+        <div class="ans">Most customer portals take 4 to 8 weeks. We often launch with a small group of friendly customers first, then roll it out to everyone once the feedback is in.</div>
+      </details>
+      <details class="rv">
+        <summary>Can it use our brand and our own web address?<span class="pm" aria-hidden="true"></span></summary>
+        <div class="ans">Yes. The portal uses your logo, colours and a web address like portal.yourcompany.com, so customers see it as part of your business, not a third-party tool.</div>
+      </details>
+    </div>
+  </div>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Can it connect to our accounting or order system?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Usually, yes. We connect to tools like Xero, QuickBooks, Sage, Shopify, HubSpot and most systems with an API, so orders and invoices appear in the portal without anyone retyping them."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Will our customers actually log in?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "They will if it saves them time. We keep sign-in simple, often with a one-click email link instead of a password, and we make the first screen answer the question they usually email you about."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Can each customer only see their own data?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. Every customer account is kept separate, and inside each account you can give people different roles, such as an owner, a buyer with a spending limit or a read-only viewer."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How much does a customer portal cost?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Every project gets a fixed quote after a free 15-minute call. Cost depends mostly on how many systems we connect to and how many features customers need on day one."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How long does it take?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Most customer portals take 4 to 8 weeks. We often launch with a small group of friendly customers first, then roll it out to everyone once the feedback is in."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Can it use our brand and our own web address?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. The portal uses your logo, colours and a web address like portal.yourcompany.com, so customers see it as part of your business, not a third-party tool."
+        }
+      }
+    ]
+  }
+  </script>
+</section>
+
+<!-- ================= CONTACT ================= -->
+<section class="sec" id="contact" style="padding-top:20px;padding-bottom:0">
+  <div class="wrap contact">
+    <div class="c-left stage rv">
+      <div class="kicker"><span class="idx">06</span>Start a project</div>
+      <h2 class="display">Tell us what customers <span class="soft">ask you for.</span></h2>
+      <p>A few lines is plenty: who your customers are and the questions they ask most. We'll reply within one business day with honest advice and a clear next step.</p>
+      <ol class="next">
+        <li><b>1</b>We reply within one business day</li>
+        <li><b>2</b>A free 15-minute call to scope it</li>
+        <li><b>3</b>A fixed quote and plan within 48 hours</li>
+      </ol>
+      <div class="c-items">
+        <a class="c-item" href="mailto:support@qoreonlabs.com"><span class="ic"><svg width="16" height="16" viewBox="0 0 24 24"><path d="M3 6h18v12H3zM3 7l9 6 9-6" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg></span><div><small>Email</small><b>support@qoreonlabs.com</b></div></a>
+        <a class="c-item" href="tel:+447883302109"><span class="ic"><svg width="16" height="16" viewBox="0 0 24 24"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg></span><div><small>Phone</small><b>+44 7883 302 109</b></div></a>
+        <div class="c-item"><span class="ic"><svg width="16" height="16" viewBox="0 0 24 24"><path d="M12 22s7-6.2 7-12a7 7 0 1 0-14 0c0 5.8 7 12 7 12z" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="12" cy="10" r="2.5" fill="none" stroke="currentColor" stroke-width="2"/></svg></span><div><small>Registered office</small><b>71-75 Shelton Street, London WC2H 9JQ</b></div></div>
+      </div>
+    </div>
+
+    <div class="c-form rv d1">
+      <h3>Project enquiry</h3>
+      <p>Prefer a detailed brief? Use our <a href="quoteform.html" style="color:var(--ink);font-weight:600;border-bottom:1.5px solid var(--lime)">quote form</a>.</p>
+      <form id="contactForm" action="https://formspree.io/f/moverwoe" method="POST">
+        <input type="hidden" name="_subject" value="New project enquiry (customer portals page)" />
+        <div class="fgrid">
+          <div class="fld"><label for="c-name">Name</label><input id="c-name" name="name" type="text" placeholder="Your name" autocomplete="name" required></div>
+          <div class="fld"><label for="c-email">Email</label><input id="c-email" name="_replyto" type="email" placeholder="you@company.com" autocomplete="email" required></div>
+          <div class="fld full"><label for="c-site">Company or website <span style="color:var(--mute);font-weight:500">(optional)</span></label><input id="c-site" name="company" type="text" placeholder="yourcompany.com"></div>
+          <div class="fld full"><span class="lbl" id="c-needs">What do you need?</span>
+            <div class="opts" role="group" aria-labelledby="c-needs">
+              <label><input type="checkbox" name="needs[]" value="Website"><span>Website</span></label>
+              <label><input type="checkbox" name="needs[]" value="Dashboard or internal tool"><span>Dashboard / internal tool</span></label>
+              <label><input type="checkbox" name="needs[]" value="Web app or portal" checked><span>Web app / portal</span></label>
+              <label><input type="checkbox" name="needs[]" value="iOS app or MVP"><span>iOS app / MVP</span></label>
+              <label><input type="checkbox" name="needs[]" value="AI automation"><span>AI automation</span></label>
+              <label><input type="checkbox" name="needs[]" value="Not sure yet"><span>Not sure yet</span></label>
+            </div>
+          </div>
+          <div class="fld full"><label for="c-budget">Rough budget <span style="color:var(--mute);font-weight:500">(optional)</span></label>
+            <select id="c-budget" name="budget"><option value="">Choose a range</option><option>Under £1,000</option><option>£1,000 to £3,000</option><option>£3,000 to £8,000</option><option>£8,000+</option><option>Not sure yet</option></select></div>
+          <div class="fld full"><label for="c-msg">Message</label><textarea id="c-msg" name="message" placeholder="What do your customers email or call you about most often?" required></textarea></div>
+        </div>
+        <div class="f-foot">
+          <small>We reply within one business day. No spam, ever.</small>
+          <button class="btn btn-ink" type="submit">Send message <span class="arr"><svg width="12" height="12" viewBox="0 0 12 12"><path d="M2 6h8M6.5 2.5 10 6l-3.5 3.5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></span></button>
+        </div>
+      </form>
+    </div>
+  </div>
+</section>
+</main>
+
+<!-- ================= FOOTER ================= -->
+<footer class="foot">
+  <div class="wrap">
+    <div class="foot-cta">
+      <h2 class="display">Let's build something <span class="hl">useful.</span></h2>
+      <div class="ctas" style="margin-top:0">
+        <a class="btn btn-lime" href="#contact">Start a project <span class="arr"><svg width="12" height="12" viewBox="0 0 12 12"><path d="M2 6h8M6.5 2.5 10 6l-3.5 3.5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></span></a>
+        <a class="btn" style="background:#17181a;color:#fff;box-shadow:0 0 0 1px #2a2b2e inset" href="index.html#audit">Free site audit</a>
+      </div>
+    </div>
+    <div class="foot-grid">
+      <div>
+        <a class="logo" href="index.html" aria-label="Qoreon Labs home"><img src="assets/img/qoreon-logo-light.svg" alt="Qoreon Labs" width="175" height="52" loading="lazy" /></a>
+        <p class="about">A UK product studio building websites, dashboards, web apps, iOS apps and AI automations for growing businesses.</p>
+        <div class="foot-soc">
+          <a href="https://www.linkedin.com/company/qoreon-labs-ltd/" target="_blank" rel="noopener" aria-label="Qoreon Labs on LinkedIn"><svg width="15" height="15" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9h4v11H4zM6 3.5a2 2 0 1 1 0 4 2 2 0 0 1 0-4zM10 9h3.8v1.6c.6-1 1.9-1.9 3.8-1.9 3.6 0 4.4 2.3 4.4 5.4V20h-4v-5.2c0-1.3 0-2.9-1.8-2.9s-2.1 1.4-2.1 2.8V20H10z" fill="currentColor"/></svg></a>
+          <a href="https://x.com/QoreonLab" target="_blank" rel="noopener" aria-label="Qoreon Labs on X"><svg width="13" height="13" viewBox="0 0 24 24" aria-hidden="true"><path d="M18.24 2.25h3.31l-7.23 8.26 8.5 11.24h-6.65l-5.21-6.82-5.97 6.82H1.68l7.73-8.84L1.25 2.25h6.83l4.71 6.23zm-1.16 17.52h1.83L7.08 4.13H5.12z" fill="currentColor"/></svg></a>
+          <a href="https://www.facebook.com/QOREONLABS" target="_blank" rel="noopener" aria-label="Qoreon Labs on Facebook"><svg width="15" height="15" viewBox="0 0 24 24" aria-hidden="true"><path d="M14 8.5V6.6c0-.8.2-1.3 1.4-1.3H17V2.2c-.3 0-1.3-.2-2.5-.2C12 2 10.5 3.5 10.5 6.2v2.3H8v3.3h2.5V22H14V11.8h2.8l.4-3.3z" fill="currentColor"/></svg></a>
+          <a href="https://www.fiverr.com/talha_19" target="_blank" rel="noopener" aria-label="Qoreon Labs on Fiverr"><svg width="15" height="15" viewBox="0 0 24 24" aria-hidden="true"><path d="M9 19V9.6C9 7.6 10 6.5 12 6.5h1.3M6.5 11.2H12M16 11.2V19" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round"/><circle cx="16" cy="7.4" r="1.6" fill="currentColor"/></svg></a>
+        </div>
+      </div>
+      <div>
+        <h3>Studio</h3>
+        <ul><li><a href="about-us.html">About</a></li><li><a href="index.html#work">Work</a></li><li><a href="polymonit-wallet-tracker.html">PolyMonit</a></li><li><a href="blogs.html">Blog</a></li><li><a href="quoteform.html">Get a quote</a></li><li><a href="#contact">Contact</a></li></ul>
+      </div>
+      <div>
+        <h3>Services</h3>
+        <ul><li><a href="services.html#web-development">Web development</a></li><li><a href="business-dashboard-development.html">Dashboards</a></li><li><a href="internal-tools-development.html">Internal tools</a></li><li><a href="business-web-app-development.html">Business web apps</a></li><li><a href="customer-portal-development.html">Customer portals</a></li><li><a href="custom-software-development.html">Custom software</a></li></ul>
+      </div>
+      <div>
+        <h3>Products &amp; AI</h3>
+        <ul><li><a href="mvp-development.html">MVP development</a></li><li><a href="saas-development.html">SaaS development</a></li><li><a href="ai-development.html">AI development</a></li><li><a href="ai-automation.html">AI automation</a></li><li><a href="workflow-automation.html">Workflow automation</a></li><li><a href="index.html#security">AI security (RedShield)</a></li></ul>
+      </div>
+    </div>
+    <div class="foot-bot">
+      <span>© <span id="year">2026</span> Qoreon Labs Ltd. Registered in England &amp; Wales, company no. 16359714.</span>
+      <nav aria-label="Legal"><a href="privacy.html">Privacy</a><a href="terms.html">Terms</a><a href="cookies.html">Cookies</a></nav>
+    </div>
+  </div>
+  <div class="foot-word" aria-hidden="true">Qoreon Labs</div>
+</footer>
+
+<script src="assets/js/studio.js"></script>
+</body>
+</html>

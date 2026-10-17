@@ -1,0 +1,44 @@
+# Qoreon Labs
+
+> Qoreon Labs Ltd is a small, senior AI development company and product studio registered in London, UK. We design and build custom AI systems, web apps, internal tools, dashboards and websites, with a fixed quote up front, a working preview every week, and full ownership of the code.
+
+Key facts:
+
+- Company: Qoreon Labs Ltd, registered in England and Wales (company no. 16359714). Registered office: 71-75 Shelton Street, London WC2H 9JQ, United Kingdom.
+- Contact: support@qoreonlabs.com, +44 7883 302 109. We reply within one business day.
+- Who we work with: training and e-learning providers, professional services firms, operations-heavy businesses, and founders building MVPs or SaaS products. We work remotely with clients in the UK, US, Australia and Asia.
+- How we work: a free 15-minute call, then a fixed quote and plan within 48 hours, a working preview every week, and milestone payments. Larger or more complex projects start with a paid technical audit (architecture review, integration plan and fixed quote for the build), which the client keeps whoever builds it.
+- Ownership and data: everything built for a project, including source code and IP, is transferred to the client with documentation. GDPR-ready, with EU data options. NDA on request.
+- Custom AI systems: conversational and voice AI (speech recognition, lifelike voices, tutoring, speaking practice, training simulations, customer assistants), AI integrated into existing platforms with admin controls, private deployment on the client's own servers with open-source models or on cloud AI providers using the client's own accounts, and evaluation and AI security testing via our sister platform RedShield.
+- Reviews: 5.0 average from 69 client reviews on Fiverr, 100+ orders delivered.
+
+## Services
+
+- [Custom AI systems](https://qoreonlabs.com/#custom-ai): AI built into a real product or platform, including conversational and voice AI, integration with your content and users, private or cloud deployment, and testing before launch.
+- [AI development](https://qoreonlabs.com/ai-development.html): AI features in products and websites: search that answers questions, assistants that know your data, and document reading.
+- [AI automation](https://qoreonlabs.com/ai-automation.html): Automations that reply to enquiries in minutes, qualify leads, book appointments and update your CRM, using the tools you already have.
+- [Workflow automation](https://qoreonlabs.com/workflow-automation.html): Connecting forms, spreadsheets, CRM, accounts and chat tools so information moves on its own, with monitoring and alerts.
+- [Custom software development](https://qoreonlabs.com/custom-software-development.html): Workflow systems, operations tools and business rules, connected to the tools a business already uses.
+- [Business dashboards](https://qoreonlabs.com/business-dashboard-development.html): Sales, orders, stock and finance in one live view, with roles, alerts and weekly reports.
+- [Internal tools](https://qoreonlabs.com/internal-tools-development.html): Admin panels, approval workflows, roles and audit logs that replace spreadsheets.
+- [Business web apps](https://qoreonlabs.com/business-web-app-development.html): Web apps for bookings, orders and payments, plus the staff tools behind them.
+- [Customer portals](https://qoreonlabs.com/customer-portal-development.html): Portals where clients track orders, pay invoices, download documents and reorder on their own.
+- [MVP development](https://qoreonlabs.com/mvp-development.html): Focused MVPs for startups: iPhone apps, web apps and the dashboards behind them.
+- [SaaS development](https://qoreonlabs.com/saas-development.html): SaaS products end to end: sign-up, teams, Stripe subscriptions, admin tools and the product itself.
+- [All services](https://qoreonlabs.com/services.html): Websites, dashboards, internal tools, web apps, iPhone apps and AI automation.
+
+## Work
+
+- [PolyMonit case study](https://qoreonlabs.com/polymonit-wallet-tracker.html): How we designed, built and launched our own SaaS product, a Polymarket wallet tracker with alerts and paying subscribers in more than 20 countries.
+
+## Company
+
+- [About Qoreon Labs](https://qoreonlabs.com/about-us.html): Who we are and how the studio works.
+- [Request a quote](https://qoreonlabs.com/quoteform.html): Describe a project and get a fixed quote and plan within 48 hours of a short call.
+- [Contact](https://qoreonlabs.com/#contact): Project enquiry form, email and phone.
+
+## Optional
+
+- [Blog](https://qoreonlabs.com/blogs.html): Articles on AI, software and product development.
+- [The future of AI-driven development](https://qoreonlabs.com/the-future-of-ai-driven-development.html)
+- [Machine learning in business analytics](https://qoreonlabs.com/how-machine-learning-is-revolutionizing-business-analytics.html)

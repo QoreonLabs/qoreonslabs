@@ -1,2130 +1,319 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-KPXN9398W1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-KPXN9398W1');
+  </script>
+
+  <!-- Primary meta -->
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>AI, Software & Product Insights Blog | Qoreon Labs</title>
-  <meta name="description" content="Read Qoreon Labs articles on AI development, machine learning, secure software engineering, business analytics, and digital transformation." />
+  <title>Blog | AI, Software &amp; Product Insights | Qoreon Labs</title>
+  <meta name="description" content="Practical articles on AI, software and product development from Qoreon Labs, a UK studio building websites, dashboards, apps and automations." />
+  <meta name="author" content="Qoreon Labs Ltd" />
   <meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1" />
+  <meta name="theme-color" content="#efefea" />
   <link rel="canonical" href="https://qoreonlabs.com/blogs.html" />
+  <link rel="icon" href="assets/img/favicon.ico" sizes="any" />
+  <link rel="icon" type="image/svg+xml" href="assets/img/favicon.svg" />
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon-32.png" />
+  <link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png" />
+
+  <!-- Open Graph / Social -->
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://qoreonlabs.com/blogs.html" />
-  <meta property="og:title" content="AI, Software & Product Insights Blog | Qoreon Labs" />
-  <meta property="og:description" content="Insights from Qoreon Labs on AI systems, machine learning, secure software, analytics, and product delivery." />
-  <meta property="og:image" content="https://res.cloudinary.com/dfzsolglz/image/upload/v1744477640/3d-illustration-blue-purple-futuristic-sci-fi-techno-lights-cool-background_ueaecd.jpg" />
+  <meta property="og:title" content="Qoreon Labs blog" />
+  <meta property="og:description" content="Practical writing on AI, software and product development from a UK product studio." />
+  <meta property="og:image" content="https://qoreonlabs.com/assets/img/og-qoreon.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:alt" content="Qoreon Labs, a UK AI development company and product studio" />
   <meta property="og:site_name" content="Qoreon Labs" />
   <meta property="og:locale" content="en_GB" />
   <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="AI, Software & Product Insights Blog | Qoreon Labs" />
-  <meta name="twitter:description" content="Read the Qoreon Labs blog for AI engineering, analytics, web, app, and product development insights." />
-  <meta name="twitter:image" content="https://res.cloudinary.com/dfzsolglz/image/upload/v1744477640/3d-illustration-blue-purple-futuristic-sci-fi-techno-lights-cool-background_ueaecd.jpg" />
+  <meta name="twitter:site" content="@QoreonLab" />
+  <meta name="twitter:title" content="Qoreon Labs blog" />
+  <meta name="twitter:description" content="Practical writing on AI, software and product development from a UK product studio." />
+  <meta name="twitter:image" content="https://qoreonlabs.com/assets/img/og-qoreon.png" />
+
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": "Blog",
     "name": "Qoreon Labs Blog",
     "url": "https://qoreonlabs.com/blogs.html",
-    "description": "Insights, trends, and expertise on AI development, software engineering, analytics, and digital transformation.",
     "publisher": {
       "@type": "Organization",
       "name": "Qoreon Labs Ltd",
-      "url": "https://qoreonlabs.com"
+      "url": "https://qoreonlabs.com",
+      "logo": "https://qoreonlabs.com/assets/img/apple-touch-icon.png",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "71-75 Shelton Street, Covent Garden",
+        "addressLocality": "London",
+        "postalCode": "WC2H 9JQ",
+        "addressCountry": "GB"
+      }
     },
     "blogPost": [
       {
         "@type": "BlogPosting",
         "headline": "The Future of AI-Driven Development: Transforming Software Creation",
-        "url": "https://qoreonlabs.com/the-future-of-ai-driven-development.html"
+        "url": "https://qoreonlabs.com/the-future-of-ai-driven-development.html",
+        "datePublished": "2025-04-14",
+        "image": "https://qoreonlabs.com/assets/img/blog/ai-driven-development.jpg"
       },
       {
         "@type": "BlogPosting",
         "headline": "How Machine Learning is Revolutionizing Business Analytics",
-        "url": "https://qoreonlabs.com/how-machine-learning-is-revolutionizing-business-analytics.html"
+        "url": "https://qoreonlabs.com/how-machine-learning-is-revolutionizing-business-analytics.html",
+        "datePublished": "2025-04-14",
+        "image": "https://qoreonlabs.com/assets/img/blog/ml-business-analytics.jpg"
       }
     ]
   }
   </script>
-  <!-- Google Fonts for a modern look -->
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
-  <!-- Font Awesome for icons -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
-  <!-- AOS Animation Library -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
-  <style>
-    /* Global Styles and Variables */
-    :root {
-      --primary-color: #2575fc;
-      --primary-light: rgba(37, 117, 252, 0.1);
-      --primary-dark: #1a5cca;
-      --secondary-color: #6a11cb;
-      --secondary-light: rgba(106, 17, 203, 0.1);
-      --secondary-dark: #5410a3;
-      --accent-color: #00d9ff;
-      --dark-color: #151c2b;
-      --darker-color: #0c111e;
-      --text-color: #333;
-      --text-light: #6e7a8a;
-      --light-color: #f8f9fa;
-      --white: #ffffff;
-      --gray-100: #f8f9fa;
-      --gray-200: #e9ecef;
-      --gray-300: #dee2e6;
-      --gray-400: #ced4da;
-      --gray-500: #adb5bd;
-      --gray-600: #6c757d;
-      --gray-700: #495057;
-      --gray-800: #343a40;
-      --gray-900: #212529;
-      --shadow-sm: 0 2px 5px rgba(0, 0, 0, 0.05);
-      --shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
-      --shadow-lg: 0 10px 25px rgba(0, 0, 0, 0.12);
-      --shadow-xl: 0 15px 35px rgba(0, 0, 0, 0.15);
-      --transition-fast: 0.2s;
-      --transition: 0.3s;
-      --transition-slow: 0.5s;
-      --z-tooltip: 10;
-      --z-fixed: 100;
-      --z-modal: 1000;
-      --border-radius-sm: 4px;
-      --border-radius: 8px;
-      --border-radius-lg: 12px;
-      --border-radius-xl: 20px;
-      --border-radius-full: 9999px;
-    }
-    
-    * {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-    }
-    
-    html {
-      scroll-behavior: smooth;
-      scroll-padding-top: 80px;
-    }
-    
-    body {
-      font-family: 'Poppins', sans-serif;
-      line-height: 1.6;
-      color: var(--text-color);
-      overflow-x: hidden;
-      background-color: var(--light-color);
-      position: relative;
-    }
-    
-    a {
-      text-decoration: none;
-      color: inherit;
-    }
-    
-    ul {
-      list-style: none;
-    }
-    
-    img {
-      max-width: 100%;
-      height: auto;
-    }
-    
-    /* Utility Classes */
-    .container {
-      width: 100%;
-      max-width: 1200px;
-      margin: 0 auto;
-      padding: 0 1.5rem;
-      position: relative;
-      z-index: 1;
-    }
-    
-    .btn {
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      padding: 0.75rem 1.8rem;
-      font-size: 1rem;
-      font-weight: 500;
-      border-radius: var(--border-radius-full);
-      transition: all var(--transition) ease;
-      cursor: pointer;
-      position: relative;
-      overflow: hidden;
-      z-index: 1;
-      border: none;
-    }
-    
-    .btn-primary {
-      background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
-      color: var(--white);
-      box-shadow: 0 4px 15px rgba(37, 117, 252, 0.3);
-    }
-    
-    .btn-outline {
-      background: transparent;
-      color: var(--primary-color);
-      border: 2px solid var(--primary-color);
-    }
-    
-    .btn-light {
-      background: var(--white);
-      color: var(--primary-color);
-      box-shadow: var(--shadow);
-    }
-    
-    .btn i {
-      margin-left: 0.5rem;
-      transition: transform var(--transition) ease;
-    }
-    
-    .btn:hover {
-      transform: translateY(-3px);
-      box-shadow: var(--shadow-lg);
-    }
-    
-    .btn:hover i {
-      transform: translateX(3px);
-    }
-    
-    .btn-primary::before {
-      content: '';
-      position: absolute;
-      top: 0;
-      left: -100%;
-      width: 100%;
-      height: 100%;
-      background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
-      transition: left 0.7s ease;
-    }
-    
-    .btn-primary:hover::before {
-      left: 100%;
-    }
-    
-    .section {
-      padding: 6rem 0;
-      position: relative;
-    }
-    
-    .section-header {
-      margin-bottom: 4rem;
-      text-align: center;
-      position: relative;
-    }
-    
-    .section-header .subtitle {
-      color: var(--primary-color);
-      font-weight: 500;
-      margin-bottom: 1rem;
-      display: block;
-    }
-    
-    .section-header h2 {
-      font-size: 2.5rem;
-      margin-bottom: 1.5rem;
-      position: relative;
-      display: inline-block;
-    }
-    
-    .section-header h2::after {
-      content: '';
-      position: absolute;
-      bottom: -10px;
-      left: 50%;
-      transform: translateX(-50%);
-      width: 70px;
-      height: 4px;
-      background: linear-gradient(90deg, var(--secondary-color), var(--primary-color));
-      border-radius: 4px;
-    }
-    
-    .section-header p {
-      max-width: 700px;
-      margin: 0 auto;
-      color: var(--text-light);
-      font-size: 1.1rem;
-    }
-    
-    .text-gradient {
-      color: white;
-      text-shadow: 0 0 8px rgba(180, 130, 230, 0.6), 0 0 16px rgba(180, 130, 230, 0.4);
-      font-weight: 700;
-      letter-spacing: 0.5px;
-    }
-    
-    .card {
-      background: var(--white);
-      border-radius: var(--border-radius);
-      box-shadow: var(--shadow);
-      overflow: hidden;
-      transition: all var(--transition) ease;
-    }
-    
-    .card:hover {
-      transform: translateY(-10px);
-      box-shadow: var(--shadow-lg);
-    }
-    
-    .bg-primary {
-      background: var(--primary-color);
-      color: var(--white);
-    }
-    
-    .bg-secondary {
-      background: var(--secondary-color);
-      color: var(--white);
-    }
-    
-    .bg-dark {
-      background: var(--dark-color);
-      color: var(--white);
-    }
-    
-    .bg-light {
-      background: var(--light-color);
-      color: var(--text-color);
-    }
-    
-    .text-center {
-      text-align: center;
-    }
-    
-    .mb-1 {
-      margin-bottom: 0.5rem;
-    }
-    
-    .mb-2 {
-      margin-bottom: 1rem;
-    }
-    
-    .mb-3 {
-      margin-bottom: 1.5rem;
-    }
-    
-    .mb-4 {
-      margin-bottom: 2rem;
-    }
-    
-    .mb-5 {
-      margin-bottom: 3rem;
-    }
-    
-    .mt-1 {
-      margin-top: 0.5rem;
-    }
-    
-    .mt-2 {
-      margin-top: 1rem;
-    }
-    
-    .mt-3 {
-      margin-top: 1.5rem;
-    }
-    
-    .mt-4 {
-      margin-top: 2rem;
-    }
-    
-    .mt-5 {
-      margin-top: 3rem;
-    }
-    
-    /* Animated Background */
-    .animated-background {
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      overflow: hidden;
-      z-index: 0;
-    }
-    
-    .bg-gradient {
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      background: linear-gradient(-45deg,
-                                 rgba(106, 17, 203, 0.05),
-                                 rgba(37, 117, 252, 0.05),
-                                 rgba(0, 217, 255, 0.05),
-                                 rgba(245, 247, 250, 0.05));
-      background-size: 400% 400%;
-      animation: gradientBG 15s ease infinite;
-      z-index: -2;
-    }
-    
-    @keyframes gradientBG {
-      0% {
-        background-position: 0% 50%;
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://qoreonlabs.com/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Blog",
+        "item": "https://qoreonlabs.com/blogs.html"
       }
-      50% {
-        background-position: 100% 50%;
-      }
-      100% {
-        background-position: 0% 50%;
-      }
-    }
-    
-    .bg-grid {
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      background-image:
-        linear-gradient(var(--gray-200) 1px, transparent 1px),
-        linear-gradient(90deg, var(--gray-200) 1px, transparent 1px);
-      background-size: 30px 30px;
-      opacity: 0.3;
-      z-index: -1;
-    }
-    
-    .particles-container {
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      overflow: hidden;
-      z-index: -1;
-    }
-    
-    .particle {
-      position: absolute;
-      display: block;
-      pointer-events: none;
-      opacity: 0.5;
-      animation: float 15s infinite ease-in-out;
-    }
-    
-    @keyframes float {
-      0%, 100% {
-        transform: translateY(0) rotate(0deg);
-      }
-      50% {
-        transform: translateY(-20px) rotate(180deg);
-      }
-    }
-    
-    /* Header Styles */
-    header {
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 100%;
-      z-index: var(--z-fixed);
-      transition: all var(--transition) ease;
-      padding: 1rem 0;
-      background: linear-gradient(90deg, var(--secondary-color), var(--primary-color));
-    }
-    
-    .header-container {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-    }
-    
-    .logo {
-      font-size: 1.8rem;
-      font-weight: 700;
-      color: var(--white);
-      position: relative;
-      display: flex;
-      align-items: center;
-    }
-    
-    .logo::before {
-      content: '';
-      position: absolute;
-      width: 10px;
-      height: 10px;
-      background: var(--white);
-      border-radius: 50%;
-      left: -18px;
-      box-shadow: 0 0 15px rgba(255, 255, 255, 0.8);
-    }
-    
-    .nav-menu {
-      display: flex;
-      align-items: center;
-    }
-    
-    .nav-list {
-      display: flex;
-      gap: 2.5rem;
-      margin-right: 2rem;
-    }
-    
-    .nav-link {
-      font-weight: 500;
-      color: var(--white);
-      transition: all var(--transition) ease;
-      position: relative;
-      padding: 0.5rem 0;
-      font-size: 1.05rem;
-      opacity: 0.85;
-    }
-    
-    .nav-link::after {
-      content: '';
-      position: absolute;
-      width: 0;
-      height: 3px;
-      bottom: -3px;
-      left: 0;
-      background-color: var(--white);
-      transition: width var(--transition) ease;
-      border-radius: var(--border-radius-full);
-    }
-    
-    .nav-link:hover {
-      opacity: 1;
-    }
-    
-    .nav-link:hover::after,
-    .nav-link.active::after {
-      width: 100%;
-    }
-    
-    .nav-link.active {
-      opacity: 1;
-    }
-    
-    .header-btn {
-      background: rgba(255, 255, 255, 0.15);
-      color: var(--white);
-      border: 1px solid rgba(255, 255, 255, 0.3);
-      padding: 0.6rem 1.5rem;
-      border-radius: var(--border-radius-full);
-      font-weight: 500;
-      transition: all var(--transition) ease;
-      display: flex;
-      align-items: center;
-      gap: 0.5rem;
-    }
-    
-    .header-btn:hover {
-      background: var(--white);
-      color: var(--primary-color);
-      transform: translateY(-3px);
-    }
-    
-    .nav-toggle {
-      display: none;
-      font-size: 1.5rem;
-      cursor: pointer;
-      color: var(--white);
-      transition: all var(--transition) ease;
-    }
-
-    /* Hero Section - Blog */
-    .hero-blog {
-      padding: 12rem 0 6rem;
-      background: linear-gradient(135deg, var(--secondary-color) 0%, var(--primary-color) 100%);
-      color: var(--white);
-      position: relative;
-      overflow: hidden;
-    }
-    
-    .hero-blog-overlay {
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23ffffff' fill-opacity='0.05' fill-rule='evenodd'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/svg%3E");
-      opacity: 0.3;
-    }
-    
-    .hero-blog-content {
-      max-width: 800px;
-      margin: 0 auto;
-      text-align: center;
-      position: relative;
-      z-index: 1;
-    }
-    
-    .hero-blog-content h1 {
-      font-size: 3.5rem;
-      line-height: 1.2;
-      margin-bottom: 1.5rem;
-    }
-    
-    .hero-blog-content p {
-      font-size: 1.2rem;
-      opacity: 0.9;
-      max-width: 600px;
-      margin: 0 auto 2rem;
-    }
-
-    /* Blog Search and Filter Bar */
-    .blog-filter-bar {
-      background: var(--white);
-      padding: 1.5rem;
-      border-radius: var(--border-radius);
-      margin-top: -3rem;
-      box-shadow: var(--shadow-lg);
-      position: relative;
-      z-index: 10;
-      margin-bottom: 3rem;
-    }
-    
-    .blog-search-form {
-      display: flex;
-      gap: 1rem;
-    }
-    
-    .blog-search-input {
-      flex: 1;
-      padding: 0.8rem 1.2rem;
-      border: 1px solid var(--gray-300);
-      border-radius: var(--border-radius-full);
-      font-family: 'Poppins', sans-serif;
-      font-size: 1rem;
-      transition: all var(--transition) ease;
-    }
-    
-    .blog-search-input:focus {
-      outline: none;
-      border-color: var(--primary-color);
-      box-shadow: 0 0 0 3px var(--primary-light);
-    }
-    
-    .blog-search-btn {
-      padding: 0.8rem 1.5rem;
-      background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
-      color: var(--white);
-      border: none;
-      border-radius: var(--border-radius-full);
-      cursor: pointer;
-      transition: all var(--transition) ease;
-      font-weight: 500;
-    }
-    
-    .blog-search-btn:hover {
-      transform: translateY(-3px);
-      box-shadow: var(--shadow);
-    }
-    
-    .blog-categories {
-      display: flex;
-      gap: 0.8rem;
-      margin-top: 1.5rem;
-      flex-wrap: wrap;
-    }
-    
-    .blog-category {
-      padding: 0.5rem 1rem;
-      background: var(--gray-100);
-      border-radius: var(--border-radius-full);
-      font-size: 0.9rem;
-      color: var(--gray-700);
-      transition: all var(--transition) ease;
-      cursor: pointer;
-    }
-    
-    .blog-category:hover,
-    .blog-category.active {
-      background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
-      color: var(--white);
-      transform: translateY(-2px);
-      box-shadow: var(--shadow-sm);
-    }
-
-    /* Featured Post */
-    .featured-post {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 3rem;
-      margin-bottom: 4rem;
-      background: var(--white);
-      border-radius: var(--border-radius-lg);
-      overflow: hidden;
-      box-shadow: var(--shadow);
-      transition: all var(--transition) ease;
-    }
-    
-    .featured-post:hover {
-      transform: translateY(-10px);
-      box-shadow: var(--shadow-lg);
-    }
-    
-    .featured-post-image {
-      height: 100%;
-      overflow: hidden;
-      position: relative;
-    }
-    
-    .featured-post-image img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      transition: transform var(--transition) ease;
-    }
-    
-    .featured-post:hover .featured-post-image img {
-      transform: scale(1.05);
-    }
-    
-    .featured-post-content {
-      padding: 3rem;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-    }
-    
-    .featured-badge {
-      display: inline-block;
-      padding: 0.3rem 1rem;
-      background: linear-gradient(135deg, var(--secondary-color), var(--primary-color));
-      color: var(--white);
-      border-radius: var(--border-radius-full);
-      font-size: 0.8rem;
-      font-weight: 500;
-      margin-bottom: 1rem;
-    }
-    
-    .featured-post-title {
-      font-size: 2rem;
-      margin-bottom: 1rem;
-      color: var(--dark-color);
-    }
-    
-    .featured-post-meta {
-      display: flex;
-      align-items: center;
-      gap: 1.5rem;
-      margin-bottom: 1.5rem;
-      color: var(--text-light);
-      font-size: 0.9rem;
-    }
-    
-    .featured-post-meta span {
-      display: flex;
-      align-items: center;
-      gap: 0.5rem;
-    }
-    
-    .featured-post-excerpt {
-      margin-bottom: 1.5rem;
-      color: var(--text-light);
-    }
-
-    /* Blog Posts Grid */
-    .blog-grid {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 2rem;
-      margin-bottom: 3rem;
-    }
-    
-    .blog-card {
-      background: var(--white);
-      border-radius: var(--border-radius);
-      overflow: hidden;
-      box-shadow: var(--shadow);
-      transition: all var(--transition) ease;
-      height: 100%;
-      display: flex;
-      flex-direction: column;
-    }
-    
-    .blog-card:hover {
-      transform: translateY(-10px);
-      box-shadow: var(--shadow-lg);
-    }
-    
-    .blog-card-image {
-      width: 100%;
-      height: 220px;
-      overflow: hidden;
-      position: relative;
-    }
-    
-    .blog-card-image img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      transition: transform var(--transition) ease;
-    }
-    
-    .blog-card:hover .blog-card-image img {
-      transform: scale(1.05);
-    }
-    
-    .blog-card-category {
-      position: absolute;
-      top: 1rem;
-      left: 1rem;
-      padding: 0.3rem 0.8rem;
-      background: linear-gradient(135deg, var(--secondary-color), var(--primary-color));
-      color: var(--white);
-      border-radius: var(--border-radius-full);
-      font-size: 0.8rem;
-      font-weight: 500;
-      z-index: 1;
-      opacity: 0.9;
-    }
-    
-    .blog-card-content {
-      padding: 1.5rem;
-      display: flex;
-      flex-direction: column;
-      flex-grow: 1;
-    }
-    
-    .blog-card-title {
-      font-size: 1.3rem;
-      margin-bottom: 0.8rem;
-      color: var(--dark-color);
-      transition: color var(--transition) ease;
-    }
-    
-    .blog-card:hover .blog-card-title {
-      color: var(--primary-color);
-    }
-    
-    .blog-card-meta {
-      display: flex;
-      align-items: center;
-      gap: 1rem;
-      margin-bottom: 1rem;
-      color: var(--text-light);
-      font-size: 0.85rem;
-    }
-    
-    .blog-card-meta span {
-      display: flex;
-      align-items: center;
-      gap: 0.3rem;
-    }
-    
-    .blog-card-excerpt {
-      margin-bottom: 1.5rem;
-      color: var(--text-light);
-      font-size: 0.95rem;
-      flex-grow: 1;
-    }
-    
-    .blog-card-link {
-      display: flex;
-      align-items: center;
-      color: var(--primary-color);
-      font-weight: 500;
-      transition: transform var(--transition) ease;
-    }
-    
-    .blog-card-link i {
-      margin-left: 0.5rem;
-      transition: transform var(--transition) ease;
-    }
-    
-    .blog-card:hover .blog-card-link {
-      transform: translateX(5px);
-    }
-    
-    .blog-card:hover .blog-card-link i {
-      transform: translateX(3px);
-    }
-
-    /* Pagination */
-    .blog-pagination {
-      display: flex;
-      justify-content: center;
-      gap: 0.5rem;
-      margin-top: 4rem;
-    }
-    
-    .page-link {
-      width: 40px;
-      height: 40px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      border-radius: var(--border-radius);
-      background: var(--white);
-      color: var(--text-color);
-      font-weight: 500;
-      transition: all var(--transition) ease;
-      box-shadow: var(--shadow-sm);
-    }
-    
-    .page-link:hover,
-    .page-link.active {
-      background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
-      color: var(--white);
-      transform: translateY(-3px);
-      box-shadow: var(--shadow);
-    }
-    
-    .page-link.prev,
-    .page-link.next {
-      width: auto;
-      padding: 0 1rem;
-    }
-
-    /* Sidebar */
-    .blog-sidebar {
-      background: var(--white);
-      border-radius: var(--border-radius);
-      padding: 2rem;
-      box-shadow: var(--shadow);
-      margin-bottom: 2rem;
-    }
-    
-    .sidebar-title {
-      font-size: 1.3rem;
-      margin-bottom: 1.5rem;
-      padding-bottom: 0.8rem;
-      border-bottom: 1px solid var(--gray-200);
-      position: relative;
-    }
-    
-    .sidebar-title::after {
-      content: '';
-      position: absolute;
-      width: 50px;
-      height: 3px;
-      background: linear-gradient(90deg, var(--secondary-color), var(--primary-color));
-      bottom: -2px;
-      left: 0;
-      border-radius: var(--border-radius-full);
-    }
-    
-    .recent-post {
-      display: flex;
-      gap: 1rem;
-      margin-bottom: 1.5rem;
-      padding-bottom: 1.5rem;
-      border-bottom: 1px solid var(--gray-200);
-    }
-    
-    .recent-post:last-child {
-      margin-bottom: 0;
-      padding-bottom: 0;
-      border-bottom: none;
-    }
-    
-    .recent-post-image {
-      width: 70px;
-      height: 70px;
-      border-radius: var(--border-radius);
-      overflow: hidden;
-      flex-shrink: 0;
-    }
-    
-    .recent-post-image img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-    }
-    
-    .recent-post-content {
-      display: flex;
-      flex-direction: column;
-    }
-    
-    .recent-post-title {
-      font-size: 1rem;
-      margin-bottom: 0.5rem;
-      transition: color var(--transition) ease;
-    }
-    
-    .recent-post-title:hover {
-      color: var(--primary-color);
-    }
-    
-    .recent-post-date {
-      font-size: 0.8rem;
-      color: var(--text-light);
-      display: flex;
-      align-items: center;
-      gap: 0.5rem;
-    }
-    
-    .category-list {
-      display: flex;
-      flex-direction: column;
-      gap: 0.8rem;
-    }
-    
-    .category-item {
-      display: flex;
-      justify-content: space-between;
-      padding: 0.6rem 1rem;
-      background: var(--gray-100);
-      border-radius: var(--border-radius);
-      transition: all var(--transition) ease;
-    }
-    
-    .category-item:hover {
-      background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
-      color: var(--white);
-      transform: translateX(5px);
-    }
-    
-    .category-item span {
-      font-size: 0.85rem;
-      background: var(--white);
-      color: var(--text-color);
-      width: 24px;
-      height: 24px;
-      border-radius: 50%;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      transition: all var(--transition) ease;
-    }
-    
-    .category-item:hover span {
-      background: rgba(255, 255, 255, 0.2);
-      color: var(--white);
-    }
-    
-    .tag-cloud {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 0.8rem;
-    }
-    
-    .tag {
-      padding: 0.4rem 1rem;
-      background: var(--gray-100);
-      border-radius: var(--border-radius-full);
-      font-size: 0.85rem;
-      transition: all var(--transition) ease;
-    }
-    
-    .tag:hover {
-      background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
-      color: var(--white);
-      transform: translateY(-3px);
-    }
-
-    /* Newsletter Box */
-    .newsletter-box {
-      background: linear-gradient(135deg, var(--secondary-color) 0%, var(--primary-color) 100%);
-      border-radius: var(--border-radius);
-      padding: 2.5rem;
-      color: var(--white);
-      position: relative;
-      overflow: hidden;
-      margin-bottom: 2rem;
-    }
-    
-    .newsletter-pattern {
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23ffffff' fill-opacity='0.05' fill-rule='evenodd'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/svg%3E");
-      opacity: 0.1;
-    }
-    
-    .newsletter-title {
-      font-size: 1.5rem;
-      margin-bottom: 1rem;
-      position: relative;
-    }
-    
-    .newsletter-description {
-      margin-bottom: 1.5rem;
-      opacity: 0.9;
-      position: relative;
-    }
-    
-    .newsletter-form {
-      display: flex;
-      position: relative;
-    }
-    
-    .newsletter-input {
-      flex: 1;
-      padding: 0.8rem 1.2rem;
-      border: none;
-      border-radius: var(--border-radius-full);
-      font-family: 'Poppins', sans-serif;
-      font-size: 1rem;
-    }
-    
-    .newsletter-input:focus {
-      outline: none;
-    }
-    
-    .newsletter-btn {
-      position: absolute;
-      right: 5px;
-      top: 5px;
-      bottom: 5px;
-      border: none;
-      background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
-      color: var(--white);
-      padding: 0 1.2rem;
-      border-radius: var(--border-radius-full);
-      font-weight: 500;
-      cursor: pointer;
-      transition: all var(--transition) ease;
-    }
-    
-    .newsletter-btn:hover {
-      opacity: 0.9;
-      transform: translateX(3px);
-    }
-
-    /* CTA Section */
-    .cta {
-      background: linear-gradient(135deg, var(--secondary-color), var(--primary-color));
-      color: var(--white);
-      text-align: center;
-      padding: 5rem 0;
-      position: relative;
-      overflow: hidden;
-    }
-    
-    .cta-pattern {
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23ffffff' fill-opacity='0.05' fill-rule='evenodd'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/svg%3E");
-    }
-    
-    .cta h2 {
-      font-size: 2.5rem;
-      margin-bottom: 1.5rem;
-    }
-    
-    .cta p {
-      font-size: 1.2rem;
-      margin-bottom: 2rem;
-      max-width: 700px;
-      margin-left: auto;
-      margin-right: auto;
-      opacity: 0.9;
-    }
-    
-    .cta .btn-light {
-      padding: 1rem 2.5rem;
-      font-size: 1.1rem;
-    }
-
-    /* Footer */
-    footer {
-      background: linear-gradient(180deg, var(--dark-color) 0%, var(--darker-color) 100%);
-      color: var(--gray-300);
-      position: relative;
-      overflow: hidden;
-    }
-    
-    /* Bubble Animation for Footer */
-    .bubble {
-      position: absolute;
-      border-radius: 50%;
-      background: rgba(255, 255, 255, 0.05);
-      animation: bubbleFloat linear infinite;
-      bottom: -50px;
-    }
-    
-    @keyframes bubbleFloat {
-      0% {
-        transform: translateY(0) scale(1);
-        opacity: 0;
-      }
-      50% {
-        opacity: 0.1;
-      }
-      100% {
-        transform: translateY(-1000px) scale(1.8);
-        opacity: 0;
-      }
-    }
-    
-    /* Decorative elements */
-    .footer-decoration {
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      pointer-events: none;
-    }
-    
-    .footer-blob {
-      position: absolute;
-      background: linear-gradient(135deg, var(--secondary-color), var(--primary-color));
-      opacity: 0.05;
-      border-radius: 50%;
-    }
-    
-    .blob-1 {
-      width: 400px;
-      height: 400px;
-      top: -200px;
-      right: -200px;
-      filter: blur(50px);
-    }
-    
-    .blob-2 {
-      width: 300px;
-      height: 300px;
-      bottom: -150px;
-      left: -150px;
-      filter: blur(40px);
-    }
-    
-    /* Main Footer Content */
-    .footer-content {
-      position: relative;
-      padding: 5rem 0 3rem;
-      z-index: 1;
-    }
-    
-    .footer-main {
-      display: grid;
-      grid-template-columns: 2fr 1fr 1fr 1fr;
-      gap: 3rem;
-      margin-bottom: 3rem;
-    }
-    
-    /* Logo and About Section */
-    .footer-brand {
-      margin-bottom: 1.5rem;
-    }
-    
-    .footer-logo {
-      font-size: 1.8rem;
-      font-weight: 700;
-      color: var(--white);
-      margin-bottom: 1rem;
-      display: inline-block;
-      position: relative;
-    }
-    
-    .footer-logo::after {
-      content: '';
-      position: absolute;
-      width: 30px;
-      height: 3px;
-      background: linear-gradient(90deg, var(--secondary-color), var(--primary-color));
-      bottom: -8px;
-      left: 0;
-      border-radius: var(--border-radius-full);
-    }
-    
-    .footer-about p {
-      color: var(--gray-400);
-      margin-bottom: 1.5rem;
-    }
-    
-    /* Social Media Links */
-    .footer-social {
-      display: flex;
-      gap: 1rem;
-      margin-bottom: 1.5rem;
-    }
-    
-    .social-link {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      width: 36px;
-      height: 36px;
-      background: rgba(255, 255, 255, 0.05);
-      border-radius: var(--border-radius-full);
-      color: var(--white);
-      transition: all var(--transition) ease;
-    }
-    
-    .social-link:hover {
-      background: linear-gradient(135deg, var(--secondary-color), var(--primary-color));
-      transform: translateY(-3px);
-    }
-    
-    /* Footer Links */
-    .footer-block h3 {
-      color: var(--white);
-      font-size: 1.2rem;
-      margin-bottom: 1.5rem;
-      position: relative;
-      display: inline-block;
-    }
-    
-    .footer-block h3::after {
-      content: '';
-      position: absolute;
-      width: 30px;
-      height: 3px;
-      background: linear-gradient(90deg, var(--secondary-color), var(--primary-color));
-      bottom: -8px;
-      left: 0;
-      border-radius: var(--border-radius-full);
-    }
-    
-    .footer-links {
-      display: flex;
-      flex-direction: column;
-      gap: 0.8rem;
-    }
-    
-    .footer-link {
-      color: var(--gray-400);
-      transition: all var(--transition) ease;
-      position: relative;
-      padding-left: 15px;
-    }
-    
-    .footer-link::before {
-      content: '';
-      position: absolute;
-      width: 6px;
-      height: 6px;
-      border-radius: 50%;
-      background-color: var(--gray-600);
-      left: 0;
-      top: 50%;
-      transform: translateY(-50%);
-      transition: all var(--transition) ease;
-    }
-    
-    .footer-link:hover {
-      color: var(--white);
-      transform: translateX(5px);
-    }
-    
-    .footer-link:hover::before {
-      background: linear-gradient(135deg, var(--secondary-color), var(--primary-color));
-    }
-    
-    /* Contact Information */
-    .footer-contact-item {
-      display: flex;
-      align-items: flex-start;
-      gap: 1rem;
-      margin-bottom: 1.2rem;
-      color: var(--gray-400);
-    }
-    
-    .footer-contact-item i {
-      color: var(--primary-color);
-      font-size: 1.1rem;
-      margin-top: 0.2rem;
-    }
-    
-    /* Newsletter Subscription */
-    .footer-newsletter {
-      margin-top: 1.5rem;
-    }
-    
-    .newsletter-form {
-      position: relative;
-      margin-top: 1rem;
-    }
-    
-    .newsletter-input {
-      width: 100%;
-      padding: 0.8rem 1rem;
-      padding-right: 3.5rem;
-      background: rgba(255, 255, 255, 0.05);
-      border: 1px solid rgba(255, 255, 255, 0.1);
-      border-radius: var(--border-radius-full);
-      color: var(--white);
-      font-size: 0.9rem;
-      transition: all var(--transition) ease;
-    }
-    
-    .newsletter-input:focus {
-      outline: none;
-      border-color: rgba(255, 255, 255, 0.3);
-      background: rgba(255, 255, 255, 0.08);
-    }
-    
-    .newsletter-input::placeholder {
-      color: var(--gray-500);
-    }
-    
-    .newsletter-btn {
-      position: absolute;
-      top: 50%;
-      right: 0.5rem;
-      transform: translateY(-50%);
-      background: linear-gradient(135deg, var(--secondary-color), var(--primary-color));
-      border: none;
-      width: 36px;
-      height: 36px;
-      border-radius: 50%;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      color: var(--white);
-      cursor: pointer;
-      transition: all var(--transition) ease;
-    }
-    
-    .newsletter-btn:hover {
-      transform: translateY(-50%) scale(1.05);
-      box-shadow: 0 0 15px rgba(37, 117, 252, 0.4);
-    }
-    
-    /* Copyright Section */
-    .footer-divider {
-      height: 1px;
-      background: linear-gradient(to right, transparent, rgba(255, 255, 255, 0.1), transparent);
-      margin-bottom: 1.5rem;
-    }
-    
-    .footer-bottom {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding-bottom: 1.5rem;
-      color: var(--gray-500);
-      font-size: 0.9rem;
-    }
-    
-    .footer-copyright a {
-      color: var(--primary-color);
-      transition: color var(--transition) ease;
-    }
-    
-    .footer-copyright a:hover {
-      color: var(--white);
-    }
-    
-    .footer-links-inline {
-      display: flex;
-      gap: 1.5rem;
-    }
-    
-    .footer-links-inline a {
-      color: var(--gray-500);
-      transition: color var(--transition) ease;
-    }
-    
-    .footer-links-inline a:hover {
-      color: var(--white);
-    }
-    
-    /* Responsive Styles */
-    @media (max-width: 1200px) {
-      .blog-grid {
-        grid-template-columns: repeat(2, 1fr);
-      }
-      
-      .footer-main {
-        grid-template-columns: 1fr 1fr;
-      }
-    }
-    
-    @media (max-width: 992px) {
-      html {
-        font-size: 14px;
-      }
-      
-      .featured-post {
-        grid-template-columns: 1fr;
-      }
-      
-      .featured-post-image {
-        height: 300px;
-      }
-      
-      .hero-blog-content h1 {
-        font-size: 2.8rem;
-      }
-    }
-    
-    @media (max-width: 768px) {
-      .section {
-        padding: 4rem 0;
-      }
-      
-      .blog-grid {
-        grid-template-columns: 1fr;
-      }
-      
-      .footer-main {
-        grid-template-columns: 1fr;
-        gap: 2rem;
-      }
-      
-      .footer-block {
-        margin-bottom: 1rem;
-      }
-      
-      .footer-bottom {
-        flex-direction: column;
-        gap: 1rem;
-        text-align: center;
-      }
-      
-      .footer-links-inline {
-        justify-content: center;
-      }
-      
-      .nav-menu {
-        position: fixed;
-        top: 0;
-        right: -100%;
-        width: 80%;
-        height: 100vh;
-        background: linear-gradient(135deg, var(--secondary-color), var(--primary-color));
-        padding: 6rem 2rem 2rem;
-        transition: all var(--transition) ease;
-        z-index: var(--z-fixed);
-        box-shadow: var(--shadow-lg);
-        display: block;
-      }
-      
-      .nav-menu.show {
-        right: 0;
-      }
-      
-      .nav-list {
-        flex-direction: column;
-        margin-right: 0;
-      }
-      
-      .nav-close {
-        position: absolute;
-        top: 1.5rem;
-        right: 1.5rem;
-        font-size: 1.5rem;
-        cursor: pointer;
-        color: var(--white);
-      }
-      
-      .nav-toggle {
-        display: block;
-      }
-      
-      .blog-search-form {
-        flex-direction: column;
-      }
-      
-      .blog-search-btn {
-        width: 100%;
-      }
-    }
-    
-    @media (max-width: 576px) {
-      html {
-        font-size: 12px;
-      }
-      
-      .hero-blog {
-        padding: 10rem 0 4rem;
-      }
-      
-      .hero-blog-content h1 {
-        font-size: 2.2rem;
-      }
-      
-      .featured-post-content {
-        padding: 1.5rem;
-      }
-      
-      .featured-post-title {
-        font-size: 1.5rem;
-      }
-    }
-  </style>
-  <link rel="stylesheet" href="revamp.css" />
-</head>
-<body>
-
-  <!-- Animated Background -->
-  <div class="animated-background">
-    <div class="bg-gradient"></div>
-    <div class="bg-grid"></div>
-    <div class="particles-container" id="particles-container"></div>
-  </div>
-
-  <!-- Header -->
-  <header id="header">
-    <div class="container">
-      <div class="header-container">
-        <a href="index.html" class="logo">QOREON LABS</a>
-        
-        <div class="nav-toggle" id="nav-toggle">
-          <i class="fas fa-bars"></i>
-        </div>
-        
-        <nav class="nav-menu" id="nav-menu">
-          <div class="nav-close" id="nav-close">
-            <i class="fas fa-times"></i>
-          </div>
-          
-          <ul class="nav-list">
-            <li><a href="index.html" class="nav-link">Home</a></li>
-            <li><a href="about-us.html" class="nav-link">About</a></li>
-            <li class="nav-item nav-item--has-dropdown">
-              <a href="services.html" class="nav-link nav-link--dropdown" aria-haspopup="true" aria-expanded="false">
-                Services
-                <i class="fas fa-chevron-down nav-caret" aria-hidden="true"></i>
-              </a>
-              <div class="nav-dropdown" role="menu" aria-label="Services">
-                <a href="software-development.html" class="nav-dropdown-link" role="menuitem">Software Development</a>
-                <a href="web-development.html" class="nav-dropdown-link" role="menuitem">Web Development</a>
-                <a href="app-development.html" class="nav-dropdown-link" role="menuitem">App Development</a>
-              </div>
-            </li>
-            <li><a href="blogs.html" class="nav-link active">Blog</a></li>
-            <li><a href="polymonit-wallet-tracker.html" class="nav-link">Product</a></li>
-            <li><a href="index.html#contact" class="nav-link">Contact</a></li>
-          </ul>
-          
-          <a href="quoteform.html" class="header-btn">
-            <i class="fas fa-headset"></i>
-            Get In Touch
-          </a>
-        </nav>
-      </div>
-    </div>
-  </header>
-
-  <!-- Blog Hero Section -->
-  <section class="hero-blog" id="blog-hero">
-    <div class="hero-blog-overlay"></div>
-    
-    <div class="container">
-      <div class="hero-blog-content" data-aos="fade-up">
-        <h1>QOREON LABS <span class="text-gradient">Blog</span></h1>
-        <p>Insights, trends, and expertise on AI, software development, and digital transformation</p>
-      </div>
-    </div>
-  </section>
-
-  <!-- Blog Main Content -->
-  <section class="section" id="blog-content">
-    <div class="container">
-      <!-- Blog Search and Filter Bar -->
-      <div class="blog-filter-bar" data-aos="fade-up" data-aos-delay="200">
-        <form class="blog-search-form">
-          <input type="text" class="blog-search-input" placeholder="Search articles...">
-          <button type="submit" class="blog-search-btn">Search</button>
-        </form>
-        
-        <div class="blog-categories">
-          <div class="blog-category active">All</div>
-          <div class="blog-category">Artificial Intelligence</div>
-          <div class="blog-category">App Development</div>
-          <div class="blog-category">Web Development</div>
-          <div class="blog-category">Digital Transformation</div>
-          <div class="blog-category">Technology Trends</div>
-        </div>
-      </div>
-      
-      <!-- Featured Post -->
-      <div class="featured-post" data-aos="fade-up">
-        <div class="featured-post-image">
-          <img src="https://res.cloudinary.com/dfzsolglz/image/upload/v1744477640/3d-illustration-blue-purple-futuristic-sci-fi-techno-lights-cool-background_ueaecd.jpg" alt="Featured Post">
-        </div>
-        
-        <div class="featured-post-content">
-          <span class="featured-badge">Featured</span>
-          <h2 class="featured-post-title">The Future of AI-Driven Development: Transforming Software Creation</h2>
-          <div class="featured-post-meta">
-            <span><i class="far fa-calendar"></i> April 10, 2025</span>
-            <span><i class="far fa-user"></i> John Smith</span>
-          </div>
-          <p class="featured-post-excerpt">Discover how artificial intelligence is revolutionizing software development processes, enhancing productivity, and enabling developers to create more robust applications with unprecedented speed and precision.</p>
-          <a href="the-future-of-ai-driven-development.html" class="btn btn-primary">Read Article <i class="fas fa-arrow-right"></i></a>
-        </div>
-      </div>
-      
-      <div class="section-header" data-aos="fade-up">
-        <span class="subtitle">Latest Insights</span>
-        <h2>Recent Articles</h2>
-        <p>Stay informed with our latest thoughts, insights, and expertise on technology and digital innovation</p>
-      </div>
-      
-      <!-- Blog Grid -->
-      <div class="blog-grid">
-        <!-- Blog Card 1 -->
-<div class="blog-card" data-aos="fade-up" data-aos-delay="100">
-  <div class="blog-card-image">
-    <span class="blog-card-category">Artificial Intelligence</span>
-    <img src="https://res.cloudinary.com/dfzsolglz/image/upload/v1744477907/image_femtga.png" alt="AI">
-  </div>
-  
-  <div class="blog-card-content">
-    <h3 class="blog-card-title">
-      <a href="how-machine-learning-is-revolutionizing-business-analytics.html">How Machine Learning is Revolutionizing Business Analytics</a>
-    </h3>
-    
-    <div class="blog-card-meta">
-      <span><i class="far fa-calendar"></i> April 5, 2025</span>
-      <span><i class="far fa-comment"></i> 12</span>
-    </div>
-    
-    <p class="blog-card-excerpt">
-      Explore how machine learning algorithms are transforming business analytics, providing deeper insights and enabling more accurate predictions for data-driven decision making.
-    </p>
-    
-    <a href="how-machine-learning-is-revolutionizing-business-analytics.html" class="blog-card-link">
-      Read More <i class="fas fa-arrow-right"></i>
-    </a>
-  </div>
-</div>
-        
-        <!-- Blog Card 2 -->
-        <div class="blog-card" data-aos="fade-up" data-aos-delay="200">
-          <div class="blog-card-image">
-            <span class="blog-card-category">App Development</span>
-            <img src="https://res.cloudinary.com/dfzsolglz/image/upload/v1744478036/Mobile-app-development-company-1_tbx9qx.webp" alt="App Development">
-          </div>
-          
-          <div class="blog-card-content">
-            <h3 class="blog-card-title">
-              <a href="blog-post.html">Best Practices for Creating Accessible Mobile Applications</a>
-            </h3>
-            
-            <div class="blog-card-meta">
-              <span><i class="far fa-calendar"></i> March 28, 2025</span>
-              <span><i class="far fa-comment"></i> 8</span>
-            </div>
-            
-            <p class="blog-card-excerpt">
-              Learn essential guidelines and techniques for developing mobile applications that are accessible to all users, including those with disabilities, to reach a wider audience.
-            </p>
-            
-            <a href="blog-post.html" class="blog-card-link">
-              Read More <i class="fas fa-arrow-right"></i>
-            </a>
-          </div>
-        </div>
-        
-        <!-- Blog Card 3 -->
-        <div class="blog-card" data-aos="fade-up" data-aos-delay="300">
-          <div class="blog-card-image">
-            <span class="blog-card-category">Web Development</span>
-            <img src="https://res.cloudinary.com/dfzsolglz/image/upload/v1744477899/web_app_kclxed.png" alt="Web Development">
-          </div>
-          
-          <div class="blog-card-content">
-            <h3 class="blog-card-title">
-              <a href="blog-post.html">The Impact of Web Performance on User Experience and Conversion Rates</a>
-            </h3>
-            
-            <div class="blog-card-meta">
-              <span><i class="far fa-calendar"></i> March 20, 2025</span>
-              <span><i class="far fa-comment"></i> 15</span>
-            </div>
-            
-            <p class="blog-card-excerpt">
-              Discover how website loading speed and overall performance directly influence user experience, engagement metrics, and ultimately conversion rates for businesses.
-            </p>
-            
-            <a href="blog-post.html" class="blog-card-link">
-              Read More <i class="fas fa-arrow-right"></i>
-            </a>
-          </div>
-        </div>
-        
-        <!-- Blog Card 4 -->
-        <div class="blog-card" data-aos="fade-up" data-aos-delay="100">
-          <div class="blog-card-image">
-            <span class="blog-card-category">Digital Transformation</span>
-            <img src="https://res.cloudinary.com/dfzsolglz/image/upload/v1744478569/L3-Digital-transformation-of-tax-administration-V2-shutterstock_2070595583_u5jtuj.jpg" alt="Digital Transformation">
-          </div>
-          
-          <div class="blog-card-content">
-            <h3 class="blog-card-title">
-              <a href="blog-post.html">5 Key Elements of a Successful Digital Transformation Strategy</a>
-            </h3>
-            
-            <div class="blog-card-meta">
-              <span><i class="far fa-calendar"></i> March 15, 2025</span>
-              <span><i class="far fa-comment"></i> 10</span>
-            </div>
-            
-            <p class="blog-card-excerpt">
-              Explore the critical components that organizations need to consider when planning and implementing a successful digital transformation initiative.
-            </p>
-            
-            <a href="blog-post.html" class="blog-card-link">
-              Read More <i class="fas fa-arrow-right"></i>
-            </a>
-          </div>
-        </div>
-        
-        <!-- Blog Card 5 -->
-        <div class="blog-card" data-aos="fade-up" data-aos-delay="200">
-          <div class="blog-card-image">
-            <span class="blog-card-category">Cloud Solutions</span>
-            <img src="https://res.cloudinary.com/dfzsolglz/image/upload/v1744478560/saas-concept-collage_k9yqzv.jpg" alt="Cloud Solutions">
-          </div>
-          
-          <div class="blog-card-content">
-            <h3 class="blog-card-title">
-              <a href="blog-post.html">Optimizing Cloud Architecture for Scalability and Cost-Efficiency</a>
-            </h3>
-            
-            <div class="blog-card-meta">
-              <span><i class="far fa-calendar"></i> March 8, 2025</span>
-              <span><i class="far fa-comment"></i> 7</span>
-            </div>
-            
-            <p class="blog-card-excerpt">
-              Learn strategies and best practices for designing cloud infrastructures that can scale with your business while maintaining optimal cost efficiency.
-            </p>
-            
-            <a href="blog-post.html" class="blog-card-link">
-              Read More <i class="fas fa-arrow-right"></i>
-            </a>
-          </div>
-        </div>
-        
-        <!-- Blog Card 6 -->
-        <div class="blog-card" data-aos="fade-up" data-aos-delay="300">
-          <div class="blog-card-image">
-            <span class="blog-card-category">Technology Trends</span>
-            <img src="https://res.cloudinary.com/dfzsolglz/image/upload/v1744478392/original-045689ec2ea6c33fc92e91f39042e00a_qafgc4.webp" alt="Technology Trends">
-          </div>
-          
-          <div class="blog-card-content">
-            <h3 class="blog-card-title">
-              <a href="blog-post.html">Emerging Tech Trends That Will Shape the Software Industry in 2025</a>
-            </h3>
-            
-            <div class="blog-card-meta">
-              <span><i class="far fa-calendar"></i> March 1, 2025</span>
-              <span><i class="far fa-comment"></i> 20</span>
-            </div>
-            
-            <p class="blog-card-excerpt">
-              Explore the cutting-edge technologies and innovations that are poised to revolutionize the software development industry in the coming year.
-            </p>
-            
-            <a href="blog-post.html" class="blog-card-link">
-              Read More <i class="fas fa-arrow-right"></i>
-            </a>
-          </div>
-        </div>
-      </div>
-      
-      <!-- Pagination -->
-      <div class="blog-pagination">
-        <a href="#" class="page-link prev"><i class="fas fa-chevron-left"></i> Prev</a>
-        <a href="#" class="page-link active">1</a>
-        <a href="#" class="page-link">2</a>
-        <a href="#" class="page-link">3</a>
-        <a href="#" class="page-link">...</a>
-        <a href="#" class="page-link next">Next <i class="fas fa-chevron-right"></i></a>
-      </div>
-    </div>
-  </section>
-
-  <!-- Newsletter Section -->
-  <section class="section bg-light" id="newsletter">
-    <div class="container">
-      <div class="newsletter-box" data-aos="fade-up">
-        <div class="newsletter-pattern"></div>
-        <h3 class="newsletter-title">Subscribe to Our Blog Updates</h3>
-        <p class="newsletter-description">Stay informed with our latest articles, insights, and industry expertise delivered directly to your inbox.</p>
-        <form class="newsletter-form">
-          <input type="email" class="newsletter-input" placeholder="Enter your email address">
-          <button type="submit" class="newsletter-btn">Subscribe</button>
-        </form>
-      </div>
-    </div>
-  </section>
-
-  <!-- CTA Section -->
-  <section class="section cta">
-    <div class="cta-pattern"></div>
-    <div class="container">
-      <div data-aos="fade-up">
-        <h2>Ready to Transform Your Business?</h2>
-        <p>Let's discuss how our AI-driven solutions can help you achieve your business goals and stay ahead of the competition.</p>
-        <a href="quoteform.html" class="btn btn-light">Schedule a Consultation <i class="fas fa-arrow-right"></i></a>
-      </div>
-    </div>
-  </section>
-
-  <!-- Footer -->
-  <footer>
-    <!-- Bubbles Animation -->
-    <div id="footer-bubbles"></div>
-    
-    <!-- Decorative Elements -->
-    <div class="footer-decoration">
-      <div class="footer-blob blob-1"></div>
-      <div class="footer-blob blob-2"></div>
-    </div>
-    
-    <!-- Footer Content -->
-    <div class="footer-content">
-      <div class="container">
-        <!-- Main Footer Area -->
-        <div class="footer-main">
-          <!-- About Section -->
-          <div class="footer-block footer-about">
-            <div class="footer-brand">
-              <a href="index.html" class="footer-logo">QOREON LABS</a>
-              <p>Pioneering software and app development company dedicated to bringing intelligent, future-ready solutions to the digital landscape.</p>
-            </div>
-            
-            <!-- Social Media Links -->
-            <div class="footer-social">
-              <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
-              <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
-              <a href="#" class="social-link"><i class="fab fa-linkedin-in"></i></a>
-              <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
-              <a href="#" class="social-link"><i class="fab fa-github"></i></a>
-            </div>
-            
-            <!-- Newsletter Subscription -->
-            <div class="footer-newsletter">
-              <h3>Subscribe to Our Newsletter</h3>
-              <p>Stay updated with our latest news and insights.</p>
-              <form class="newsletter-form">
-                <input type="email" class="newsletter-input" placeholder="Your email address">
-                <button type="submit" class="newsletter-btn">
-                  <i class="fas fa-paper-plane"></i>
-                </button>
-              </form>
-            </div>
-          </div>
-          
-          <!-- Quick Links -->
-          <div class="footer-block">
-            <h3>Quick Links</h3>
-            <div class="footer-links">
-              <a href="index.html" class="footer-link">Home</a>
-              <a href="about-us.html" class="footer-link">About Us</a>
-              <a href="services.html" class="footer-link">Services</a>
-              <a href="blogs.html" class="footer-link">Blog</a>
-              <a href="polymonit-wallet-tracker.html" class="footer-link">Polymonit</a>
-              <a href="index.html#contact" class="footer-link">Contact</a>
-            </div>
-          </div>
-          
-          <!-- Services Links -->
-          <div class="footer-block">
-            <h3>Our Services</h3>
-            <div class="footer-links">
-              <a href="app-development.html" class="footer-link">App Development</a>
-              <a href="software-development.html" class="footer-link">AI &amp; Machine Learning</a>
-              <a href="web-development.html" class="footer-link">Web Development</a>
-              <a href="app-development.html" class="footer-link">Mobile Apps</a>
-              <a href="software-development.html" class="footer-link">Data Analytics</a>
-              <a href="software-development.html" class="footer-link">Cloud Solutions</a>
-            </div>
-          </div>
-          
-          <!-- Contact Information -->
-          <div class="footer-block">
-            <h3>Contact Info</h3>
-            <div class="footer-contact">
-              <div class="footer-contact-item">
-                <i class="fas fa-map-marker-alt"></i>
-                <span>71-75 Shelton Street, Covent Garden, London, WC2H 9JQ</span>
-              </div>
-              <div class="footer-contact-item">
-                <i class="fas fa-envelope"></i>
-                <span>support@qoreonslabs.com</span>
-              </div>
-              <div class="footer-contact-item">
-                <i class="fas fa-phone-alt"></i>
-                <span>+601161322729</span>
-              </div>
-              <div class="footer-contact-item">
-                <i class="fas fa-clock"></i>
-                <span>Monday - Friday: 9:00 AM - 6:00 PM</span>
-              </div>
-            </div>
-          </div>
-        </div>
-        
-        <!-- Divider Line -->
-        <div class="footer-divider"></div>
-        
-        <!-- Copyright Section -->
-        <div class="footer-bottom">
-          <div class="footer-copyright">
-            &copy; <span id="year">2025</span> <a href="index.html">QOREON LABS LTD</a>. All Rights Reserved.
-          </div>
-          
-          <div class="footer-links-inline">
-            <a href="#">Privacy Policy</a>
-            <a href="#">Terms of Service</a>
-            <a href="#">Cookie Policy</a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </footer>
-
-  <!-- AOS Animation -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
-  
-  <script>
-    // Set the current year dynamically in the footer
-    document.getElementById('year').textContent = new Date().getFullYear();
-    
-    // Initialize AOS Animation Library
-    document.addEventListener('DOMContentLoaded', function() {
-      AOS.init({
-        duration: 800,
-        easing: 'ease-in-out',
-        once: true,
-        mirror: false
-      });
-      
-      // Create particles for the background
-      createParticles();
-      
-      // Create bubbles for footer
-      createBubbles();
-      
-      // Navigation functionality
-      initNavigation();
-      
-      // Initialize category filters
-      initCategoryFilters();
-    });
-    
-    // Create particles for the background
-    function createParticles() {
-      const container = document.getElementById('particles-container');
-      const particleCount = 20;
-      
-      if (!container) return;
-      
-      for (let i = 0; i < particleCount; i++) {
-        const particle = document.createElement('div');
-        particle.classList.add('particle');
-        
-        // Random size between 30px and 100px
-        const size = Math.random() * 70 + 30;
-        particle.style.width = `${size}px`;
-        particle.style.height = `${size}px`;
-        
-        // Random position
-        particle.style.left = `${Math.random() * 100}vw`;
-        particle.style.top = `${Math.random() * 100}vh`;
-        
-        // Random opacity
-        particle.style.opacity = Math.random() * 0.3 + 0.1;
-        
-        // Random animation delay
-        particle.style.animationDelay = `${Math.random() * 15}s`;
-        
-        // Random animation duration
-        particle.style.animationDuration = `${Math.random() * 15 + 10}s`;
-        
-        container.appendChild(particle);
-      }
-    }
-    
-    // Create bubble animation for footer
-    function createBubbles() {
-      const container = document.getElementById('footer-bubbles');
-      const bubbleCount = 30;
-      
-      if (!container) return;
-      
-      for (let i = 0; i < bubbleCount; i++) {
-        const bubble = document.createElement('div');
-        bubble.classList.add('bubble');
-        
-        // Random size between 5px and 30px
-        const size = Math.random() * 25 + 5;
-        bubble.style.width = `${size}px`;
-        bubble.style.height = `${size}px`;
-        
-        // Random horizontal position
-        bubble.style.left = `${Math.random() * 100}%`;
-        
-        // Random animation duration between 8s and 20s
-        const duration = Math.random() * 12 + 8;
-        bubble.style.animationDuration = `${duration}s`;
-        
-        // Random animation delay
-        bubble.style.animationDelay = `${Math.random() * 5}s`;
-        
-        // Random opacity
-        bubble.style.opacity = (Math.random() * 0.15).toFixed(2);
-        
-        container.appendChild(bubble);
-      }
-    }
-    
-    // Initialize navigation functionality
-    function initNavigation() {
-      const header = document.getElementById('header');
-      const navToggle = document.getElementById('nav-toggle');
-      const navClose = document.getElementById('nav-close');
-      const navMenu = document.getElementById('nav-menu');
-      const navLinks = document.querySelectorAll('.nav-link');
-      
-      if (!navToggle || !navMenu || !navLinks.length) return;
-      
-      // Toggle menu
-      if (navToggle) {
-        navToggle.addEventListener('click', () => {
-          navMenu.classList.add('show');
-        });
-      }
-      
-      if (navClose) {
-        navClose.addEventListener('click', () => {
-          navMenu.classList.remove('show');
-        });
-      }
-      
-      // Close menu when clicking nav links
-      navLinks.forEach(link => {
-        link.addEventListener('click', () => {
-          navMenu.classList.remove('show');
-        });
-      });
-      
-      // Smooth scrolling for all links
-      document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-        anchor.addEventListener('click', function(e) {
-          e.preventDefault();
-          
-          const targetId = this.getAttribute('href');
-          if (targetId === '#') return;
-          
-          const targetElement = document.querySelector(targetId);
-          
-          if (targetElement) {
-            window.scrollTo({
-              top: targetElement.offsetTop - 80,
-              behavior: 'smooth'
-            });
-          }
-        });
-      });
-    }
-    
-    // Category filter functionality
-    function initCategoryFilters() {
-      const categories = document.querySelectorAll('.blog-category');
-      
-      if (!categories.length) return;
-      
-      categories.forEach(category => {
-        category.addEventListener('click', () => {
-          // Remove active class from all categories
-          categories.forEach(cat => cat.classList.remove('active'));
-          
-          // Add active class to clicked category
-          category.classList.add('active');
-          
-          // In a real implementation, this would filter the blog posts
-          // For this demo, we'll just console log
-          console.log('Filter by:', category.textContent);
-        });
-      });
-    }
+    ]
+  }
   </script>
-  <script src="revamp.js" defer></script>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Inter+Tight:wght@500;600;700&family=Lora:ital,wght@1,500&display=swap" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Inter+Tight:wght@500;600;700&family=Lora:ital,wght@1,500&display=swap" media="print" onload="this.media='all'" />
+  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Inter+Tight:wght@500;600;700&family=Lora:ital,wght@1,500&display=swap" /></noscript>
+
+  <link rel="stylesheet" href="assets/css/studio.css" />
+</head>
+<body class="no-js">
+<script>document.body.classList.remove('no-js')</script>
+
+<!-- ================= HEADER ================= -->
+<header class="hdr" id="header">
+  <div class="hdr-in">
+    <a class="logo" href="index.html" aria-label="Qoreon Labs home"><img src="assets/img/qoreon-logo.svg" alt="Qoreon Labs" width="134" height="40" /></a>
+
+    <nav class="nav" id="primary-nav" aria-label="Primary">
+      <a href="index.html">Home</a>
+      <a href="about-us.html">About</a>
+      <div class="dd" id="dd-services">
+        <button class="dd-t" type="button" aria-expanded="false" aria-controls="mega">Services
+          <svg width="11" height="8" viewBox="0 0 12 8" aria-hidden="true"><path d="m1 1 5 5 5-5" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></svg>
+        </button>
+        <div class="mega" id="mega">
+          <div class="mg">
+            <div class="mg-l">Websites &amp; core</div>
+            <a href="services.html#web-development"><b>Web Development <svg width="10" height="10" viewBox="0 0 10 10"><path d="M2 8 8 2M3.5 2H8v4.5" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></b><span>New sites and redesigns</span></a>
+            <a href="services.html#app-development"><b>App Development <svg width="10" height="10" viewBox="0 0 10 10"><path d="M2 8 8 2M3.5 2H8v4.5" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></b><span>iOS and cross-platform apps</span></a>
+            <a href="services.html#software-development"><b>Software Development <svg width="10" height="10" viewBox="0 0 10 10"><path d="M2 8 8 2M3.5 2H8v4.5" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></b><span>Back ends, APIs, integrations</span></a>
+            <a href="custom-software-development.html"><b>Custom Software <svg width="10" height="10" viewBox="0 0 10 10"><path d="M2 8 8 2M3.5 2H8v4.5" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></b><span>Built around how you work</span></a>
+          </div>
+          <div class="mg">
+            <div class="mg-l">Business systems</div>
+            <a href="business-dashboard-development.html"><b>Business Dashboards <svg width="10" height="10" viewBox="0 0 10 10"><path d="M2 8 8 2M3.5 2H8v4.5" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></b><span>Your numbers on one screen</span></a>
+            <a href="internal-tools-development.html"><b>Internal Tools <svg width="10" height="10" viewBox="0 0 10 10"><path d="M2 8 8 2M3.5 2H8v4.5" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></b><span>Replace the spreadsheets</span></a>
+            <a href="business-web-app-development.html"><b>Business Web Apps <svg width="10" height="10" viewBox="0 0 10 10"><path d="M2 8 8 2M3.5 2H8v4.5" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></b><span>Booking, ordering, ops</span></a>
+            <a href="customer-portal-development.html"><b>Customer Portals <svg width="10" height="10" viewBox="0 0 10 10"><path d="M2 8 8 2M3.5 2H8v4.5" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></b><span>Self-serve for your clients</span></a>
+          </div>
+          <div class="mg">
+            <div class="mg-l">Products &amp; automation</div>
+            <a href="ai-automation.html"><b>AI Automation <svg width="10" height="10" viewBox="0 0 10 10"><path d="M2 8 8 2M3.5 2H8v4.5" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></b><span>Leads, replies, follow-ups</span></a>
+            <a href="workflow-automation.html"><b>Workflow Automation <svg width="10" height="10" viewBox="0 0 10 10"><path d="M2 8 8 2M3.5 2H8v4.5" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></b><span>Connect the tools you use</span></a>
+            <a href="ai-development.html"><b>AI Development <svg width="10" height="10" viewBox="0 0 10 10"><path d="M2 8 8 2M3.5 2H8v4.5" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></b><span>Chat, search, AI features</span></a>
+            <a href="mvp-development.html"><b>MVP Development <svg width="10" height="10" viewBox="0 0 10 10"><path d="M2 8 8 2M3.5 2H8v4.5" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></b><span>From idea to first users</span></a>
+            <a href="saas-development.html"><b>SaaS Development <svg width="10" height="10" viewBox="0 0 10 10"><path d="M2 8 8 2M3.5 2H8v4.5" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></b><span>Subscriptions, accounts, billing</span></a>
+          </div>
+          <a class="mg-promo" href="index.html#audit">
+            <div class="score">46<small>/100</small></div>
+            <b>Free site audit</b>
+            <p>See what's costing you enquiries, in plain English.</p>
+            <span class="go">Get yours <svg width="12" height="12" viewBox="0 0 12 12"><path d="M2 6h8M6.5 2.5 10 6l-3.5 3.5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+          </a>
+        </div>
+      </div>
+      <a href="index.html#work">Work</a>
+      <a href="index.html#process">Process</a>
+      <a href="#contact">Contact</a>
+      <a class="btn btn-ink btn-sm m-cta" href="index.html#audit" style="display:none">Free site audit <span class="arr"><svg width="11" height="11" viewBox="0 0 12 12"><path d="M2 6h8M6.5 2.5 10 6l-3.5 3.5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></span></a>
+    </nav>
+
+    <div class="hdr-cta">
+      <a class="q" href="quoteform.html">Get a quote</a>
+      <a class="btn btn-ink btn-sm" href="index.html#audit">Free site audit <span class="arr"><svg width="11" height="11" viewBox="0 0 12 12"><path d="M2 6h8M6.5 2.5 10 6l-3.5 3.5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></span></a>
+    </div>
+    <button class="burger" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="primary-nav">
+      <svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 8h16M4 16h16" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+    </button>
+  </div>
+</header>
+
+<main id="top">
+
+<!-- ================= HERO ================= -->
+<section class="hero hero-s">
+  <div class="wrap hero-top">
+    <div class="ht-l">
+      <div class="kicker rv"><span class="idx">Blog</span>Insights from the studio</div>
+      <h1 class="display rv d1">Notes on building <span class="soft ser">useful</span> <span class="hl">software.</span></h1>
+    </div>
+    <div class="ht-r">
+      <p class="lede rv d2">Practical writing on AI, software and product development, from the team that builds websites, dashboards, apps and automations for growing businesses.</p>
+      <div class="ctas rv d3">
+        <a class="btn btn-ink" href="#posts">Read the latest <span class="arr"><svg width="12" height="12" viewBox="0 0 12 12"><path d="M2 6h8M6.5 2.5 10 6l-3.5 3.5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></span></a>
+        <a class="btn btn-ghost" href="#contact">Start a project</a>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ================= POSTS ================= -->
+<section class="sec" id="posts" style="padding-top:20px">
+  <div class="wrap">
+    <div class="sec-head">
+      <div>
+        <div class="kicker rv"><span class="idx">01</span>Latest articles</div>
+        <h2 class="display rv d1">Fresh from <span class="hl">the studio.</span></h2>
+      </div>
+      <p class="rv d2">We write about what we see while building software for real businesses. New articles are on the way.</p>
+    </div>
+    <div class="posts">
+      <article class="post rv">
+        <a class="img" href="the-future-of-ai-driven-development.html" tabindex="-1" aria-hidden="true"><picture><source type="image/webp" srcset="assets/img/blog/ai-driven-development-800.webp 800w, assets/img/blog/ai-driven-development-1600.webp 1600w" sizes="(max-width:680px) 92vw, 600px" /><img src="assets/img/blog/ai-driven-development.jpg" alt="" width="1600" height="900" loading="lazy" decoding="async" /></picture></a>
+        <div class="meta"><span class="label n"><i></i>AI Innovation</span><time datetime="2025-04-14">14 April 2025</time><span>· 2 min read</span></div>
+        <h3><a href="the-future-of-ai-driven-development.html">The Future of AI-Driven Development: Transforming Software Creation</a></h3>
+        <p>How AI tools are changing the way software is written, tested and shipped, and what that means for teams building products today.</p>
+        <a class="tlink" href="the-future-of-ai-driven-development.html">Read the article <svg width="10" height="10" viewBox="0 0 10 10"><path d="M2 8 8 2M3.5 2H8v4.5" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></a>
+      </article>
+      <article class="post rv d1">
+        <a class="img" href="how-machine-learning-is-revolutionizing-business-analytics.html" tabindex="-1" aria-hidden="true"><picture><source type="image/webp" srcset="assets/img/blog/ml-business-analytics-800.webp 800w, assets/img/blog/ml-business-analytics-1600.webp 1600w" sizes="(max-width:680px) 92vw, 600px" /><img src="assets/img/blog/ml-business-analytics.jpg" alt="" width="1600" height="900" loading="lazy" decoding="async" /></picture></a>
+        <div class="meta"><span class="label n"><i></i>Data Analytics</span><time datetime="2025-04-14">14 April 2025</time><span>· 4 min read</span></div>
+        <h3><a href="how-machine-learning-is-revolutionizing-business-analytics.html">How Machine Learning is Revolutionizing Business Analytics</a></h3>
+        <p>How machine learning helps businesses get more from their data, from forecasting and anomaly detection to faster, better-informed decisions.</p>
+        <a class="tlink" href="how-machine-learning-is-revolutionizing-business-analytics.html">Read the article <svg width="10" height="10" viewBox="0 0 10 10"><path d="M2 8 8 2M3.5 2H8v4.5" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></a>
+      </article>
+    </div>
+    <!-- TODO: add new articles here as they are published (copy one <article class="post"> card). -->
+  </div>
+</section>
+
+<!-- ================= CONTACT ================= -->
+<section class="sec" id="contact" style="padding-top:20px;padding-bottom:0">
+  <div class="wrap contact">
+    <div class="c-left stage rv">
+      <div class="kicker"><span class="idx">02</span>Start a project</div>
+      <h2 class="display">Got a question <span class="soft">we should write about?</span></h2>
+      <p>Or a project you'd like help with. A few lines is plenty, and we'll reply within one business day.</p>
+      <ol class="next">
+        <li><b>1</b>We reply within one business day</li>
+        <li><b>2</b>A free 15-minute call to scope it</li>
+        <li><b>3</b>A fixed quote and plan within 48 hours</li>
+      </ol>
+      <div class="c-items">
+        <a class="c-item" href="mailto:support@qoreonlabs.com"><span class="ic"><svg width="16" height="16" viewBox="0 0 24 24"><path d="M3 6h18v12H3zM3 7l9 6 9-6" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg></span><div><small>Email</small><b>support@qoreonlabs.com</b></div></a>
+        <a class="c-item" href="tel:+447883302109"><span class="ic"><svg width="16" height="16" viewBox="0 0 24 24"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg></span><div><small>Phone</small><b>+44 7883 302 109</b></div></a>
+        <div class="c-item"><span class="ic"><svg width="16" height="16" viewBox="0 0 24 24"><path d="M12 22s7-6.2 7-12a7 7 0 1 0-14 0c0 5.8 7 12 7 12z" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="12" cy="10" r="2.5" fill="none" stroke="currentColor" stroke-width="2"/></svg></span><div><small>Registered office</small><b>71-75 Shelton Street, London WC2H 9JQ</b></div></div>
+      </div>
+    </div>
+
+    <div class="c-form rv d1">
+      <h3>Project enquiry</h3>
+      <p>Prefer a detailed brief? Use our <a href="quoteform.html" style="color:var(--ink);font-weight:600;border-bottom:1.5px solid var(--lime)">quote form</a>.</p>
+      <form id="contactForm" action="https://formspree.io/f/moverwoe" method="POST">
+        <input type="hidden" name="_subject" value="New enquiry (blog)" />
+        <div class="fgrid">
+          <div class="fld"><label for="c-name">Name</label><input id="c-name" name="name" type="text" placeholder="Your name" autocomplete="name" required></div>
+          <div class="fld"><label for="c-email">Email</label><input id="c-email" name="_replyto" type="email" placeholder="you@company.com" autocomplete="email" required></div>
+          <div class="fld full"><label for="c-site">Company or website <span style="color:var(--mute);font-weight:500">(optional)</span></label><input id="c-site" name="company" type="text" placeholder="yourcompany.com"></div>
+          <div class="fld full"><span class="lbl" id="c-needs">What do you need?</span>
+            <div class="opts" role="group" aria-labelledby="c-needs">
+              <label><input type="checkbox" name="needs[]" value="Website"><span>Website</span></label>
+              <label><input type="checkbox" name="needs[]" value="Dashboard or internal tool"><span>Dashboard / internal tool</span></label>
+              <label><input type="checkbox" name="needs[]" value="Web app or portal"><span>Web app / portal</span></label>
+              <label><input type="checkbox" name="needs[]" value="iOS app or MVP"><span>iOS app / MVP</span></label>
+              <label><input type="checkbox" name="needs[]" value="AI automation"><span>AI automation</span></label>
+              <label><input type="checkbox" name="needs[]" value="Not sure yet"><span>Not sure yet</span></label>
+            </div>
+          </div>
+          <div class="fld full"><label for="c-budget">Rough budget <span style="color:var(--mute);font-weight:500">(optional)</span></label>
+            <select id="c-budget" name="budget"><option value="">Choose a range</option><option>Under £1,000</option><option>£1,000 to £3,000</option><option>£3,000 to £8,000</option><option>£8,000+</option><option>Not sure yet</option></select></div>
+          <div class="fld full"><label for="c-msg">Message</label><textarea id="c-msg" name="message" placeholder="What are you trying to fix or build?" required></textarea></div>
+        </div>
+        <div class="f-foot">
+          <small>We reply within one business day. No spam, ever.</small>
+          <button class="btn btn-ink" type="submit">Send message <span class="arr"><svg width="12" height="12" viewBox="0 0 12 12"><path d="M2 6h8M6.5 2.5 10 6l-3.5 3.5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></span></button>
+        </div>
+      </form>
+    </div>
+  </div>
+</section>
+</main>
+
+<!-- ================= FOOTER ================= -->
+<footer class="foot">
+  <div class="wrap">
+    <div class="foot-cta">
+      <h2 class="display">Let's build something <span class="hl">useful.</span></h2>
+      <div class="ctas" style="margin-top:0">
+        <a class="btn btn-lime" href="#contact">Start a project <span class="arr"><svg width="12" height="12" viewBox="0 0 12 12"><path d="M2 6h8M6.5 2.5 10 6l-3.5 3.5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></span></a>
+        <a class="btn" style="background:#17181a;color:#fff;box-shadow:0 0 0 1px #2a2b2e inset" href="index.html#audit">Free site audit</a>
+      </div>
+    </div>
+    <div class="foot-grid">
+      <div>
+        <a class="logo" href="index.html" aria-label="Qoreon Labs home"><img src="assets/img/qoreon-logo-light.svg" alt="Qoreon Labs" width="175" height="52" loading="lazy" /></a>
+        <p class="about">A UK product studio building websites, dashboards, web apps, iOS apps and AI automations for growing businesses.</p>
+        <div class="foot-soc">
+          <a href="https://www.linkedin.com/company/qoreon-labs-ltd/" target="_blank" rel="noopener" aria-label="Qoreon Labs on LinkedIn"><svg width="15" height="15" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9h4v11H4zM6 3.5a2 2 0 1 1 0 4 2 2 0 0 1 0-4zM10 9h3.8v1.6c.6-1 1.9-1.9 3.8-1.9 3.6 0 4.4 2.3 4.4 5.4V20h-4v-5.2c0-1.3 0-2.9-1.8-2.9s-2.1 1.4-2.1 2.8V20H10z" fill="currentColor"/></svg></a>
+          <a href="https://x.com/QoreonLab" target="_blank" rel="noopener" aria-label="Qoreon Labs on X"><svg width="13" height="13" viewBox="0 0 24 24" aria-hidden="true"><path d="M18.24 2.25h3.31l-7.23 8.26 8.5 11.24h-6.65l-5.21-6.82-5.97 6.82H1.68l7.73-8.84L1.25 2.25h6.83l4.71 6.23zm-1.16 17.52h1.83L7.08 4.13H5.12z" fill="currentColor"/></svg></a>
+          <a href="https://www.facebook.com/QOREONLABS" target="_blank" rel="noopener" aria-label="Qoreon Labs on Facebook"><svg width="15" height="15" viewBox="0 0 24 24" aria-hidden="true"><path d="M14 8.5V6.6c0-.8.2-1.3 1.4-1.3H17V2.2c-.3 0-1.3-.2-2.5-.2C12 2 10.5 3.5 10.5 6.2v2.3H8v3.3h2.5V22H14V11.8h2.8l.4-3.3z" fill="currentColor"/></svg></a>
+          <a href="https://www.fiverr.com/talha_19" target="_blank" rel="noopener" aria-label="Qoreon Labs on Fiverr"><svg width="15" height="15" viewBox="0 0 24 24" aria-hidden="true"><path d="M9 19V9.6C9 7.6 10 6.5 12 6.5h1.3M6.5 11.2H12M16 11.2V19" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round"/><circle cx="16" cy="7.4" r="1.6" fill="currentColor"/></svg></a>
+        </div>
+      </div>
+      <div>
+        <h3>Studio</h3>
+        <ul><li><a href="about-us.html">About</a></li><li><a href="index.html#work">Work</a></li><li><a href="polymonit-wallet-tracker.html">PolyMonit</a></li><li><a href="blogs.html">Blog</a></li><li><a href="quoteform.html">Get a quote</a></li><li><a href="#contact">Contact</a></li></ul>
+      </div>
+      <div>
+        <h3>Services</h3>
+        <ul><li><a href="services.html#web-development">Web development</a></li><li><a href="business-dashboard-development.html">Dashboards</a></li><li><a href="internal-tools-development.html">Internal tools</a></li><li><a href="business-web-app-development.html">Business web apps</a></li><li><a href="customer-portal-development.html">Customer portals</a></li><li><a href="custom-software-development.html">Custom software</a></li></ul>
+      </div>
+      <div>
+        <h3>Products &amp; AI</h3>
+        <ul><li><a href="mvp-development.html">MVP development</a></li><li><a href="saas-development.html">SaaS development</a></li><li><a href="ai-development.html">AI development</a></li><li><a href="ai-automation.html">AI automation</a></li><li><a href="workflow-automation.html">Workflow automation</a></li><li><a href="index.html#security">AI security (RedShield)</a></li></ul>
+      </div>
+    </div>
+    <div class="foot-bot">
+      <span>© <span id="year">2026</span> Qoreon Labs Ltd. Registered in England &amp; Wales, company no. 16359714.</span>
+      <nav aria-label="Legal"><a href="privacy.html">Privacy</a><a href="terms.html">Terms</a><a href="cookies.html">Cookies</a></nav>
+    </div>
+  </div>
+  <div class="foot-word" aria-hidden="true">Qoreon Labs</div>
+</footer>
+
+<script src="assets/js/studio.js"></script>
 </body>
 </html>

@@ -1,0 +1,825 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-KPXN9398W1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-KPXN9398W1');
+  </script>
+
+  <!-- Primary meta -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Business Dashboard Development | Custom KPI Dashboards | Qoreon Labs</title>
+  <meta name="description" content="Custom business dashboards that pull sales, orders, stock and finance into one live view, with roles, alerts and weekly reports. UK studio, fixed quotes." />
+  <meta name="author" content="Qoreon Labs Ltd" />
+  <meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1" />
+  <meta name="theme-color" content="#efefea" />
+  <link rel="canonical" href="https://qoreonlabs.com/business-dashboard-development.html" />
+  <link rel="icon" href="assets/img/favicon.ico" sizes="any" />
+  <link rel="icon" type="image/svg+xml" href="assets/img/favicon.svg" />
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon-32.png" />
+  <link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png" />
+
+  <!-- Open Graph / Social -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://qoreonlabs.com/business-dashboard-development.html" />
+  <meta property="og:title" content="Business dashboard development | Qoreon Labs" />
+  <meta property="og:description" content="One live dashboard instead of six spreadsheets. Sales, orders, stock and finance on one screen, with roles, alerts and weekly reports." />
+  <meta property="og:image" content="https://qoreonlabs.com/assets/img/og-qoreon.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:alt" content="Qoreon Labs, a UK AI development company and product studio" />
+  <meta property="og:site_name" content="Qoreon Labs" />
+  <meta property="og:locale" content="en_GB" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:site" content="@QoreonLab" />
+  <meta name="twitter:title" content="Business dashboard development | Qoreon Labs" />
+  <meta name="twitter:description" content="One live dashboard instead of six spreadsheets. Fixed quotes, weekly previews." />
+  <meta name="twitter:image" content="https://qoreonlabs.com/assets/img/og-qoreon.png" />
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "name": "Business dashboard development",
+    "serviceType": "Business dashboard development",
+    "url": "https://qoreonlabs.com/business-dashboard-development.html",
+    "description": "Custom business dashboards that pull sales, orders, stock and finance data into one live view, with user roles, alerts and scheduled reports.",
+    "areaServed": [
+      "GB",
+      "US",
+      "AU"
+    ],
+    "provider": {
+      "@type": "Organization",
+      "name": "Qoreon Labs Ltd",
+      "url": "https://qoreonlabs.com",
+      "logo": "https://qoreonlabs.com/assets/img/apple-touch-icon.png",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "71-75 Shelton Street, Covent Garden",
+        "addressLocality": "London",
+        "postalCode": "WC2H 9JQ",
+        "addressCountry": "GB"
+      }
+    }
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://qoreonlabs.com/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Services",
+        "item": "https://qoreonlabs.com/services.html"
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "name": "Business dashboard development",
+        "item": "https://qoreonlabs.com/business-dashboard-development.html"
+      }
+    ]
+  }
+  </script>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Inter+Tight:wght@500;600;700&family=Lora:ital,wght@1,500&display=swap" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Inter+Tight:wght@500;600;700&family=Lora:ital,wght@1,500&display=swap" media="print" onload="this.media='all'" />
+  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Inter+Tight:wght@500;600;700&family=Lora:ital,wght@1,500&display=swap" /></noscript>
+
+  <link rel="stylesheet" href="assets/css/studio.css" />
+</head>
+<body class="no-js">
+<script>document.body.classList.remove('no-js')</script>
+
+<!-- ================= HEADER ================= -->
+<header class="hdr" id="header">
+  <div class="hdr-in">
+    <a class="logo" href="index.html" aria-label="Qoreon Labs home"><img src="assets/img/qoreon-logo.svg" alt="Qoreon Labs" width="134" height="40" /></a>
+
+    <nav class="nav" id="primary-nav" aria-label="Primary">
+      <a href="index.html">Home</a>
+      <a href="about-us.html">About</a>
+      <div class="dd" id="dd-services">
+        <button class="dd-t on" type="button" aria-expanded="false" aria-controls="mega">Services
+          <svg width="11" height="8" viewBox="0 0 12 8" aria-hidden="true"><path d="m1 1 5 5 5-5" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></svg>
+        </button>
+        <div class="mega" id="mega">
+          <div class="mg">
+            <div class="mg-l">Websites &amp; core</div>
+            <a href="services.html#web-development"><b>Web Development <svg width="10" height="10" viewBox="0 0 10 10"><path d="M2 8 8 2M3.5 2H8v4.5" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></b><span>New sites and redesigns</span></a>
+            <a href="services.html#app-development"><b>App Development <svg width="10" height="10" viewBox="0 0 10 10"><path d="M2 8 8 2M3.5 2H8v4.5" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></b><span>iOS and cross-platform apps</span></a>
+            <a href="services.html#software-development"><b>Software Development <svg width="10" height="10" viewBox="0 0 10 10"><path d="M2 8 8 2M3.5 2H8v4.5" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></b><span>Back ends, APIs, integrations</span></a>
+            <a href="custom-software-development.html"><b>Custom Software <svg width="10" height="10" viewBox="0 0 10 10"><path d="M2 8 8 2M3.5 2H8v4.5" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></b><span>Built around how you work</span></a>
+          </div>
+          <div class="mg">
+            <div class="mg-l">Business systems</div>
+            <a href="business-dashboard-development.html" aria-current="page"><b>Business Dashboards <svg width="10" height="10" viewBox="0 0 10 10"><path d="M2 8 8 2M3.5 2H8v4.5" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></b><span>Your numbers on one screen</span></a>
+            <a href="internal-tools-development.html"><b>Internal Tools <svg width="10" height="10" viewBox="0 0 10 10"><path d="M2 8 8 2M3.5 2H8v4.5" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></b><span>Replace the spreadsheets</span></a>
+            <a href="business-web-app-development.html"><b>Business Web Apps <svg width="10" height="10" viewBox="0 0 10 10"><path d="M2 8 8 2M3.5 2H8v4.5" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></b><span>Booking, ordering, ops</span></a>
+            <a href="customer-portal-development.html"><b>Customer Portals <svg width="10" height="10" viewBox="0 0 10 10"><path d="M2 8 8 2M3.5 2H8v4.5" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></b><span>Self-serve for your clients</span></a>
+          </div>
+          <div class="mg">
+            <div class="mg-l">Products &amp; automation</div>
+            <a href="ai-automation.html"><b>AI Automation <svg width="10" height="10" viewBox="0 0 10 10"><path d="M2 8 8 2M3.5 2H8v4.5" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></b><span>Leads, replies, follow-ups</span></a>
+            <a href="workflow-automation.html"><b>Workflow Automation <svg width="10" height="10" viewBox="0 0 10 10"><path d="M2 8 8 2M3.5 2H8v4.5" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></b><span>Connect the tools you use</span></a>
+            <a href="ai-development.html"><b>AI Development <svg width="10" height="10" viewBox="0 0 10 10"><path d="M2 8 8 2M3.5 2H8v4.5" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></b><span>Chat, search, AI features</span></a>
+            <a href="mvp-development.html"><b>MVP Development <svg width="10" height="10" viewBox="0 0 10 10"><path d="M2 8 8 2M3.5 2H8v4.5" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></b><span>From idea to first users</span></a>
+            <a href="saas-development.html"><b>SaaS Development <svg width="10" height="10" viewBox="0 0 10 10"><path d="M2 8 8 2M3.5 2H8v4.5" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></b><span>Subscriptions, accounts, billing</span></a>
+          </div>
+          <a class="mg-promo" href="index.html#audit">
+            <div class="score">46<small>/100</small></div>
+            <b>Free site audit</b>
+            <p>See what's costing you enquiries, in plain English.</p>
+            <span class="go">Get yours <svg width="12" height="12" viewBox="0 0 12 12"><path d="M2 6h8M6.5 2.5 10 6l-3.5 3.5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+          </a>
+        </div>
+      </div>
+      <a href="index.html#work">Work</a>
+      <a href="index.html#process">Process</a>
+      <a href="#contact">Contact</a>
+      <a class="btn btn-ink btn-sm m-cta" href="index.html#audit" style="display:none">Free site audit <span class="arr"><svg width="11" height="11" viewBox="0 0 12 12"><path d="M2 6h8M6.5 2.5 10 6l-3.5 3.5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></span></a>
+    </nav>
+
+    <div class="hdr-cta">
+      <a class="q" href="quoteform.html">Get a quote</a>
+      <a class="btn btn-ink btn-sm" href="index.html#audit">Free site audit <span class="arr"><svg width="11" height="11" viewBox="0 0 12 12"><path d="M2 6h8M6.5 2.5 10 6l-3.5 3.5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></span></a>
+    </div>
+    <button class="burger" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="primary-nav">
+      <svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 8h16M4 16h16" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+    </button>
+  </div>
+</header>
+
+<main id="top">
+
+<!-- ================= HERO ================= -->
+<section class="hero">
+  <div class="wrap hero-top">
+    <div class="ht-l">
+      <div class="kicker rv"><a class="idx" href="services.html">Services</a>Business dashboard development</div>
+      <h1 class="display rv d1">Business dashboards that show you <span class="soft ser">exactly</span> where you <span class="hl">stand.</span></h1>
+    </div>
+    <div class="ht-r">
+      <p class="lede rv d2">We build custom dashboards that pull your <b>sales, orders, stock and finance</b> into one live view, with the right numbers for each person and an alert when something needs attention. Fixed quote up front, working preview every week.</p>
+      <div class="ctas rv d3">
+        <a class="btn btn-ink" href="#contact">Book a free call <span class="arr"><svg width="12" height="12" viewBox="0 0 12 12"><path d="M2 6h8M6.5 2.5 10 6l-3.5 3.5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></span></a>
+        <a class="btn btn-ghost" href="#work">See examples</a>
+      </div>
+      <div class="trust rv d4">
+        <div class="trust-i"><div>
+          <div class="stars" role="img" aria-label="5 out of 5 stars"><svg width="13" height="13" viewBox="0 0 20 20"><path d="M10 1.5l2.6 5.6 6.1.7-4.5 4.2 1.2 6L10 15l-5.4 3 1.2-6L1.3 7.8l6.1-.7z" fill="currentColor"/></svg><svg width="13" height="13" viewBox="0 0 20 20"><path d="M10 1.5l2.6 5.6 6.1.7-4.5 4.2 1.2 6L10 15l-5.4 3 1.2-6L1.3 7.8l6.1-.7z" fill="currentColor"/></svg><svg width="13" height="13" viewBox="0 0 20 20"><path d="M10 1.5l2.6 5.6 6.1.7-4.5 4.2 1.2 6L10 15l-5.4 3 1.2-6L1.3 7.8l6.1-.7z" fill="currentColor"/></svg><svg width="13" height="13" viewBox="0 0 20 20"><path d="M10 1.5l2.6 5.6 6.1.7-4.5 4.2 1.2 6L10 15l-5.4 3 1.2-6L1.3 7.8l6.1-.7z" fill="currentColor"/></svg><svg width="13" height="13" viewBox="0 0 20 20"><path d="M10 1.5l2.6 5.6 6.1.7-4.5 4.2 1.2 6L10 15l-5.4 3 1.2-6L1.3 7.8l6.1-.7z" fill="currentColor"/></svg></div>
+          <span><b style="display:inline">5.0</b> from 69 reviews</span></div></div>
+        <span class="trust-sep"></span>
+        <div class="trust-i"><div><b>100+</b>orders delivered</div></div>
+        <span class="trust-sep"></span>
+        <div class="trust-i"><div><b>UK Ltd</b>registered in London</div></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Hero visual: the dashboard as a dark screen on the wall (Brightline Ops sample build) -->
+  <div class="hv rv d2" aria-hidden="true">
+    <div class="wall">
+      <div class="wall-scr"><div class="wall-in">
+        <div class="wd-top">
+          <div class="wd-brand"><span class="lg">B</span><div><b>Brightline</b><small>Sales floor screen</small></div></div>
+          <span class="wd-live"><i></i>Live</span>
+          <div class="wd-seg"><span>Today</span><span class="on">This week</span><span>Month</span></div>
+          <div class="wd-clock"><b>09:00</b><small>Mon 29 Sep · refreshes every minute</small></div>
+        </div>
+
+        <div class="wd-kpis">
+          <div class="wd-k on"><div class="l">Revenue</div><div class="v">$84,210</div><div class="d"><span class="wd-ch">+9.2%</span><span>vs last week</span></div>
+            <svg viewBox="0 0 200 34" preserveAspectRatio="none"><path d="M0 26 L33 21 L66 19 L100 16 L133 5 L166 17 L200 28" fill="none" stroke="#d6ff3d" stroke-width="2" vector-effect="non-scaling-stroke" stroke-linejoin="round"/></svg></div>
+          <div class="wd-k"><div class="l">Gross margin</div><div class="v">41.8%</div><div class="d"><span class="wd-ch">+1.3 pts</span><span>vs last week</span></div>
+            <svg viewBox="0 0 200 34" preserveAspectRatio="none"><path d="M0 22 L33 24 L66 18 L100 20 L133 14 L166 15 L200 11" fill="none" stroke="#8b8c90" stroke-width="2" vector-effect="non-scaling-stroke" stroke-linejoin="round"/></svg></div>
+          <div class="wd-k"><div class="l">Orders</div><div class="v">696</div><div class="d"><span class="wd-ch">+6.1%</span><span>vs last week</span></div>
+            <svg viewBox="0 0 200 34" preserveAspectRatio="none"><path d="M0 24 L33 20 L66 21 L100 15 L133 9 L166 13 L200 25" fill="none" stroke="#8b8c90" stroke-width="2" vector-effect="non-scaling-stroke" stroke-linejoin="round"/></svg></div>
+          <div class="wd-k"><div class="l">Late orders</div><div class="v">4</div><div class="d"><span class="wd-ch">3 fewer</span><span>than last week</span></div>
+            <svg viewBox="0 0 200 34" preserveAspectRatio="none"><path d="M0 8 L33 12 L66 10 L100 17 L133 20 L166 24 L200 27" fill="none" stroke="#8b8c90" stroke-width="2" vector-effect="non-scaling-stroke" stroke-linejoin="round"/></svg></div>
+        </div>
+
+        <div class="wd-main">
+          <div class="wd-card">
+            <div class="wd-ch-h">
+              <div><b>Revenue by day</b><small>Sep 22 to 28, every channel</small></div>
+              <div class="wd-leg"><span><i></i>This week</span><span><i class="lw"></i>Last week</span><span><i class="tg"></i>Target $12k</span></div>
+            </div>
+            <div class="wd-chart">
+              <svg viewBox="0 0 720 236" width="720" height="236">
+                <defs><linearGradient id="wdg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#d6ff3d" stop-opacity=".28"/><stop offset="1" stop-color="#d6ff3d" stop-opacity="0"/></linearGradient></defs>
+                <g stroke="#1f2023" stroke-width="1"><path d="M50 20H700M50 115H700M50 162.5H700M50 210H700"/></g>
+                <g><text x="0" y="24">$16k</text><text x="0" y="71">$12k</text><text x="0" y="119">$8k</text><text x="0" y="166">$4k</text><text x="0" y="214">$0</text></g>
+                <g text-anchor="middle"><text x="50" y="232">Mon</text><text x="158.3" y="232">Tue</text><text x="266.7" y="232">Wed</text><text x="375" y="232">Thu</text><text x="483.3" y="232" fill="#fff">Fri</text><text x="591.7" y="232">Sat</text><text x="700" y="232">Sun</text></g>
+                <path d="M50.0 88.9 C104.2 88.9 104.2 69.9 158.3 69.9 C212.5 69.9 212.5 62.8 266.7 62.8 C320.8 62.8 320.8 54.4 375.0 54.4 C429.2 54.4 429.2 24.3 483.3 24.3 C537.5 24.3 537.5 56.8 591.7 56.8 C645.8 56.8 645.8 112.6 700.0 112.6 L700 210 L50 210Z" fill="url(#wdg)"/>
+                <path d="M50.0 98.4 C104.2 98.4 104.2 80.6 158.3 80.6 C212.5 80.6 212.5 72.2 266.7 72.2 C320.8 72.2 320.8 67.5 375.0 67.5 C429.2 67.5 429.2 46.1 483.3 46.1 C537.5 46.1 537.5 66.3 591.7 66.3 C645.8 66.3 645.8 123.3 700.0 123.3" fill="none" stroke="#55565b" stroke-width="2"/>
+                <path d="M50 67.5H700" stroke="#9d9ea3" stroke-width="1.4" stroke-dasharray="5 5"/>
+                <path d="M483.3 24.3V210" stroke="#d6ff3d" stroke-opacity=".35" stroke-dasharray="3 4"/>
+                <path d="M50.0 88.9 C104.2 88.9 104.2 69.9 158.3 69.9 C212.5 69.9 212.5 62.8 266.7 62.8 C320.8 62.8 320.8 54.4 375.0 54.4 C429.2 54.4 429.2 24.3 483.3 24.3 C537.5 24.3 537.5 56.8 591.7 56.8 C645.8 56.8 645.8 112.6 700.0 112.6" fill="none" stroke="#d6ff3d" stroke-width="3" stroke-linecap="round"/>
+                <circle cx="483.3" cy="24.3" r="6.5" fill="#d6ff3d" stroke="#0c0d0e" stroke-width="3"/>
+              </svg>
+              <div class="wd-tip"><small>Fri, Sep 26</small><b>$15,640</b><small>Best day this month</small></div>
+            </div>
+            <div class="wd-sum"><div><span>Week total</span><b>$84,210</b></div><div><span>Weekly target</span><b>$84,000</b></div><div><span>Best channel</span><b>Wholesale</b></div><div><span>Report</span><b>Mon 8:00, by email</b></div></div>
+          </div>
+
+          <div class="wd-side">
+            <div class="wd-card">
+              <div class="wd-ch-h"><div><b>By channel</b><small>Against this week's target</small></div></div>
+              <div class="wd-bar"><div class="r"><span>Wholesale</span><b>$28,960 · 118%</b></div><div class="t"><em class="l" style="width:100%"></em></div></div>
+              <div class="wd-bar"><div class="r"><span>Online store</span><b>$31,480 · 104%</b></div><div class="t"><em style="width:88.1%"></em></div></div>
+              <div class="wd-bar"><div class="r"><span>Leeds shop</span><b>$14,220 · 86%</b></div><div class="t"><em class="y" style="width:72.9%"></em></div></div>
+            </div>
+            <div class="wd-card">
+              <div class="wd-ch-h"><div><b>Needs attention</b><small>Sent to the right person</small></div></div>
+              <div class="wd-al"><i></i><span>Leeds margin under 35%</span><b>33.9%</b></div>
+              <div class="wd-al"><i class="y"></i><span>Orders late over 48h</span><b>4</b></div>
+              <div class="wd-al"><i class="y"></i><span>Oat milk 1L stock</span><b>3 days</b></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="wd-tick"><b>Latest</b><div class="wd-tick-v"><div class="wd-tick-t">
+          <span><b>Kestrel Cafe</b> wholesale order · $1,120 · 08:58</span><span><b>Online store</b> 14 orders in the last hour</span><span><b>Leeds shop</b> margin alert sent to Mia · 08:40</span><span><b>Stripe</b> payout matched · $6,204 · 08:01</span><span><b>Monday report</b> emailed to 4 managers · 08:01</span><span><b>Oat milk 1L</b> under 3 days of stock</span>
+          <span><b>Kestrel Cafe</b> wholesale order · $1,120 · 08:58</span><span><b>Online store</b> 14 orders in the last hour</span><span><b>Leeds shop</b> margin alert sent to Mia · 08:40</span><span><b>Stripe</b> payout matched · $6,204 · 08:01</span><span><b>Monday report</b> emailed to 4 managers · 08:01</span><span><b>Oat milk 1L</b> under 3 days of stock</span>
+        </div></div></div>
+      </div></div>
+      <div class="wall-stand"></div><div class="wall-base"></div>
+    </div>
+    <div class="hv-cap"><span>Sample build · Brightline Ops sales floor screen</span><span>Shopify · Stripe · Xero · Sheets</span></div>
+  </div>
+
+  <div class="marq" aria-label="Tools we connect dashboards to">
+    <div class="marq-in">
+      <div class="marq-l">Connects to</div>
+      <div class="marq-v">
+        <div class="marq-t">
+          <span>Shopify</span><span>Stripe</span><span>Xero</span><span>QuickBooks</span><span>HubSpot</span><span>Google Sheets</span><span>Airtable</span><span>WooCommerce</span><span>PostgreSQL</span><span>MySQL</span><span>Slack</span><span>Gmail</span>
+          <span aria-hidden="true">Shopify</span><span aria-hidden="true">Stripe</span><span aria-hidden="true">Xero</span><span aria-hidden="true">QuickBooks</span><span aria-hidden="true">HubSpot</span><span aria-hidden="true">Google Sheets</span><span aria-hidden="true">Airtable</span><span aria-hidden="true">WooCommerce</span><span aria-hidden="true">PostgreSQL</span><span aria-hidden="true">MySQL</span><span aria-hidden="true">Slack</span><span aria-hidden="true">Gmail</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= PROBLEMS ================= -->
+<section class="sec" id="problems">
+  <div class="wrap">
+    <div class="sec-head">
+      <div>
+        <div class="kicker rv"><span class="idx">01</span>Sound familiar?</div>
+        <h2 class="display rv d1">You have the data. You just <span class="hl">can't see it.</span></h2>
+      </div>
+      <p class="rv d2">Most growing businesses already collect everything they need. It's just spread across five tools and one very tired spreadsheet.</p>
+    </div>
+
+    <div class="prob-grid">
+      <article class="prob rv">
+        <div class="fit" style="--w:300;--h:230" aria-hidden="true"><div class="fit-in real">
+          <div class="mini-win sheet">
+            <div class="sbar"><i></i>Weekly_report_v4.xlsx<span>4 editors</span></div>
+            <table>
+              <tr><td class="rn">1</td><td><b>Day</b></td><td><b>Shopify</b></td><td><b>Stripe</b></td></tr>
+              <tr><td class="rn">2</td><td>Mon</td><td>10,204</td><td>10,190</td></tr>
+              <tr><td class="rn">3</td><td>Tue</td><td class="yel">11.8k??</td><td>11,795</td></tr>
+              <tr><td class="rn">4</td><td>Wed</td><td>12,410</td><td class="err">#REF!</td></tr>
+              <tr><td class="rn">5</td><td>Thu</td><td class="dup">13,100</td><td class="dup">13,100</td></tr>
+              <tr><td class="rn">6</td><td>Total</td><td class="err">#VALUE!</td><td></td></tr>
+            </table>
+                      </div>
+        </div></div>
+        <span class="n">Problem 01</span>
+        <h3>Reports eat your Monday</h3>
+        <p>Someone spends hours exporting, pasting and fixing formulas before anyone can see how last week went.</p>
+      </article>
+
+      <article class="prob rv d1">
+        <div class="fit" style="--w:300;--h:230" aria-hidden="true"><div class="fit-in real">
+          <div class="pad">
+            <div class="note"><span class="ic"><svg width="14" height="14" viewBox="0 0 24 24"><path d="M6 7h12l1 13a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1L6 7zM9 7a3 3 0 0 1 6 0" fill="none" stroke="#3d3d42" stroke-width="2" stroke-linejoin="round"/></svg></span><div><b>Shopify</b>Sales last week</div><span class="ago"><b>$84,210</b></span></div>
+            <div class="note"><span class="ic"><svg width="14" height="14" viewBox="0 0 24 24"><rect x="3" y="6" width="18" height="12" rx="2" fill="none" stroke="#3d3d42" stroke-width="2"/><path d="M3 10h18" stroke="#3d3d42" stroke-width="2"/></svg></span><div><b>Stripe</b>Payments last week</div><span class="ago"><b>$79,940</b></span></div>
+            <div class="note"><span class="ic"><svg width="14" height="14" viewBox="0 0 24 24"><path d="M4 4h16v16H4zM4 10h16M10 4v16" fill="none" stroke="#3d3d42" stroke-width="2"/></svg></span><div><b>Xero</b>Income last week</div><span class="ago"><b>$81,305</b></span></div>
+            <div class="bub me" style="margin-top:4px">So which one do we use?</div>
+          </div>
+        </div></div>
+        <span class="n">Problem 02</span>
+        <h3>Every tool gives a different number</h3>
+        <p>Shopify, Stripe and your accounts all disagree, so meetings turn into arguments about which figure is right.</p>
+      </article>
+
+      <article class="prob rv d2">
+        <div class="fit" style="--w:300;--h:230" aria-hidden="true"><div class="fit-in real">
+          <div class="pad">
+            <div class="note"><span class="ic"><svg width="14" height="14" viewBox="0 0 24 24"><path d="M21 8 12 3 3 8v8l9 5 9-5V8z" fill="none" stroke="#b4262b" stroke-width="2" stroke-linejoin="round"/></svg></span><div><b>Out of stock</b>Oat milk 1L, 40 orders waiting</div><span class="ct">!</span></div>
+            <div class="note"><span class="ic"><svg width="14" height="14" viewBox="0 0 24 24"><path d="M3 12a9 9 0 1 0 3-6.7L3 8M3 3v5h5" fill="none" stroke="#3d3d42" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span><div><b>Refunds doubled</b>Spotted at month end</div><span class="ago">3 wks</span></div>
+            <div class="note"><span class="ic"><svg width="14" height="14" viewBox="0 0 24 24"><path d="M14 3H6a1 1 0 0 0-1 1v16a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V8zM14 3v5h5" fill="none" stroke="#3d3d42" stroke-width="2" stroke-linejoin="round"/></svg></span><div><b>Invoice unpaid</b>Harbor Deli, 45 days overdue</div><span class="ago">6 wks</span></div>
+          </div>
+        </div></div>
+        <span class="n">Problem 03</span>
+        <h3>You find problems weeks late</h3>
+        <p>Low stock, rising refunds and unpaid invoices only show up at month end, when they've already cost you.</p>
+      </article>
+
+      <article class="prob rv d3">
+        <div class="fit" style="--w:300;--h:230" aria-hidden="true"><div class="fit-in real">
+          <div class="pad" style="inset:20px 18px">
+            <div class="bub me">Who updates the margin tab now?</div>
+            <div class="bub th">Dan always did that one.</div>
+            <div class="bub th">He left in June.</div>
+            <div class="bub me">So nobody knows the formula?</div>
+            <div class="seen"><b>Seen</b> 2 days ago</div>
+          </div>
+        </div></div>
+        <span class="n">Problem 04</span>
+        <h3>Only one person knows how it works</h3>
+        <p>The reporting lives in one person's spreadsheet. When they're off or they leave, nobody can see the numbers.</p>
+      </article>
+    </div>
+
+    <div class="prob-foot rv">
+      <p>One live dashboard fixes all four. <span>Usually in 3 to 8 weeks.</span></p>
+      <a class="btn btn-lime btn-sm" href="#build">See what we build <span class="arr"><svg width="11" height="11" viewBox="0 0 12 12"><path d="M2 6h8M6.5 2.5 10 6l-3.5 3.5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></span></a>
+    </div>
+  </div>
+</section>
+
+<!-- ================= WHAT WE BUILD ================= -->
+<section class="sec" id="build" style="padding-top:20px">
+  <div class="wrap">
+    <div class="sec-head">
+      <div>
+        <div class="kicker rv"><span class="idx">02</span>What we build</div>
+        <h2 class="display rv d1">Dashboards <span class="soft ser">built around</span> how you <span class="hl">actually work.</span></h2>
+      </div>
+      <p class="rv d2">Not a template with your logo on it. We start from the decisions you make each week and build the screens that answer them.</p>
+    </div>
+
+    <div class="cards-3">
+      <article class="pstep rv">
+        <div class="fit" style="--w:400;--h:250" aria-hidden="true"><div class="fit-in real">
+          <div class="pad">
+            <div class="ap-kpis c2">
+              <div class="ap-kpi flat"><div class="l">Revenue this month</div><div class="v">$296,040</div><div class="d"><span class="ch g">+12.4%</span>vs Aug</div></div>
+              <div class="ap-kpi flat"><div class="l">Gross margin</div><div class="v">41.2%</div><div class="d"><span class="ch g">+0.8 pts</span>vs Aug</div></div>
+              <div class="ap-kpi flat"><div class="l">Cash in bank</div><div class="v">$62,480</div><div class="d">Synced from Xero</div></div>
+              <div class="ap-kpi flat"><div class="l">Open orders</div><div class="v">126</div><div class="d">4 late</div></div>
+            </div>
+            <div class="ap-goal" style="margin-top:12px"><div class="r"><span>September target</span><b>82% of $360k</b></div><div class="b"><i style="width:82%"></i></div></div>
+          </div>
+        </div></div>
+        <div class="top"><b>OWNERS</b><span>Every morning</span></div>
+        <h3>A KPI dashboard for the owner</h3>
+        <p>Revenue, margin, cash and orders against target, on one screen you can read in thirty seconds.</p>
+      </article>
+
+      <article class="pstep rv d1">
+        <div class="fit" style="--w:400;--h:250" aria-hidden="true"><div class="fit-in real">
+          <div class="pad">
+            <div class="ap-card ap-orders" style="margin-top:0;background:#fff">
+              <div class="ap-ch"><div><b>Top products</b><small>Wholesale · September</small></div><div class="ap-seg" style="margin-left:auto"><span class="on">Revenue</span><span>Units</span></div></div>
+              <table>
+                <tr><th>Product</th><th class="r">Units</th><th class="r">Revenue</th><th class="r">Margin</th></tr>
+                <tr><td><b>Oat milk 1L</b></td><td class="r">2,140</td><td class="r"><b>$6,420</b></td><td class="r">38%</td></tr>
+                <tr><td><b>House blend 1kg</b></td><td class="r">310</td><td class="r"><b>$5,890</b></td><td class="r">52%</td></tr>
+                <tr><td><b>Cups 12oz</b></td><td class="r">18,000</td><td class="r"><b>$2,160</b></td><td class="r">29%</td></tr>
+              </table>
+            </div>
+          </div>
+        </div></div>
+        <div class="top"><b>SALES</b><span>Drill down</span></div>
+        <h3>Sales and order reports</h3>
+        <p>Filter by channel, location, product or customer, then click any number to see the orders behind it.</p>
+      </article>
+
+      <article class="pstep rv d2">
+        <div class="fit" style="--w:400;--h:250" aria-hidden="true"><div class="fit-in real">
+          <div class="pad">
+            <div class="ap-a">
+              <p><b style="color:var(--ink)">Needs attention</b> · sorted by urgency</p>
+              <div class="ap-ri"><span class="pl r">Stock</span><span class="nm">Oat milk 1L</span><span class="q">3 days left</span></div>
+              <div class="ap-ri"><span class="pl r">Late</span><span class="nm">Order #4820, Kestrel Cafe</span><span class="q">52h</span></div>
+              <div class="ap-ri"><span class="pl y">Stock</span><span class="nm">Cups 12oz</span><span class="q">6 days left</span></div>
+              <div class="ap-ri"><span class="pl n">Team</span><span class="nm">Mia has 14 open tasks</span><span class="q">Busy</span></div>
+            </div>
+          </div>
+        </div></div>
+        <div class="top"><b>OPERATIONS</b><span>Live</span></div>
+        <h3>Stock and operations views</h3>
+        <p>Low stock, late orders and team workload in one list, sorted by what needs doing first.</p>
+      </article>
+
+      <article class="pstep rv">
+        <div class="fit" style="--w:400;--h:250" aria-hidden="true"><div class="fit-in real">
+          <div class="toast" style="left:20px;top:22px;width:330px">
+            <span class="ic"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#d6ff3d" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 8a6 6 0 0 1 12 0c0 7 3 9 3 9H3s3-2 3-9"/><path d="M10.3 21a1.9 1.9 0 0 0 3.4 0"/></svg></span>
+            <div class="tx"><b>Slack · #ops <em>2:14 pm</em></b>Leeds margin dropped below 35% today. 6 orders had discounts over 20%.</div>
+          </div>
+          <div class="toast" style="left:50px;top:128px;width:330px">
+            <span class="ic"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#d6ff3d" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 6h18v12H3zM3 7l9 6 9-6"/></svg></span>
+            <div class="tx"><b>Weekly report <em>Mon 8:00</em></b>Brightline, Sep 22 to 28. Revenue $84,210, up 9.2%. PDF attached.</div>
+          </div>
+        </div></div>
+        <div class="top"><b>ALERTS</b><span>Email · Slack</span></div>
+        <h3>Alerts and scheduled reports</h3>
+        <p>A message when a number crosses a line you set, and a summary in everyone's inbox every Monday.</p>
+      </article>
+
+      <article class="pstep rv d1">
+        <div class="fit" style="--w:400;--h:250" aria-hidden="true"><div class="fit-in real">
+          <div class="pad">
+            <div class="ap-card ap-orders" style="margin-top:0;background:#fff">
+              <div class="ap-ch"><div><b>Roles</b><small>Who can see what</small></div><span class="ap-btn sm" style="margin-left:auto">+ Invite</span></div>
+              <table>
+                <tr><th>Role</th><th>Sales</th><th>Margins</th><th>Locations</th></tr>
+                <tr><td><b>Owner</b></td><td><span class="ap-st g">Full</span></td><td><span class="ap-st g">Full</span></td><td>All</td></tr>
+                <tr><td><b>Manager</b></td><td><span class="ap-st g">Full</span></td><td><span class="ap-st n">Hidden</span></td><td>Own shop</td></tr>
+                <tr><td><b>Staff</b></td><td><span class="ap-st y">Tasks only</span></td><td><span class="ap-st n">Hidden</span></td><td>Own shop</td></tr>
+              </table>
+            </div>
+          </div>
+        </div></div>
+        <div class="top"><b>ROLES</b><span>Per person</span></div>
+        <h3>The right view for each person</h3>
+        <p>Managers see their own location, finance sees margins and staff see their tasks. One login each, no shared passwords.</p>
+      </article>
+
+      <article class="pstep rv d2">
+        <div class="fit" style="--w:400;--h:250" aria-hidden="true"><div class="fit-in real">
+          <div class="launch" style="inset:18px 24px">
+            <div class="ln"><i></i>Shopify<span>Orders, products · 2 min ago</span></div>
+            <div class="ln"><i></i>Stripe<span>Payments, refunds · 2 min ago</span></div>
+            <div class="ln"><i></i>Xero<span>Invoices, cash · 1 hour ago</span></div>
+            <div class="ln live"><i></i>Google Sheets<span>Stock count · auto-sync on</span></div>
+          </div>
+        </div></div>
+        <div class="top"><b>DATA</b><span>Synced</span></div>
+        <h3>Connected to the tools you use</h3>
+        <p>Shopify, Stripe, Xero, QuickBooks, HubSpot, Google Sheets or your own database. No more weekly exports.</p>
+      </article>
+    </div>
+
+    <div class="svc-all rv">
+      <span class="lbl">Related services</span>
+      <div class="chips">
+        <a class="chip" href="internal-tools-development.html">Internal tools</a>
+        <a class="chip" href="customer-portal-development.html">Customer portals</a>
+        <a class="chip" href="business-web-app-development.html">Business web apps</a>
+        <a class="chip" href="workflow-automation.html">Workflow automation</a>
+        <a class="chip" href="ai-automation.html">AI automation</a>
+        <a class="chip" href="custom-software-development.html">Custom software</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= PROCESS ================= -->
+<section class="sec" id="process" style="padding-top:20px">
+  <div class="wrap">
+    <div class="sec-head">
+      <div>
+        <div class="kicker rv"><span class="idx">03</span>How it works</div>
+        <h2 class="display rv d1">No mystery. <span class="soft ser">Just</span> four clear <span class="hl">steps.</span></h2>
+      </div>
+      <p class="rv d2">You always know what's being built, what it costs and when it ships. That's the whole point.</p>
+    </div>
+    <div class="proc">
+      <article class="pstep rv">
+        <div class="fit" style="--w:300;--h:170" aria-hidden="true"><div class="fit-in">
+          <div class="cal">
+            <span><b>Mon</b><i></i><i style="width:60%"></i></span>
+            <span class="on"><b>Tue</b>10:30 call<i></i></span>
+            <span><b>Wed</b><i style="width:70%"></i></span>
+            <span><b>Thu</b><i></i><i style="width:50%"></i></span>
+            <span><b>Fri</b><i style="width:40%"></i></span>
+          </div>
+        </div></div>
+        <div class="top"><b>STEP 01</b><span>15 min</span></div>
+        <h3>A quick, free call</h3>
+        <p>Tell us what's not working. We ask a few questions and tell you honestly if we're the right fit.</p>
+      </article>
+      <article class="pstep rv d1">
+        <div class="fit" style="--w:300;--h:170" aria-hidden="true"><div class="fit-in">
+          <div class="qdoc">
+            <div class="h">Project plan<span>Fixed price</span></div>
+            <div class="ln">Metrics &amp; data map<i></i>Week 1</div>
+            <div class="ln">Build &amp; connect data<i></i>Weeks 2 to 4</div>
+            <div class="ln">Training &amp; handover<i></i>Week 5</div>
+            <div class="tot"><span>3 milestones</span><span>Agreed up front</span></div>
+          </div>
+        </div></div>
+        <div class="top"><b>STEP 02</b><span>48 hours</span></div>
+        <h3>A fixed quote and plan</h3>
+        <p>A clear scope, timeline and price, split into milestones. You only pay as each one is delivered.</p>
+      </article>
+      <article class="pstep rv d2">
+        <div class="fit" style="--w:300;--h:170" aria-hidden="true"><div class="fit-in">
+          <div class="prev">
+            <div class="bar"><i></i><i></i><i></i><span class="url">preview.qoreonlabs.com/brightline</span></div>
+            <div class="pv"><div><i class="k"></i><i></i><i class="s"></i></div><div class="im" style="background:linear-gradient(160deg,#eaffb0,#c3eb4a)"></div></div>
+            <div class="cm"><i></i>Preview v3 · 2 comments</div>
+          </div>
+        </div></div>
+        <div class="top"><b>STEP 03</b><span>Weekly</span></div>
+        <h3>Build, with weekly previews</h3>
+        <p>A working link every week so you can click through, comment and steer. No big reveal at the end.</p>
+      </article>
+      <article class="pstep rv d3">
+        <div class="fit" style="--w:300;--h:170" aria-hidden="true"><div class="fit-in">
+          <div class="launch">
+            <div class="ln"><i></i>Data sources connected<span>Done</span></div>
+            <div class="ln"><i></i>Logins &amp; roles<span>Done</span></div>
+            <div class="ln live"><i></i>Live<span>app.brightline.co</span></div>
+          </div>
+        </div></div>
+        <div class="top"><b>STEP 04</b><span>Launch</span></div>
+        <h3>Launch, handover, support</h3>
+        <p>We launch it, show your team how it works and hand over everything. Ongoing support if you want it.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ================= RELATED WORK ================= -->
+<section class="sec" id="work" style="padding-top:20px">
+  <div class="wrap">
+    <div class="sec-head">
+      <div>
+        <div class="kicker rv"><span class="idx">04</span>Related work</div>
+        <h2 class="display rv d1">Live data, <span class="soft ser">on screen,</span> every <span class="hl">day.</span></h2>
+      </div>
+      <p class="rv d2">We run a live data product of our own, and we use sample builds to show you what yours could look like before you commit.</p>
+    </div>
+
+    <!-- Featured: Polymonit -->
+    <article class="work-feat rv">
+      <div class="wf-copy">
+        <span class="label"><i></i>Live product · Our own SaaS</span>
+        <h3>PolyMonit: real-time dashboards for traders</h3>
+        <p>We designed, built and run PolyMonit end to end. It pulls live activity from Polymarket, turns it into dashboards and tables, and sends alerts traders act on. The same pieces go into every business dashboard we build.</p>
+        <ul class="facts">
+          <li><b>20+</b>countries with paying subscribers</li>
+          <li><b>Real-time</b>data syncing and instant alerts</li>
+          <li><b>Full stack</b>data pipeline, web app and billing</li>
+        </ul>
+        <div class="row">
+          <a class="btn btn-ink btn-sm" href="polymonit-wallet-tracker.html">Read the case study <span class="arr"><svg width="11" height="11" viewBox="0 0 12 12"><path d="M2 6h8M6.5 2.5 10 6l-3.5 3.5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></span></a>
+        </div>
+      </div>
+      <div class="wf-vis stage">
+        <!-- TODO: optionally swap this mock for a real PolyMonit screenshot -->
+        <div class="fit ov" style="--w:620;--h:500" aria-hidden="true"><div class="fit-in real">
+          <div class="pm">
+            <div class="st-top" style="left:22px;right:22px;top:18px"><span><b>QL/02</b> &nbsp;·&nbsp; PolyMonit dashboard</span><span class="st-chips"><i><em></em>Live</i></span></div>
+            <div class="pm-app">
+              <div class="pm-top"><span class="pm-logo"><i></i>PolyMonit</span><span class="pm-tabs"><span class="on">Whales</span><span>Markets</span><span>Alerts</span></span><span class="pm-live"><i></i>Streaming</span></div>
+              <div class="pm-body">
+                <div class="pm-card">
+                  <div class="t">Top wallets<span>24h</span></div>
+                  <div class="pm-row h"><span>WALLET</span><span>PNL</span><span>WIN RATE</span><span></span></div>
+                  <div class="pm-row"><b><i style="background:linear-gradient(135deg,#d6ff3d,#6e8f00)"></i>0x8f3…a21c</b><span class="up">+$182k</span><span>68%</span><span class="tg">WHALE</span></div>
+                  <div class="pm-row"><b><i style="background:linear-gradient(135deg,#b9c7ff,#5a6fe0)"></i>0x41d…9e07</b><span class="up">+$96k</span><span>61%</span><span class="tg">WHALE</span></div>
+                  <div class="pm-row"><b><i style="background:linear-gradient(135deg,#ffd5b8,#d4785a)"></i>0xc02…77b4</b><span class="up">+$41k</span><span>57%</span><span></span></div>
+                  <div class="pm-row"><b><i style="background:linear-gradient(135deg,#5a5a60,#2b2b2e)"></i>0x9aa…0f13</b><span style="color:#ff7a7e">-$8k</span><span>44%</span><span></span></div>
+                </div>
+                <div style="display:grid;gap:10px">
+                  <div class="pm-card"><div class="t">Tracked volume<span>Today</span></div><div class="pm-big">$2.41M<em>+18%</em></div>
+                    <svg width="100%" height="56" viewBox="0 0 200 56" preserveAspectRatio="none" style="margin-top:6px"><path d="M0 48 C20 44,30 38,50 40 S80 26,100 30 S140 14,160 18 S190 8,200 6" fill="none" stroke="#d6ff3d" stroke-width="2"/><path d="M0 48 C20 44,30 38,50 40 S80 26,100 30 S140 14,160 18 S190 8,200 6 V56 H0Z" fill="rgba(214,255,61,.08)"/></svg>
+                  </div>
+                  <div class="pm-card"><div class="t">Alerts sent<span>This week</span></div><div class="pm-big">1,284</div></div>
+                </div>
+                <div class="pm-card" style="grid-column:1/-1">
+                  <div class="t">Live feed<span>Last 5 minutes</span></div>
+                  <div class="pm-row pm-feed"><span>14:02:11</span><b><i style="background:linear-gradient(135deg,#d6ff3d,#6e8f00)"></i>0x8f3…a21c</b><span>Bought YES</span><span class="up">$48.2k</span></div>
+                  <div class="pm-row pm-feed"><span>14:01:47</span><b><i style="background:linear-gradient(135deg,#b9c7ff,#5a6fe0)"></i>0x41d…9e07</b><span>Bought NO</span><span class="up">$12.9k</span></div>
+                  <div class="pm-row pm-feed"><span>14:00:58</span><b><i style="background:linear-gradient(135deg,#ffd5b8,#d4785a)"></i>0xc02…77b4</b><span>Sold YES</span><span style="color:#ff7a7e;font-weight:600">$6.4k</span></div>
+                  <div class="pm-row pm-feed"><span>13:59:20</span><b><i style="background:linear-gradient(135deg,#d6ff3d,#6e8f00)"></i>0x8f3…a21c</b><span>Bought YES</span><span class="up">$22.0k</span></div>
+                </div>
+              </div>
+            </div>
+            <div class="toast pop p3" style="left:300px;top:318px;width:290px">
+              <span class="ic"><svg width="13" height="13" viewBox="0 0 24 24"><path d="M12 3a6 6 0 0 0-6 6v4l-2 3h16l-2-3V9a6 6 0 0 0-6-6zM10 19a2 2 0 0 0 4 0" fill="none" stroke="#d6ff3d" stroke-width="2" stroke-linejoin="round"/></svg></span>
+              <div class="tx"><b>Whale alert <em>12s ago</em></b>0x8f3…a21c bought $48,200 of YES on a rates market.</div>
+            </div>
+          </div>
+        </div></div>
+      </div>
+    </article>
+
+    <div class="work-grid">
+      <article class="wcard rv">
+        <div class="fit" style="--w:456;--h:340" aria-hidden="true"><div class="fit-in real">
+          <div class="win lt" style="inset:20px 20px -14px;width:auto;height:auto;background:#fff">
+            <div class="bar"><i></i><i></i><i></i><span class="url">app.brightline.co/overview</span></div>
+            <div style="padding:14px 16px">
+              <div class="ap-top"><div class="ap-crumb"><span>Brightline</span><i>/</i><b>Overview</b></div><span class="ap-btn sm">This month</span></div>
+              <div class="ap-kpis c3" style="margin-top:12px">
+                <div class="ap-kpi flat"><div class="l">Revenue</div><div class="v">$341k</div><div class="d"><span class="ch g">+12.4%</span></div></div>
+                <div class="ap-kpi flat"><div class="l">Orders</div><div class="v">2,814</div><div class="d"><span class="ch g">+8.1%</span></div></div>
+                <div class="ap-kpi flat"><div class="l">Fulfilment</div><div class="v">1.8 days</div><div class="d"><span class="ch g">0.4d faster</span></div></div>
+              </div>
+              <div class="ap-card" style="padding:12px 14px">
+                <div class="ap-ch"><div><b>Orders by channel</b></div><div class="ap-leg"><span><i class="ln"></i>Online</span><span><i class="ln ds"></i>Wholesale</span></div></div>
+                <svg width="100%" height="70" viewBox="0 0 300 70" preserveAspectRatio="none" style="display:block;margin-top:6px"><g stroke="#efefea"><path d="M0 18H300M0 40H300M0 62H300"/></g><path d="M0 60 C30 56,50 46,80 48 S130 34,160 30 S220 18,250 12 S290 8,300 6" fill="none" stroke="#0d0d0f" stroke-width="2"/><path d="M0 66 C40 64,60 60,90 60 S150 52,180 50 S240 42,300 38" fill="none" stroke="#a3a39d" stroke-width="1.6" stroke-dasharray="4 4"/><circle cx="250" cy="12" r="4.5" fill="#d6ff3d" stroke="#0d0d0f" stroke-width="2"/></svg>
+              </div>
+            </div>
+          </div>
+        </div></div>
+        <div class="meta"><span class="label s"><i></i>Sample build</span><span>Operations dashboard</span></div>
+        <h3>Brightline Ops</h3>
+        <p>A sample operations dashboard showing how we turn six spreadsheets into one live view, with roles for owners, managers and staff.</p>
+      </article>
+
+      <article class="wcard rv d1">
+        <div class="fit" style="--w:456;--h:340" aria-hidden="true"><div class="fit-in real">
+          <div class="win lt" style="inset:20px 20px -14px;width:auto;height:auto;background:#fff">
+            <div class="bar"><i></i><i></i><i></i><span class="url">portal.kestrelsupply.co/reports</span></div>
+            <div style="padding:14px 16px">
+              <div class="ap-top"><div class="ap-crumb"><span>Kestrel Supply</span><i>/</i><b>Your spending</b></div><span class="ap-btn sm k">Download CSV</span></div>
+              <div class="ap-kpis c3" style="margin-top:12px">
+                <div class="ap-kpi flat"><div class="l">This quarter</div><div class="v">£12,480</div><div class="d">38 orders</div></div>
+                <div class="ap-kpi flat"><div class="l">Avg. delivery</div><div class="v">1.6 days</div><div class="d">On time 97%</div></div>
+                <div class="ap-kpi flat"><div class="l">Open invoices</div><div class="v">2</div><div class="d">£1,940 due</div></div>
+              </div>
+              <div class="ap-card ap-orders" style="padding:10px 14px">
+                <table style="margin-top:0">
+                  <tr><th>Invoice</th><th>Date</th><th class="r">Amount</th><th>Status</th></tr>
+                  <tr><td><b>INV-2041</b></td><td>Sep 24</td><td class="r"><b>£1,120</b></td><td><span class="ap-st y">Due</span></td></tr>
+                  <tr><td><b>INV-2033</b></td><td>Sep 10</td><td class="r"><b>£820</b></td><td><span class="ap-st y">Due</span></td></tr>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div></div>
+        <div class="meta"><span class="label s"><i></i>Sample build</span><span>Customer-facing reporting</span></div>
+        <h3>Kestrel Supply</h3>
+        <p>Dashboards don't have to be internal. This sample portal lets wholesale customers see their own spend, deliveries and invoices without emailing you.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ================= FAQ ================= -->
+<section class="sec" id="faq" style="padding-top:20px">
+  <div class="wrap faq-wrap">
+    <div class="faq-side">
+      <div class="kicker rv"><span class="idx">05</span>Questions</div>
+      <h2 class="display rv d1" style="margin-top:22px">Dashboard <span class="hl">questions.</span></h2>
+      <p class="lede rv d2">What people usually ask before we build a dashboard. Anything else, just ask.</p>
+      <div class="help rv d3"><span class="mark"><i></i></span><div><b>Still unsure?</b><span>Email <a href="mailto:support@qoreonlabs.com" style="color:var(--ink);font-weight:600">support@qoreonlabs.com</a></span></div></div>
+    </div>
+    <div class="faq-list">
+      <details class="rv" open>
+        <summary>Which tools and data sources can you connect?<span class="pm" aria-hidden="true"></span></summary>
+        <div class="ans">Most tools with an API or an export: Shopify, WooCommerce, Stripe, Xero, QuickBooks, HubSpot, Google Sheets, Airtable and SQL databases such as PostgreSQL and MySQL. If a system has no API, we can usually work from a scheduled export or a shared spreadsheet.</div>
+      </details>
+      <details class="rv">
+        <summary>Why not just use Power BI, Looker Studio or Tableau?<span class="pm" aria-hidden="true"></span></summary>
+        <div class="ans">Sometimes you should, and we'll say so on the first call. Off-the-shelf BI tools are great when your data is already clean and someone on your team enjoys building reports. A custom dashboard makes more sense when the data needs real cleaning first, when people need to act on what they see (approve, reorder, assign), when you want it inside your own app or portal, or when per-seat licences add up.</div>
+      </details>
+      <details class="rv">
+        <summary>How much does a custom dashboard cost?<span class="pm" aria-hidden="true"></span></summary>
+        <div class="ans">Every project gets a fixed quote after a free 15-minute call, so you know the full price before anything starts. The main things that drive cost are how many data sources we connect, how messy that data is, and how many different views and roles you need.</div>
+      </details>
+      <details class="rv">
+        <summary>How long does it take?<span class="pm" aria-hidden="true"></span></summary>
+        <div class="ans">Most dashboards take 3 to 8 weeks depending on scope. You get a working preview every week, using your real data as soon as it's connected, so you can check the numbers long before launch.</div>
+      </details>
+      <details class="rv">
+        <summary>Who can see our data?<span class="pm" aria-hidden="true"></span></summary>
+        <div class="ans">Only the people you invite, and each person only sees what their role allows. We connect with read-only access wherever the tool supports it, keep passwords and keys on the server rather than in the browser, and host everything in accounts that you own.</div>
+      </details>
+      <details class="rv">
+        <summary>Can we add new charts and metrics later?<span class="pm" aria-hidden="true"></span></summary>
+        <div class="ans">Yes. You own the code and the accounts. Adding a new metric or view is usually a small job, and we offer simple monthly support if you'd like us to keep improving it. Or we can hand it over to your own developer with a walkthrough.</div>
+      </details>
+    </div>
+  </div>
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org","@type":"FAQPage",
+    "mainEntity":[
+      {"@type":"Question","name":"Which tools and data sources can you connect?","acceptedAnswer":{"@type":"Answer","text":"Most tools with an API or an export: Shopify, WooCommerce, Stripe, Xero, QuickBooks, HubSpot, Google Sheets, Airtable and SQL databases such as PostgreSQL and MySQL. If a system has no API, we can usually work from a scheduled export or a shared spreadsheet."}},
+      {"@type":"Question","name":"Why not just use Power BI, Looker Studio or Tableau?","acceptedAnswer":{"@type":"Answer","text":"Sometimes you should. Off-the-shelf BI tools are great when your data is already clean and someone on your team enjoys building reports. A custom dashboard makes more sense when the data needs real cleaning, when people need to act on what they see, when you want it inside your own app or portal, or when per-seat licences add up."}},
+      {"@type":"Question","name":"How much does a custom dashboard cost?","acceptedAnswer":{"@type":"Answer","text":"Every project gets a fixed quote after a free 15-minute call. The main things that drive cost are how many data sources we connect, how messy that data is, and how many different views and roles you need."}},
+      {"@type":"Question","name":"How long does it take?","acceptedAnswer":{"@type":"Answer","text":"Most dashboards take 3 to 8 weeks depending on scope, with a working preview every week using your real data as soon as it's connected."}},
+      {"@type":"Question","name":"Who can see our data?","acceptedAnswer":{"@type":"Answer","text":"Only the people you invite, and each person only sees what their role allows. We connect with read-only access wherever possible, keep keys on the server and host everything in accounts that you own."}},
+      {"@type":"Question","name":"Can we add new charts and metrics later?","acceptedAnswer":{"@type":"Answer","text":"Yes. You own the code and the accounts. Adding a new metric or view is usually a small job, and we offer simple monthly support or a handover to your own developer."}}
+    ]
+  }
+  </script>
+</section>
+
+<!-- ================= CONTACT ================= -->
+<section class="sec" id="contact" style="padding-top:20px;padding-bottom:0">
+  <div class="wrap contact">
+    <div class="c-left stage rv">
+      <div class="kicker"><span class="idx">06</span>Start a project</div>
+      <h2 class="display">Tell us what you <span class="soft">need to see.</span></h2>
+      <p>A few lines is plenty: the tools you use and the numbers you wish you had. We'll reply within one business day with honest advice and a clear next step.</p>
+      <ol class="next">
+        <li><b>1</b>We reply within one business day</li>
+        <li><b>2</b>A free 15-minute call to scope it</li>
+        <li><b>3</b>A fixed quote and plan within 48 hours</li>
+      </ol>
+      <div class="c-items">
+        <a class="c-item" href="mailto:support@qoreonlabs.com"><span class="ic"><svg width="16" height="16" viewBox="0 0 24 24"><path d="M3 6h18v12H3zM3 7l9 6 9-6" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg></span><div><small>Email</small><b>support@qoreonlabs.com</b></div></a>
+        <a class="c-item" href="tel:+447883302109"><span class="ic"><svg width="16" height="16" viewBox="0 0 24 24"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg></span><div><small>Phone</small><b>+44 7883 302 109</b></div></a>
+        <div class="c-item"><span class="ic"><svg width="16" height="16" viewBox="0 0 24 24"><path d="M12 22s7-6.2 7-12a7 7 0 1 0-14 0c0 5.8 7 12 7 12z" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="12" cy="10" r="2.5" fill="none" stroke="currentColor" stroke-width="2"/></svg></span><div><small>Registered office</small><b>71-75 Shelton Street, London WC2H 9JQ</b></div></div>
+      </div>
+    </div>
+
+    <div class="c-form rv d1">
+      <h3>Project enquiry</h3>
+      <p>Prefer a detailed brief? Use our <a href="quoteform.html" style="color:var(--ink);font-weight:600;border-bottom:1.5px solid var(--lime)">quote form</a>.</p>
+      <form id="contactForm" action="https://formspree.io/f/moverwoe" method="POST">
+        <input type="hidden" name="_subject" value="New project enquiry (dashboards page)" />
+        <div class="fgrid">
+          <div class="fld"><label for="c-name">Name</label><input id="c-name" name="name" type="text" placeholder="Your name" autocomplete="name" required></div>
+          <div class="fld"><label for="c-email">Email</label><input id="c-email" name="_replyto" type="email" placeholder="you@company.com" autocomplete="email" required></div>
+          <div class="fld full"><label for="c-site">Company or website <span style="color:var(--mute);font-weight:500">(optional)</span></label><input id="c-site" name="company" type="text" placeholder="yourcompany.com"></div>
+          <div class="fld full"><span class="lbl" id="c-needs">What do you need?</span>
+            <div class="opts" role="group" aria-labelledby="c-needs">
+              <label><input type="checkbox" name="needs[]" value="Website"><span>Website</span></label>
+              <label><input type="checkbox" name="needs[]" value="Dashboard or internal tool" checked><span>Dashboard / internal tool</span></label>
+              <label><input type="checkbox" name="needs[]" value="Web app or portal"><span>Web app / portal</span></label>
+              <label><input type="checkbox" name="needs[]" value="iOS app or MVP"><span>iOS app / MVP</span></label>
+              <label><input type="checkbox" name="needs[]" value="AI automation"><span>AI automation</span></label>
+              <label><input type="checkbox" name="needs[]" value="Not sure yet"><span>Not sure yet</span></label>
+            </div>
+          </div>
+          <div class="fld full"><label for="c-budget">Rough budget <span style="color:var(--mute);font-weight:500">(optional)</span></label>
+            <select id="c-budget" name="budget"><option value="">Choose a range</option><option>Under £1,000</option><option>£1,000 to £3,000</option><option>£3,000 to £8,000</option><option>£8,000+</option><option>Not sure yet</option></select></div>
+          <div class="fld full"><label for="c-msg">Message</label><textarea id="c-msg" name="message" placeholder="Which tools do you use, and what do you wish you could see at a glance?" required></textarea></div>
+        </div>
+        <div class="f-foot">
+          <small>We reply within one business day. No spam, ever.</small>
+          <button class="btn btn-ink" type="submit">Send message <span class="arr"><svg width="12" height="12" viewBox="0 0 12 12"><path d="M2 6h8M6.5 2.5 10 6l-3.5 3.5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></span></button>
+        </div>
+      </form>
+    </div>
+  </div>
+</section>
+</main>
+
+<!-- ================= FOOTER ================= -->
+<footer class="foot">
+  <div class="wrap">
+    <div class="foot-cta">
+      <h2 class="display">Let's build something <span class="hl">useful.</span></h2>
+      <div class="ctas" style="margin-top:0">
+        <a class="btn btn-lime" href="#contact">Start a project <span class="arr"><svg width="12" height="12" viewBox="0 0 12 12"><path d="M2 6h8M6.5 2.5 10 6l-3.5 3.5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></span></a>
+        <a class="btn" style="background:#17181a;color:#fff;box-shadow:0 0 0 1px #2a2b2e inset" href="index.html#audit">Free site audit</a>
+      </div>
+    </div>
+    <div class="foot-grid">
+      <div>
+        <a class="logo" href="index.html" aria-label="Qoreon Labs home"><img src="assets/img/qoreon-logo-light.svg" alt="Qoreon Labs" width="175" height="52" loading="lazy" /></a>
+        <p class="about">A UK product studio building websites, dashboards, web apps, iOS apps and AI automations for growing businesses.</p>
+        <div class="foot-soc">
+          <a href="https://www.linkedin.com/company/qoreon-labs-ltd/" target="_blank" rel="noopener" aria-label="Qoreon Labs on LinkedIn"><svg width="15" height="15" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9h4v11H4zM6 3.5a2 2 0 1 1 0 4 2 2 0 0 1 0-4zM10 9h3.8v1.6c.6-1 1.9-1.9 3.8-1.9 3.6 0 4.4 2.3 4.4 5.4V20h-4v-5.2c0-1.3 0-2.9-1.8-2.9s-2.1 1.4-2.1 2.8V20H10z" fill="currentColor"/></svg></a>
+          <a href="https://x.com/QoreonLab" target="_blank" rel="noopener" aria-label="Qoreon Labs on X"><svg width="13" height="13" viewBox="0 0 24 24" aria-hidden="true"><path d="M18.24 2.25h3.31l-7.23 8.26 8.5 11.24h-6.65l-5.21-6.82-5.97 6.82H1.68l7.73-8.84L1.25 2.25h6.83l4.71 6.23zm-1.16 17.52h1.83L7.08 4.13H5.12z" fill="currentColor"/></svg></a>
+          <a href="https://www.facebook.com/QOREONLABS" target="_blank" rel="noopener" aria-label="Qoreon Labs on Facebook"><svg width="15" height="15" viewBox="0 0 24 24" aria-hidden="true"><path d="M14 8.5V6.6c0-.8.2-1.3 1.4-1.3H17V2.2c-.3 0-1.3-.2-2.5-.2C12 2 10.5 3.5 10.5 6.2v2.3H8v3.3h2.5V22H14V11.8h2.8l.4-3.3z" fill="currentColor"/></svg></a>
+          <a href="https://www.fiverr.com/talha_19" target="_blank" rel="noopener" aria-label="Qoreon Labs on Fiverr"><svg width="15" height="15" viewBox="0 0 24 24" aria-hidden="true"><path d="M9 19V9.6C9 7.6 10 6.5 12 6.5h1.3M6.5 11.2H12M16 11.2V19" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round"/><circle cx="16" cy="7.4" r="1.6" fill="currentColor"/></svg></a>
+        </div>
+      </div>
+      <div>
+        <h3>Studio</h3>
+        <ul><li><a href="about-us.html">About</a></li><li><a href="index.html#work">Work</a></li><li><a href="polymonit-wallet-tracker.html">PolyMonit</a></li><li><a href="blogs.html">Blog</a></li><li><a href="quoteform.html">Get a quote</a></li><li><a href="#contact">Contact</a></li></ul>
+      </div>
+      <div>
+        <h3>Services</h3>
+        <ul><li><a href="services.html#web-development">Web development</a></li><li><a href="business-dashboard-development.html">Dashboards</a></li><li><a href="internal-tools-development.html">Internal tools</a></li><li><a href="business-web-app-development.html">Business web apps</a></li><li><a href="customer-portal-development.html">Customer portals</a></li><li><a href="custom-software-development.html">Custom software</a></li></ul>
+      </div>
+      <div>
+        <h3>Products &amp; AI</h3>
+        <ul><li><a href="mvp-development.html">MVP development</a></li><li><a href="saas-development.html">SaaS development</a></li><li><a href="ai-development.html">AI development</a></li><li><a href="ai-automation.html">AI automation</a></li><li><a href="workflow-automation.html">Workflow automation</a></li><li><a href="index.html#security">AI security (RedShield)</a></li></ul>
+      </div>
+    </div>
+    <div class="foot-bot">
+      <span>© <span id="year">2026</span> Qoreon Labs Ltd. Registered in England &amp; Wales, company no. 16359714.</span>
+      <nav aria-label="Legal"><a href="privacy.html">Privacy</a><a href="terms.html">Terms</a><a href="cookies.html">Cookies</a></nav>
+    </div>
+  </div>
+  <div class="foot-word" aria-hidden="true">Qoreon Labs</div>
+</footer>
+
+<script src="assets/js/studio.js"></script>
+</body>
+</html>

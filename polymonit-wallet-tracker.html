@@ -10,805 +10,582 @@
     gtag('config', 'G-KPXN9398W1');
   </script>
 
+  <!-- Primary meta -->
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Polymonit - Polymarket Wallet Tracker & Market Intelligence | Qoreon Labs</title>
-  <meta name="description" content="Polymonit is a live product shipped by Qoreon Labs for Polymarket wallet tracking and market intelligence. Explore wallet activity insights and decision-support analytics." />
-  <meta name="keywords" content="Polymonit, Polymarket wallet tracker, wallet intelligence, prediction market analytics, Qoreon Labs" />
+  <title>PolyMonit Case Study | Polymarket Wallet Tracker | Qoreon Labs</title>
+  <meta name="description" content="How Qoreon Labs designed, built and launched PolyMonit, a Polymarket wallet tracker with live alerts and paying subscribers in more than 20 countries." />
+  <meta name="author" content="Qoreon Labs Ltd" />
   <meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1" />
+  <meta name="theme-color" content="#efefea" />
   <link rel="canonical" href="https://qoreonlabs.com/polymonit-wallet-tracker.html" />
+  <link rel="icon" href="assets/img/favicon.ico" sizes="any" />
+  <link rel="icon" type="image/svg+xml" href="assets/img/favicon.svg" />
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon-32.png" />
+  <link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png" />
 
-  <meta property="og:type" content="website" />
-  <meta property="og:title" content="Polymonit - Polymarket Wallet Tracker by Qoreon Labs" />
-  <meta property="og:description" content="Explore Polymonit, Qoreon Labs' shipped product for wallet-level market intelligence on Polymarket." />
+  <!-- Open Graph / Social -->
+  <meta property="og:type" content="article" />
   <meta property="og:url" content="https://qoreonlabs.com/polymonit-wallet-tracker.html" />
+  <meta property="og:title" content="PolyMonit case study | Qoreon Labs" />
+  <meta property="og:description" content="How we built and launched PolyMonit, a Polymarket wallet tracker with paying subscribers in 20+ countries." />
+  <meta property="og:image" content="https://qoreonlabs.com/assets/img/og-qoreon.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:alt" content="Qoreon Labs, a UK AI development company and product studio" />
   <meta property="og:site_name" content="Qoreon Labs" />
-  <meta property="og:image" content="https://res.cloudinary.com/dfzsolglz/image/upload/v1749975829/View_our_Profile_2_wak2kb.png" />
-
+  <meta property="og:locale" content="en_GB" />
   <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="Polymonit - Polymarket Wallet Tracker by Qoreon Labs" />
-  <meta name="twitter:description" content="Live product shipped by Qoreon Labs for Polymarket wallet intelligence." />
-  <meta name="twitter:image" content="https://res.cloudinary.com/dfzsolglz/image/upload/v1749975829/View_our_Profile_2_wak2kb.png" />
+  <meta name="twitter:site" content="@QoreonLab" />
+  <meta name="twitter:title" content="PolyMonit case study | Qoreon Labs" />
+  <meta name="twitter:description" content="How we built and launched PolyMonit, a Polymarket wallet tracker with paying subscribers in 20+ countries." />
+  <meta name="twitter:image" content="https://qoreonlabs.com/assets/img/og-qoreon.png" />
+
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": "SoftwareApplication",
-    "name": "Polymonit",
-    "applicationCategory": "BusinessApplication",
+    "name": "PolyMonit",
+    "applicationCategory": "FinanceApplication",
     "operatingSystem": "Web",
-    "url": "https://qoreonlabs.com/polymonit-wallet-tracker.html",
-    "sameAs": "http://polymonit.com",
-    "description": "Polymonit is a market intelligence and wallet tracking product shipped by Qoreon Labs for Polymarket users.",
+    "description": "Wallet tracking and market intelligence for Polymarket, with a live trade feed and alerts.",
     "creator": {
       "@type": "Organization",
       "name": "Qoreon Labs Ltd",
-      "url": "https://qoreonlabs.com"
+      "url": "https://qoreonlabs.com",
+      "logo": "https://qoreonlabs.com/assets/img/apple-touch-icon.png",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "71-75 Shelton Street, Covent Garden",
+        "addressLocality": "London",
+        "postalCode": "WC2H 9JQ",
+        "addressCountry": "GB"
+      }
     }
   }
   </script>
-
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
-  <link rel="stylesheet" href="revamp.css" />
-
-  <style>
-    :root {
-      --product-ink: #0e2344;
-      --product-muted: #5e6f8a;
-      --product-line: rgba(14, 35, 68, 0.16);
-      --product-surface: rgba(255, 255, 255, 0.86);
-      --product-shadow: 0 22px 45px rgba(11, 29, 58, 0.16);
-    }
-
-    * {
-      box-sizing: border-box;
-    }
-
-    html,
-    body {
-      margin: 0;
-      padding: 0;
-      scroll-behavior: smooth;
-    }
-
-    body {
-      color: var(--product-ink);
-      line-height: 1.6;
-    }
-
-    a {
-      text-decoration: none;
-      color: inherit;
-    }
-
-    .container {
-      width: 100%;
-      max-width: 1180px;
-      margin: 0 auto;
-      padding: 0 1.2rem;
-      position: relative;
-      z-index: 2;
-    }
-
-    #header {
-      position: sticky;
-      top: 0;
-      z-index: 100;
-      padding: 0.9rem 0;
-    }
-
-    .header-container {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      gap: 1.2rem;
-    }
-
-    .logo {
-      font-size: 1.2rem;
-      font-weight: 800;
-      letter-spacing: 0.03em;
-      white-space: nowrap;
-    }
-
-    .nav-toggle,
-    .nav-close {
-      display: none;
-      font-size: 1.3rem;
-      cursor: pointer;
-      color: var(--product-ink);
-    }
-
-    .nav-menu {
-      display: flex;
-      align-items: center;
-      gap: 1.1rem;
-    }
-
-    .nav-list {
-      display: flex;
-      align-items: center;
-      list-style: none;
-      gap: 0.9rem;
-      margin: 0;
-      padding: 0;
-    }
-
-    .nav-link {
-      font-size: 0.95rem;
-      font-weight: 600;
-      padding: 0.2rem 0;
-    }
-
-    .header-btn {
-      display: inline-flex;
-      align-items: center;
-      gap: 0.45rem;
-      padding: 0.64rem 1.05rem;
-      border-radius: 999px;
-      background: linear-gradient(135deg, #0a79ee, #00a79d);
-      color: #fff;
-      font-weight: 700;
-      box-shadow: 0 12px 25px rgba(10, 121, 238, 0.23);
-    }
-
-    .product-hero {
-      padding: 4.8rem 0 3rem;
-      position: relative;
-      overflow: hidden;
-    }
-
-    .product-hero::before {
-      content: "";
-      position: absolute;
-      inset: 0;
-      background: linear-gradient(140deg, #081d3e 0%, #0c58ba 50%, #009c93 100%);
-      z-index: 0;
-    }
-
-    .product-hero::after {
-      content: "";
-      position: absolute;
-      width: 460px;
-      height: 460px;
-      border-radius: 50%;
-      background: radial-gradient(circle, rgba(255, 255, 255, 0.22), transparent 65%);
-      top: -130px;
-      right: -90px;
-      pointer-events: none;
-      z-index: 1;
-    }
-
-    .hero-grid {
-      display: grid;
-      grid-template-columns: 1.05fr 0.95fr;
-      gap: 2rem;
-      align-items: center;
-    }
-
-    .hero-copy {
-      color: #fff;
-    }
-
-    .eyebrow {
-      display: inline-flex;
-      align-items: center;
-      gap: 0.45rem;
-      padding: 0.35rem 0.85rem;
-      border-radius: 999px;
-      background: rgba(255, 255, 255, 0.16);
-      border: 1px solid rgba(255, 255, 255, 0.28);
-      font-size: 0.78rem;
-      font-weight: 700;
-      text-transform: uppercase;
-      letter-spacing: 0.06em;
-      margin-bottom: 1rem;
-    }
-
-    .hero-copy h1 {
-      margin: 0;
-      font-size: clamp(1.9rem, 4vw, 3rem);
-      line-height: 1.16;
-      letter-spacing: -0.02em;
-      color: #fff;
-    }
-
-    .hero-copy p {
-      margin: 1rem 0 0;
-      font-size: 1.03rem;
-      color: rgba(255, 255, 255, 0.9);
-      max-width: 60ch;
-    }
-
-    .hero-actions {
-      margin-top: 1.5rem;
-      display: flex;
-      flex-wrap: wrap;
-      gap: 0.7rem;
-    }
-
-    .hero-note {
-      margin-top: 1.2rem;
-      display: flex;
-      flex-wrap: wrap;
-      gap: 0.9rem;
-      padding: 0;
-      list-style: none;
-    }
-
-    .hero-note li {
-      display: inline-flex;
-      align-items: center;
-      gap: 0.4rem;
-      color: rgba(255, 255, 255, 0.9);
-      font-size: 0.9rem;
-    }
-
-    .hero-panel {
-      background: rgba(255, 255, 255, 0.12);
-      border: 1px solid rgba(255, 255, 255, 0.24);
-      border-radius: 20px;
-      box-shadow: 0 20px 45px rgba(3, 9, 20, 0.34);
-      padding: 1.2rem;
-      backdrop-filter: blur(14px);
-      -webkit-backdrop-filter: blur(14px);
-    }
-
-    .hero-panel h3 {
-      margin: 0;
-      color: #fff;
-      font-size: 1.15rem;
-    }
-
-    .hero-panel p {
-      margin: 0.7rem 0 0;
-      color: rgba(239, 247, 255, 0.92);
-      font-size: 0.96rem;
-    }
-
-    .hero-metric-grid {
-      margin-top: 1rem;
-      display: grid;
-      grid-template-columns: repeat(2, minmax(0, 1fr));
-      gap: 0.7rem;
-    }
-
-    .hero-metric {
-      background: rgba(255, 255, 255, 0.12);
-      border: 1px solid rgba(255, 255, 255, 0.22);
-      border-radius: 14px;
-      padding: 0.75rem;
-    }
-
-    .hero-metric h4 {
-      margin: 0;
-      color: #ffffff;
-      font-size: 0.96rem;
-    }
-
-    .hero-metric span {
-      display: block;
-      margin-top: 0.2rem;
-      font-size: 0.83rem;
-      color: rgba(238, 247, 255, 0.88);
-    }
-
-    .section {
-      padding: 4.4rem 0;
-    }
-
-    .section-header {
-      margin: 0 auto 2rem;
-      text-align: center;
-      max-width: 760px;
-    }
-
-    .section-header .subtitle {
-      display: inline-block;
-      margin-bottom: 0.8rem;
-      font-size: 0.78rem;
-      font-weight: 700;
-      letter-spacing: 0.08em;
-      text-transform: uppercase;
-      color: #0762c6;
-    }
-
-    .section-header h2 {
-      margin: 0;
-      font-size: clamp(1.55rem, 3.3vw, 2.35rem);
-      line-height: 1.2;
-      color: var(--product-ink);
-      letter-spacing: -0.02em;
-    }
-
-    .section-header p {
-      margin: 0.9rem 0 0;
-      color: var(--product-muted);
-      font-size: 1rem;
-    }
-
-    .intel-grid {
-      display: grid;
-      grid-template-columns: repeat(3, minmax(0, 1fr));
-      gap: 1rem;
-    }
-
-    .intel-card {
-      background: var(--product-surface);
-      border: 1px solid var(--product-line);
-      border-radius: 18px;
-      padding: 1.2rem;
-      box-shadow: var(--product-shadow);
-    }
-
-    .intel-icon {
-      width: 45px;
-      height: 45px;
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      border-radius: 14px;
-      color: #0a79ee;
-      background: rgba(10, 121, 238, 0.12);
-      border: 1px solid rgba(10, 121, 238, 0.2);
-      font-size: 1.1rem;
-      margin-bottom: 0.85rem;
-    }
-
-    .intel-card h3 {
-      margin: 0;
-      color: var(--product-ink);
-      font-size: 1.07rem;
-    }
-
-    .intel-card p {
-      margin: 0.65rem 0 0;
-      color: var(--product-muted);
-      font-size: 0.94rem;
-    }
-
-    .demo-wrap {
-      display: grid;
-      grid-template-columns: 1.03fr 0.97fr;
-      gap: 1.3rem;
-      align-items: center;
-    }
-
-    .video-shell {
-      background: #081326;
-      border-radius: 18px;
-      padding: 0.55rem;
-      box-shadow: var(--product-shadow);
-      border: 1px solid rgba(8, 19, 38, 0.14);
-    }
-
-    .video-shell iframe {
-      width: 100%;
-      aspect-ratio: 16 / 9;
-      border: 0;
-      border-radius: 13px;
-      display: block;
-      background: #081326;
-    }
-
-    .demo-copy {
-      background: var(--product-surface);
-      border: 1px solid var(--product-line);
-      border-radius: 18px;
-      padding: 1.3rem;
-      box-shadow: var(--product-shadow);
-    }
-
-    .demo-copy h3 {
-      margin: 0;
-      color: var(--product-ink);
-      font-size: 1.2rem;
-      line-height: 1.25;
-    }
-
-    .demo-copy p {
-      margin: 0.85rem 0;
-      color: var(--product-muted);
-      font-size: 0.95rem;
-    }
-
-    .demo-points {
-      list-style: none;
-      padding: 0;
-      margin: 0;
-      display: grid;
-      gap: 0.5rem;
-    }
-
-    .demo-points li {
-      display: flex;
-      align-items: flex-start;
-      gap: 0.45rem;
-      color: var(--product-muted);
-      font-size: 0.93rem;
-    }
-
-    .demo-points i {
-      margin-top: 0.15rem;
-      color: #0a79ee;
-      font-size: 0.9rem;
-    }
-
-    .demo-actions {
-      margin-top: 1rem;
-      display: flex;
-      flex-wrap: wrap;
-      gap: 0.6rem;
-    }
-
-    .proof-strip {
-      padding-top: 0;
-    }
-
-    .proof-card {
-      border-radius: 20px;
-      border: 1px solid rgba(8, 19, 38, 0.14);
-      background: linear-gradient(130deg, #0a2142, #0b4f9f 58%, #008f88);
-      color: #fff;
-      box-shadow: 0 26px 46px rgba(8, 18, 40, 0.32);
-      padding: 1.35rem;
-      text-align: center;
-    }
-
-    .proof-card h3 {
-      margin: 0;
-      font-size: clamp(1.25rem, 2.9vw, 1.9rem);
-      line-height: 1.28;
-      letter-spacing: -0.01em;
-    }
-
-    .proof-card p {
-      margin: 0.75rem auto 0;
-      max-width: 800px;
-      color: rgba(236, 245, 255, 0.9);
-      font-size: 0.96rem;
-    }
-
-    .proof-card .btn {
-      margin-top: 1rem;
-      background: #ffffff;
-      color: #0a2f66;
-      border: 1px solid rgba(255, 255, 255, 0.32);
-    }
-
-    footer {
-      margin-top: 2rem;
-      padding: 2rem 0;
-    }
-
-    .footer-inner {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 0.9rem;
-      align-items: center;
-      justify-content: space-between;
-    }
-
-    .footer-links {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 0.85rem;
-    }
-
-    .footer-link {
-      color: rgba(233, 243, 255, 0.88);
-      font-size: 0.92rem;
-    }
-
-    .footer-copy {
-      color: rgba(233, 243, 255, 0.74);
-      font-size: 0.9rem;
-    }
-
-    @media (max-width: 960px) {
-      .hero-grid,
-      .demo-wrap {
-        grid-template-columns: 1fr;
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "PolyMonit case study: building a Polymarket wallet tracker",
+    "url": "https://qoreonlabs.com/polymonit-wallet-tracker.html",
+    "author": {
+      "@type": "Organization",
+      "name": "Qoreon Labs Ltd",
+      "url": "https://qoreonlabs.com",
+      "logo": "https://qoreonlabs.com/assets/img/apple-touch-icon.png",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "71-75 Shelton Street, Covent Garden",
+        "addressLocality": "London",
+        "postalCode": "WC2H 9JQ",
+        "addressCountry": "GB"
       }
-
-      .hero-panel {
-        max-width: 700px;
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "Qoreon Labs Ltd",
+      "url": "https://qoreonlabs.com",
+      "logo": "https://qoreonlabs.com/assets/img/apple-touch-icon.png",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "71-75 Shelton Street, Covent Garden",
+        "addressLocality": "London",
+        "postalCode": "WC2H 9JQ",
+        "addressCountry": "GB"
       }
-
-      .intel-grid {
-        grid-template-columns: 1fr;
+    },
+    "image": "https://qoreonlabs.com/assets/img/og-qoreon.png"
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://qoreonlabs.com/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Work",
+        "item": "https://qoreonlabs.com/index.html#work"
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "name": "PolyMonit case study",
+        "item": "https://qoreonlabs.com/polymonit-wallet-tracker.html"
       }
-    }
+    ]
+  }
+  </script>
 
-    @media (max-width: 820px) {
-      .nav-toggle,
-      .nav-close {
-        display: block;
-      }
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Inter+Tight:wght@500;600;700&family=Lora:ital,wght@1,500&display=swap" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Inter+Tight:wght@500;600;700&family=Lora:ital,wght@1,500&display=swap" media="print" onload="this.media='all'" />
+  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Inter+Tight:wght@500;600;700&family=Lora:ital,wght@1,500&display=swap" /></noscript>
 
-      .nav-menu {
-        position: fixed;
-        top: 0;
-        right: -100%;
-        width: min(84vw, 320px);
-        height: 100vh;
-        flex-direction: column;
-        align-items: flex-start;
-        justify-content: flex-start;
-        gap: 1rem;
-        padding: 1.1rem;
-        transition: right 0.28s ease;
-        border-left: 1px solid rgba(14, 35, 68, 0.14);
-        z-index: 130;
-      }
-
-      .nav-menu.show {
-        right: 0;
-      }
-
-      .nav-list {
-        width: 100%;
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 0.75rem;
-        margin-top: 1.3rem;
-      }
-
-      .header-btn {
-        width: 100%;
-        justify-content: center;
-      }
-
-      .product-hero {
-        padding-top: 3.9rem;
-      }
-    }
-
-    @media (max-width: 540px) {
-      .hero-actions,
-      .demo-actions {
-        flex-direction: column;
-      }
-
-      .hero-actions .btn,
-      .demo-actions .btn,
-      .proof-card .btn {
-        width: 100%;
-        justify-content: center;
-      }
-    }
-  </style>
-
+  <link rel="stylesheet" href="assets/css/studio.css" />
 </head>
-<body>
-  <header id="header">
-    <div class="container">
-      <div class="header-container">
-        <a href="index.html" class="logo">QOREON LABS</a>
+<body class="no-js">
+<script>document.body.classList.remove('no-js')</script>
 
-        <div class="nav-toggle" id="nav-toggle" aria-label="Open navigation" role="button" tabindex="0">
-          <i class="fas fa-bars"></i>
-        </div>
+<!-- ================= HEADER ================= -->
+<header class="hdr" id="header">
+  <div class="hdr-in">
+    <a class="logo" href="index.html" aria-label="Qoreon Labs home"><img src="assets/img/qoreon-logo.svg" alt="Qoreon Labs" width="134" height="40" /></a>
 
-        <nav class="nav-menu" id="nav-menu">
-          <div class="nav-close" id="nav-close" aria-label="Close navigation" role="button" tabindex="0">
-            <i class="fas fa-times"></i>
+    <nav class="nav" id="primary-nav" aria-label="Primary">
+      <a href="index.html">Home</a>
+      <a href="about-us.html">About</a>
+      <div class="dd" id="dd-services">
+        <button class="dd-t" type="button" aria-expanded="false" aria-controls="mega">Services
+          <svg width="11" height="8" viewBox="0 0 12 8" aria-hidden="true"><path d="m1 1 5 5 5-5" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></svg>
+        </button>
+        <div class="mega" id="mega">
+          <div class="mg">
+            <div class="mg-l">Websites &amp; core</div>
+            <a href="services.html#web-development"><b>Web Development <svg width="10" height="10" viewBox="0 0 10 10"><path d="M2 8 8 2M3.5 2H8v4.5" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></b><span>New sites and redesigns</span></a>
+            <a href="services.html#app-development"><b>App Development <svg width="10" height="10" viewBox="0 0 10 10"><path d="M2 8 8 2M3.5 2H8v4.5" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></b><span>iOS and cross-platform apps</span></a>
+            <a href="services.html#software-development"><b>Software Development <svg width="10" height="10" viewBox="0 0 10 10"><path d="M2 8 8 2M3.5 2H8v4.5" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></b><span>Back ends, APIs, integrations</span></a>
+            <a href="custom-software-development.html"><b>Custom Software <svg width="10" height="10" viewBox="0 0 10 10"><path d="M2 8 8 2M3.5 2H8v4.5" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></b><span>Built around how you work</span></a>
           </div>
-
-          <ul class="nav-list">
-            <li><a href="index.html" class="nav-link">Home</a></li>
-            <li class="nav-item nav-item--has-dropdown">
-              <a href="services.html" class="nav-link nav-link--dropdown" aria-haspopup="true" aria-expanded="false">
-                Services
-                <i class="fas fa-chevron-down nav-caret" aria-hidden="true"></i>
-              </a>
-              <div class="nav-dropdown" role="menu" aria-label="Services">
-                <a href="software-development.html" class="nav-dropdown-link" role="menuitem">Software Development</a>
-                <a href="web-development.html" class="nav-dropdown-link" role="menuitem">Web Development</a>
-                <a href="app-development.html" class="nav-dropdown-link" role="menuitem">App Development</a>
-              </div>
-            </li>
-            <li><a href="blogs.html" class="nav-link">Blog</a></li>
-            <li><a href="polymonit-wallet-tracker.html" class="nav-link active">Product</a></li>
-            <li><a href="index.html#contact" class="nav-link">Contact</a></li>
-          </ul>
-
-          <a href="quoteform.html" class="header-btn">
-            <i class="fas fa-headset"></i>
-            Get A Quote
+          <div class="mg">
+            <div class="mg-l">Business systems</div>
+            <a href="business-dashboard-development.html"><b>Business Dashboards <svg width="10" height="10" viewBox="0 0 10 10"><path d="M2 8 8 2M3.5 2H8v4.5" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></b><span>Your numbers on one screen</span></a>
+            <a href="internal-tools-development.html"><b>Internal Tools <svg width="10" height="10" viewBox="0 0 10 10"><path d="M2 8 8 2M3.5 2H8v4.5" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></b><span>Replace the spreadsheets</span></a>
+            <a href="business-web-app-development.html"><b>Business Web Apps <svg width="10" height="10" viewBox="0 0 10 10"><path d="M2 8 8 2M3.5 2H8v4.5" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></b><span>Booking, ordering, ops</span></a>
+            <a href="customer-portal-development.html"><b>Customer Portals <svg width="10" height="10" viewBox="0 0 10 10"><path d="M2 8 8 2M3.5 2H8v4.5" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></b><span>Self-serve for your clients</span></a>
+          </div>
+          <div class="mg">
+            <div class="mg-l">Products &amp; automation</div>
+            <a href="ai-automation.html"><b>AI Automation <svg width="10" height="10" viewBox="0 0 10 10"><path d="M2 8 8 2M3.5 2H8v4.5" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></b><span>Leads, replies, follow-ups</span></a>
+            <a href="workflow-automation.html"><b>Workflow Automation <svg width="10" height="10" viewBox="0 0 10 10"><path d="M2 8 8 2M3.5 2H8v4.5" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></b><span>Connect the tools you use</span></a>
+            <a href="ai-development.html"><b>AI Development <svg width="10" height="10" viewBox="0 0 10 10"><path d="M2 8 8 2M3.5 2H8v4.5" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></b><span>Chat, search, AI features</span></a>
+            <a href="mvp-development.html"><b>MVP Development <svg width="10" height="10" viewBox="0 0 10 10"><path d="M2 8 8 2M3.5 2H8v4.5" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></b><span>From idea to first users</span></a>
+            <a href="saas-development.html"><b>SaaS Development <svg width="10" height="10" viewBox="0 0 10 10"><path d="M2 8 8 2M3.5 2H8v4.5" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></b><span>Subscriptions, accounts, billing</span></a>
+          </div>
+          <a class="mg-promo" href="index.html#audit">
+            <div class="score">46<small>/100</small></div>
+            <b>Free site audit</b>
+            <p>See what's costing you enquiries, in plain English.</p>
+            <span class="go">Get yours <svg width="12" height="12" viewBox="0 0 12 12"><path d="M2 6h8M6.5 2.5 10 6l-3.5 3.5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
           </a>
-        </nav>
+        </div>
+      </div>
+      <a href="index.html#work">Work</a>
+      <a href="index.html#process">Process</a>
+      <a href="#contact">Contact</a>
+      <a class="btn btn-ink btn-sm m-cta" href="index.html#audit" style="display:none">Free site audit <span class="arr"><svg width="11" height="11" viewBox="0 0 12 12"><path d="M2 6h8M6.5 2.5 10 6l-3.5 3.5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></span></a>
+    </nav>
+
+    <div class="hdr-cta">
+      <a class="q" href="quoteform.html">Get a quote</a>
+      <a class="btn btn-ink btn-sm" href="index.html#audit">Free site audit <span class="arr"><svg width="11" height="11" viewBox="0 0 12 12"><path d="M2 6h8M6.5 2.5 10 6l-3.5 3.5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></span></a>
+    </div>
+    <button class="burger" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="primary-nav">
+      <svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 8h16M4 16h16" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+    </button>
+  </div>
+</header>
+
+<main id="top">
+
+<!-- ================= HERO ================= -->
+<section class="hero hero-s">
+  <div class="wrap hero-top">
+    <div class="ht-l">
+      <div class="kicker rv"><a class="idx" href="index.html#work">Case study</a>PolyMonit</div>
+      <h1 class="display rv d1">PolyMonit: whale tracking <span class="soft ser">for</span> prediction <span class="hl">markets.</span></h1>
+    </div>
+    <div class="ht-r">
+      <p class="lede rv d2">How we designed, built and launched our own SaaS product, a <b>Polymarket wallet tracker</b> that turns raw on-chain activity into alerts, and grew it to paying subscribers in more than 20 countries.</p>
+      <div class="ctas rv d3">
+        <a class="btn btn-ink" href="#demo">Watch the demo <span class="arr"><svg width="12" height="12" viewBox="0 0 12 12"><path d="M2 6h8M6.5 2.5 10 6l-3.5 3.5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></span></a>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ================= AT A GLANCE ================= -->
+<section class="sec" style="padding-top:20px">
+  <div class="wrap">
+    <div class="proof rv">
+      <div class="pf"><div class="num">20+</div><p>Countries with paying subscribers.</p></div>
+      <div class="pf"><div class="num t">Live</div><p>A real product in daily use, not a concept or a demo.</p></div>
+      <div class="pf"><div class="num t">End to end</div><p>Product idea, design, build, launch and running it.</p></div>
+      <div class="pf"><div class="num t">Real-time</div><p>Wallet tracking and instant alerts as trades happen.</p></div>
+    </div>
+    <!-- TODO: add more real results if you're happy to share them (launch date, subscriber count, alerts sent, uptime). Only real numbers. -->
+  </div>
+</section>
+
+<!-- ================= PROBLEM ================= -->
+<section class="sec" id="problem" style="padding-top:40px">
+  <div class="wrap">
+    <div class="sec-head">
+      <div>
+        <div class="kicker rv"><span class="idx">01</span>The problem</div>
+        <h2 class="display rv d1">The data is public. <span class="hl">Reading it isn't.</span></h2>
+      </div>
+      <p class="rv d2">Every trade on Polymarket is on-chain and visible to anyone. In practice, that makes it noise unless you know where to look.</p>
+    </div>
+    <div class="prob-grid">
+      <article class="prob rv">
+        <div class="fit" style="--w:300;--h:230" aria-hidden="true"><div class="fit-in real">
+          <div class="pad"><div class="note"><span class="ic"><svg class="" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#3d3d42" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12a9 9 0 1 1-3-6.7L21 8"/><path d="M21 3v5h-5"/></svg></span><div><b>Thousands of trades</b>Every hour, every market</div><span class="ago">noise</span></div><div class="note"><span class="ic"><svg class="" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#3d3d42" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg></span><div><b>Which wallets matter?</b>No easy way to tell</div><span class="ago">?</span></div><div class="note"><span class="ic"><svg class="" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#3d3d42" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></span><div><b>Spotted too late</b>The price already moved</div><span class="ct">!</span></div></div>
+        </div></div>
+        <span class="n">Problem 01</span>
+        <h3>Too much raw activity</h3>
+        <p>Thousands of trades across hundreds of markets, with no simple way to separate signal from noise.</p>
+      </article>
+      <article class="prob rv d1">
+        <div class="fit" style="--w:300;--h:230" aria-hidden="true"><div class="fit-in real">
+          <div class="mini-win sheet">
+            <div class="sbar"><i></i>Whales_to_watch.xlsx<span>Updated by hand</span></div>
+            <table><tr><td class="rn">1</td><td><b>Wallet</b></td><td><b>PnL</b></td><td><b>Last seen</b></td></tr><tr><td class="rn">2</td><td>0x8f3…</td><td class="yel">+182k?</td><td>Tue</td></tr><tr><td class="rn">3</td><td>0x41d…</td><td class="dup">?</td><td class="dup">?</td></tr><tr><td class="rn">4</td><td>0xc02…</td><td>+41k</td><td class="err">stale</td></tr><tr><td class="rn">5</td><td>0x9aa…</td><td>-8k</td><td></td></tr><tr><td class="rn">6</td><td>Total</td><td class="err">#REF!</td><td></td></tr></table>
+          </div>
+        </div></div>
+        <span class="n">Problem 02</span>
+        <h3>Tracking wallets by hand</h3>
+        <p>Traders kept lists of interesting wallets in spreadsheets and block explorers, checked manually and always out of date.</p>
+      </article>
+      <article class="prob rv d2">
+        <div class="fit" style="--w:300;--h:230" aria-hidden="true"><div class="fit-in real">
+          <div class="pad" style="inset:20px 18px"><div class="bub me">Did that big wallet just buy?</div><div class="bub th">No idea, checking the explorer</div><div class="bub th">Oh, 40 minutes ago</div><div class="bub me">Price has moved already...</div></div>
+        </div></div>
+        <span class="n">Problem 03</span>
+        <h3>No timely alerts</h3>
+        <p>By the time anyone noticed a large position, the market had usually already moved.</p>
+      </article>
+      <article class="prob rv d3">
+        <div class="fit" style="--w:300;--h:230" aria-hidden="true"><div class="fit-in real">
+          <div class="pad"><div class="note"><span class="ic"><svg class="" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#3d3d42" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 6 6 18M6 6l12 12"/></svg></span><div><b>Generic crypto tools</b>Not built for prediction markets</div><span class="ago">no</span></div><div class="note"><span class="ic"><svg class="" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#3d3d42" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3v18h18"/><path d="m7 15 4-4 3 3 5-6"/></svg></span><div><b>Raw dashboards</b>Data, but no context</div><span class="ago">meh</span></div><div class="note"><span class="ic"><svg class="" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#3d3d42" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="8" cy="15" r="4"/><path d="m11 12 9-9M16 7l3 3"/></svg></span><div><b>Own scripts</b>Break every few weeks</div><span class="ct">!</span></div></div>
+        </div></div>
+        <span class="n">Problem 04</span>
+        <h3>Nothing built for this market</h3>
+        <p>Existing tools were made for general crypto trading, not the way prediction markets actually work.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ================= WHAT WE BUILT ================= -->
+<section class="sec" id="built" style="padding-top:20px">
+  <div class="wrap">
+    <div class="sec-head">
+      <div>
+        <div class="kicker rv"><span class="idx">02</span>What we built</div>
+        <h2 class="display rv d1">From noisy data <span class="soft ser">to</span> <span class="hl">clear signals.</span></h2>
+      </div>
+      <p class="rv d2">A focused product that does one job well: show traders what the biggest wallets are doing, as it happens.</p>
+    </div>
+    <!-- TODO: confirm the tech stack you want to mention publicly (for example the framework, database and hosting). -->
+    <!-- Featured: Polymonit -->
+    <article class="work-feat rv">
+      <div class="wf-copy">
+        <span class="label"><i></i>What we built</span>
+        <h3>One product, built and run end to end</h3>
+        <p>We designed and built every part of PolyMonit: the data pipeline that reads on-chain activity, the logic that scores wallets, the web app traders use every day, the alert system, and the accounts and subscriptions that turn it into a business. Then we launched it, and we still run it.</p>
+        <ul class="facts">
+          <li><b>Data</b>a pipeline that reads and cleans live on-chain activity</li>
+          <li><b>Product</b>web app with whale lists, markets and a live feed</li>
+          <li><b>Business</b>accounts, subscriptions and billing</li>
+        </ul>
+      </div>
+      <div class="wf-vis stage">
+        <!-- TODO: optionally swap this mock for a real PolyMonit screenshot -->
+        <div class="fit ov" style="--w:620;--h:500" aria-hidden="true"><div class="fit-in real">
+          <div class="pm">
+            <div class="st-top" style="left:22px;right:22px;top:18px"><span><b>QL/02</b> &nbsp;·&nbsp; PolyMonit dashboard</span><span class="st-chips"><i><em></em>Live</i></span></div>
+            <div class="pm-app">
+              <div class="pm-top"><span class="pm-logo"><i></i>PolyMonit</span><span class="pm-tabs"><span class="on">Whales</span><span>Markets</span><span>Alerts</span></span><span class="pm-live"><i></i>Streaming</span></div>
+              <div class="pm-body">
+                <div class="pm-card">
+                  <div class="t">Top wallets<span>24h</span></div>
+                  <div class="pm-row h"><span>WALLET</span><span>PNL</span><span>WIN RATE</span><span></span></div>
+                  <div class="pm-row"><b><i style="background:linear-gradient(135deg,#d6ff3d,#6e8f00)"></i>0x8f3…a21c</b><span class="up">+$182k</span><span>68%</span><span class="tg">WHALE</span></div>
+                  <div class="pm-row"><b><i style="background:linear-gradient(135deg,#b9c7ff,#5a6fe0)"></i>0x41d…9e07</b><span class="up">+$96k</span><span>61%</span><span class="tg">WHALE</span></div>
+                  <div class="pm-row"><b><i style="background:linear-gradient(135deg,#ffd5b8,#d4785a)"></i>0xc02…77b4</b><span class="up">+$41k</span><span>57%</span><span></span></div>
+                  <div class="pm-row"><b><i style="background:linear-gradient(135deg,#5a5a60,#2b2b2e)"></i>0x9aa…0f13</b><span style="color:#ff7a7e">-$8k</span><span>44%</span><span></span></div>
+                </div>
+                <div style="display:grid;gap:10px">
+                  <div class="pm-card"><div class="t">Tracked volume<span>Today</span></div><div class="pm-big">$2.41M<em>+18%</em></div>
+                    <svg width="100%" height="56" viewBox="0 0 200 56" preserveAspectRatio="none" style="margin-top:6px"><path d="M0 48 C20 44,30 38,50 40 S80 26,100 30 S140 14,160 18 S190 8,200 6" fill="none" stroke="#d6ff3d" stroke-width="2"/><path d="M0 48 C20 44,30 38,50 40 S80 26,100 30 S140 14,160 18 S190 8,200 6 V56 H0Z" fill="rgba(214,255,61,.08)"/></svg>
+                  </div>
+                  <div class="pm-card"><div class="t">Alerts sent<span>This week</span></div><div class="pm-big">1,284</div></div>
+                </div>
+                <div class="pm-card" style="grid-column:1/-1">
+                  <div class="t">Live feed<span>Last 5 minutes</span></div>
+                  <div class="pm-row pm-feed"><span>14:02:11</span><b><i style="background:linear-gradient(135deg,#d6ff3d,#6e8f00)"></i>0x8f3…a21c</b><span>Bought YES</span><span class="up">$48.2k</span></div>
+                  <div class="pm-row pm-feed"><span>14:01:47</span><b><i style="background:linear-gradient(135deg,#b9c7ff,#5a6fe0)"></i>0x41d…9e07</b><span>Bought NO</span><span class="up">$12.9k</span></div>
+                  <div class="pm-row pm-feed"><span>14:00:58</span><b><i style="background:linear-gradient(135deg,#ffd5b8,#d4785a)"></i>0xc02…77b4</b><span>Sold YES</span><span style="color:#ff7a7e;font-weight:600">$6.4k</span></div>
+                  <div class="pm-row pm-feed"><span>13:59:20</span><b><i style="background:linear-gradient(135deg,#d6ff3d,#6e8f00)"></i>0x8f3…a21c</b><span>Bought YES</span><span class="up">$22.0k</span></div>
+                </div>
+              </div>
+            </div>
+            <div class="toast pop p3" style="left:300px;top:318px;width:290px">
+              <span class="ic"><svg width="13" height="13" viewBox="0 0 24 24"><path d="M12 3a6 6 0 0 0-6 6v4l-2 3h16l-2-3V9a6 6 0 0 0-6-6zM10 19a2 2 0 0 0 4 0" fill="none" stroke="#d6ff3d" stroke-width="2" stroke-linejoin="round"/></svg></span>
+              <div class="tx"><b>Whale alert <em>12s ago</em></b>0x8f3…a21c bought $48,200 of YES on a rates market.</div>
+            </div>
+          </div>
+        </div></div>
+      </div>
+    </article>
+  </div>
+</section>
+
+<!-- ================= FEATURES ================= -->
+<section class="sec" id="features" style="padding-top:20px">
+  <div class="wrap">
+    <div class="sec-head">
+      <div>
+        <div class="kicker rv"><span class="idx">03</span>Features</div>
+        <h2 class="display rv d1">Three things, <span class="hl">done well.</span></h2>
+      </div>
+      <p class="rv d2">We kept the product focused on the jobs traders actually came for, and left out everything else. Interface details shown here are illustrative.</p>
+    </div>
+    <!-- TODO: swap these illustrative mockups for real PolyMonit screenshots if you prefer. -->
+    <div class="cards-3">
+      <article class="pstep rv">
+        <div class="fit dk" style="--w:400;--h:250" aria-hidden="true"><div class="fit-in real">
+          <div class="pm" style="padding:0"><div class="pm-app" style="left:18px;right:18px;top:18px;bottom:-30px"><div class="pm-body" style="grid-template-columns:1fr;padding:12px"><div class="pm-card"><div class="t">Top wallets<span>24h</span></div><div class="pm-row h"><span>WALLET</span><span>PNL</span><span>WIN</span><span></span></div><div class="pm-row"><b><i style="background:linear-gradient(135deg,#d6ff3d,#6e8f00)"></i>0x8f3…a21c</b><span class="up">+$182k</span><span>68%</span><span class="tg">WHALE</span></div><div class="pm-row"><b><i style="background:linear-gradient(135deg,#b9c7ff,#5a6fe0)"></i>0x41d…9e07</b><span class="up">+$96k</span><span>61%</span><span class="tg">WHALE</span></div><div class="pm-row"><b><i style="background:linear-gradient(135deg,#ffd5b8,#d4785a)"></i>0xc02…77b4</b><span class="up">+$41k</span><span>57%</span><span></span></div></div></div></div></div>
+        </div></div>
+        <div class="top"><b>WHALES</b><span>Ranked</span></div>
+        <h3>Whale tracking</h3>
+        <p>The most profitable and active wallets ranked by performance, so traders know whose moves are worth watching.</p>
+      </article>
+      <article class="pstep rv d1">
+        <div class="fit dk" style="--w:400;--h:250" aria-hidden="true"><div class="fit-in real">
+          <div class="pm" style="padding:0"><div class="pm-app" style="left:18px;right:18px;top:18px;bottom:-30px"><div class="pm-body" style="grid-template-columns:1fr;padding:12px"><div class="pm-card"><div class="t">Live feed<span>Last 5 minutes</span></div><div class="pm-row pm-feed"><span>14:02</span><b><i style="background:linear-gradient(135deg,#d6ff3d,#6e8f00)"></i>0x8f3…</b><span>Bought YES</span><span class="up">$48.2k</span></div><div class="pm-row pm-feed"><span>14:01</span><b><i style="background:linear-gradient(135deg,#b9c7ff,#5a6fe0)"></i>0x41d…</b><span>Bought NO</span><span class="up">$12.9k</span></div><div class="pm-row pm-feed"><span>14:00</span><b><i style="background:linear-gradient(135deg,#ffd5b8,#d4785a)"></i>0xc02…</b><span>Sold YES</span><span style="color:#ff7a7e;font-weight:600">$6.4k</span></div></div></div></div></div>
+        </div></div>
+        <div class="top"><b>LIVE FEED</b><span>Real-time</span></div>
+        <h3>A live trade feed</h3>
+        <p>Large trades from tracked wallets appear as they happen, with the market, side and size on one line.</p>
+      </article>
+      <article class="pstep rv d2">
+        <div class="fit dk" style="--w:400;--h:250" aria-hidden="true"><div class="fit-in real">
+          <div class="toast dk" style="left:24px;top:40px;width:350px"><span class="ic"><svg width="14" height="14" viewBox="0 0 24 24"><path d="M12 3a6 6 0 0 0-6 6v4l-2 3h16l-2-3V9a6 6 0 0 0-6-6zM10 19a2 2 0 0 0 4 0" fill="none" stroke="#d6ff3d" stroke-width="2" stroke-linejoin="round"/></svg></span><div class="tx"><b>Whale alert <em>12s ago</em></b>0x8f3…a21c bought $48,200 of YES on a rates market.</div></div>
+          <div class="toast dk" style="left:54px;top:140px;width:320px"><span class="ic"><svg width="14" height="14" viewBox="0 0 24 24"><path d="M12 3a6 6 0 0 0-6 6v4l-2 3h16l-2-3V9a6 6 0 0 0-6-6zM10 19a2 2 0 0 0 4 0" fill="none" stroke="#d6ff3d" stroke-width="2" stroke-linejoin="round"/></svg></span><div class="tx"><b>Watchlist <em>3 min ago</em></b>2 wallets you follow entered the same market.</div></div>
+        </div></div>
+        <div class="top"><b>ALERTS</b><span>Instant</span></div>
+        <h3>Alerts that arrive in time</h3>
+        <p>Traders choose the wallets and markets they care about and get an alert the moment something happens.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ================= DEMO ================= -->
+<section class="sec" id="demo" style="padding-top:20px">
+  <div class="wrap">
+    <div class="sec-head">
+      <div>
+        <div class="kicker rv"><span class="idx">04</span>Demo</div>
+        <h2 class="display rv d1">See it <span class="hl">in action.</span></h2>
+      </div>
+      <p class="rv d2">A short walkthrough of the product and how traders use it day to day.</p>
+    </div>
+    <!-- TODO: if you want video rich results, add VideoObject JSON-LD with the real YouTube upload date. -->
+    <div class="panel rv" style="padding:12px">
+      <div class="video"><iframe src="https://www.youtube-nocookie.com/embed/s8nc9UKVOMk" title="PolyMonit product demo" loading="lazy" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= RESULTS ================= -->
+<section class="sec" id="results" style="padding-top:20px">
+  <div class="wrap">
+    <div class="sec-head">
+      <div>
+        <div class="kicker rv"><span class="idx">05</span>Results</div>
+        <h2 class="display rv d1">A real product, <span class="soft ser">with</span> <span class="hl">real customers.</span></h2>
+      </div>
+      <p class="rv d2">We only share numbers we can stand behind.</p>
+    </div>
+    <div class="split">
+      <div class="panel rv"><div class="num" style="font:600 clamp(48px,5vw,72px)/1 var(--f-display);letter-spacing:-.05em">20+</div><p class="lede" style="margin-top:12px">countries with paying subscribers, from a product we designed, built and launched ourselves.</p></div>
+      <div class="panel rv d1 prose">
+        <p><strong>What it proves for clients.</strong> We know how to take a product from an idea to something people pay for: reliable data, a clear interface, accounts and billing, and the ongoing care a live product needs.</p>
+        <p>The same building blocks power the <a href="saas-development.html">SaaS products</a>, <a href="business-dashboard-development.html">dashboards</a> and <a href="ai-automation.html">automations</a> we build for clients.</p>
       </div>
     </div>
-  </header>
+  </div>
+</section>
 
-  <main>
-    <section class="product-hero" id="overview">
-      <div class="container">
-        <div class="hero-grid">
-          <div class="hero-copy">
-            <span class="eyebrow"><i class="fas fa-circle-check"></i> Shipped by Qoreon Labs</span>
-            <h1>Polymonit is live: wallet-level intelligence for Polymarket</h1>
-            <p>
-              Polymonit helps traders and analysts track on-chain wallet behavior on Polymarket, surface high-signal activity,
-              and turn noisy market movement into clearer decision support.
-            </p>
-
-            <div class="hero-actions">
-              <a href="https://polymonit.com" target="_blank" rel="noopener noreferrer" class="btn btn-primary">Visit Polymonit <i class="fas fa-arrow-right"></i></a>
-              <a href="https://youtu.be/s8nc9UKVOMk?si=oCcmM2IMoBuMBO-N" target="_blank" rel="noopener noreferrer" class="btn btn-light">Watch Demo on YouTube</a>
-            </div>
-
-            <ul class="hero-note">
-              <li><i class="fas fa-bolt"></i> Real-time signal visibility</li>
-              <li><i class="fas fa-wallet"></i> Wallet behavior tracking</li>
-              <li><i class="fas fa-chart-line"></i> Market intelligence workflow</li>
-            </ul>
-          </div>
-
-          <div class="hero-panel">
-            <h3>What this proves</h3>
-            <p>
-              Qoreon Labs does not only consult. We ship real products, iterate quickly, and build practical intelligence systems
-              that users can adopt immediately.
-            </p>
-            <div class="hero-metric-grid">
-              <div class="hero-metric">
-                <h4>Live deployment</h4>
-                <span>Product is available now at polymonit.com</span>
-              </div>
-              <div class="hero-metric">
-                <h4>Clear market use-case</h4>
-                <span>Designed for prediction market participants</span>
-              </div>
-              <div class="hero-metric">
-                <h4>Decision support</h4>
-                <span>Focused on actionable wallet intelligence</span>
-              </div>
-              <div class="hero-metric">
-                <h4>Product execution</h4>
-                <span>Built and shipped by Qoreon Labs</span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="section" id="capabilities">
-      <div class="container">
-        <div class="section-header">
-          <span class="subtitle">Core Capabilities</span>
-          <h2>Why Polymonit matters for market intelligence</h2>
-          <p>Built to cut through noise and expose wallet activity that can influence market direction.</p>
-        </div>
-
-        <div class="intel-grid">
-          <article class="intel-card">
-            <div class="intel-icon"><i class="fas fa-wallet"></i></div>
-            <h3>Wallet Tracking Intelligence</h3>
-            <p>Monitor wallet activity patterns to identify meaningful behavior shifts across prediction markets.</p>
-          </article>
-
-          <article class="intel-card">
-            <div class="intel-icon"><i class="fas fa-crosshairs"></i></div>
-            <h3>Signal-Led Workflow</h3>
-            <p>Surface high-signal actions faster so teams can focus on decisions, not manual data chasing.</p>
-          </article>
-
-          <article class="intel-card">
-            <div class="intel-icon"><i class="fas fa-layer-group"></i></div>
-            <h3>Built for Practical Use</h3>
-            <p>A productized interface that supports recurring market monitoring and intelligence operations.</p>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section class="section" id="demo">
-      <div class="container">
-        <div class="section-header">
-          <span class="subtitle">Product Demo</span>
-          <h2>See Polymonit in action</h2>
-          <p>Short walkthrough of the product experience and core intelligence workflow.</p>
-        </div>
-
-        <div class="demo-wrap">
-          <div class="video-shell">
-            <iframe src="https://www.youtube.com/embed/s8nc9UKVOMk" title="Polymonit product demo" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-          </div>
-
-          <div class="demo-copy">
-            <h3>From product concept to live execution</h3>
-            <p>
-              This launch demonstrates Qoreon Labs' ability to design, ship, and deploy a real intelligence product with direct user value.
-            </p>
-            <ul class="demo-points">
-              <li><i class="fas fa-check-circle"></i> Built for real market participants</li>
-              <li><i class="fas fa-check-circle"></i> Clear intelligence-centric use case</li>
-              <li><i class="fas fa-check-circle"></i> Demonstrates product delivery capability</li>
-            </ul>
-
-            <div class="demo-actions">
-              <a href="https://polymonit.com" target="_blank" rel="noopener noreferrer" class="btn btn-primary">Open Product <i class="fas fa-arrow-right"></i></a>
-              <a href="https://youtu.be/s8nc9UKVOMk?si=oCcmM2IMoBuMBO-N" target="_blank" rel="noopener noreferrer" class="btn btn-outline">Open YouTube Demo</a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="section proof-strip">
-      <div class="container">
-        <div class="proof-card">
-          <h3>Need your own intelligence product shipped end-to-end?</h3>
-          <p>
-            Qoreon Labs can help scope, build, and launch your next platform with product-grade engineering and fast iteration loops.
-          </p>
-          <a href="quoteform.html" class="btn">Discuss Your Product</a>
-        </div>
-      </div>
-    </section>
-  </main>
-
-  <footer>
-    <div class="container">
-      <div class="footer-inner">
-        <div class="footer-copy">&copy; <span id="year">2026</span> Qoreon Labs Ltd. All rights reserved.</div>
-        <div class="footer-links">
-          <a href="index.html" class="footer-link">Home</a>
-          <a href="services.html" class="footer-link">Services</a>
-          <a href="blogs.html" class="footer-link">Blog</a>
-          <a href="polymonit-wallet-tracker.html" class="footer-link">Product</a>
-        </div>
-      </div>
+<!-- ================= FAQ ================= -->
+<section class="sec" id="faq" style="padding-top:20px">
+  <div class="wrap faq-wrap">
+    <div class="faq-side">
+      <div class="kicker rv"><span class="idx">06</span>Questions</div>
+      <h2 class="display rv d1" style="margin-top:22px">PolyMonit <span class="hl">questions.</span></h2>
+      <p class="lede rv d2">Common questions about the product and this case study.</p>
+      <div class="help rv d3"><span class="mark"><i></i></span><div><b>Still unsure?</b><span>Email <a href="mailto:support@qoreonlabs.com" style="color:var(--ink);font-weight:600">support@qoreonlabs.com</a></span></div></div>
     </div>
-  </footer>
-
-  <script>
-    (function() {
-      var yearNode = document.getElementById('year');
-      if (yearNode) {
-        yearNode.textContent = new Date().getFullYear();
-      }
-
-      var navToggle = document.getElementById('nav-toggle');
-      var navClose = document.getElementById('nav-close');
-      var navMenu = document.getElementById('nav-menu');
-
-      function closeMenu() {
-        if (navMenu) {
-          navMenu.classList.remove('show');
+    <div class="faq-list">
+      <details class="rv" open>
+        <summary>What is PolyMonit?<span class="pm" aria-hidden="true"></span></summary>
+        <div class="ans">PolyMonit is a wallet tracking and market intelligence tool for Polymarket. It follows large and successful wallets, shows their activity in a live feed and sends alerts when they trade.</div>
+      </details>
+      <details class="rv">
+        <summary>Who built it?<span class="pm" aria-hidden="true"></span></summary>
+        <div class="ans">Qoreon Labs designed, built and runs PolyMonit end to end, from the data pipeline to the web app, alerts, accounts and subscriptions.</div>
+      </details>
+      <details class="rv">
+        <summary>Is PolyMonit financial advice?<span class="pm" aria-hidden="true"></span></summary>
+        <div class="ans">No. PolyMonit shows public on-chain activity to help people research markets. It does not give financial advice or recommendations, and traders make their own decisions.</div>
+      </details>
+      <details class="rv">
+        <summary>Can you build something like this for us?<span class="pm" aria-hidden="true"></span></summary>
+        <div class="ans">Yes. If you have an idea for a data product, a dashboard or a subscription app, we can help you scope, build and launch it. See our <a href="saas-development.html" style="color:var(--ink);font-weight:600">SaaS development</a> page or get in touch below.</div>
+      </details>
+    </div>
+  </div>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "What is PolyMonit?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "PolyMonit is a wallet tracking and market intelligence tool for Polymarket. It follows large and successful wallets, shows their activity in a live feed and sends alerts when they trade."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Who built it?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Qoreon Labs designed, built and runs PolyMonit end to end, from the data pipeline to the web app, alerts, accounts and subscriptions."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Is PolyMonit financial advice?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "No. PolyMonit shows public on-chain activity to help people research markets. It does not give financial advice or recommendations, and traders make their own decisions."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Can you build something like this for us?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. If you have an idea for a data product, a dashboard or a subscription app, we can help you scope, build and launch it. See our SaaS development page or get in touch below."
         }
       }
-
-      if (navToggle && navMenu) {
-        navToggle.addEventListener('click', function() {
-          navMenu.classList.add('show');
-        });
-
-        navToggle.addEventListener('keydown', function(event) {
-          if (event.key === 'Enter' || event.key === ' ') {
-            event.preventDefault();
-            navMenu.classList.add('show');
-          }
-        });
-      }
-
-      if (navClose) {
-        navClose.addEventListener('click', closeMenu);
-        navClose.addEventListener('keydown', function(event) {
-          if (event.key === 'Enter' || event.key === ' ') {
-            event.preventDefault();
-            closeMenu();
-          }
-        });
-      }
-
-      document.querySelectorAll('.nav-link').forEach(function(link) {
-        link.addEventListener('click', closeMenu);
-      });
-    })();
+    ]
+  }
   </script>
-  <script src="revamp.js" defer></script>
+</section>
+
+<!-- ================= CONTACT ================= -->
+<section class="sec" id="contact" style="padding-top:20px;padding-bottom:0">
+  <div class="wrap contact">
+    <div class="c-left stage rv">
+      <div class="kicker"><span class="idx">07</span>Start a project</div>
+      <h2 class="display">Got an idea for <span class="soft">a product?</span></h2>
+      <p>A few lines is plenty: what it does and who it's for. We'll reply within one business day with honest advice and a clear next step.</p>
+      <ol class="next">
+        <li><b>1</b>We reply within one business day</li>
+        <li><b>2</b>A free 15-minute call to scope it</li>
+        <li><b>3</b>A fixed quote and plan within 48 hours</li>
+      </ol>
+      <div class="c-items">
+        <a class="c-item" href="mailto:support@qoreonlabs.com"><span class="ic"><svg width="16" height="16" viewBox="0 0 24 24"><path d="M3 6h18v12H3zM3 7l9 6 9-6" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg></span><div><small>Email</small><b>support@qoreonlabs.com</b></div></a>
+        <a class="c-item" href="tel:+447883302109"><span class="ic"><svg width="16" height="16" viewBox="0 0 24 24"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg></span><div><small>Phone</small><b>+44 7883 302 109</b></div></a>
+        <div class="c-item"><span class="ic"><svg width="16" height="16" viewBox="0 0 24 24"><path d="M12 22s7-6.2 7-12a7 7 0 1 0-14 0c0 5.8 7 12 7 12z" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="12" cy="10" r="2.5" fill="none" stroke="currentColor" stroke-width="2"/></svg></span><div><small>Registered office</small><b>71-75 Shelton Street, London WC2H 9JQ</b></div></div>
+      </div>
+    </div>
+
+    <div class="c-form rv d1">
+      <h3>Project enquiry</h3>
+      <p>Prefer a detailed brief? Use our <a href="quoteform.html" style="color:var(--ink);font-weight:600;border-bottom:1.5px solid var(--lime)">quote form</a>.</p>
+      <form id="contactForm" action="https://formspree.io/f/moverwoe" method="POST">
+        <input type="hidden" name="_subject" value="New project enquiry (PolyMonit case study)" />
+        <div class="fgrid">
+          <div class="fld"><label for="c-name">Name</label><input id="c-name" name="name" type="text" placeholder="Your name" autocomplete="name" required></div>
+          <div class="fld"><label for="c-email">Email</label><input id="c-email" name="_replyto" type="email" placeholder="you@company.com" autocomplete="email" required></div>
+          <div class="fld full"><label for="c-site">Company or website <span style="color:var(--mute);font-weight:500">(optional)</span></label><input id="c-site" name="company" type="text" placeholder="yourcompany.com"></div>
+          <div class="fld full"><span class="lbl" id="c-needs">What do you need?</span>
+            <div class="opts" role="group" aria-labelledby="c-needs">
+              <label><input type="checkbox" name="needs[]" value="Website"><span>Website</span></label>
+              <label><input type="checkbox" name="needs[]" value="Dashboard or internal tool"><span>Dashboard / internal tool</span></label>
+              <label><input type="checkbox" name="needs[]" value="Web app or portal" checked><span>Web app / portal</span></label>
+              <label><input type="checkbox" name="needs[]" value="iOS app or MVP"><span>iOS app / MVP</span></label>
+              <label><input type="checkbox" name="needs[]" value="AI automation"><span>AI automation</span></label>
+              <label><input type="checkbox" name="needs[]" value="Not sure yet"><span>Not sure yet</span></label>
+            </div>
+          </div>
+          <div class="fld full"><label for="c-budget">Rough budget <span style="color:var(--mute);font-weight:500">(optional)</span></label>
+            <select id="c-budget" name="budget"><option value="">Choose a range</option><option>Under £1,000</option><option>£1,000 to £3,000</option><option>£3,000 to £8,000</option><option>£8,000+</option><option>Not sure yet</option></select></div>
+          <div class="fld full"><label for="c-msg">Message</label><textarea id="c-msg" name="message" placeholder="What would your product do, and who is it for?" required></textarea></div>
+        </div>
+        <div class="f-foot">
+          <small>We reply within one business day. No spam, ever.</small>
+          <button class="btn btn-ink" type="submit">Send message <span class="arr"><svg width="12" height="12" viewBox="0 0 12 12"><path d="M2 6h8M6.5 2.5 10 6l-3.5 3.5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></span></button>
+        </div>
+      </form>
+    </div>
+  </div>
+</section>
+</main>
+
+<!-- ================= FOOTER ================= -->
+<footer class="foot">
+  <div class="wrap">
+    <div class="foot-cta">
+      <h2 class="display">Let's build something <span class="hl">useful.</span></h2>
+      <div class="ctas" style="margin-top:0">
+        <a class="btn btn-lime" href="#contact">Start a project <span class="arr"><svg width="12" height="12" viewBox="0 0 12 12"><path d="M2 6h8M6.5 2.5 10 6l-3.5 3.5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></span></a>
+        <a class="btn" style="background:#17181a;color:#fff;box-shadow:0 0 0 1px #2a2b2e inset" href="index.html#audit">Free site audit</a>
+      </div>
+    </div>
+    <div class="foot-grid">
+      <div>
+        <a class="logo" href="index.html" aria-label="Qoreon Labs home"><img src="assets/img/qoreon-logo-light.svg" alt="Qoreon Labs" width="175" height="52" loading="lazy" /></a>
+        <p class="about">A UK product studio building websites, dashboards, web apps, iOS apps and AI automations for growing businesses.</p>
+        <div class="foot-soc">
+          <a href="https://www.linkedin.com/company/qoreon-labs-ltd/" target="_blank" rel="noopener" aria-label="Qoreon Labs on LinkedIn"><svg width="15" height="15" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9h4v11H4zM6 3.5a2 2 0 1 1 0 4 2 2 0 0 1 0-4zM10 9h3.8v1.6c.6-1 1.9-1.9 3.8-1.9 3.6 0 4.4 2.3 4.4 5.4V20h-4v-5.2c0-1.3 0-2.9-1.8-2.9s-2.1 1.4-2.1 2.8V20H10z" fill="currentColor"/></svg></a>
+          <a href="https://x.com/QoreonLab" target="_blank" rel="noopener" aria-label="Qoreon Labs on X"><svg width="13" height="13" viewBox="0 0 24 24" aria-hidden="true"><path d="M18.24 2.25h3.31l-7.23 8.26 8.5 11.24h-6.65l-5.21-6.82-5.97 6.82H1.68l7.73-8.84L1.25 2.25h6.83l4.71 6.23zm-1.16 17.52h1.83L7.08 4.13H5.12z" fill="currentColor"/></svg></a>
+          <a href="https://www.facebook.com/QOREONLABS" target="_blank" rel="noopener" aria-label="Qoreon Labs on Facebook"><svg width="15" height="15" viewBox="0 0 24 24" aria-hidden="true"><path d="M14 8.5V6.6c0-.8.2-1.3 1.4-1.3H17V2.2c-.3 0-1.3-.2-2.5-.2C12 2 10.5 3.5 10.5 6.2v2.3H8v3.3h2.5V22H14V11.8h2.8l.4-3.3z" fill="currentColor"/></svg></a>
+          <a href="https://www.fiverr.com/talha_19" target="_blank" rel="noopener" aria-label="Qoreon Labs on Fiverr"><svg width="15" height="15" viewBox="0 0 24 24" aria-hidden="true"><path d="M9 19V9.6C9 7.6 10 6.5 12 6.5h1.3M6.5 11.2H12M16 11.2V19" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round"/><circle cx="16" cy="7.4" r="1.6" fill="currentColor"/></svg></a>
+        </div>
+      </div>
+      <div>
+        <h3>Studio</h3>
+        <ul><li><a href="about-us.html">About</a></li><li><a href="index.html#work">Work</a></li><li><a href="polymonit-wallet-tracker.html">PolyMonit</a></li><li><a href="blogs.html">Blog</a></li><li><a href="quoteform.html">Get a quote</a></li><li><a href="#contact">Contact</a></li></ul>
+      </div>
+      <div>
+        <h3>Services</h3>
+        <ul><li><a href="services.html#web-development">Web development</a></li><li><a href="business-dashboard-development.html">Dashboards</a></li><li><a href="internal-tools-development.html">Internal tools</a></li><li><a href="business-web-app-development.html">Business web apps</a></li><li><a href="customer-portal-development.html">Customer portals</a></li><li><a href="custom-software-development.html">Custom software</a></li></ul>
+      </div>
+      <div>
+        <h3>Products &amp; AI</h3>
+        <ul><li><a href="mvp-development.html">MVP development</a></li><li><a href="saas-development.html">SaaS development</a></li><li><a href="ai-development.html">AI development</a></li><li><a href="ai-automation.html">AI automation</a></li><li><a href="workflow-automation.html">Workflow automation</a></li><li><a href="index.html#security">AI security (RedShield)</a></li></ul>
+      </div>
+    </div>
+    <div class="foot-bot">
+      <span>© <span id="year">2026</span> Qoreon Labs Ltd. Registered in England &amp; Wales, company no. 16359714.</span>
+      <nav aria-label="Legal"><a href="privacy.html">Privacy</a><a href="terms.html">Terms</a><a href="cookies.html">Cookies</a></nav>
+    </div>
+  </div>
+  <div class="foot-word" aria-hidden="true">Qoreon Labs</div>
+</footer>
+
+<script src="assets/js/studio.js"></script>
 </body>
 </html>

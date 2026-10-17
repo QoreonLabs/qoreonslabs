@@ -1,0 +1,712 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-KPXN9398W1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-KPXN9398W1');
+  </script>
+
+  <!-- Primary meta -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SaaS Development UK | Build &amp; Launch Your SaaS Product | Qoreon Labs</title>
+  <meta name="description" content="We build SaaS products end to end: sign-up, teams, Stripe subscriptions, admin tools and the product itself. We run our own SaaS too. UK studio, fixed quotes." />
+  <meta name="author" content="Qoreon Labs Ltd" />
+  <meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1" />
+  <meta name="theme-color" content="#efefea" />
+  <link rel="canonical" href="https://qoreonlabs.com/saas-development.html" />
+  <link rel="icon" href="assets/img/favicon.ico" sizes="any" />
+  <link rel="icon" type="image/svg+xml" href="assets/img/favicon.svg" />
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon-32.png" />
+  <link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png" />
+
+  <!-- Open Graph / Social -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://qoreonlabs.com/saas-development.html" />
+  <meta property="og:title" content="SaaS development | Qoreon Labs" />
+  <meta property="og:description" content="SaaS products with accounts, billing and room to grow, from a studio that runs its own SaaS. Fixed quotes, weekly previews." />
+  <meta property="og:image" content="https://qoreonlabs.com/assets/img/og-qoreon.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:alt" content="Qoreon Labs, a UK AI development company and product studio" />
+  <meta property="og:site_name" content="Qoreon Labs" />
+  <meta property="og:locale" content="en_GB" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:site" content="@QoreonLab" />
+  <meta name="twitter:title" content="SaaS development | Qoreon Labs" />
+  <meta name="twitter:description" content="SaaS products with accounts, billing and room to grow, from a studio that runs its own SaaS. Fixed quotes, weekly previews." />
+  <meta name="twitter:image" content="https://qoreonlabs.com/assets/img/og-qoreon.png" />
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "name": "SaaS development",
+    "serviceType": "SaaS development",
+    "url": "https://qoreonlabs.com/saas-development.html",
+    "description": "End-to-end SaaS product development: accounts and teams, Stripe subscriptions, onboarding, admin tools, usage limits and analytics.",
+    "areaServed": [
+      "GB",
+      "US",
+      "AU"
+    ],
+    "provider": {
+      "@type": "Organization",
+      "name": "Qoreon Labs Ltd",
+      "url": "https://qoreonlabs.com",
+      "logo": "https://qoreonlabs.com/assets/img/apple-touch-icon.png",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "71-75 Shelton Street, Covent Garden",
+        "addressLocality": "London",
+        "postalCode": "WC2H 9JQ",
+        "addressCountry": "GB"
+      }
+    }
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://qoreonlabs.com/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Services",
+        "item": "https://qoreonlabs.com/services.html"
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "name": "SaaS development",
+        "item": "https://qoreonlabs.com/saas-development.html"
+      }
+    ]
+  }
+  </script>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Inter+Tight:wght@500;600;700&family=Lora:ital,wght@1,500&display=swap" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Inter+Tight:wght@500;600;700&family=Lora:ital,wght@1,500&display=swap" media="print" onload="this.media='all'" />
+  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Inter+Tight:wght@500;600;700&family=Lora:ital,wght@1,500&display=swap" /></noscript>
+
+  <link rel="stylesheet" href="assets/css/studio.css" />
+</head>
+<body class="no-js">
+<script>document.body.classList.remove('no-js')</script>
+
+<!-- ================= HEADER ================= -->
+<header class="hdr" id="header">
+  <div class="hdr-in">
+    <a class="logo" href="index.html" aria-label="Qoreon Labs home"><img src="assets/img/qoreon-logo.svg" alt="Qoreon Labs" width="134" height="40" /></a>
+
+    <nav class="nav" id="primary-nav" aria-label="Primary">
+      <a href="index.html">Home</a>
+      <a href="about-us.html">About</a>
+      <div class="dd" id="dd-services">
+        <button class="dd-t on" type="button" aria-expanded="false" aria-controls="mega">Services
+          <svg width="11" height="8" viewBox="0 0 12 8" aria-hidden="true"><path d="m1 1 5 5 5-5" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></svg>
+        </button>
+        <div class="mega" id="mega">
+          <div class="mg">
+            <div class="mg-l">Websites &amp; core</div>
+            <a href="services.html#web-development"><b>Web Development <svg width="10" height="10" viewBox="0 0 10 10"><path d="M2 8 8 2M3.5 2H8v4.5" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></b><span>New sites and redesigns</span></a>
+            <a href="services.html#app-development"><b>App Development <svg width="10" height="10" viewBox="0 0 10 10"><path d="M2 8 8 2M3.5 2H8v4.5" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></b><span>iOS and cross-platform apps</span></a>
+            <a href="services.html#software-development"><b>Software Development <svg width="10" height="10" viewBox="0 0 10 10"><path d="M2 8 8 2M3.5 2H8v4.5" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></b><span>Back ends, APIs, integrations</span></a>
+            <a href="custom-software-development.html"><b>Custom Software <svg width="10" height="10" viewBox="0 0 10 10"><path d="M2 8 8 2M3.5 2H8v4.5" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></b><span>Built around how you work</span></a>
+          </div>
+          <div class="mg">
+            <div class="mg-l">Business systems</div>
+            <a href="business-dashboard-development.html"><b>Business Dashboards <svg width="10" height="10" viewBox="0 0 10 10"><path d="M2 8 8 2M3.5 2H8v4.5" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></b><span>Your numbers on one screen</span></a>
+            <a href="internal-tools-development.html"><b>Internal Tools <svg width="10" height="10" viewBox="0 0 10 10"><path d="M2 8 8 2M3.5 2H8v4.5" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></b><span>Replace the spreadsheets</span></a>
+            <a href="business-web-app-development.html"><b>Business Web Apps <svg width="10" height="10" viewBox="0 0 10 10"><path d="M2 8 8 2M3.5 2H8v4.5" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></b><span>Booking, ordering, ops</span></a>
+            <a href="customer-portal-development.html"><b>Customer Portals <svg width="10" height="10" viewBox="0 0 10 10"><path d="M2 8 8 2M3.5 2H8v4.5" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></b><span>Self-serve for your clients</span></a>
+          </div>
+          <div class="mg">
+            <div class="mg-l">Products &amp; automation</div>
+            <a href="ai-automation.html"><b>AI Automation <svg width="10" height="10" viewBox="0 0 10 10"><path d="M2 8 8 2M3.5 2H8v4.5" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></b><span>Leads, replies, follow-ups</span></a>
+            <a href="workflow-automation.html"><b>Workflow Automation <svg width="10" height="10" viewBox="0 0 10 10"><path d="M2 8 8 2M3.5 2H8v4.5" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></b><span>Connect the tools you use</span></a>
+            <a href="ai-development.html"><b>AI Development <svg width="10" height="10" viewBox="0 0 10 10"><path d="M2 8 8 2M3.5 2H8v4.5" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></b><span>Chat, search, AI features</span></a>
+            <a href="mvp-development.html"><b>MVP Development <svg width="10" height="10" viewBox="0 0 10 10"><path d="M2 8 8 2M3.5 2H8v4.5" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></b><span>From idea to first users</span></a>
+            <a href="saas-development.html" aria-current="page"><b>SaaS Development <svg width="10" height="10" viewBox="0 0 10 10"><path d="M2 8 8 2M3.5 2H8v4.5" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></b><span>Subscriptions, accounts, billing</span></a>
+          </div>
+          <a class="mg-promo" href="index.html#audit">
+            <div class="score">46<small>/100</small></div>
+            <b>Free site audit</b>
+            <p>See what's costing you enquiries, in plain English.</p>
+            <span class="go">Get yours <svg width="12" height="12" viewBox="0 0 12 12"><path d="M2 6h8M6.5 2.5 10 6l-3.5 3.5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+          </a>
+        </div>
+      </div>
+      <a href="index.html#work">Work</a>
+      <a href="index.html#process">Process</a>
+      <a href="#contact">Contact</a>
+      <a class="btn btn-ink btn-sm m-cta" href="index.html#audit" style="display:none">Free site audit <span class="arr"><svg width="11" height="11" viewBox="0 0 12 12"><path d="M2 6h8M6.5 2.5 10 6l-3.5 3.5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></span></a>
+    </nav>
+
+    <div class="hdr-cta">
+      <a class="q" href="quoteform.html">Get a quote</a>
+      <a class="btn btn-ink btn-sm" href="index.html#audit">Free site audit <span class="arr"><svg width="11" height="11" viewBox="0 0 12 12"><path d="M2 6h8M6.5 2.5 10 6l-3.5 3.5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></span></a>
+    </div>
+    <button class="burger" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="primary-nav">
+      <svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 8h16M4 16h16" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+    </button>
+  </div>
+</header>
+
+<main id="top">
+
+<!-- ================= HERO ================= -->
+<section class="hero">
+  <div class="wrap hero-top">
+    <div class="ht-l">
+      <div class="kicker rv"><a class="idx" href="services.html">Services</a>SaaS development</div>
+      <h1 class="display rv d1">SaaS products with accounts, billing <span class="soft ser">and</span> room <span class="hl">to grow.</span></h1>
+    </div>
+    <div class="ht-r">
+      <p class="lede rv d2">We design and build software-as-a-service products from first sketch to paying customers: <b>sign-up, teams, subscriptions, admin tools and the product itself</b>. We run our own SaaS, so we know what it takes to keep one running.</p>
+      <div class="ctas rv d3">
+        <a class="btn btn-ink" href="#contact">Book a free call <span class="arr"><svg width="12" height="12" viewBox="0 0 12 12"><path d="M2 6h8M6.5 2.5 10 6l-3.5 3.5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></span></a>
+        <a class="btn btn-ghost" href="#work">See our SaaS</a>
+      </div>
+      <div class="trust rv d4">
+        <div class="trust-i"><div>
+          <div class="stars" role="img" aria-label="5 out of 5 stars"><svg width="13" height="13" viewBox="0 0 20 20"><path d="M10 1.5l2.6 5.6 6.1.7-4.5 4.2 1.2 6L10 15l-5.4 3 1.2-6L1.3 7.8l6.1-.7z" fill="currentColor"/></svg><svg width="13" height="13" viewBox="0 0 20 20"><path d="M10 1.5l2.6 5.6 6.1.7-4.5 4.2 1.2 6L10 15l-5.4 3 1.2-6L1.3 7.8l6.1-.7z" fill="currentColor"/></svg><svg width="13" height="13" viewBox="0 0 20 20"><path d="M10 1.5l2.6 5.6 6.1.7-4.5 4.2 1.2 6L10 15l-5.4 3 1.2-6L1.3 7.8l6.1-.7z" fill="currentColor"/></svg><svg width="13" height="13" viewBox="0 0 20 20"><path d="M10 1.5l2.6 5.6 6.1.7-4.5 4.2 1.2 6L10 15l-5.4 3 1.2-6L1.3 7.8l6.1-.7z" fill="currentColor"/></svg><svg width="13" height="13" viewBox="0 0 20 20"><path d="M10 1.5l2.6 5.6 6.1.7-4.5 4.2 1.2 6L10 15l-5.4 3 1.2-6L1.3 7.8l6.1-.7z" fill="currentColor"/></svg></div>
+          <span><b style="display:inline">5.0</b> from 69 reviews</span></div></div>
+        <span class="trust-sep"></span>
+        <div class="trust-i"><div><b>100+</b>orders delivered</div></div>
+        <span class="trust-sep"></span>
+        <div class="trust-i"><div><b>UK Ltd</b>registered in London</div></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Hero visual: the customer path, pricing page to checkout to billing (Northstar for Teams sample build) -->
+  <div class="hv rv d2" aria-hidden="true">
+    <div class="fit hvf ss-fit"><div class="fit-in">
+
+      <span class="ss-n n1 hv-pill" style="left:16px;top:44px"><b>1</b>Pricing page</span>
+      <span class="ss-n n2 hv-pill" style="left:460px;top:2px"><b>2</b>Sign up and pay</span>
+      <span class="ss-n n3 hv-pill" style="left:902px;top:56px"><b>3</b>Billing, inside the app</span>
+
+      <div class="ss-w ss-1"><div class="ss-c"><i></i><i></i><i></i><span>northstar.so/pricing</span></div><div class="ss-in">
+        <div class="ss-nav"><span class="lg-t">N</span><b>Northstar</b><span>Product</span><span>Pricing</span><span>Sign in</span><span>Try free</span></div>
+        <div class="ss-h">Plans that grow<br>with your team</div>
+        <div class="ss-tg"><span class="on">Monthly</span><span>Yearly <em>save 20%</em></span></div>
+        <div class="ss-plans">
+          <div class="ss-pl"><b>Starter</b><span class="p">£0<small> / month</small></span>Up to 3 people<br>Personal goals<span class="bt">Start free</span></div>
+          <div class="ss-pl on"><span class="tag">Popular</span><b>Team</b><span class="p">£8<small> / seat</small></span>Shared goals<br>Weekly insights<span class="bt">Start trial</span></div>
+          <div class="ss-pl"><b>Business</b><span class="p">£14<small> / seat</small></span>SSO, admin roles<br>AI coaching<span class="bt">Talk to us</span></div>
+        </div>
+      </div></div>
+
+      <div class="ss-w ss-2"><div class="ss-c"><i></i><i></i><i></i><span>app.northstar.so/checkout</span></div><div class="ss-in ss-ck">
+        <h4>Start your Team plan</h4><p>14 days free, then billed monthly. Cancel any time.</p>
+        <div class="ss-f"><label>Seats</label><div class="ss-stp"><span>&minus;</span><span>18</span><span>+</span></div></div>
+        <div class="ss-f"><label>Card</label><div class="on"><b style="font:700 12px var(--f-sans);color:#1a1f71">VISA</b>&bull;&bull;&bull;&bull; 4242<em>08/28</em></div></div>
+        <div class="ss-f"><label>VAT number</label><div>GB 123 4567 89<em>Verified</em></div></div>
+        <div class="ss-sum"><div><span>18 seats x £8</span><span>£144.00</span></div><div><span>VAT 20%</span><span>£28.80</span></div><div class="t"><span>From 15 Oct</span><span>£172.80 / month</span></div></div>
+        <div class="ss-go">Start free trial <i><svg width="11" height="11" viewBox="0 0 12 12"><path d="M2 6h8M6.5 2.5 10 6l-3.5 3.5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></i></div>
+      </div></div>
+
+      <div class="ss-w ss-3"><div class="ss-c"><i></i><i></i><i></i><span>app.northstar.so/settings/billing</span></div><div class="ss-in ss-bl">
+        <div class="top"><span>Settings</span>/<b>Plan and billing</b><span class="ap-btn sm k">Upgrade</span></div>
+        <div class="ss-cur"><div><b>Team plan</b><small>Lumen Studio · renews 1 Oct</small></div><div class="p">£8<small> / seat</small></div></div>
+        <div class="ss-us"><div class="r"><span>Seats</span><b>18 of 25</b></div><div class="br"><i style="width:72%"></i></div></div>
+        <div class="ss-us"><div class="r"><span>AI coaching credits</span><b>7,420 of 10,000</b></div><div class="br"><i class="l" style="width:74%"></i></div></div>
+        <div class="ss-inv">
+          <div><b>NS-00184</b>1 Sep · 18 seats<span class="ap-st g">Paid</span><b>£172.80</b></div>
+          <div><b>NS-00161</b>1 Aug · 16 seats<span class="ap-st g">Paid</span><b>£153.60</b></div>
+          <div><b>NS-00139</b>1 Jul · 12 seats<span class="ap-st g">Paid</span><b>£115.20</b></div>
+        </div>
+      </div></div>
+
+      <div class="ss-ev pop p1"><b>Stripe events, handled</b><span><i></i>Payment succeeded</span><span><i></i>Invoice emailed to finance</span><span><i></i>Seats synced</span><span><i></i>Usage reset</span></div>
+    </div></div>
+    <div class="hv-cap"><span>Sample build · Northstar for Teams, sign-up to billing</span><span>Accounts · Subscriptions · Usage</span></div>
+  </div>
+
+  <div class="marq" aria-label="Built with">
+    <div class="marq-in">
+      <div class="marq-l">Built with</div>
+      <div class="marq-v">
+        <div class="marq-t">
+          <span>Next.js</span><span>React</span><span>Node.js</span><span>Python</span><span>PostgreSQL</span><span>Supabase</span><span>Stripe Billing</span><span>Clerk</span><span>Resend</span><span>Vercel</span><span>AWS</span><span>PostHog</span>
+          <span aria-hidden="true">Next.js</span><span aria-hidden="true">React</span><span aria-hidden="true">Node.js</span><span aria-hidden="true">Python</span><span aria-hidden="true">PostgreSQL</span><span aria-hidden="true">Supabase</span><span aria-hidden="true">Stripe Billing</span><span aria-hidden="true">Clerk</span><span aria-hidden="true">Resend</span><span aria-hidden="true">Vercel</span><span aria-hidden="true">AWS</span><span aria-hidden="true">PostHog</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= PROBLEMS ================= -->
+<section class="sec" id="problems">
+  <div class="wrap">
+    <div class="sec-head">
+      <div>
+        <div class="kicker rv"><span class="idx">01</span>Sound familiar?</div>
+        <h2 class="display rv d1">Great idea. <span class="hl">Hard parts</span> still to build.</h2>
+      </div>
+      <p class="rv d2">The product is the fun bit. Accounts, billing, permissions and admin tools are what turn it into a business, and they're where most SaaS projects stall.</p>
+    </div>
+
+    <div class="prob-grid">
+      <article class="prob rv">
+        <div class="fit" style="--w:300;--h:230" aria-hidden="true"><div class="fit-in real">
+          <div class="pad"><div class="note"><span class="ic"><svg class="" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#3d3d42" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="6" width="18" height="12" rx="2"/><path d="M3 10h18"/></svg></span><div><b>Invoice sent by hand</b>From a Google Doc</div><span class="ago">monthly</span></div><div class="note"><span class="ic"><svg class="" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#3d3d42" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 6 6 18M6 6l12 12"/></svg></span><div><b>Card payment failed</b>Nobody noticed for 3 weeks</div><span class="ct">!</span></div><div class="note"><span class="ic"><svg class="" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#3d3d42" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 20v-1a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v1"/><circle cx="9" cy="7" r="4"/><path d="M22 20v-1a4 4 0 0 0-3-3.9M16 3.1a4 4 0 0 1 0 7.8"/></svg></span><div><b>Seat count wrong</b>Paying for 12, using 19</div><span class="ago">?</span></div></div>
+        </div></div>
+        <span class="n">Problem 01</span>
+        <h3>Billing held together by hand</h3>
+        <p>Without proper subscription billing, invoices, failed payments and seat changes all need someone to chase them.</p>
+      </article>
+      <article class="prob rv d1">
+        <div class="fit" style="--w:300;--h:230" aria-hidden="true"><div class="fit-in real">
+          <div class="pad" style="inset:20px 18px"><div class="bub me">Can the app handle whole teams?</div><div class="bub th">Not really, it was built for one user</div><div class="bub th">Logins get slow past 200 people</div><div class="bub me">We have 3 big teams waiting...</div></div>
+        </div></div>
+        <span class="n">Problem 02</span>
+        <h3>Built for one user, sold to teams</h3>
+        <p>Prototypes rarely plan for organisations, roles and permissions, and retrofitting them is slow and risky.</p>
+      </article>
+      <article class="prob rv d2">
+        <div class="fit" style="--w:300;--h:230" aria-hidden="true"><div class="fit-in real">
+          <div class="mini-win sheet">
+            <div class="sbar"><i></i>New_customer_setup.xlsx<span>Done by hand</span></div>
+            <table><tr><td class="rn">1</td><td><b>Customer</b></td><td><b>Seats</b></td><td><b>Set up?</b></td></tr><tr><td class="rn">2</td><td>Lumen Studio</td><td>18</td><td class="yel">half</td></tr><tr><td class="rn">3</td><td>Kite & Co</td><td class="dup">6</td><td class="dup">6</td></tr><tr><td class="rn">4</td><td>Acorn Labs</td><td class="err">?</td><td>waiting</td></tr><tr><td class="rn">5</td><td>Fable Ltd</td><td>12</td><td></td></tr><tr><td class="rn">6</td><td>Trials</td><td class="err">#REF!</td><td></td></tr></table>
+          </div>
+        </div></div>
+        <span class="n">Problem 03</span>
+        <h3>Every new customer is manual work</h3>
+        <p>Accounts, plans and trial extensions get set up by hand, so growth means more admin, not more profit.</p>
+      </article>
+      <article class="prob rv d3">
+        <div class="fit" style="--w:300;--h:230" aria-hidden="true"><div class="fit-in real">
+          <div class="pad"><div class="note"><span class="ic"><svg class="" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#3d3d42" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3v18h18"/><path d="m7 15 4-4 3 3 5-6"/></svg></span><div><b>Which plan sells best?</b>No data, just a guess</div><span class="ago">?</span></div><div class="note"><span class="ic"><svg class="" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#3d3d42" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></span><div><b>Why did Acorn cancel?</b>Found out from an email</div><span class="ago">late</span></div><div class="note"><span class="ic"><svg class="" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#3d3d42" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20s-7-4.5-7-10a4 4 0 0 1 7-2.6A4 4 0 0 1 19 10c0 5.5-7 10-7 10z"/></svg></span><div><b>Trial to paid rate</b>Somewhere in Stripe</div><span class="ago">?</span></div></div>
+        </div></div>
+        <span class="n">Problem 04</span>
+        <h3>You can't see what's working</h3>
+        <p>Signups, conversion and churn live in five different tools, so decisions get made on gut feel.</p>
+      </article>
+    </div>
+
+    <div class="prob-foot rv">
+      <p>We build the hard parts properly from day one. <span>First paying users in 6 to 12 weeks.</span></p>
+      <a class="btn btn-lime btn-sm" href="#build">See what we build <span class="arr"><svg width="11" height="11" viewBox="0 0 12 12"><path d="M2 6h8M6.5 2.5 10 6l-3.5 3.5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></span></a>
+    </div>
+  </div>
+</section>
+
+<!-- ================= WHAT WE BUILD ================= -->
+<section class="sec" id="build" style="padding-top:20px">
+  <div class="wrap">
+    <div class="sec-head">
+      <div>
+        <div class="kicker rv"><span class="idx">02</span>What we build</div>
+        <h2 class="display rv d1">The whole product, <span class="soft ser">not</span> just the <span class="hl">demo.</span></h2>
+      </div>
+      <p class="rv d2">Everything a subscription business needs underneath the product, built properly once so you never have to rebuild it.</p>
+    </div>
+
+    <div class="cards-3">
+      <article class="pstep rv">
+        <div class="fit" style="--w:400;--h:250" aria-hidden="true"><div class="fit-in real">
+          <div class="pad"><div class="ap-card ap-orders" style="margin-top:0;background:#fff"><div class="ap-ch"><div><b>Members</b><small>Lumen Studio · 18</small></div><span class="ap-btn k sm" style="margin-left:auto">Invite</span></div><table><tr><th>Name</th><th>Role</th><th>Last active</th></tr><tr><td><b>Ana Costa</b></td><td><span class="ap-st g">Owner</span></td><td>Now</td></tr><tr><td><b>Ben Okoro</b></td><td><span class="ap-st y">Admin</span></td><td>2h ago</td></tr><tr><td><b>Chloe Park</b></td><td><span class="ap-st n">Member</span></td><td>Yesterday</td></tr></table></div></div>
+        </div></div>
+        <div class="top"><b>ACCOUNTS</b><span>Teams · Roles</span></div>
+        <h3>Sign-up, teams and roles</h3>
+        <p>Sign-up, login, password-free email links, workspaces, invites and roles, with each customer's data kept separate.</p>
+      </article>
+      <article class="pstep rv d1">
+        <div class="fit" style="--w:400;--h:250" aria-hidden="true"><div class="fit-in real">
+          <div class="pad" style="inset:18px 14px"><div class="plans"><div class="plan"><b>Starter</b><div class="pr">£0<small></small></div><ul><li>3 people</li></ul></div><div class="plan on"><span class="tag">Popular</span><b>Team</b><div class="pr">£8<small> /seat</small></div><ul><li>Insights</li></ul></div><div class="plan"><b>Business</b><div class="pr">£14<small> /seat</small></div><ul><li>SSO</li></ul></div></div></div>
+        </div></div>
+        <div class="top"><b>BILLING</b><span>Stripe</span></div>
+        <h3>Subscriptions and billing</h3>
+        <p>Plans, trials, seats, coupons, VAT and failed-payment emails, all handled by Stripe Billing and wired into your app.</p>
+      </article>
+      <article class="pstep rv d2">
+        <div class="fit" style="--w:400;--h:250" aria-hidden="true"><div class="fit-in real">
+          <div class="pad"><div class="ap-a"><p><b style="color:var(--ink)">Get started</b> · 3 of 5 done</p><div class="ap-ri"><span class="pl g">Done</span><span class="nm">Create your workspace</span><span class="q"></span></div><div class="ap-ri"><span class="pl g">Done</span><span class="nm">Invite your team</span><span class="q">6 joined</span></div><div class="ap-ri"><span class="pl g">Done</span><span class="nm">Set your first goal</span><span class="q"></span></div><div class="ap-ri"><span class="pl y">Next</span><span class="nm">Connect your calendar</span><span class="q">1 min</span></div><div class="ap-ri"><span class="pl n">Later</span><span class="nm">Turn on weekly insights</span><span class="q"></span></div></div></div>
+        </div></div>
+        <div class="top"><b>ONBOARDING</b><span>First week</span></div>
+        <h3>Onboarding that converts</h3>
+        <p>A first-run experience that gets new users to the moment it clicks, with emails that nudge the ones who stall.</p>
+      </article>
+      <article class="pstep rv">
+        <div class="fit" style="--w:400;--h:250" aria-hidden="true"><div class="fit-in real">
+          <div class="pad"><div class="ap-card ap-orders" style="margin-top:0;background:#fff"><div class="ap-ch"><div><b>Customers</b><small>Admin</small></div></div><table><tr><th>Workspace</th><th>Plan</th><th class="r">MRR</th><th>Status</th></tr><tr><td><b>Lumen Studio</b></td><td>Team</td><td class="r">£172.80</td><td><span class="ap-st g">Active</span></td></tr><tr><td><b>Acorn Labs</b></td><td>Business</td><td class="r">£168.00</td><td><span class="ap-st y">Past due</span></td></tr><tr><td><b>Kite &amp; Co</b></td><td>Trial</td><td class="r">£0</td><td><span class="ap-st n">Day 9</span></td></tr></table></div></div>
+        </div></div>
+        <div class="top"><b>ADMIN</b><span>Your side</span></div>
+        <h3>Admin and support tools</h3>
+        <p>See every customer, their plan and usage, extend trials, issue refunds and log in as a user to help them.</p>
+      </article>
+      <article class="pstep rv d1">
+        <div class="fit" style="--w:400;--h:250" aria-hidden="true"><div class="fit-in real">
+          <div class="pad"><div class="ap-goals"><div class="h">Usage this month<span>Lumen Studio</span></div><div class="ap-goal"><div class="r"><span>Seats</span><b>18 of 25</b></div><div class="b"><i style="width:72%"></i></div></div><div class="ap-goal"><div class="r"><span>AI coaching credits</span><b>7,420 of 10,000</b></div><div class="b"><i class="l" style="width:74%"></i></div></div><div class="ap-goal"><div class="r"><span>Storage</span><b>3.2 of 10 GB</b></div><div class="b"><i style="width:32%"></i></div></div></div></div>
+        </div></div>
+        <div class="top"><b>LIMITS</b><span>Metered</span></div>
+        <h3>Usage limits and metering</h3>
+        <p>Seat counts, credits and usage-based pricing tracked accurately, with friendly warnings before anyone hits a limit.</p>
+      </article>
+      <article class="pstep rv d2">
+        <div class="fit" style="--w:400;--h:250" aria-hidden="true"><div class="fit-in real">
+          <div class="pad"><div class="ap-kpis c2"><div class="ap-kpi flat"><div class="l">MRR</div><div class="v">£8,420</div><div class="d"><span class="ch g">+11%</span> this month</div></div><div class="ap-kpi flat"><div class="l">Trials started</div><div class="v">64</div><div class="d">this month</div></div><div class="ap-kpi flat"><div class="l">Trial to paid</div><div class="v">23%</div><div class="d">last 90 days</div></div><div class="ap-kpi flat"><div class="l">Monthly churn</div><div class="v">2.1%</div><div class="d"><span class="ch g">was 3.4%</span></div></div></div></div>
+        </div></div>
+        <div class="top"><b>ANALYTICS</b><span>Live</span></div>
+        <h3>Metrics you can trust</h3>
+        <p>MRR, trials, conversion and churn in one place, built on the same data as your billing, so the numbers match.</p>
+      </article>
+    </div>
+
+    <div class="svc-all rv">
+      <span class="lbl">Related services</span>
+      <div class="chips">
+        <a class="chip" href="mvp-development.html">MVP development</a>
+        <a class="chip" href="ai-development.html">AI development</a>
+        <a class="chip" href="business-web-app-development.html">Business web apps</a>
+        <a class="chip" href="customer-portal-development.html">Customer portals</a>
+        <a class="chip" href="business-dashboard-development.html">Business dashboards</a>
+        <a class="chip" href="custom-software-development.html">Custom software</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= PROCESS ================= -->
+<section class="sec" id="process" style="padding-top:20px">
+  <div class="wrap">
+    <div class="sec-head">
+      <div>
+        <div class="kicker rv"><span class="idx">03</span>How it works</div>
+        <h2 class="display rv d1">No mystery. <span class="soft ser">Just</span> four clear <span class="hl">steps.</span></h2>
+      </div>
+      <p class="rv d2">You always know what's being built, what it costs and when it ships. That's the whole point.</p>
+    </div>
+    <div class="proc">
+      <article class="pstep rv">
+        <div class="fit" style="--w:300;--h:170" aria-hidden="true"><div class="fit-in">
+          <div class="cal">
+            <span><b>Mon</b><i></i><i style="width:60%"></i></span>
+            <span class="on"><b>Tue</b>10:30 call<i></i></span>
+            <span><b>Wed</b><i style="width:70%"></i></span>
+            <span><b>Thu</b><i></i><i style="width:50%"></i></span>
+            <span><b>Fri</b><i style="width:40%"></i></span>
+          </div>
+        </div></div>
+        <div class="top"><b>STEP 01</b><span>15 min</span></div>
+        <h3>A quick, free call</h3>
+        <p>Tell us what's not working. We ask a few questions and tell you honestly if we're the right fit.</p>
+      </article>
+      <article class="pstep rv d1">
+        <div class="fit" style="--w:300;--h:170" aria-hidden="true"><div class="fit-in">
+          <div class="qdoc">
+            <div class="h">Project plan<span>Fixed price</span></div>
+            <div class="ln">Product plan &amp; design<i></i>Weeks 1 to 2</div>
+            <div class="ln">Build core &amp; billing<i></i>Weeks 3 to 8</div>
+            <div class="ln">Beta &amp; launch<i></i>Weeks 9 to 10</div>
+            <div class="tot"><span>3 milestones</span><span>Agreed up front</span></div>
+          </div>
+        </div></div>
+        <div class="top"><b>STEP 02</b><span>48 hours</span></div>
+        <h3>A fixed quote and plan</h3>
+        <p>A clear scope, timeline and price, split into milestones. You only pay as each one is delivered.</p>
+      </article>
+      <article class="pstep rv d2">
+        <div class="fit" style="--w:300;--h:170" aria-hidden="true"><div class="fit-in">
+          <div class="prev">
+            <div class="bar"><i></i><i></i><i></i><span class="url">preview.qoreonlabs.com/northstar</span></div>
+            <div class="pv"><div><i class="k"></i><i></i><i class="s"></i></div><div class="im" style="background:linear-gradient(160deg,#dfe4ff,#a9b6f5)"></div></div>
+            <div class="cm"><i></i>Preview v3 · 2 comments</div>
+          </div>
+        </div></div>
+        <div class="top"><b>STEP 03</b><span>Weekly</span></div>
+        <h3>Build, with weekly previews</h3>
+        <p>A working link every week so you can click through, comment and steer. No big reveal at the end.</p>
+      </article>
+      <article class="pstep rv d3">
+        <div class="fit" style="--w:300;--h:170" aria-hidden="true"><div class="fit-in">
+          <div class="launch">
+            <div class="ln"><i></i>Stripe live mode<span>Done</span></div>
+            <div class="ln"><i></i>Beta users invited<span>Done</span></div>
+            <div class="ln live"><i></i>Live<span>app.northstar.so</span></div>
+          </div>
+        </div></div>
+        <div class="top"><b>STEP 04</b><span>Launch</span></div>
+        <h3>Launch, handover, support</h3>
+        <p>We launch it, show your team how it works and hand over everything. Ongoing support if you want it.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ================= RELATED WORK ================= -->
+<section class="sec" id="work" style="padding-top:20px">
+  <div class="wrap">
+    <div class="sec-head">
+      <div>
+        <div class="kicker rv"><span class="idx">04</span>Related work</div>
+        <h2 class="display rv d1">We run <span class="soft ser">our</span> own <span class="hl">SaaS.</span></h2>
+      </div>
+      <p class="rv d2">Building a SaaS is one thing. Keeping one running, billing and growing is another. We do both.</p>
+    </div>
+    <!-- Featured: Polymonit -->
+    <article class="work-feat rv">
+      <div class="wf-copy">
+        <span class="label"><i></i>Live product · Our own SaaS</span>
+        <h3>PolyMonit: a SaaS we built, launched and still run</h3>
+        <p>PolyMonit is our own subscription product. We designed it, built it and run it every day: the data pipeline, the web app, sign-up, subscriptions and support. It's how we know what a SaaS needs after launch day, not just before it.</p>
+        <ul class="facts">
+          <li><b>20+</b>countries with paying subscribers</li>
+          <li><b>Subscriptions</b>sign-up, plans and billing in production</li>
+          <li><b>Full stack</b>data pipeline, web app and alerts</li>
+        </ul>
+        <div class="row">
+          <a class="btn btn-ink btn-sm" href="polymonit-wallet-tracker.html">Read the case study <span class="arr"><svg width="11" height="11" viewBox="0 0 12 12"><path d="M2 6h8M6.5 2.5 10 6l-3.5 3.5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></span></a>
+        </div>
+      </div>
+      <div class="wf-vis stage">
+        <!-- TODO: optionally swap this mock for a real PolyMonit screenshot -->
+        <div class="fit ov" style="--w:620;--h:500" aria-hidden="true"><div class="fit-in real">
+          <div class="pm">
+            <div class="st-top" style="left:22px;right:22px;top:18px"><span><b>QL/02</b> &nbsp;·&nbsp; PolyMonit dashboard</span><span class="st-chips"><i><em></em>Live</i></span></div>
+            <div class="pm-app">
+              <div class="pm-top"><span class="pm-logo"><i></i>PolyMonit</span><span class="pm-tabs"><span class="on">Whales</span><span>Markets</span><span>Alerts</span></span><span class="pm-live"><i></i>Streaming</span></div>
+              <div class="pm-body">
+                <div class="pm-card">
+                  <div class="t">Top wallets<span>24h</span></div>
+                  <div class="pm-row h"><span>WALLET</span><span>PNL</span><span>WIN RATE</span><span></span></div>
+                  <div class="pm-row"><b><i style="background:linear-gradient(135deg,#d6ff3d,#6e8f00)"></i>0x8f3…a21c</b><span class="up">+$182k</span><span>68%</span><span class="tg">WHALE</span></div>
+                  <div class="pm-row"><b><i style="background:linear-gradient(135deg,#b9c7ff,#5a6fe0)"></i>0x41d…9e07</b><span class="up">+$96k</span><span>61%</span><span class="tg">WHALE</span></div>
+                  <div class="pm-row"><b><i style="background:linear-gradient(135deg,#ffd5b8,#d4785a)"></i>0xc02…77b4</b><span class="up">+$41k</span><span>57%</span><span></span></div>
+                  <div class="pm-row"><b><i style="background:linear-gradient(135deg,#5a5a60,#2b2b2e)"></i>0x9aa…0f13</b><span style="color:#ff7a7e">-$8k</span><span>44%</span><span></span></div>
+                </div>
+                <div style="display:grid;gap:10px">
+                  <div class="pm-card"><div class="t">Tracked volume<span>Today</span></div><div class="pm-big">$2.41M<em>+18%</em></div>
+                    <svg width="100%" height="56" viewBox="0 0 200 56" preserveAspectRatio="none" style="margin-top:6px"><path d="M0 48 C20 44,30 38,50 40 S80 26,100 30 S140 14,160 18 S190 8,200 6" fill="none" stroke="#d6ff3d" stroke-width="2"/><path d="M0 48 C20 44,30 38,50 40 S80 26,100 30 S140 14,160 18 S190 8,200 6 V56 H0Z" fill="rgba(214,255,61,.08)"/></svg>
+                  </div>
+                  <div class="pm-card"><div class="t">Alerts sent<span>This week</span></div><div class="pm-big">1,284</div></div>
+                </div>
+                <div class="pm-card" style="grid-column:1/-1">
+                  <div class="t">Live feed<span>Last 5 minutes</span></div>
+                  <div class="pm-row pm-feed"><span>14:02:11</span><b><i style="background:linear-gradient(135deg,#d6ff3d,#6e8f00)"></i>0x8f3…a21c</b><span>Bought YES</span><span class="up">$48.2k</span></div>
+                  <div class="pm-row pm-feed"><span>14:01:47</span><b><i style="background:linear-gradient(135deg,#b9c7ff,#5a6fe0)"></i>0x41d…9e07</b><span>Bought NO</span><span class="up">$12.9k</span></div>
+                  <div class="pm-row pm-feed"><span>14:00:58</span><b><i style="background:linear-gradient(135deg,#ffd5b8,#d4785a)"></i>0xc02…77b4</b><span>Sold YES</span><span style="color:#ff7a7e;font-weight:600">$6.4k</span></div>
+                  <div class="pm-row pm-feed"><span>13:59:20</span><b><i style="background:linear-gradient(135deg,#d6ff3d,#6e8f00)"></i>0x8f3…a21c</b><span>Bought YES</span><span class="up">$22.0k</span></div>
+                </div>
+              </div>
+            </div>
+            <div class="toast pop p3" style="left:300px;top:318px;width:290px">
+              <span class="ic"><svg width="13" height="13" viewBox="0 0 24 24"><path d="M12 3a6 6 0 0 0-6 6v4l-2 3h16l-2-3V9a6 6 0 0 0-6-6zM10 19a2 2 0 0 0 4 0" fill="none" stroke="#d6ff3d" stroke-width="2" stroke-linejoin="round"/></svg></span>
+              <div class="tx"><b>Whale alert <em>12s ago</em></b>0x8f3…a21c bought $48,200 of YES on a rates market.</div>
+            </div>
+          </div>
+        </div></div>
+      </div>
+    </article>
+
+  </div>
+</section>
+
+<!-- ================= FAQ ================= -->
+<section class="sec" id="faq" style="padding-top:20px">
+  <div class="wrap faq-wrap">
+    <div class="faq-side">
+      <div class="kicker rv"><span class="idx">05</span>Questions</div>
+      <h2 class="display rv d1" style="margin-top:22px">SaaS <span class="hl">questions.</span></h2>
+      <p class="lede rv d2">What founders usually ask before we start building a SaaS product.</p>
+      <div class="help rv d3"><span class="mark"><i></i></span><div><b>Still unsure?</b><span>Email <a href="mailto:support@qoreonlabs.com" style="color:var(--ink);font-weight:600">support@qoreonlabs.com</a></span></div></div>
+    </div>
+    <div class="faq-list">
+      <details class="rv" open>
+        <summary>Should we start with an MVP?<span class="pm" aria-hidden="true"></span></summary>
+        <div class="ans">Usually, yes. We help you pick the smallest version people will pay for, launch it, and then grow it. Because we build accounts and billing properly from the start, the MVP doesn't need to be thrown away later. See our <a href="mvp-development.html" style="color:var(--ink);font-weight:600">MVP development</a> page for more.</div>
+      </details>
+      <details class="rv">
+        <summary>Can you handle trials, coupons and VAT?<span class="pm" aria-hidden="true"></span></summary>
+        <div class="ans">Yes. We use Stripe Billing for plans, free trials, coupons, seat-based and usage-based pricing, UK VAT and failed-payment emails, and connect it all to your app so access updates automatically.</div>
+      </details>
+      <details class="rv">
+        <summary>How do you keep each customer's data separate?<span class="pm" aria-hidden="true"></span></summary>
+        <div class="ans">Every customer workspace is separated at the database level, with role-based access inside each one. We also add audit logs and admin tools so you can support customers without touching their data directly.</div>
+      </details>
+      <details class="rv">
+        <summary>How much does it cost to build a SaaS?<span class="pm" aria-hidden="true"></span></summary>
+        <div class="ans">Every project gets a fixed quote after a free 15-minute call. We usually split a SaaS build into milestones, so you can launch a first version, learn from real users and decide what to build next.</div>
+      </details>
+      <details class="rv">
+        <summary>How long does it take?<span class="pm" aria-hidden="true"></span></summary>
+        <div class="ans">A focused first version with accounts, billing and the core feature usually takes 6 to 12 weeks. You get a working preview every week, so you can show it to early users while we build.</div>
+      </details>
+      <details class="rv">
+        <summary>Who owns the code and the product?<span class="pm" aria-hidden="true"></span></summary>
+        <div class="ans">You do, fully. The code, the database, the Stripe account and the hosting all sit in accounts you own. We offer ongoing development and support if you want it, but there is no lock-in.</div>
+      </details>
+    </div>
+  </div>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Should we start with an MVP?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Usually, yes. We help you pick the smallest version people will pay for, launch it, and then grow it. Because we build accounts and billing properly from the start, the MVP doesn't need to be thrown away later. See our MVP development page for more."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Can you handle trials, coupons and VAT?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. We use Stripe Billing for plans, free trials, coupons, seat-based and usage-based pricing, UK VAT and failed-payment emails, and connect it all to your app so access updates automatically."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How do you keep each customer's data separate?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Every customer workspace is separated at the database level, with role-based access inside each one. We also add audit logs and admin tools so you can support customers without touching their data directly."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How much does it cost to build a SaaS?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Every project gets a fixed quote after a free 15-minute call. We usually split a SaaS build into milestones, so you can launch a first version, learn from real users and decide what to build next."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How long does it take?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "A focused first version with accounts, billing and the core feature usually takes 6 to 12 weeks. You get a working preview every week, so you can show it to early users while we build."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Who owns the code and the product?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "You do, fully. The code, the database, the Stripe account and the hosting all sit in accounts you own. We offer ongoing development and support if you want it, but there is no lock-in."
+        }
+      }
+    ]
+  }
+  </script>
+</section>
+
+<!-- ================= CONTACT ================= -->
+<section class="sec" id="contact" style="padding-top:20px;padding-bottom:0">
+  <div class="wrap contact">
+    <div class="c-left stage rv">
+      <div class="kicker"><span class="idx">06</span>Start a project</div>
+      <h2 class="display">Tell us about <span class="soft">your product.</span></h2>
+      <p>A few lines is plenty: who it's for, what it does and how far along you are. We'll reply within one business day with honest advice and a clear next step.</p>
+      <ol class="next">
+        <li><b>1</b>We reply within one business day</li>
+        <li><b>2</b>A free 15-minute call to scope it</li>
+        <li><b>3</b>A fixed quote and plan within 48 hours</li>
+      </ol>
+      <div class="c-items">
+        <a class="c-item" href="mailto:support@qoreonlabs.com"><span class="ic"><svg width="16" height="16" viewBox="0 0 24 24"><path d="M3 6h18v12H3zM3 7l9 6 9-6" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg></span><div><small>Email</small><b>support@qoreonlabs.com</b></div></a>
+        <a class="c-item" href="tel:+447883302109"><span class="ic"><svg width="16" height="16" viewBox="0 0 24 24"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg></span><div><small>Phone</small><b>+44 7883 302 109</b></div></a>
+        <div class="c-item"><span class="ic"><svg width="16" height="16" viewBox="0 0 24 24"><path d="M12 22s7-6.2 7-12a7 7 0 1 0-14 0c0 5.8 7 12 7 12z" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="12" cy="10" r="2.5" fill="none" stroke="currentColor" stroke-width="2"/></svg></span><div><small>Registered office</small><b>71-75 Shelton Street, London WC2H 9JQ</b></div></div>
+      </div>
+    </div>
+
+    <div class="c-form rv d1">
+      <h3>Project enquiry</h3>
+      <p>Prefer a detailed brief? Use our <a href="quoteform.html" style="color:var(--ink);font-weight:600;border-bottom:1.5px solid var(--lime)">quote form</a>.</p>
+      <form id="contactForm" action="https://formspree.io/f/moverwoe" method="POST">
+        <input type="hidden" name="_subject" value="New project enquiry (SaaS page)" />
+        <div class="fgrid">
+          <div class="fld"><label for="c-name">Name</label><input id="c-name" name="name" type="text" placeholder="Your name" autocomplete="name" required></div>
+          <div class="fld"><label for="c-email">Email</label><input id="c-email" name="_replyto" type="email" placeholder="you@company.com" autocomplete="email" required></div>
+          <div class="fld full"><label for="c-site">Company or website <span style="color:var(--mute);font-weight:500">(optional)</span></label><input id="c-site" name="company" type="text" placeholder="yourcompany.com"></div>
+          <div class="fld full"><span class="lbl" id="c-needs">What do you need?</span>
+            <div class="opts" role="group" aria-labelledby="c-needs">
+              <label><input type="checkbox" name="needs[]" value="Website"><span>Website</span></label>
+              <label><input type="checkbox" name="needs[]" value="Dashboard or internal tool"><span>Dashboard / internal tool</span></label>
+              <label><input type="checkbox" name="needs[]" value="Web app or portal" checked><span>Web app / portal</span></label>
+              <label><input type="checkbox" name="needs[]" value="iOS app or MVP"><span>iOS app / MVP</span></label>
+              <label><input type="checkbox" name="needs[]" value="AI automation"><span>AI automation</span></label>
+              <label><input type="checkbox" name="needs[]" value="Not sure yet"><span>Not sure yet</span></label>
+            </div>
+          </div>
+          <div class="fld full"><label for="c-budget">Rough budget <span style="color:var(--mute);font-weight:500">(optional)</span></label>
+            <select id="c-budget" name="budget"><option value="">Choose a range</option><option>Under £1,000</option><option>£1,000 to £3,000</option><option>£3,000 to £8,000</option><option>£8,000+</option><option>Not sure yet</option></select></div>
+          <div class="fld full"><label for="c-msg">Message</label><textarea id="c-msg" name="message" placeholder="Who is the product for, and what stage is it at?" required></textarea></div>
+        </div>
+        <div class="f-foot">
+          <small>We reply within one business day. No spam, ever.</small>
+          <button class="btn btn-ink" type="submit">Send message <span class="arr"><svg width="12" height="12" viewBox="0 0 12 12"><path d="M2 6h8M6.5 2.5 10 6l-3.5 3.5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></span></button>
+        </div>
+      </form>
+    </div>
+  </div>
+</section>
+</main>
+
+<!-- ================= FOOTER ================= -->
+<footer class="foot">
+  <div class="wrap">
+    <div class="foot-cta">
+      <h2 class="display">Let's build something <span class="hl">useful.</span></h2>
+      <div class="ctas" style="margin-top:0">
+        <a class="btn btn-lime" href="#contact">Start a project <span class="arr"><svg width="12" height="12" viewBox="0 0 12 12"><path d="M2 6h8M6.5 2.5 10 6l-3.5 3.5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></span></a>
+        <a class="btn" style="background:#17181a;color:#fff;box-shadow:0 0 0 1px #2a2b2e inset" href="index.html#audit">Free site audit</a>
+      </div>
+    </div>
+    <div class="foot-grid">
+      <div>
+        <a class="logo" href="index.html" aria-label="Qoreon Labs home"><img src="assets/img/qoreon-logo-light.svg" alt="Qoreon Labs" width="175" height="52" loading="lazy" /></a>
+        <p class="about">A UK product studio building websites, dashboards, web apps, iOS apps and AI automations for growing businesses.</p>
+        <div class="foot-soc">
+          <a href="https://www.linkedin.com/company/qoreon-labs-ltd/" target="_blank" rel="noopener" aria-label="Qoreon Labs on LinkedIn"><svg width="15" height="15" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9h4v11H4zM6 3.5a2 2 0 1 1 0 4 2 2 0 0 1 0-4zM10 9h3.8v1.6c.6-1 1.9-1.9 3.8-1.9 3.6 0 4.4 2.3 4.4 5.4V20h-4v-5.2c0-1.3 0-2.9-1.8-2.9s-2.1 1.4-2.1 2.8V20H10z" fill="currentColor"/></svg></a>
+          <a href="https://x.com/QoreonLab" target="_blank" rel="noopener" aria-label="Qoreon Labs on X"><svg width="13" height="13" viewBox="0 0 24 24" aria-hidden="true"><path d="M18.24 2.25h3.31l-7.23 8.26 8.5 11.24h-6.65l-5.21-6.82-5.97 6.82H1.68l7.73-8.84L1.25 2.25h6.83l4.71 6.23zm-1.16 17.52h1.83L7.08 4.13H5.12z" fill="currentColor"/></svg></a>
+          <a href="https://www.facebook.com/QOREONLABS" target="_blank" rel="noopener" aria-label="Qoreon Labs on Facebook"><svg width="15" height="15" viewBox="0 0 24 24" aria-hidden="true"><path d="M14 8.5V6.6c0-.8.2-1.3 1.4-1.3H17V2.2c-.3 0-1.3-.2-2.5-.2C12 2 10.5 3.5 10.5 6.2v2.3H8v3.3h2.5V22H14V11.8h2.8l.4-3.3z" fill="currentColor"/></svg></a>
+          <a href="https://www.fiverr.com/talha_19" target="_blank" rel="noopener" aria-label="Qoreon Labs on Fiverr"><svg width="15" height="15" viewBox="0 0 24 24" aria-hidden="true"><path d="M9 19V9.6C9 7.6 10 6.5 12 6.5h1.3M6.5 11.2H12M16 11.2V19" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round"/><circle cx="16" cy="7.4" r="1.6" fill="currentColor"/></svg></a>
+        </div>
+      </div>
+      <div>
+        <h3>Studio</h3>
+        <ul><li><a href="about-us.html">About</a></li><li><a href="index.html#work">Work</a></li><li><a href="polymonit-wallet-tracker.html">PolyMonit</a></li><li><a href="blogs.html">Blog</a></li><li><a href="quoteform.html">Get a quote</a></li><li><a href="#contact">Contact</a></li></ul>
+      </div>
+      <div>
+        <h3>Services</h3>
+        <ul><li><a href="services.html#web-development">Web development</a></li><li><a href="business-dashboard-development.html">Dashboards</a></li><li><a href="internal-tools-development.html">Internal tools</a></li><li><a href="business-web-app-development.html">Business web apps</a></li><li><a href="customer-portal-development.html">Customer portals</a></li><li><a href="custom-software-development.html">Custom software</a></li></ul>
+      </div>
+      <div>
+        <h3>Products &amp; AI</h3>
+        <ul><li><a href="mvp-development.html">MVP development</a></li><li><a href="saas-development.html">SaaS development</a></li><li><a href="ai-development.html">AI development</a></li><li><a href="ai-automation.html">AI automation</a></li><li><a href="workflow-automation.html">Workflow automation</a></li><li><a href="index.html#security">AI security (RedShield)</a></li></ul>
+      </div>
+    </div>
+    <div class="foot-bot">
+      <span>© <span id="year">2026</span> Qoreon Labs Ltd. Registered in England &amp; Wales, company no. 16359714.</span>
+      <nav aria-label="Legal"><a href="privacy.html">Privacy</a><a href="terms.html">Terms</a><a href="cookies.html">Cookies</a></nav>
+    </div>
+  </div>
+  <div class="foot-word" aria-hidden="true">Qoreon Labs</div>
+</footer>
+
+<script src="assets/js/studio.js"></script>
+</body>
+</html>
