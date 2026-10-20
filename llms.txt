@@ -1,10 +1,11 @@
 # Qoreon Labs
 
-> Qoreon Labs Ltd is a small, senior AI development company and product studio registered in London, UK. We design and build custom AI systems, web apps, internal tools, dashboards and websites, with a fixed quote up front, a working preview every week, and full ownership of the code.
+> Qoreon Labs Ltd is a UK-registered AI development company and product studio. We design and build custom AI systems, web apps, internal tools, dashboards and websites for growing businesses, with a fixed quote up front, a working preview every week, and full ownership of the code.
+
+Company: Qoreon Labs Ltd, a private company limited by shares, registered in England and Wales, company number 17531153 (incorporated 20 October 2026). Registered office: 71-75 Shelton Street, Covent Garden, London, WC2H 9JQ, United Kingdom. The team works remotely. Companies House record: https://find-and-update.company-information.service.gov.uk/company/17531153
 
 Key facts:
 
-- Company: Qoreon Labs Ltd, registered in England and Wales (company no. 16359714). Registered office: 71-75 Shelton Street, London WC2H 9JQ, United Kingdom.
 - Contact: support@qoreonlabs.com, +44 7883 302 109. We reply within one business day.
 - Who we work with: training and e-learning providers, professional services firms, operations-heavy businesses, and founders building MVPs or SaaS products. We work remotely with clients in the UK, US, Australia and Asia.
 - How we work: a free 15-minute call, then a fixed quote and plan within 48 hours, a working preview every week, and milestone payments. Larger or more complex projects start with a paid technical audit (architecture review, integration plan and fixed quote for the build), which the client keeps whoever builds it.
@@ -37,8 +38,15 @@ Key facts:
 - [Request a quote](https://qoreonlabs.com/quoteform): Describe a project and get a fixed quote and plan within 48 hours of a short call.
 - [Contact](https://qoreonlabs.com/#contact): Project enquiry form, email and phone.
 
+## Legal
+
+- [Privacy notice](https://qoreonlabs.com/privacy): How Qoreon Labs Ltd collects, uses and protects personal information.
+- [Terms of use](https://qoreonlabs.com/terms): The terms that apply when you use qoreonlabs.com.
+- [Cookie policy](https://qoreonlabs.com/cookies): The cookies and similar technologies the site uses.
+
 ## Optional
 
 - [Blog](https://qoreonlabs.com/blogs): Articles on AI, software and product development.
 - [The future of AI-driven development](https://qoreonlabs.com/the-future-of-ai-driven-development)
 - [Machine learning in business analytics](https://qoreonlabs.com/how-machine-learning-is-revolutionizing-business-analytics)
+- [Full text](https://qoreonlabs.com/llms-full.txt): Plain-text content of the home, services, about and quote pages in one file.

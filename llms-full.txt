@@ -1,0 +1,536 @@
+# Qoreon Labs: full text
+
+> Plain-text content of the key pages on qoreonlabs.com, generated from the live HTML. For a short index, see https://qoreonlabs.com/llms.txt
+
+Company: Qoreon Labs Ltd, registered in England and Wales, company number 17531153. Registered office: 71-75 Shelton Street, Covent Garden, London, WC2H 9JQ. The team works remotely.
+
+---
+
+# AI Development Company UK | Custom Web, App & AI Solutions | Qoreon Labs
+
+Source: https://qoreonlabs.com/
+
+UK AI development company · Web, apps & AI systems
+## Websites, dashboards & AI tools that help your business run better.
+Qoreon Labs is a small, senior AI development company. We design and build custom AI systems, web apps, internal tools and websites, with a fixed quote up front, a working preview every week, and full ownership of the code.
+Discuss a project Free site audit
+5.0 from 69 reviews on Fiverr
+100+ orders delivered
+UK Ltd registered in England & Wales
+Built with
+Next.js React Swift & SwiftUI Node.js Python Supabase PostgreSQL Stripe OpenAI Claude Vercel AWS Firebase Webflow
+01 Sound familiar?
+### Most businesses we meet are stuck on the same four things.
+None of them are hard to fix. They just never make it to the top of the list, and they quietly cost you customers every week.
+- 01 Costs you new enquiries
+#### Your website looks like 2012.
+A fast site that turns visits into bookings.
+Websites
+- 02 Costs you hours every week
+#### The business runs on spreadsheets.
+One tool with numbers the whole team trusts.
+Dashboards
+- 03 Costs you ready buyers
+#### Leads slip through the cracks.
+Every enquiry answered in minutes, day or night.
+AI automation
+- 04 Costs you your launch date
+#### Your last developer went quiet.
+A working preview every week, and people who pick up.
+How we work
+We fix all four. Usually in weeks, not months.
+See what we build
+02 What we build
+### Everything you need to look sharp and run smoothly.
+One studio for the site your customers see and the tools your team uses behind it. Pick one, or let us join them up.
+01 · Websites
+#### Websites & redesigns
+New sites and revamps that load fast, look the part and turn visitors into bookings and enquiries.
+Design & build SEO-ready Fast on mobile Booking & forms
+02 · Business systems
+#### Dashboards & internal tools
+Swap the spreadsheet mess for one tool your team trusts. Live numbers, user roles and alerts that tell you what to do next.
+DashboardsInternal tools
+03 · Web apps
+#### Web apps & customer portals
+Let customers order, book, pay and track things themselves, without emailing you.
+Web appsCustomer portals
+04 · Apps
+#### iOS apps & MVPs
+From idea to a real app in people's hands, with AI features built in where they help.
+App developmentMVPs
+05 · Automation
+#### AI & workflow automation
+Every enquiry answered in minutes, booked in and logged, even at 11pm on a Sunday.
+AI automationWorkflows
+Need something more specific? Explore every service
+03 Custom AI systems
+### AI built into your product, not bolted on.
+For teams building AI into a real product or platform. We design, build and deploy the whole system: the models, the integration with your content and users, and the controls your organisation needs before anything goes live.
+01 · Voice
+#### Conversational & voice AI
+Natural spoken dialogue with speech recognition and lifelike voices. Built for tutoring, speaking practice, training simulations and customer assistants, with feedback and level assessment where you need it.
+Speech-to-text Text-to-speech Real-time or turn-based
+02 · Integration
+#### AI inside your existing platform
+We connect AI to the content, users and data you already have. Your team configures lessons, prompts, rules and difficulty in a simple admin, without calling a developer for every change.
+Your content Admin controls API integration
+03 · Deployment
+#### Private or cloud deployment
+Run on your own servers with open-source models, or on leading cloud AI providers with your own accounts. Built to swap providers later, so you are never locked in.
+Self-hosted Cloud APIs No lock-in
+04 · Safety
+#### Evaluation & AI security
+Every AI feature is tested for accuracy, unsafe answers and prompt injection before your users see it, using our sister platform RedShield.
+Testing Guardrails RedShield
+See AI security
+Fig. 02 · An illustrative voice tutoring session
+- Full source code and IP transfer
+- GDPR-ready, EU data options
+- NDA on request
+- Paid technical audit for larger projects
+Discuss an AI project
+04 How it connects
+### One system, not ten open tabs.
+Most of what we build sits between the tools you already use. Enquiries and orders come in, the right things happen on their own, and your team sees one picture.
+Comes in
+Website forms Quotes, bookings, sign-ups
+WhatsApp and Instagram Messages and DMs
+Missed calls Texted back right away
+Email inbox orders@ and hello@
+Shop orders Shopify, Stripe, WooCommerce
+Your system Built around how you work, owned by you
+Dashboard Live numbers for each person
+Automations The busywork, done on its own
+AI assistant Replies, sorts and summarises
+Portal Customers help themselves
+Rules, roles and a full history of who did what
+Ends up
+X Xero or QuickBooks Invoices drafted
+H HubSpot or Pipedrive Contacts and deals updated
+# Slack or Teams Alerts to the right person
+S Google Sheets Reports, if you still want them
+Your customers Updates by SMS and email
+01
+Keeps your tools We connect what you already pay for. No big switch.
+02
+Tells you when it breaks Monitoring and alerts, so nothing fails quietly.
+03
+Yours to keep You own the code, the data and the logins.
+05 Selected work
+### Useful things, actually shipped.
+A live product we run and a client website project. The other previews on this page are clearly marked as examples.
+Live product · Our own SaaS
+#### PolyMonit: whale tracking for prediction markets
+We designed, built and run PolyMonit end to end. It watches large wallets on Polymarket and turns raw on-chain activity into alerts traders can act on.
+- 20+ countries with paying subscribers
+- Real-time wallet tracking and instant alerts
+- Full stack data pipeline, web app and billing
+Learn more
+Bonnymuir Group
+Client project Website + ongoing SEO content
+#### Investment migration consultancy
+A multi-page site and a monthly SEO content programme for a firm guiding investors through EB-5 and residency programmes.
+5.0
+Average rating from 69 client reviews on Fiverr.
+Read the reviews
+100 +
+Orders delivered for clients in the UK, US, Australia and Asia.
+20 +
+Countries with paying users of our own products.
+1 day
+Typical reply time on weekdays. You talk to the people building it.
+06 Who we work with
+### Small teams with real problems to solve.
+01
+#### Training & e-learning
+Speaking practice, AI tutors, adaptive exercises and content tools for course providers.
+02
+#### Professional services
+Client portals, intake automation and sites that turn expertise into enquiries.
+03
+#### Operations-heavy businesses
+Dashboards and internal tools that replace the spreadsheets running the business.
+04
+#### Founders & startups
+MVPs and SaaS products, from first screen to paying users.
+07 How it works
+### No mystery. Just four clear steps.
+You always know what's being built, what it costs and when it ships. That's the whole point.
+STEP 01 15 min
+#### A quick, free call
+Tell us what's not working. We ask a few questions and tell you honestly if we're the right fit.
+STEP 02 48 hours
+#### A fixed quote and plan
+A clear scope, timeline and price, split into milestones. You only pay as each one is delivered.
+STEP 03 Weekly
+#### Build, with weekly previews
+A working link every week so you can click through, comment and steer. No big reveal at the end.
+STEP 04 Launch
+#### Launch, handover, support
+We launch it, show your team how it works and hand over everything. Ongoing support if you want it.
+Larger or more complex project? We start with a paid technical audit: an architecture review, an integration plan and a fixed quote for the build. It is yours to keep, whoever you choose to build it.
+- You own the code and IP
+- GDPR-ready, EU data options
+- Self-hosted or cloud
+- NDA on request
+- Milestone payments
+08 Do the maths
+### What is the busywork costing you?
+Move the sliders to match a normal week for your team. It's your numbers, not ours, and nothing leaves your browser.
+#### A normal week, across the team
+Hours spent on each of these
+Copying between tools Orders, invoices, CRM updates 5 h
+Chasing enquiries Calls, forms, DMs and follow-ups 4 h
+Building reports Pulling numbers into spreadsheets 3 h
+Fixing mistakes Double entry, wrong totals, lost orders 2 h
+Cost of an hour Wages plus overheads £25
+Rough figures are fine. This is a starting point, not a quote.
+Busywork, every year
+£18,200 a year
+728 hours, or about 19 working weeks
+Your year, 52 working weeks 19 weeks of busywork
+On a free call we'll tell you honestly which of these is worth automating first.
+Get a free plan
+09 Free site audit
+### Not sure what your site needs? We'll tell you.
+Send us your website and we'll review it for free. You get a short, plain-English report with the changes that would bring in more enquiries.
+- Speed, mobile and Google check
+- The 3 fixes that matter most
+- No sales pitch, no obligation
+Report in your inbox within 2 business days.
+10 AI security · Powered by RedShield
+### Shipping AI features? We test them before your users do.
+Our sister platform, RedShield, stress-tests chatbots and AI agents for prompt injection, data leaks and unsafe answers, then tells you exactly what to fix.
+Prompt injection Data leakage Jailbreaks Guardrails
+Request early access
+11 Questions
+### Good questions.
+The things people usually ask before we start. Anything else, just ask.
+Still unsure? Email support@qoreonlabs.com
+Q: How much does a project cost?
+Every project gets a fixed quote after a free 15-minute call, so you know the full price before anything starts. Because a small senior team does the work, a website revamp or a single dashboard usually costs far less than a traditional agency would charge.
+Q: How long does it take?
+Most website revamps take 2 to 4 weeks. Dashboards, internal tools and MVPs usually take 3 to 8 weeks depending on scope. You get a working preview every week, so you see progress long before launch.
+Q: Will a redesign hurt our Google rankings?
+Not if it's done properly. We keep your important pages and URLs, set up redirects where anything moves, and fix the technical basics Google cares about. Most sites rank better after a rebuild because they load faster and are easier to read.
+Q: Can you add AI to the tools we already use?
+Yes. We connect AI to things like your website forms, inbox, CRM, spreadsheets and booking system, so enquiries get answered, sorted and followed up automatically. We start with the one workflow that saves you the most time.
+Q: Can you deploy on our own infrastructure?
+Yes. We can build with open-source speech and language models that run on your own or dedicated servers, so no third-party AI service is required. If you prefer cloud AI providers, we set them up on your own accounts and keep the system able to switch providers later.
+Q: Do we own the code and intellectual property?
+Yes. Everything built specifically for your project is transferred to you with the source code and documentation, so your team or any developer can maintain it. We list any third-party components and their licences up front.
+Q: How do larger projects start?
+With a paid technical audit. We review your platform and requirements, then deliver an architecture plan, a list of risks and a fixed quote for the build. You keep the audit whether or not we build it.
+Q: Do you sign NDAs?
+Yes, happily. We can sign your NDA or send a mutual one before you share any details.
+Q: Do you work with businesses outside the UK?
+Yes. We're a UK-registered company working remotely with clients in the UK, US, Australia and Asia, with calls scheduled in your time zone.
+Q: What happens after launch?
+You own everything: the code, the design files and the accounts. We hand it over with a walkthrough, and if you want us to stay on for updates, fixes and new features, we offer simple monthly support.
+12 Start a project
+### Tell us what you're building.
+A few lines is plenty. We'll reply within one business day with honest advice and a clear next step.
+- 1 We reply within one business day
+- 2 A free 15-minute call to scope it
+- 3 A fixed quote and plan within 48 hours
+Email support@qoreonlabs.com
+Phone +44 7883 302 109
+Registered office 71-75 Shelton Street, Covent Garden, London, WC2H 9JQ
+#### Project enquiry
+Prefer a detailed brief? Use our quote form.
+
+---
+
+# Web, App & Software Development Services | Qoreon Labs
+
+Source: https://qoreonlabs.com/services
+
+Services Web, app and software development
+## Websites, apps & software for growing businesses.
+One small, senior studio for the website your customers see and the tools your team uses behind it: websites, dashboards, internal tools, web apps, iPhone apps and AI automation. Fixed quotes, weekly previews.
+Book a free call Browse services
+5.0 from 69 reviews
+100+ orders delivered
+UK Ltd registered in England & Wales
+Built with
+Next.js React Swift & SwiftUI Node.js Python Supabase PostgreSQL Stripe OpenAI Claude Vercel AWS Webflow
+01 Core services
+### Three things we do every day.
+Most projects start with one of these. Many end up using two or three, because the website, the app and the tools behind them work best when they are built together.
+Web development
+#### Websites and redesigns that bring in business
+New sites and redesigns that load fast, look trustworthy and turn visitors into bookings and enquiries. Built to rank on Google from day one, and easy for you to update.
+- Design custom design, written to convert
+- Speed fast on mobile, Core Web Vitals in the green
+- SEO redirects, structure and the technical basics
+Get a free site audit Booking and ordering apps
+App development
+#### iPhone apps and MVPs people actually use
+Native iPhone apps in Swift and SwiftUI, cross-platform apps with React Native, and the web dashboards behind them. From first version to App Store and beyond.
+- iOS SwiftUI, TestFlight and App Store launch
+- Both iPhone and Android with React Native
+- Behind it accounts, payments, admin and analytics
+MVP development SaaS development
+Software development
+#### Back ends, APIs and integrations that hold it all together
+The reliable layer underneath: databases, APIs, integrations and background jobs that connect your website, apps and tools, and keep running quietly.
+- APIs clean, documented and secure
+- Data PostgreSQL, one source of truth
+- Integrations Shopify, Stripe, Xero, HubSpot and more
+Custom software Workflow automation
+5.0
+Average rating from 69 client reviews on Fiverr.
+Read the reviews
+100 +
+Orders delivered for clients in the UK, US, Australia and Asia.
+20 +
+Countries with paying users of our own products.
+1 day
+Typical reply time on weekdays. You talk to the people building it.
+02 Business systems
+### Tools that help your business run smoothly.
+The software behind the scenes: where your team works, where your numbers live and where your customers serve themselves.
+04
+#### Business dashboards
+Sales, orders, stock and finance on one live screen, with roles, alerts and weekly reports.
+KPIs Alerts Reports
+05
+#### Internal tools
+Admin panels, approvals and team tools that replace the spreadsheets and group chats.
+Approvals Roles Audit log
+06
+#### Business web apps
+Booking and ordering apps for your customers, with the staff tools behind them.
+Bookings Payments Reminders
+07
+#### Customer portals
+A login for your clients to track orders, pay invoices and download documents.
+Tracking Invoices Documents
+08
+#### Custom software
+Workflow and operations systems for when off-the-shelf tools don't fit.
+Workflows Rules Integrations
+03 Products & automation
+### Automation, AI and new products.
+Take repetitive work off your team, add AI where it genuinely helps, or launch something new of your own.
+09
+#### AI automation
+Every enquiry answered in minutes, qualified, booked in and logged in your CRM.
+Replies Booking CRM
+10
+#### Workflow automation
+Your forms, sheets, CRM, accounts and chat tools connected, with monitoring.
+Sync Documents Alerts
+11
+#### AI development
+AI search, assistants and document tools grounded in your own data.
+Search Assistants Testing
+12
+#### MVP development
+From idea to an iPhone or web app in real hands, with analytics from day one.
+iOS Web Launch
+13
+#### SaaS development
+Subscription products with accounts, teams, billing and admin, built to grow.
+Accounts Stripe Admin
+04 How it works
+### No mystery. Just four clear steps.
+You always know what's being built, what it costs and when it ships. That's the whole point.
+STEP 01 15 min
+#### A quick, free call
+Tell us what's not working. We ask a few questions and tell you honestly if we're the right fit.
+STEP 02 48 hours
+#### A fixed quote and plan
+A clear scope, timeline and price, split into milestones. You only pay as each one is delivered.
+STEP 03 Weekly
+#### Build, with weekly previews
+A working link every week so you can click through, comment and steer. No big reveal at the end.
+STEP 04 Launch
+#### Launch, handover, support
+We launch it, show your team how it works and hand over everything. Ongoing support if you want it.
+05 Questions
+### Good questions.
+What people usually ask when they are not sure which service they need.
+Still unsure? Email support@qoreonlabs.com
+Q: We're not sure which service we need. Can you help?
+Yes, that's what the free 15-minute call is for. Tell us what's slowing you down or what you want to launch, and we'll suggest the simplest thing that would fix it, even if that's not a build at all.
+Q: Do you work with small businesses?
+Yes. Most of our clients are small and growing businesses, from clinics and cafes to suppliers and startups. We keep projects focused, so they are worth it at that size.
+Q: Do you give fixed prices?
+Yes. Every project gets a fixed quote after the first call, split into milestones. You only pay as each one is delivered, and you know the full price before anything starts.
+Q: Can you work with our existing website or software?
+Usually, yes. We can improve or extend what you already have, connect to the tools you use, or plan a careful move to something new without losing your data or Google rankings.
+Q: Do you work with businesses outside the UK?
+Yes. We're a UK-registered company working remotely with clients in the UK, US, Australia and Asia, with calls scheduled in your time zone.
+Q: What happens after launch?
+You own everything: the code, the design files and the accounts. We hand it over with a walkthrough, and offer simple monthly support for updates, fixes and new features if you want it.
+06 Start a project
+### Tell us what you're building.
+A few lines is plenty. We'll reply within one business day with honest advice and a clear next step.
+- 1 We reply within one business day
+- 2 A free 15-minute call to scope it
+- 3 A fixed quote and plan within 48 hours
+Email support@qoreonlabs.com
+Phone +44 7883 302 109
+Registered office 71-75 Shelton Street, Covent Garden, London, WC2H 9JQ
+#### Project enquiry
+Prefer a detailed brief? Use our quote form.
+
+---
+
+# About Qoreon Labs | A Small, Senior UK Product Studio
+
+Source: https://qoreonlabs.com/about-us
+
+Studio About Qoreon Labs
+## A small, senior studio that ships.
+Qoreon Labs is a UK product studio. We design and build websites, dashboards, web apps, iPhone apps and AI automations for growing businesses, and we run software products of our own.
+Book a free call See our work
+5.0 from 69 reviews
+100+ orders delivered
+UK Ltd registered in England & Wales
+5.0
+Average rating from 69 client reviews on Fiverr.
+Read the reviews
+100+
+Orders delivered for clients in the UK, US, Australia and Asia.
+20+
+Countries with paying subscribers to PolyMonit, our own product.
+UK Ltd
+Registered in England and Wales, company number 17531153.
+01 Our story
+### Built by people who build things.
+We started as hands-on developers and still are. Everyone you talk to at Qoreon Labs is someone who builds.
+Qoreon Labs began as a small development practice, building websites, apps and software for clients around the world. Over 100 delivered orders and a 5.0 rating from 69 reviews later, we became a UK limited company with a simple aim: give growing businesses the kind of senior, reliable product team that is usually only available to much bigger companies.
+We also build products of our own. PolyMonit, our live data and alerts product, has paying subscribers in more than 20 countries. Running it every day keeps us honest about what it takes to launch software and keep it working long after launch day.
+Who you work with. A small, senior team. The people on your first call are the people who plan, design and build your project, so nothing gets lost in a handover between sales and delivery.
+Where we work. We are a UK-registered company and work remotely with clients in the UK, US, Australia and Asia, with calls scheduled in your time zone.
+What we focus on. Practical software for growing businesses: the website your customers see, the tools your team uses and the automations that join them up.
+02 How we work
+### Simple promises we actually keep.
+These are the things clients mention most in their reviews, so we treat them as rules, not slogans.
+TEAM
+#### Small and senior
+You talk directly to the people building your project. No account managers, no junior hand-offs.
+PRICE
+#### Fixed quotes
+A clear scope and a fixed price before anything starts, split into milestones you pay for as they are delivered.
+PROGRESS
+#### Weekly previews
+A working link every week, so you can click through, comment and steer. No big reveal at the end.
+OWNERSHIP
+#### You own everything
+The code, the designs, the data and the accounts are yours. No lock-in, and a proper handover at the end.
+TALK
+#### Plain English
+No jargon and no buzzwords. We explain options and trade-offs clearly, and tell you when something is not worth building.
+QUALITY
+#### Built to last
+Mainstream, well-supported technology that any good developer can pick up, tested and documented before handover.
+03 Our products
+### Products we run ourselves.
+Client work pays the bills. Our own products keep our skills sharp and our advice grounded in real launches.
+Live product · Our own SaaS
+#### PolyMonit: our own live product
+We designed, built and run PolyMonit end to end. It watches large wallets on Polymarket and turns raw on-chain activity into alerts traders can act on. Running our own product means we know what it takes to keep software working, not just to launch it.
+- 20+ countries with paying subscribers
+- Real-time data syncing and instant alerts
+- Full stack data pipeline, web app and billing
+Read the case study
+RS Sister platform
+### RedShield tests AI features before your users do.
+Security testing for chatbots and AI agents lives on its own platform, RedShield. It checks AI features for prompt injection, data leaks and unsafe answers, then explains exactly what to fix.
+Learn about RedShield
+04 How it works
+### No mystery. Just four clear steps.
+You always know what's being built, what it costs and when it ships. That's the whole point.
+STEP 01 15 min
+#### A quick, free call
+Tell us what's not working. We ask a few questions and tell you honestly if we're the right fit.
+STEP 02 48 hours
+#### A fixed quote and plan
+A clear scope, timeline and price, split into milestones. You only pay as each one is delivered.
+STEP 03 Weekly
+#### Build, with weekly previews
+A working link every week so you can click through, comment and steer. No big reveal at the end.
+STEP 04 Launch
+#### Launch, handover, support
+We launch it, show your team how it works and hand over everything. Ongoing support if you want it.
+05 Company details
+### The paperwork.
+Everything you need for a supplier form or a contract.
+Qoreon Labs Ltd is a UK-registered private company limited by shares, registered in England and Wales with company number 17531153. It was incorporated on 20 October 2026, and its registered office is 71-75 Shelton Street, Covent Garden, London, WC2H 9JQ. You can check these details on the Companies House register.
+- Company Qoreon Labs Ltd
+- Type Private company limited by shares
+- Number 17531153, registered in England and Wales
+- Incorporated 20 October 2026
+- Registered office 71-75 Shelton Street, Covent Garden, London, WC2H 9JQ
+- Verify Companies House record
+- Email support@qoreonlabs.com
+- Phone +44 7883 302 109
+06 Questions
+### About us.
+Common questions about who we are and how we work.
+Still unsure? Email support@qoreonlabs.com
+Q: Where is Qoreon Labs based?
+Qoreon Labs Ltd is a UK limited company, registered in England and Wales with company number 17531153. Our registered office is 71-75 Shelton Street, Covent Garden, London, WC2H 9JQ. The team works remotely with clients in the UK, US, Australia and Asia.
+Q: Who will I actually work with?
+A small, senior team. The people on your first call are the people who plan and build your project, and you will have a direct line to them throughout.
+Q: Do you work with startups or established businesses?
+Both. Most of our clients are growing businesses, from clinics and suppliers to agencies and early-stage founders. What they have in common is that they want something practical, built well.
+Q: What is PolyMonit?
+PolyMonit is our own live product, a wallet tracking and alerts platform for Polymarket traders. We designed, built and run it end to end, and it has paying subscribers in more than 20 countries.
+Q: What is RedShield?
+RedShield is our sister platform for testing AI features such as chatbots and AI agents. It checks for prompt injection, data leaks and unsafe answers. This site focuses on building products, and RedShield focuses on testing them.
+Q: How do I start a project?
+Send us a few lines using the form below or email support@qoreonlabs.com. We reply within one business day and suggest a free 15-minute call to scope it, followed by a fixed quote and plan within 48 hours.
+07 Start a project
+### Tell us what you're building.
+A few lines is plenty. We'll reply within one business day with honest advice and a clear next step.
+- 1 We reply within one business day
+- 2 A free 15-minute call to scope it
+- 3 A fixed quote and plan within 48 hours
+Email support@qoreonlabs.com
+Phone +44 7883 302 109
+Registered office 71-75 Shelton Street, Covent Garden, London, WC2H 9JQ
+#### Project enquiry
+Prefer a detailed brief? Use our quote form.
+
+---
+
+# Request a Quote | Fixed-Price Web, App & AI Projects | Qoreon Labs
+
+Source: https://qoreonlabs.com/quoteform
+
+Quote Request a quote
+## Tell us about your project. Get a fixed quote.
+Share a few details and we will come back within one business day with questions or a clear next step. A fixed quote and plan follow within 48 hours of a short call.
+Start the form Email us instead
+5.0 from 69 reviews
+100+ orders delivered
+UK Ltd registered in England & Wales
+01 What happens next
+### A clear answer, fast.
+No sales pitch. We read every brief ourselves and reply with honest advice, even if that means suggesting something simpler.
+- 1 We reply within one business day
+- 2 A free 15-minute call to scope it
+- 3 A fixed quote and plan within 48 hours
+Email support@qoreonlabs.com
+Phone +44 7883 302 109
+#### Project details
+Fields marked * are required. It takes about three minutes.
+#### Thanks, we've got it.
+We'll read your brief and reply within one business day. If it's urgent, email support@qoreonlabs.com.
+02 Questions
+### Quote questions.
+What people usually ask before sending a brief.
+Still unsure? Email support@qoreonlabs.com
+Q: What happens after I send this?
+We read it ourselves and reply within one business day, usually with a couple of questions and an invite to a free 15-minute call. After the call you get a fixed quote and plan within 48 hours.
+Q: Is the quote really fixed?
+Yes. The quote covers the agreed scope, split into milestones, and you pay as each milestone is delivered. If you want to add something later, we quote for it separately before doing any work.
+Q: What if I'm not sure about my budget?
+That's fine, choose "Not sure yet". We'll suggest options at different sizes, so you can decide what is worth doing now and what can wait.
+Q: What do you do with my details?
+We only use them to reply to your enquiry and prepare a quote. The form is handled by Formspree, and you can read more in our privacy notice.

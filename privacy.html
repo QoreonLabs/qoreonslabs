@@ -52,25 +52,102 @@
   <meta name="twitter:description" content="How Qoreon Labs Ltd collects, uses and protects personal information from this website, our contact forms and Google Analytics." />
   <meta name="twitter:image" content="https://qoreonlabs.com/assets/img/og-qoreon.png" />
 
+  <!-- JSON-LD: Organization. Identical on every page, keep all copies in sync. -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "@id": "https://qoreonlabs.com/#organization",
+    "name": "Qoreon Labs",
+    "legalName": "Qoreon Labs Ltd",
+    "url": "https://qoreonlabs.com/",
+    "logo": "https://qoreonlabs.com/assets/img/apple-touch-icon.png",
+    "description": "Qoreon Labs is a UK AI development company building custom AI systems, web apps, dashboards and websites. Fixed quotes, weekly previews and full code ownership.",
+    "identifier": {
+      "@type": "PropertyValue",
+      "propertyID": "Companies House company number",
+      "value": "17531153"
+    },
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "71-75 Shelton Street, Covent Garden",
+      "addressLocality": "London",
+      "postalCode": "WC2H 9JQ",
+      "addressCountry": "GB"
+    },
+    "email": "support@qoreonlabs.com",
+    "contactPoint": {
+      "@type": "ContactPoint",
+      "telephone": "+44-7883-302109",
+      "contactType": "sales",
+      "email": "support@qoreonlabs.com",
+      "availableLanguage": "English"
+    },
+    "sameAs": [
+      "https://www.linkedin.com/company/qoreon-labs-ltd/",
+      "https://x.com/QoreonLab",
+      "https://www.facebook.com/QOREONLABS",
+      "https://www.fiverr.com/talha_19"
+    ],
+    "hasOfferCatalog": {
+      "@type": "OfferCatalog",
+      "name": "Design and development services",
+      "itemListElement": [
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Website design and redesign"
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Business dashboard development"
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Internal tools and web apps"
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Customer portal development"
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "iOS app and MVP development"
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "AI and workflow automation"
+          }
+        }
+      ]
+    }
+  }
+  </script>
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": "WebPage",
     "name": "Privacy Notice",
     "url": "https://qoreonlabs.com/privacy",
-    "dateModified": "2026-10-03",
+    "dateModified": "2026-10-21",
     "publisher": {
-      "@type": "Organization",
-      "name": "Qoreon Labs Ltd",
-      "url": "https://qoreonlabs.com",
-      "logo": "https://qoreonlabs.com/assets/img/apple-touch-icon.png",
-      "address": {
-        "@type": "PostalAddress",
-        "streetAddress": "71-75 Shelton Street, Covent Garden",
-        "addressLocality": "London",
-        "postalCode": "WC2H 9JQ",
-        "addressCountry": "GB"
-      }
+      "@id": "https://qoreonlabs.com/#organization"
     }
   }
   </script>
@@ -151,7 +228,7 @@
     <div class="kicker rv"><span class="idx">Legal</span>Privacy notice</div>
     <h1 class="display rv d1">Privacy <span class="hl">notice.</span></h1>
     <p class="lede rv d2" style="margin-top:18px;max-width:640px">How Qoreon Labs collects, uses and protects personal information when you visit this website or contact us.</p>
-    <div class="art-meta rv d2"><span class="mark"><i></i></span><b>Qoreon Labs Ltd</b><span class="sep"></span>Last updated <time datetime="2026-10-03">3 October 2026</time></div>
+    <div class="art-meta rv d2"><span class="mark"><i></i></span><b>Qoreon Labs Ltd</b><span class="sep"></span>Last updated <time datetime="2026-10-21">21 October 2026</time></div>
   </div>
 </section>
 
@@ -163,7 +240,7 @@
       <!-- TODO: have this privacy notice reviewed before relying on it. -->
       <!-- TODO: add your ICO registration (data protection fee) number if you have one, for example "ICO registration number: ZA000000". -->
       <h2>Who we are</h2>
-      <p>This notice explains how Qoreon Labs Ltd (company number 16359714), registered in England and Wales at 71-75 Shelton Street, Covent Garden, London WC2H 9JQ ("Qoreon Labs", "we", "us") collects and uses personal information through qoreonlabs.com. We are the controller of that information.</p>
+      <p>This notice explains how Qoreon Labs Ltd (company number 17531153), a company registered in England and Wales with its registered office at 71-75 Shelton Street, Covent Garden, London, WC2H 9JQ ("Qoreon Labs", "we", "us") collects and uses personal information through qoreonlabs.com. We are the controller of that information.</p>
       <p>If you have any questions, email <a href="mailto:support@qoreonlabs.com">support@qoreonlabs.com</a> or write to us at the address above.</p>
 
       <h2>What we collect</h2>
@@ -265,8 +342,9 @@
       </div>
     </div>
     <div class="foot-bot">
-      <span>© <span id="year">2026</span> Qoreon Labs Ltd. Registered in England &amp; Wales, company no. 16359714.</span>
+      <span>© <span id="year">2026</span> Qoreon Labs Ltd</span>
       <nav aria-label="Legal"><a href="/privacy">Privacy</a><a href="/terms">Terms</a><a href="/cookies">Cookies</a></nav>
+      <p class="foot-legal">Qoreon Labs Ltd is a company registered in England and Wales, company number 17531153. Registered office: 71-75 Shelton Street, Covent Garden, London, WC2H 9JQ.</p>
     </div>
   </div>
   <div class="foot-word" aria-hidden="true" data-word="Qoreon Labs"></div>

@@ -628,6 +628,7 @@ section{position:relative}
 .facts li b{min-width:92px;font:600 15px var(--f-display);letter-spacing:-.02em;color:var(--ink)}
 /* long values (an email address) may break rather than push the page wider on 320px phones */
 .facts li a{min-width:0;overflow-wrap:anywhere}
+@media (min-width:700px){#company .facts li b{min-width:136px}}
 .wf-copy .row{display:flex;gap:18px;flex-wrap:wrap;margin-top:auto;align-items:center}
 .wf-vis{position:relative;border-radius:24px;overflow:hidden}
 .fit.ov{overflow:visible}
@@ -887,6 +888,7 @@ a.c-item:hover{background:rgba(255,255,255,.08)}
 .foot-soc a:hover{background:var(--lime);color:var(--ink);box-shadow:none}
 .foot-bot{display:flex;justify-content:space-between;align-items:center;gap:16px;flex-wrap:wrap;padding:22px 0 30px;border-top:1px solid #222326;font-size:13px;color:#8d8e92}
 .foot-bot nav{display:flex;gap:18px}
+.foot-legal{flex-basis:100%;margin:0;line-height:1.55}
 .foot-bot a:hover{color:#fff}
 .foot-word{font:600 clamp(70px,17vw,250px)/.8 var(--f-display);letter-spacing:-.06em;color:#17181a;white-space:nowrap;text-align:center;margin-bottom:-.12em;user-select:none;pointer-events:none}
 /* the watermark is decoration, so its text lives in CSS rather than the document */

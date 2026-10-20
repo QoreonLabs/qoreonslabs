@@ -1,3 +1,43 @@
+# robots.txt for qoreonlabs.com
+# This file is public and is only a request to well-behaved crawlers. It does not hide or protect anything.
+# Pages we do not want in search results use <meta name="robots" content="noindex"> instead,
+# so they stay crawlable and the noindex tag can be read.
+
+# Default: every crawler may access the whole site.
 User-agent: *
 Allow: /
+
+# AI crawlers and assistants
+# Each one is listed so it can be switched off on its own.
+# To block one, change its "Allow: /" line to "Disallow: /".
+# A crawler that matches a named group below ignores the default group above.
+
+# OpenAI: training crawler
+User-agent: GPTBot
+Allow: /
+
+# OpenAI: ChatGPT search
+User-agent: OAI-SearchBot
+Allow: /
+
+# OpenAI: fetches pages when a ChatGPT user asks
+User-agent: ChatGPT-User
+Allow: /
+
+# Anthropic: training crawler
+User-agent: ClaudeBot
+Allow: /
+
+# Anthropic: Claude search
+User-agent: Claude-SearchBot
+Allow: /
+
+# Perplexity: search
+User-agent: PerplexityBot
+Allow: /
+
+# Google: use in Gemini and AI training (does not affect Google Search)
+User-agent: Google-Extended
+Allow: /
+
 Sitemap: https://qoreonlabs.com/sitemap.xml

@@ -52,25 +52,102 @@
   <meta name="twitter:description" content="The terms of use for the Qoreon Labs website, run by Qoreon Labs Ltd, a company registered in England and Wales." />
   <meta name="twitter:image" content="https://qoreonlabs.com/assets/img/og-qoreon.png" />
 
+  <!-- JSON-LD: Organization. Identical on every page, keep all copies in sync. -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "@id": "https://qoreonlabs.com/#organization",
+    "name": "Qoreon Labs",
+    "legalName": "Qoreon Labs Ltd",
+    "url": "https://qoreonlabs.com/",
+    "logo": "https://qoreonlabs.com/assets/img/apple-touch-icon.png",
+    "description": "Qoreon Labs is a UK AI development company building custom AI systems, web apps, dashboards and websites. Fixed quotes, weekly previews and full code ownership.",
+    "identifier": {
+      "@type": "PropertyValue",
+      "propertyID": "Companies House company number",
+      "value": "17531153"
+    },
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "71-75 Shelton Street, Covent Garden",
+      "addressLocality": "London",
+      "postalCode": "WC2H 9JQ",
+      "addressCountry": "GB"
+    },
+    "email": "support@qoreonlabs.com",
+    "contactPoint": {
+      "@type": "ContactPoint",
+      "telephone": "+44-7883-302109",
+      "contactType": "sales",
+      "email": "support@qoreonlabs.com",
+      "availableLanguage": "English"
+    },
+    "sameAs": [
+      "https://www.linkedin.com/company/qoreon-labs-ltd/",
+      "https://x.com/QoreonLab",
+      "https://www.facebook.com/QOREONLABS",
+      "https://www.fiverr.com/talha_19"
+    ],
+    "hasOfferCatalog": {
+      "@type": "OfferCatalog",
+      "name": "Design and development services",
+      "itemListElement": [
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Website design and redesign"
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Business dashboard development"
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Internal tools and web apps"
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Customer portal development"
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "iOS app and MVP development"
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "AI and workflow automation"
+          }
+        }
+      ]
+    }
+  }
+  </script>
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": "WebPage",
     "name": "Website Terms of Use",
     "url": "https://qoreonlabs.com/terms",
-    "dateModified": "2026-10-03",
+    "dateModified": "2026-10-21",
     "publisher": {
-      "@type": "Organization",
-      "name": "Qoreon Labs Ltd",
-      "url": "https://qoreonlabs.com",
-      "logo": "https://qoreonlabs.com/assets/img/apple-touch-icon.png",
-      "address": {
-        "@type": "PostalAddress",
-        "streetAddress": "71-75 Shelton Street, Covent Garden",
-        "addressLocality": "London",
-        "postalCode": "WC2H 9JQ",
-        "addressCountry": "GB"
-      }
+      "@id": "https://qoreonlabs.com/#organization"
     }
   }
   </script>
@@ -151,7 +228,7 @@
     <div class="kicker rv"><span class="idx">Legal</span>Website terms</div>
     <h1 class="display rv d1">Website <span class="hl">terms.</span></h1>
     <p class="lede rv d2" style="margin-top:18px;max-width:640px">The terms that apply when you use qoreonlabs.com. Project work is covered by your written quote or agreement.</p>
-    <div class="art-meta rv d2"><span class="mark"><i></i></span><b>Qoreon Labs Ltd</b><span class="sep"></span>Last updated <time datetime="2026-10-03">3 October 2026</time></div>
+    <div class="art-meta rv d2"><span class="mark"><i></i></span><b>Qoreon Labs Ltd</b><span class="sep"></span>Last updated <time datetime="2026-10-21">21 October 2026</time></div>
   </div>
 </section>
 
@@ -162,7 +239,7 @@
 
       <!-- TODO: have these terms reviewed before relying on them. -->
       <h2>About these terms</h2>
-      <p>These terms apply to your use of qoreonlabs.com. The website is run by Qoreon Labs Ltd (company number 16359714), registered in England and Wales at 71-75 Shelton Street, Covent Garden, London WC2H 9JQ. By using the site you agree to these terms.</p>
+      <p>These terms apply to your use of qoreonlabs.com. The website is run by Qoreon Labs Ltd (company number 17531153), a company registered in England and Wales with its registered office at 71-75 Shelton Street, Covent Garden, London, WC2H 9JQ. By using the site you agree to these terms.</p>
       <p>These terms cover the website only. Any project we carry out for you is governed by the written quote or agreement we send you before work starts. Orders placed through Fiverr are also covered by Fiverr's own terms.</p>
       <!-- TODO: if you have standard terms of business for client projects, link them here. -->
 
@@ -230,8 +307,9 @@
       </div>
     </div>
     <div class="foot-bot">
-      <span>© <span id="year">2026</span> Qoreon Labs Ltd. Registered in England &amp; Wales, company no. 16359714.</span>
+      <span>© <span id="year">2026</span> Qoreon Labs Ltd</span>
       <nav aria-label="Legal"><a href="/privacy">Privacy</a><a href="/terms">Terms</a><a href="/cookies">Cookies</a></nav>
+      <p class="foot-legal">Qoreon Labs Ltd is a company registered in England and Wales, company number 17531153. Registered office: 71-75 Shelton Street, Covent Garden, London, WC2H 9JQ.</p>
     </div>
   </div>
   <div class="foot-word" aria-hidden="true" data-word="Qoreon Labs"></div>
