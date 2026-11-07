@@ -47,6 +47,7 @@ Key facts:
 ## Optional
 
 - [Blog](https://qoreonlabs.com/blogs): Articles on AI, software and product development.
+- [Private AI for Small Business: When On-Premise Makes Sense](https://qoreonlabs.com/blog/private-ai-for-small-business-on-premise-guide): Deployment options, cost planning, data controls and a practical rollout guide. By Talha, 2026-11-07.
 - [The future of AI-driven development](https://qoreonlabs.com/the-future-of-ai-driven-development)
 - [Machine learning in business analytics](https://qoreonlabs.com/how-machine-learning-is-revolutionizing-business-analytics)
 - [Full text](https://qoreonlabs.com/llms-full.txt): Plain-text content of the home, services, about and quote pages in one file.

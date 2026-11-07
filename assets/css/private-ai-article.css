@@ -1,0 +1,47 @@
+/* Scoped additions for the private AI article. The shared site stylesheet is unchanged. */
+.private-ai-article .pai-intro{max-width:740px;margin-top:24px;color:var(--ink-2);font-size:clamp(17px,2vw,20px);line-height:1.6}
+.private-ai-article .pai-caption{margin:14px 0 0;font-size:12px;line-height:1.5;color:var(--mute)}
+.private-ai-article .pai-callout,.private-ai-article .pai-toc,.private-ai-article .pai-cost{padding:28px;border:1px solid var(--line);border-radius:var(--r);background:var(--paper,#f8f8f4);margin-top:32px}
+.private-ai-article .pai-callout{border-top:3px solid var(--lime)}
+.private-ai-article .pai-callout h2,.private-ai-article .pai-toc h2{margin-top:14px;font-size:clamp(23px,3vw,29px);line-height:1.18}
+.private-ai-article .pai-callout ul,.private-ai-article .pai-toc ol{margin-top:18px}
+.private-ai-article .pai-toc h2{margin-top:0}
+.private-ai-article .pai-toc ol{columns:2;column-gap:30px;font-size:15px;line-height:1.6}
+.private-ai-article .pai-toc li{break-inside:avoid;margin:0 0 10px}
+.private-ai-article :is(h2,h3)[id]{scroll-margin-top:120px}
+.private-ai-article .pai-table{margin-top:24px;border:1px solid var(--line);border-radius:14px;background:var(--white,#fff)}
+.private-ai-article .pai-table table{min-width:620px;margin:0;line-height:1.55}
+.private-ai-article .pai-table caption{padding:16px 18px;text-align:left;color:var(--ink);font-weight:600;font-size:15px;border-bottom:1px solid var(--line)}
+.private-ai-article .pai-table thead{background:var(--bg,#efefea)}
+.private-ai-article .pai-table tbody th{min-width:145px}
+.private-ai-article .pai-table tr:last-child>*{border-bottom:0}
+.private-ai-article .pai-table:focus-visible,.private-ai-article a:focus-visible,.private-ai-article summary:focus-visible{outline:2px solid var(--ink);outline-offset:4px}
+.private-ai-article .pai-cost{background:var(--ink,#111);color:#fff}
+.private-ai-article .pai-cost h3{color:#fff;margin:14px 0 28px}
+.private-ai-article .pai-cost .label{color:#d7d7d0}
+.private-ai-article .pai-bar+.pai-bar{margin-top:26px}
+.private-ai-article .pai-bar-label{display:flex;gap:18px;justify-content:space-between;align-items:baseline;font-size:15px}
+.private-ai-article .pai-cost strong{color:#fff;white-space:nowrap}
+.private-ai-article .pai-bar-track{height:18px;background:#333537;border-radius:5px;margin:10px 0;overflow:hidden}
+.private-ai-article .pai-bar-track span{display:block;height:100%;background:var(--lime)}
+.private-ai-article .pai-bar-cloud span{background:#d0d1ca}
+.private-ai-article .pai-bar small{font-size:13px;color:#c6c8c1}
+.private-ai-article .pai-cost figcaption{margin-top:26px;font-size:12.5px;line-height:1.6;color:#c6c8c1}
+.private-ai-article .pai-cta h3{margin-top:0}
+.private-ai-article .pai-cta p{margin:12px 0 22px}
+.private-ai-article .pai-cta .btn{font-size:14px;text-decoration:none;white-space:normal;gap:14px;line-height:1.4}
+.private-ai-article .pai-faqs{margin-top:52px}
+.private-ai-article .pai-faqs details{border-bottom:1px solid var(--line);padding:20px 0}
+.private-ai-article .pai-faqs summary{cursor:pointer;font-weight:600;color:var(--ink);font-size:18px;line-height:1.4;padding-right:14px}
+.private-ai-article .pai-faqs details p{margin-top:14px;font-size:16px}
+.private-ai-article .pai-sources{margin-top:52px;font-size:14px;line-height:1.7;border-top:1px solid var(--line);padding-top:8px}
+.private-ai-article .pai-sources h2{font-size:26px}
+.private-ai-article .pai-author{margin-top:34px;padding:22px 0;border-top:1px solid var(--line);border-bottom:1px solid var(--line);font-size:15px}
+.private-ai-article .pai-author p{margin-top:8px}
+@media(max-width:680px){
+ .private-ai-article .pai-callout,.private-ai-article .pai-toc,.private-ai-article .pai-cost{padding:20px}
+ .private-ai-article .pai-toc ol{columns:1}
+ .private-ai-article .pai-table table{min-width:590px}
+ .private-ai-article .pai-bar-label{font-size:14px;gap:10px}
+ .private-ai-article .pai-faqs summary{font-size:17px}
+}
